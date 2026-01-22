@@ -1,0 +1,273 @@
+{
+  "apps": {
+    "Borderfree": {
+      "cats": [
+        106
+      ],
+      "cookies": {
+        "bfx.apikey:": "^[\\w\\d-]+$",
+        "bfx.country:": "^\\w+$",
+        "bfx.language": "^\\w+$",
+        "bfx.loglevel": "^\\w+$"
+      },
+      "js": {
+        "bfx._apiKey": "",
+        "bfx._brand": ""
+      },
+      "scriptSrc": [
+        "bfx-objects\\.prd\\.borderfree\\.com",
+        "global\\.prd\\.borderfree\\.com",
+        "wm\\.prd\\.borderfree\\.com"
+      ],
+      "description": "Borderfree is an cross-border ecommerce solutions provider.",
+      "website": "https://www.borderfree.com",
+      "icon": "Borderfree.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof bfx !== 'undefined' && typeof bfx._apiKey !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ESW": {
+      "cats": [
+        106
+      ],
+      "js": {
+        "eshopworld": "",
+        "eswRetailerDisplayConfiguration": ""
+      },
+      "scriptSrc": [
+        "eswhooks\\.js"
+      ],
+      "description": "ESW (eShopWorld) is a company providing payments, shipping, and delivery services focusing on cross-border ecommerce.",
+      "website": "https://esw.com",
+      "icon": "ESW.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof eshopworld !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof eshopworld !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Exemptify": {
+      "cats": [
+        106,
+        100
+      ],
+      "js": {
+        "ExemptifyTriggerUpdate": "",
+        "m4u_ex_vat_postfix_txt": ""
+      },
+      "scriptSrc": [
+        "\\.modules4u\\.biz/shopify/exemptify"
+      ],
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Exemptify allows you to conduct proper EU B2B transactions by validating EU VAT IDs.",
+      "website": "https://modules4u.biz/exemptify",
+      "icon": "Exemptify.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ExemptifyTriggerUpdate !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ExemptifyTriggerUpdate !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Flow": {
+      "cats": [
+        106
+      ],
+      "js": {
+        "flow.cart": "",
+        "flow.countryPicker": "",
+        "flow_cart_localize": ""
+      },
+      "scriptSrc": [
+        "(?:shopify-)?cdn\\.flow\\.io/"
+      ],
+      "description": "Flow is an ecommerce platform that enables brands and retailers to sell their merchandise to customers internationally by creating localized shopping experiences.",
+      "website": "https://www.flow.io/",
+      "icon": "Flow.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof flow !== 'undefined' && typeof flow.cart !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof flow !== 'undefined' && typeof flow.cart !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Global-e": {
+      "cats": [
+        106
+      ],
+      "cookies": {
+        "glbe_sess_id": "",
+        "globale_consent": "",
+        "globale_ct_data": "",
+        "globale_data": "",
+        "globale_supportthirdpartcookies": ""
+      },
+      "js": {
+        "GLBE_PARAMS": "",
+        "GLOBALE_ENGINE_CONFIG": "",
+        "GlobalE": ""
+      },
+      "scriptSrc": [
+        "\\.global-e\\.com"
+      ],
+      "description": "Global-e is a provider of cross-border ecommerce solutions.",
+      "website": "https://www.global-e.com",
+      "icon": "Global-e.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof GLBE_PARAMS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GLBE_PARAMS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GLBE_PARAMS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "GlobalShopex": {
+      "cats": [
+        106
+      ],
+      "js": {
+        "GSXMiniCheckout": "",
+        "GSXPreviewCheckout": ""
+      },
+      "scriptSrc": [
+        "//globalshopex\\.com/"
+      ],
+      "description": "GlobalShopex offers a logistics ecommerce solution easy to integrate, which helps online businesses to sell in over 200 countries.",
+      "website": "https://www.globalshopex.com",
+      "icon": "GlobalShopex.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof GSXMiniCheckout !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GSXMiniCheckout !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Glopal": {
+      "cats": [
+        106
+      ],
+      "scriptSrc": [
+        "\\.glopal\\.com/"
+      ],
+      "description": "Glopal provides advanced international marketing solutions for ecommerce retailers and brands seeking to grow their businesses' globally.",
+      "website": "https://www.glopal.com",
+      "icon": "Glopal.png"
+    },
+    "Localised": {
+      "cats": [
+        106
+      ],
+      "dom": {
+        "img[src='.localised.com']": {
+          "attributes": {
+            "src": ""
+          }
+        },
+        "span": {
+          "attributes": {
+            "text": ".+Localised Inc\\..+"
+          }
+        }
+      },
+      "description": "Localised is local-first ecommerce platform.",
+      "website": "https://www.localised.com",
+      "icon": "Localised.png"
+    },
+    "With Reach": {
+      "cats": [
+        106
+      ],
+      "scriptSrc": [
+        "\\.rch\\.io/",
+        "checkout\\.gointerpay\\.net"
+      ],
+      "description": "With Reach is a fintech/payments service provider that helps retailers connect with customers around the world.",
+      "website": "https://www.withreach.com",
+      "icon": "With Reach.svg"
+    },
+    "WorldShopping": {
+      "cats": [
+        106
+      ],
+      "scriptSrc": [
+        "checkout-api\\.worldshopping\\.jp/(v\\d+)?\\;version:\\1"
+      ],
+      "description": "WorldShopping makes online purchases in Japan easier for international visitors.",
+      "website": "https://www.worldshopping.global/",
+      "icon": "worldshopping.png"
+    },
+    "Zonos": {
+      "cats": [
+        106
+      ],
+      "js": {
+        "Zonos": "",
+        "zonos": "",
+        "zonosCheckout": ""
+      },
+      "scriptSrc": [
+        "\\.zonos\\.com/"
+      ],
+      "description": "Zonos is a cross-border ecommerce software and app solution for companies with international business.",
+      "website": "https://zonos.com",
+      "icon": "Zonos.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Zonos !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Zonos !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Zonos !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

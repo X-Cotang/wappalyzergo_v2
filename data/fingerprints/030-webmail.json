@@ -1,0 +1,244 @@
+{
+  "apps": {
+    "Apple iCloud Mail": {
+      "cats": [
+        30
+      ],
+      "description": "Apple iCloud Mail is a webmail service provided by Apple, Inc.",
+      "website": "https://www.apple.com/icloud/",
+      "icon": "Apple.svg"
+    },
+    "CrossBox": {
+      "cats": [
+        30
+      ],
+      "headers": {
+        "server": "cbx-ws"
+      },
+      "description": "CrossBox is a webmail client.",
+      "website": "https://crossbox.io",
+      "icon": "CrossBox.png"
+    },
+    "Google Workspace": {
+      "cats": [
+        30,
+        75
+      ],
+      "description": "Google Workspace, formerly G Suite, is a collection of cloud computing, productivity and collaboration tools.",
+      "website": "https://workspace.google.com/",
+      "icon": "Google.svg"
+    },
+    "Microsoft 365": {
+      "cats": [
+        30,
+        75
+      ],
+      "description": "Microsoft 365 is a line of subscription services offered by Microsoft as part of the Microsoft Office product line.",
+      "website": "https://www.microsoft.com/microsoft-365",
+      "icon": "Microsoft 365.svg"
+    },
+    "Open-Xchange App Suite": {
+      "cats": [
+        30,
+        75
+      ],
+      "dom": {
+        "#io-ox-core, form > input[value='open-xchange-appsuite']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "ox.version": ""
+      },
+      "implies": [
+        "Java"
+      ],
+      "description": "Open-Xchange is a web-based communication, collaboration and office productivity software suite.",
+      "website": "https://www.open-xchange.com/",
+      "cpe": "cpe:2.3:a:open-xchange:app_suite:*:*:*:*:*:*:*:*",
+      "icon": "openxchange.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ox !== 'undefined' && typeof ox.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "ox.version || \"\""
+          }
+        ]
+      }
+    },
+    "Outlook Web App": {
+      "cats": [
+        30
+      ],
+      "js": {
+        "IsOwaPremiumBrowser": ""
+      },
+      "headers": {
+        "x-owa-version": "([\\d\\.]+)?\\;version:\\1"
+      },
+      "html": [
+        "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources\\;version:\\1"
+      ],
+      "implies": [
+        "Microsoft ASP.NET"
+      ],
+      "description": "Outlook on the web is an information manager web app. It includes a web-based email client, a calendar tool, a contact manager, and a task manager.",
+      "website": "https://help.outlook.com",
+      "cpe": "cpe:2.3:a:microsoft:outlook_web_access:*:*:*:*:*:*:*:*",
+      "icon": "Outlook.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof IsOwaPremiumBrowser !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Proton Mail": {
+      "cats": [
+        30
+      ],
+      "description": "Proton Mail is the world’s largest secure email service with over 70 million users. Available on Web, iOS, Android, and desktop. Protected by Swiss privacy law.",
+      "website": "https://proton.me/mail",
+      "icon": "Proton Mail.svg"
+    },
+    "RainLoop": {
+      "cats": [
+        30
+      ],
+      "js": {
+        "rainloop": "",
+        "rainloopI18N": ""
+      },
+      "headers": {
+        "server": "^rainloop"
+      },
+      "html": [
+        "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "^rainloop/v/([0-9.]+)/\\;version:\\1"
+      ],
+      "meta": {
+        "rlappversion": [
+          "^([0-9.]+)$\\;version:\\1"
+        ]
+      },
+      "implies": [
+        "PHP"
+      ],
+      "description": "RainLoop is a web-based email client.",
+      "website": "https://www.rainloop.net/",
+      "icon": "RainLoop.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rainloop !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof rainloop !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RoundCube": {
+      "cats": [
+        30
+      ],
+      "js": {
+        "rcmail": "",
+        "roundcube": ""
+      },
+      "html": [
+        "<title>roundcube"
+      ],
+      "implies": [
+        "PHP"
+      ],
+      "description": "RoundCube is free and open-source web-based IMAP email client.",
+      "website": "https://roundcube.net",
+      "cpe": "cpe:2.3:a:roundcube:webmail:*:*:*:*:*:*:*:*",
+      "icon": "RoundCube.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rcmail !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof rcmail !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SquirrelMail": {
+      "cats": [
+        30
+      ],
+      "js": {
+        "squirrelmail_loginpage_onload": ""
+      },
+      "html": [
+        "<small>squirrelmail version ([.\\d]+)[^<]*<br \\;version:\\1"
+      ],
+      "implies": [
+        "PHP"
+      ],
+      "description": "SquirrelMail is an open-source web-mail package that is based on PHP language. It provides a web-based-email client and a proxy server for IMAP protocol.",
+      "website": "https://squirrelmail.org",
+      "cpe": "cpe:2.3:a:squirrelmail:squirrelmail:*:*:*:*:*:*:*:*",
+      "icon": "SquirrelMail.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof squirrelmail_loginpage_onload !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sympa": {
+      "cats": [
+        30
+      ],
+      "html": [
+        "<a href=\"https?://www\\.sympa\\.org\">\\s*powered by sympa\\s*</a>"
+      ],
+      "meta": {
+        "generator": [
+          "^sympa$"
+        ]
+      },
+      "implies": [
+        "Perl"
+      ],
+      "description": "Sympa is an open-source mailing list management (MLM) software.",
+      "website": "https://www.sympa.org/",
+      "icon": "sympa.png"
+    },
+    "Zimbra": {
+      "cats": [
+        30
+      ],
+      "cookies": {
+        "zm_test": "true"
+      },
+      "implies": [
+        "Java"
+      ],
+      "website": "https://www.zimbra.com/",
+      "cpe": "cpe:2.3:a:zimbra:zimbra:*:*:*:*:*:*:*:*",
+      "icon": "Zimbra.png"
+    }
+  }
+}

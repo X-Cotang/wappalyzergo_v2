@@ -1,0 +1,105 @@
+{
+  "apps": {
+    "Alibaba Cloud Object Storage Service": {
+      "cats": [
+        63
+      ],
+      "headers": {
+        "x-oss-object-type": "",
+        "x-oss-request-id": "",
+        "x-oss-storage-class": ""
+      },
+      "description": "Alibaba Cloud Object Storage Service (OSS) is a cloud-based object storage service provided by Alibaba Cloud, which allows users to store and access large amounts of data in the cloud.",
+      "website": "https://www.alibabacloud.com/product/object-storage-service",
+      "icon": "Alibaba Cloud.svg"
+    },
+    "Amazon ECS": {
+      "cats": [
+        63
+      ],
+      "headers": {
+        "server": "^ecs"
+      },
+      "implies": [
+        "Amazon Web Services",
+        "Docker"
+      ],
+      "website": "https://aws.amazon.com/ecs/",
+      "icon": "Amazon ECS.svg"
+    },
+    "Clientacquisition": {
+      "cats": [
+        63
+      ],
+      "scripts": [
+        "app\\.clientacquisition\\.io"
+      ],
+      "description": "Clientacquisition is a provider of tailored infrastructure solutions that drive growth.",
+      "website": "https://www.clientacquisition.io",
+      "icon": "Clientacquisition.svg"
+    },
+    "Dweet": {
+      "cats": [
+        63
+      ],
+      "js": {
+        "dweetCallback": "",
+        "dweet_script_loader": "",
+        "dweetio.dweet": "",
+        "dweetioThing": ""
+      },
+      "description": "Dweet is a platform enabling data sharing across Internet of Things(IoT).",
+      "website": "https://dweet.io",
+      "icon": "Dweet.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dweetCallback !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof dweetCallback !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof dweetCallback !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof dweetCallback !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Google Cloud": {
+      "cats": [
+        63
+      ],
+      "description": "Google Cloud is a suite of cloud computing services.",
+      "website": "https://cloud.google.com",
+      "cpe": "cpe:2.3:a:google:cloud_platform:*:*:*:*:*:*:*:*",
+      "icon": "Google Cloud.svg"
+    },
+    "Leaseweb": {
+      "cats": [
+        63,
+        88
+      ],
+      "description": "Leaseweb is an Infrastructure-as-a-Service (IaaS) provider offering dedicated servers, CDN, cloud hosting and hybrid cloud on a global network.",
+      "website": "https://www.leaseweb.com",
+      "icon": "Leaseweb.svg"
+    },
+    "Parmin Cloud": {
+      "cats": [
+        63
+      ],
+      "headers": {
+        "x-powered-by": "^parmincloud$"
+      },
+      "description": "Parmin Cloud operates in the field of cloud services.",
+      "website": "https://parmin.cloud",
+      "icon": "Parmin Cloud.svg"
+    }
+  }
+}

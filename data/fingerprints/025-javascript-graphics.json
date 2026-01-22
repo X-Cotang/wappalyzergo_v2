@@ -1,0 +1,1303 @@
+{
+  "apps": {
+    "A-Frame": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "AFRAME.version": "^(.+)$\\;version:\\1"
+      },
+      "html": [
+        "<a-scene[^<>]*>"
+      ],
+      "scriptSrc": [
+        "/?([\\d.]+)?/aframe(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "Three.js"
+      ],
+      "website": "https://aframe.io",
+      "icon": "A-Frame.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AFRAME !== 'undefined' && typeof AFRAME.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "AFRAME.version || \"\""
+          }
+        ]
+      }
+    },
+    "Angular Gridster": {
+      "cats": [
+        25,
+        59
+      ],
+      "scriptSrc": [
+        "angular-gridster(?:\\.min)?\\.js"
+      ],
+      "description": "Gridster is a JavaScript library, with a simple drag-and-drop interface, for creating intuitive, dynamic and customizable layouts in web applications.",
+      "website": "https://tiberiuzuld.github.io/angular-gridster2/",
+      "icon": "Angular.svg"
+    },
+    "AntV G2": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "div.g2-tooltip": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "G2.Chart": "",
+        "G2.VERSION": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "AntV G2 is a highly interactive data-driven visualisation grammar for statistical charts.",
+      "website": "https://g2plot.antv.vision",
+      "icon": "AntV.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof G2 !== 'undefined' && typeof G2.Chart !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AntV G6": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "g6.Graph": "",
+        "g6.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "AntV G6 is a graph visualisation framework in JavaScript.",
+      "website": "https://g6.antv.vision",
+      "icon": "AntV.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof g6 !== 'undefined' && typeof g6.Graph !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ApexCharts.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "ApexCharts": ""
+      },
+      "description": "ApexCharts is a modern JavaScript charting library that empowers developers to build interactive data visualizations for commercial and non-commercial projects.",
+      "website": "https://apexcharts.com",
+      "icon": "apexcharts.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ApexCharts !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Arbor.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "arbor": ""
+      },
+      "description": "Arbor.js is a graph visualization library that uses web workers for performance and relies on jQuery for DOM manipulation and interaction.",
+      "website": "https://arborjs.org",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof arbor !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Babylon.js": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "canvas[data-engine*='Babylon.js']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "BABYLON.AddressMode": ""
+      },
+      "description": "Babylon.js is a real time 3D engine using a JavaScript library for displaying 3D graphics in a web browser via HTML5. The source code is available on GitHub and distributed under the Apache License 2.0.",
+      "website": "https://www.babylonjs.com/",
+      "icon": "babylonjs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BABYLON !== 'undefined' && typeof BABYLON.AddressMode !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Backstretch": {
+      "cats": [
+        25,
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?(?:jquery\\.)?backstretch(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "A simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.",
+      "website": "https://www.jquery-backstretch.com/"
+    },
+    "Bokeh": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Bokeh": "",
+        "Bokeh.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "bokeh.*\\.js"
+      ],
+      "implies": [
+        "Python"
+      ],
+      "website": "https://bokeh.org",
+      "icon": "bokeh.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Bokeh !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CanvasJS": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "CanvasJS.Chart": "",
+        "CanvasJS.Chart.version": "^v(.+)$\\;version:\\1"
+      },
+      "description": "CanvasJS charts is a data visualisation library that runs across multiple devices and browsers.",
+      "website": "https://canvasjs.com",
+      "icon": "canvasjs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CanvasJS !== 'undefined' && typeof CanvasJS.Chart !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chart.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Chart": "\\;confidence:50",
+        "Chart.defaults.doughnut": "",
+        "chart.ctx.bezierCurveTo": ""
+      },
+      "scriptSrc": [
+        "/chart(?:\\.bundle)?(?:\\.min)?\\.js\\;confidence:75",
+        "cdn\\.jsdelivr\\.net/(?:npm|gh/chartjs)/chart\\.js@([\\d.]+(?:-[^/]+)?|latest)/dist/chart.*\\.js\\;version:\\1",
+        "cdnjs\\.cloudflare\\.com/ajax/libs/chart\\.js/([\\d.]+(?:-[^/]+)?)/chart.*\\.js\\;version:\\1",
+        "chartjs\\.org/dist/([\\d.]+(?:-[^/]+)?|master|latest)/chart.*\\.js\\;version:\\1"
+      ],
+      "description": "Chart.js is an open-source JavaScript library that allows you to draw different types of charts by using the HTML5 canvas element.",
+      "website": "https://www.chartjs.org",
+      "icon": "Chart.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Chart !== 'undefined' && Chart === '\\;confidence:50'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Chart !== 'undefined' && Chart === '\\;confidence:50'"
+          }
+        ]
+      }
+    },
+    "D3": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "d3.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/d3(?:\\. v\\d+)?(?:\\.min)?\\.js"
+      ],
+      "description": "D3.js is a JavaScript library for producing dynamic, interactive data visualisations in web browsers.",
+      "website": "https://d3js.org",
+      "cpe": "cpe:2.3:a:d3.js_project:d3.js:*:*:*:*:*:*:*:*",
+      "icon": "D3.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof d3 !== 'undefined' && typeof d3.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "d3.version || \"\""
+          }
+        ]
+      }
+    },
+    "ECharts": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "div[_echarts_instance_]": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/echarts(?:\\.simple)?(?:\\.esm)?(?:\\.common)?(?:\\.min)?\\.js",
+        "/echarts\\.min\\.[a-za-z0-9]*\\.js",
+        "cdn\\.jsdelivr\\.net/(?:npm|gh/apache)/echarts@([\\d.]+(?:-[^/]+)?|latest)/dist/echarts.*\\.js\\;version:\\1"
+      ],
+      "description": "ECharts is an open-source JavaScript visualisation library.",
+      "website": "https://echarts.apache.org/",
+      "icon": "echarts.png"
+    },
+    "Epoch": {
+      "cats": [
+        25
+      ],
+      "html": [
+        "<link[^>]+?href=\"[^\"]+epoch(?:\\.min)?\\.css"
+      ],
+      "scriptSrc": [
+        "epoch(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "D3"
+      ],
+      "website": "https://fastly.github.io/epoch"
+    },
+    "Exhibit": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Exhibit": "",
+        "Exhibit.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "exhibit.*\\.js"
+      ],
+      "website": "https://simile-widgets.org/exhibit/",
+      "icon": "Exhibit.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Exhibit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "FlipClock.js": {
+      "cats": [
+        25,
+        59
+      ],
+      "scriptSrc": [
+        "flipclock(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "FlipClock.js is a JavaScript library, offering a modern twist to displaying time and countdowns on web applications.",
+      "website": "https://flipclock.readthedocs.io/en/dev-1.0.0/CHANGE%20LOG/"
+    },
+    "Flot": {
+      "cats": [
+        25
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:jquery\\.)?)?flot(?:\\/curvedlines)?(?:\\/excanvas)?(?:\\/jquery)?(?:\\.categories)?(?:\\.pack)?(?:\\.pie)?(?:\\.resize)?(?:\\.selection)?(?:\\.spline)?(?:\\.symbol)?(?:\\.time)?(?:\\.tooltip)?(?:\\.min)?\\.js\\;version:\\1",
+        "(?:(?:jquery\\.)?)?flot(?:\\/curvedlines)?(?:\\/excanvas)?(?:\\/jquery)?(?:\\.categories)?(?:\\.pack)?(?:\\.pie)?(?:\\.resize)?(?:\\.selection)?(?:\\.spline)?(?:\\.symbol)?(?:\\.time)?(?:\\.tooltip)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Flot is a JavaScript plotting library for jQuery that provides interactive charts and graphs using HTML canvas.",
+      "website": "https://flotcharts.org/",
+      "icon": "Flot.svg"
+    },
+    "Flourish": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Flourish.environment": "",
+        "FlourishConfig": "",
+        "FlourishLoaded": "",
+        "_Flourish_template_id": ""
+      },
+      "description": "Flourish is a data visualisation and storytelling platform that enables users to create interactive data visualisations, charts, and presentations.",
+      "website": "https://flourish.studio",
+      "icon": "Flourish.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Flourish !== 'undefined' && typeof Flourish.environment !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Flourish !== 'undefined' && typeof Flourish.environment !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Flourish !== 'undefined' && typeof Flourish.environment !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Flourish !== 'undefined' && typeof Flourish.environment !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "FusionCharts": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "FusionCharts": "",
+        "FusionChartsDataFormats": "",
+        "FusionMaps": ""
+      },
+      "description": "FusionCharts is a comprehensive charting solution for websites.",
+      "website": "https://www.fusioncharts.com/charts",
+      "icon": "fusion_charts.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FusionCharts !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FusionCharts !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FusionCharts !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "GoJS": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "go.GraphObject": "",
+        "go.version": "(.*)\\;version:\\1"
+      },
+      "website": "https://gojs.net/",
+      "icon": "GoJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof go !== 'undefined' && typeof go.GraphObject !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Google Charts": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "__googleVisualizationAbstractRendererElementsCount__": "",
+        "__gvizguard__": ""
+      },
+      "description": "Google Charts is an interactive web service that creates graphical charts from user-supplied information.",
+      "website": "https://developers.google.com/chart/",
+      "icon": "Google Charts.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __googleVisualizationAbstractRendererElementsCount__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __googleVisualizationAbstractRendererElementsCount__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Highcharts": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Highcharts": "",
+        "Highcharts.version": "^(.+)$\\;version:\\1"
+      },
+      "html": [
+        "<svg[^>]*><desc>created with highcharts ([\\d.]*)\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "highcharts.*\\.js"
+      ],
+      "description": "Highcharts is a charting library written in pure JavaScript, for adding interactive charts to a website or web application. Highcharts meets accessibility standards and works with Python, Angular, React, iOS, Android, and more.",
+      "website": "https://www.highcharts.com",
+      "icon": "Highcharts.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Highcharts !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Highstock": {
+      "cats": [
+        25
+      ],
+      "html": [
+        "<svg[^>]*><desc>created with highstock ([\\d.]*)\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "highstock[.-]?([\\d\\.]*\\d).*\\.js\\;version:\\1"
+      ],
+      "website": "https://highcharts.com/products/highstock",
+      "icon": "Highcharts.svg"
+    },
+    "JS Charts": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "JSChart": ""
+      },
+      "scriptSrc": [
+        "jscharts.{0,32}\\.js"
+      ],
+      "website": "https://www.jscharts.com",
+      "icon": "JS Charts.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof JSChart !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "JavaScript Infovis Toolkit": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "$jit": "",
+        "$jit.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "jit(?:-yc)?\\.js"
+      ],
+      "website": "https://philogb.github.io/jit/",
+      "icon": "JavaScript Infovis Toolkit.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $jit !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "KaTeX": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "link[href*=katex]": {
+          "attributes": {
+            "href": "katex(?:\\.min)?\\.css"
+          }
+        }
+      },
+      "js": {
+        "katex": "",
+        "katex.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "katex(@|/)[0-9.]+(?:/dist)?/katex(?:\\.min)?\\.(mjs|js|css)\\;version:\\1"
+      ],
+      "description": "KaTeX is a cross-browser JavaScript library that displays mathematical notation in web browsers.",
+      "website": "https://katex.org/",
+      "icon": "KaTeX.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof katex !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "KineticJS": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Kinetic": "",
+        "Kinetic.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "kinetic(?:-v?([\\d.]+))?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "website": "https://github.com/ericdrowell/KineticJS/",
+      "icon": "KineticJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Kinetic !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Konva.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Konva": "",
+        "Konva.version": "^(.+)$\\;version:\\1"
+      },
+      "description": "Konva.js is a JavaScript library for creating 2D canvas applications on both desktop and mobile platforms, utilising HTML5.",
+      "website": "https://konvajs.org",
+      "icon": "KonvaJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Konva !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LocalFocus": {
+      "cats": [
+        25
+      ],
+      "html": [
+        "<iframe[^>]+\\blocalfocus\\b"
+      ],
+      "implies": [
+        "Angular",
+        "D3"
+      ],
+      "website": "https://www.localfocus.nl/en/",
+      "icon": "LocalFocus.png"
+    },
+    "MathJax": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "MathJax": "",
+        "MathJax.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "([\\d.]+)?/mathjax\\.js\\;version:\\1"
+      ],
+      "description": "MathJax is a cross-browser JavaScript library that displays mathematical notation in web browsers, using MathML, LaTeX and ASCIIMathML markup.",
+      "website": "https://www.mathjax.org",
+      "icon": "MathJax.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MathJax !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mermaid": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "mermaid": ""
+      },
+      "html": [
+        "<div [^>]*class=[\"']mermaid[\"']>\\;confidence:90"
+      ],
+      "scriptSrc": [
+        "/mermaid(?:\\.min)?\\.js"
+      ],
+      "website": "https://mermaidjs.github.io/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mermaid !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "NVD3": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "nv.addGraph": "",
+        "nv.version": "^(.+)$\\;confidence:0\\;version:\\1"
+      },
+      "html": [
+        "<link[^>]* href=[^>]+nv\\.d3(?:\\.min)?\\.css"
+      ],
+      "scriptSrc": [
+        "nv\\.d3(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "D3"
+      ],
+      "description": "NVD3 is a JavaScript visualisation library that is a free open-source tool.",
+      "website": "https://nvd3.org",
+      "icon": "NVD3.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof nv !== 'undefined' && typeof nv.addGraph !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "PIXIjs": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "PIXI": "",
+        "PIXI.VERSION": "^(.+)$\\;version:\\1",
+        "PIXI_WEBWORKER_URL": ""
+      },
+      "scriptSrc": [
+        "pixi(?:\\.min|-legacy)?\\.js$"
+      ],
+      "description": "PIXIjs is a free open-source 2D engine used to make animated websites and HTML5 games.",
+      "website": "https://www.pixijs.com",
+      "icon": "PIXIjs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PIXI !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PIXI !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Paper.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "paper": "",
+        "paper.PaperScope": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?paper(?:-full)?(?:-core)?(?:\\.min)?(?:-[\\d\\w]{0,64})?\\.js\\;version:\\1"
+      ],
+      "description": "Paper.js is an open-source vector graphics scripting framework that operates on the HTML5 Canvas.",
+      "website": "https://paperjs.org",
+      "icon": "PaperJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof paper !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Paths.js": {
+      "cats": [
+        25
+      ],
+      "scriptSrc": [
+        "paths(?:\\.min)?\\.js"
+      ],
+      "website": "https://github.com/andreaferretti/paths-js"
+    },
+    "Plotly": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Plotly.version": "([\\d.])\\;version:\\1"
+      },
+      "scriptSrc": [
+        "https?://cdn\\.plot\\.ly/plotly"
+      ],
+      "implies": [
+        "D3"
+      ],
+      "website": "https://plot.ly/javascript/",
+      "icon": "Plotly.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Plotly !== 'undefined' && typeof Plotly.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Plotly.version || \"\""
+          }
+        ]
+      }
+    },
+    "Protovis": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "protovis": ""
+      },
+      "scriptSrc": [
+        "protovis.*\\.js"
+      ],
+      "website": "https://mbostock.github.io/protovis",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof protovis !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Raphael": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Raphael.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "raphael(?:-([\\d.]+))?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Raphael is a cross-browser JavaScript library that draws Vector graphics for websites.",
+      "website": "https://dmitrybaranovskiy.github.io/raphael/",
+      "icon": "Raphael.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Raphael !== 'undefined' && typeof Raphael.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Raphael.version || \"\""
+          }
+        ]
+      }
+    },
+    "Recharts": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "div > div > svg.recharts-surface": {
+          "attributes": {
+            "class": ""
+          }
+        }
+      },
+      "implies": [
+        "React"
+      ],
+      "description": "Recharts is a component-based charting library, which is exclusively built for React applications.",
+      "website": "https://recharts.org/",
+      "icon": "Recharts.svg"
+    },
+    "Rickshaw": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Rickshaw": ""
+      },
+      "scriptSrc": [
+        "rickshaw(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "D3"
+      ],
+      "website": "https://code.shutterstock.com/rickshaw/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Rickshaw !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Rive": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "rive.Rive": ""
+      },
+      "description": "Rive is a real-time interactive design and animation tool.",
+      "website": "https://rive.app",
+      "icon": "Rive.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rive !== 'undefined' && typeof rive.Rive !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Spline": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "div[data-spline-url*='prod.spline.design/']": {
+          "exists": ""
+        }
+      },
+      "description": "Spline is a platform for designing and collaborating on 3D content in real time.",
+      "website": "https://spline.design",
+      "icon": "Spline.svg"
+    },
+    "Supersized": {
+      "cats": [
+        25
+      ],
+      "scriptSrc": [
+        "supersized(?:\\.([\\d.]*[\\d]))?.*\\.js\\;version:\\1"
+      ],
+      "website": "https://buildinternet.com/project/supersized",
+      "icon": "Supersized.png"
+    },
+    "TeeChart": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Tee.Animation": ""
+      },
+      "description": "TeeChart is a JavaScript charting library that plots graphs in compatible browsers using native JavaScript and the HTML5 Canvas element.",
+      "website": "http://216.92.101.67/product/html5",
+      "icon": "TeeChart.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Tee !== 'undefined' && typeof Tee.Animation !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Theatre.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "__TheatreJS_CoreBundle": "",
+        "__TheatreJS_CoreBundle.version": "((?:\\d+\\.)+\\d+)\\;version:\\1"
+      },
+      "description": "Theatre.js is a javascript animation library with a professional motion design toolset.",
+      "website": "https://www.theatrejs.com",
+      "icon": "Theatre.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __TheatreJS_CoreBundle !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Three.js": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "canvas[data-engine*='three.js']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "THREE.REVISION": "^(.+)$\\;version:\\1",
+        "__THREE__": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "three(?:\\.min)?\\.js"
+      ],
+      "description": "Three.js is a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL.",
+      "website": "https://threejs.org",
+      "icon": "Three.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __THREE__ !== 'undefined' || typeof THREE.REVISION !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __THREE__ !== 'undefined' || typeof THREE.REVISION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "THREE.REVISION || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "__THREE__ || \"\""
+          }
+        ]
+      }
+    },
+    "Timeplot": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Timeplot": ""
+      },
+      "scriptSrc": [
+        "timeplot.*\\.js"
+      ],
+      "website": "https://www.simile-widgets.org/timeplot/",
+      "icon": "Timeplot.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Timeplot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TradingView": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "iframe[src*='.tradingview.com/']": {
+          "exists": ""
+        }
+      },
+      "description": "TradingView is used to show world chart, chats and trades markets.",
+      "website": "https://www.tradingview.com",
+      "icon": "trading_view.svg"
+    },
+    "Variance": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "link[href*='variancecharts.com/'], script#variance-js": {
+          "exists": ""
+        }
+      },
+      "description": "Variance is a provider of custom charting data graphics tools for web platforms, utilizing HTML and CSS.",
+      "website": "https://variancecharts.com"
+    },
+    "Visx": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "g.visx-group,g.vx-group": {
+          "attributes": {
+            "class": "(?:v(?:is)?x)-group"
+          }
+        }
+      },
+      "description": "Visx is a collection of React-based data visualisation tools developed by Airbnb.",
+      "website": "https://airbnb.io/visx/",
+      "icon": "Visx.svg"
+    },
+    "Xzero JS": {
+      "cats": [
+        25
+      ],
+      "scriptSrc": [
+        "xzero-js@([\\d.]+)/xzero\\.min\\.js.*\\;version:\\1"
+      ],
+      "description": "Xzero JS is a JavaScript library (ES6 module) for displaying 3D models, scenes and 360° panoramas on the web.",
+      "website": "https://xzerojs.org",
+      "icon": "XzeroJS.svg"
+    },
+    "ZingChart": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "zingchart": ""
+      },
+      "description": "ZingChart is a open-source and free JavaScript library for building interactive and intuitive charts.",
+      "website": "https://www.zingchart.com",
+      "icon": "ZingChart.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof zingchart !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "amCharts": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "AmCharts": ""
+      },
+      "html": [
+        "<svg[^>]*><desc>javascript chart by amcharts ([\\d.]*)\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "amcharts.*\\.js"
+      ],
+      "description": "amCharts is a JavaScript-based interactive charts and maps programming library and tool.",
+      "website": "https://amcharts.com",
+      "icon": "amCharts.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AmCharts !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "anime.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "anime.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "description": "Anime.js (/ˈæn.ə.meɪ/) is a lightweight JavaScript animation library with a simple, yet powerful API.It works with CSS properties, SVG, DOM attributes and JavaScript Objects.",
+      "website": "https://animejs.com/",
+      "icon": "anime.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof anime !== 'undefined' && typeof anime.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "anime.version || \"\""
+          }
+        ]
+      }
+    },
+    "dc.js": {
+      "cats": [
+        25,
+        59
+      ],
+      "js": {
+        "dcAPIKey": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:dc\\/)?)?dc(?:\\.leaflet)?\\.js\\;version:\\1"
+      ],
+      "description": "A multi-dimensional charting library built to work natively with crossfilter and rendered using d3.js",
+      "website": "https://dc-js.github.io/dc.js/",
+      "icon": "dc.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dcAPIKey !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "dimple": {
+      "cats": [
+        25,
+        59
+      ],
+      "scriptSrc": [
+        "dimple(?:\\/lib\\/[\\w\\.]+)?(?:\\/theme\\/js\\/[\\w\\.-]+)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "dimple.js is a powerful and flexible open-source charting API for d3 letting you quickly and easily create and combine bar, line, area and scatter charts.",
+      "website": "http://dimplejs.org/"
+    },
+    "jQuery Sparklines": {
+      "cats": [
+        25
+      ],
+      "scriptSrc": [
+        "jquery\\.sparkline.*\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "jQuery Sparklines is a plugin that generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.",
+      "website": "https://omnipotent.net/jquery.sparkline/"
+    },
+    "jqPlot": {
+      "cats": [
+        25
+      ],
+      "scriptSrc": [
+        "jqplot.*\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "website": "https://www.jqplot.com",
+      "icon": "jqPlot.png"
+    },
+    "particles.js": {
+      "cats": [
+        25
+      ],
+      "dom": {
+        "div#particles-js": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "particlesJS": ""
+      },
+      "scriptSrc": [
+        "/particles(?:\\.min)?\\.js"
+      ],
+      "description": "Particles.js is a JavaScript library for creating particles.",
+      "website": "https://github.com/VincentGarreau/particles.js",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof particlesJS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "shine.js": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "Shine": ""
+      },
+      "scriptSrc": [
+        "shine(?:\\.min)?\\.js"
+      ],
+      "website": "https://bigspaceship.github.io/shine.js/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Shine !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "spin.js": {
+      "cats": [
+        25
+      ],
+      "scriptSrc": [
+        "spin(?:\\.min)?\\.js(?:\\?ver=([\\d.]+))?\\;version:\\1"
+      ],
+      "description": "Configurable JavaScript/CSS spinner that can be used as a resolution-independent loading indicator",
+      "website": "https://spin.js.org/",
+      "icon": "spin.js.png"
+    },
+    "uPlot": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "uPlot": ""
+      },
+      "description": "uPlot is a small, fast chart for time series, lines, areas, ohlc and bars.",
+      "website": "https://leeoniya.github.io/uPlot",
+      "icon": "uPlot.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof uPlot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "xCharts": {
+      "cats": [
+        25
+      ],
+      "js": {
+        "xChart": ""
+      },
+      "html": [
+        "<link[^>]* href=\"[^\"]*xcharts(?:\\.min)?\\.css"
+      ],
+      "scriptSrc": [
+        "xcharts\\.js"
+      ],
+      "implies": [
+        "D3"
+      ],
+      "website": "https://tenxer.github.io/xcharts/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof xChart !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

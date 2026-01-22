@@ -1,0 +1,787 @@
+{
+  "apps": {
+    "ActBlue": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='//secure.actblue.com/donate/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "actblue.__configuration": ""
+      },
+      "description": "ActBlue is an online fundraising platform that facilitates secure donations to Democratic candidates and progressive causes, streamlining the process of processing and distributing campaign contributions.",
+      "website": "https://secure.actblue.com",
+      "icon": "ActBlue.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof actblue !== 'undefined' && typeof actblue.__configuration !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AlumnIQ": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.alumniq.com/giving/to/']": {
+          "exists": ""
+        }
+      },
+      "cookies": {
+        "alumniq-online-giving": ""
+      },
+      "description": "AlumnIQ is a set of services to manage events, giving, email, volunteers, class agents, and more, all designed to work with your database of record.",
+      "website": "https://www.alumniq.com/platform/",
+      "icon": "AlumnIQ.svg"
+    },
+    "Arreva": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='=ArrevaOnlineDonationsPortlet_WA']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/arreva-onlinedonations-portlet/"
+      ],
+      "description": "Arreva is a fundraising software that provides the ability to mobilise constituents using the donor tracking system.",
+      "website": "https://www.arreva.com",
+      "icon": "Arreva.png"
+    },
+    "BRYNK": {
+      "cats": [
+        111
+      ],
+      "scriptSrc": [
+        "cdn\\.brynk\\.org"
+      ],
+      "description": "BRYNK is an all-in-one platform for managing memberships, donors, events, and payments or fundraising activities.",
+      "website": "https://www.brynk.com",
+      "icon": "BRYNK.svg"
+    },
+    "BackerKit": {
+      "cats": [
+        111
+      ],
+      "cookies": {
+        "_backerkit_sessionv2": ""
+      },
+      "js": {
+        "BackerKitPreorders": ""
+      },
+      "scriptSrc": [
+        "\\.backerkit\\.com/"
+      ],
+      "description": "Backerkit is a crowdfunding shipping fulfillment software solution.",
+      "website": "https://www.backerkit.com",
+      "icon": "BackerKit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BackerKitPreorders !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Blackbaud CRM": {
+      "cats": [
+        111
+      ],
+      "js": {
+        "BLACKBAUD": "",
+        "don_premium_map": ""
+      },
+      "scriptSrc": [
+        "js/convio/modules\\.js"
+      ],
+      "description": "Blackbaud CRM gathers fundraising, online applications, actionable prospect research and analytics, and multichannel direct marketing into one platform.",
+      "website": "https://www.blackbaud.com",
+      "icon": "Blackbaud.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BLACKBAUD !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BLACKBAUD !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Classy": {
+      "cats": [
+        111
+      ],
+      "js": {
+        "Classy.clientId": ""
+      },
+      "scripts": [
+        "classy\\.org"
+      ],
+      "description": "Classy is an online fundraising platform.",
+      "website": "https://www.classy.org/",
+      "icon": "classy.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Classy !== 'undefined' && typeof Classy.clientId !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Click & Pledge": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.clickandpledge.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.clickandpledge\\.com/"
+      ],
+      "description": "Click & Pledge is an all-in-one digital fundraising platform.",
+      "website": "https://clickandpledge.com",
+      "icon": "Click & Pledge.png"
+    },
+    "Community Funded": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='//give.communityfunded.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "//give\\.communityfunded\\.com/"
+      ],
+      "description": "Community Funded is a digital fundraising and engagement platform.",
+      "website": "https://www.communityfunded.com",
+      "icon": "Community Funded.png"
+    },
+    "CustomDonations": {
+      "cats": [
+        111
+      ],
+      "js": {
+        "CustomDonations.BuildForm": ""
+      },
+      "scriptSrc": [
+        "api\\.customdonations\\.com"
+      ],
+      "description": "CustomDonations is a cloud-based service providing nonprofits with tools to create and manage online donation forms.",
+      "website": "https://customdonations.com",
+      "icon": "CustomDonations.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CustomDonations !== 'undefined' && typeof CustomDonations.BuildForm !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "DonorPerfect": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.donorperfect.']": {
+          "attributes": {
+            "href": "\\.donorperfect\\.(?:com|net)"
+          }
+        }
+      },
+      "scriptSrc": [
+        "\\.donorperfect\\.net/"
+      ],
+      "description": "DonorPerfect is a fundraising management software.",
+      "website": "https://www.donorperfect.com",
+      "icon": "DonorPerfect.svg"
+    },
+    "Donorbox": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='//donorbox.org/'], iframe[src*='//donorbox.org/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "DONORBOX": "",
+        "DonorBox": "",
+        "donorbox_check_donation_period": ""
+      },
+      "description": "Donorbox is a US-based technology company. It offers an online fundraising software that allows individuals and nonprofit organisations to receive donations over the Internet.",
+      "website": "https://donorbox.org",
+      "icon": "Donorbox.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DONORBOX !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DONORBOX !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DONORBOX !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "EveryAction": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='secure.everyaction.com/'], div[data-form-url*='secure.everyaction.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.everyaction\\.com/"
+      ],
+      "description": "EveryAction provides fundraising software, donor management software, and CRM software to nonprofit organisations.",
+      "website": "https://www.everyaction.com",
+      "icon": "EveryAction.svg"
+    },
+    "Frontstream": {
+      "cats": [
+        111
+      ],
+      "scripts": [
+        "\\.firstgiving\\.com"
+      ],
+      "description": "FrontStream is a fundraising platform, formerly FirstGiving, that supports walks, runs, rides, DIY, and virtual activity challenge campaigns.",
+      "website": "https://www.frontstream.com",
+      "icon": "FrontStream.svg"
+    },
+    "FundRazr": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "link[href*='//static.fundrazr.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "FundRazr": ""
+      },
+      "description": "FundRazr is an online fundraising and crowdfunding platform.",
+      "website": "https://fundrazr.com",
+      "icon": "FundRazr.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FundRazr !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Fundraise Up": {
+      "cats": [
+        111
+      ],
+      "js": {
+        "FundraiseUp": ""
+      },
+      "scriptSrc": [
+        "\\.fundraiseup\\.com/"
+      ],
+      "description": "Fundraise Up is a platform for online donations.",
+      "website": "https://fundraiseup.com",
+      "icon": "Fundraise Up.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FundraiseUp !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Funraise": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.funraise.org/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "FR.IMAGE_BASE_URL": "\\.funraise\\.io"
+      },
+      "description": "Funraise is a nonprofit fundraising platform that enables organisations to build fundraising websites as well as manage donations and campaigns.",
+      "website": "https://funraise.org",
+      "icon": "Funraise.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FR !== 'undefined' && typeof FR.IMAGE_BASE_URL !== 'undefined' && FR.IMAGE_BASE_URL === '\\.funraise\\.io'"
+          }
+        ]
+      }
+    },
+    "GiveCampus": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.givecampus.com/']": {
+          "exists": ""
+        }
+      },
+      "meta": {
+        "author": [
+          "^givecampus$"
+        ]
+      },
+      "description": "GiveCampus is a fundraising platform for nonprofit educational institutions.",
+      "website": "https://go.givecampus.com",
+      "icon": "GiveCampus.png"
+    },
+    "GiveSmart": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.givesmart.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.givesmart\\.com/"
+      ],
+      "description": "GiveSmart is an event fund gathering technology that offers customisable event size, mobile bidding, text-to-donate, enhanced dashboard and reporting, seating arrangement, and more.",
+      "website": "https://www.givesmart.com",
+      "icon": "GiveSmart.svg"
+    },
+    "GiveWP": {
+      "cats": [
+        111,
+        87
+      ],
+      "js": {
+        "Give.donor": "",
+        "giveApiSettings": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/give/.+give\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "GiveWP is a donation plugin for WordPress.",
+      "website": "https://givewp.com",
+      "icon": "GiveWP.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Give !== 'undefined' && typeof Give.donor !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Give !== 'undefined' && typeof Give.donor !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "GivingFuel": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.givingfuel.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.givingfuel\\.com/"
+      ],
+      "description": "GivingFuel is a fundraising software solution.",
+      "website": "https://www.givingfuel.com",
+      "icon": "GivingFuel.png"
+    },
+    "Golden Volunteer": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "link[href*='.goldenvolunteer.com/']": {
+          "exists": ""
+        }
+      },
+      "headers": {
+        "content-security-policy": "\\.goldenvolunteer\\.com"
+      },
+      "scripts": [
+        "\\.goldenvolunteer\\.com"
+      ],
+      "description": "Golden Volunteer is a volunteer management platform that uses automation and fundraising AI to streamline tasks, ensure compliance, and support volunteer-to-donor conversion.",
+      "website": "https://www.goldenvolunteer.com",
+      "icon": "GoldenVolunteer.svg"
+    },
+    "Harness": {
+      "cats": [
+        111
+      ],
+      "js": {
+        "HarnessWidget": ""
+      },
+      "scriptSrc": [
+        "\\.harnessapp\\.com"
+      ],
+      "description": "Harness is a fundraising solution designed to streamline the process of raising funds for various causes and initiatives.",
+      "website": "https://www.goharness.com/nonprofits",
+      "icon": "Harness.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HarnessWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Kindful": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.kindful.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Bloomerang.version": "([\\d\\.]+)\\;version:\\1",
+        "KindfulPaymentsConnect": "",
+        "bloomerangLoadStarted": "",
+        "kindful_gtag": ""
+      },
+      "description": "Kindful is a cloud-based donor management and fundraising software and database designed for nonprofit organisations.",
+      "website": "https://kindful.com",
+      "icon": "Kindful.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Bloomerang !== 'undefined' && typeof Bloomerang.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Bloomerang !== 'undefined' && typeof Bloomerang.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Bloomerang !== 'undefined' && typeof Bloomerang.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Bloomerang !== 'undefined' && typeof Bloomerang.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Bloomerang.version || \"\""
+          }
+        ]
+      }
+    },
+    "Kiva": {
+      "cats": [
+        111
+      ],
+      "scriptSrc": [
+        "www\\.kiva\\.org"
+      ],
+      "description": "Kiva is a charity organization that connects individuals through micro-lending to help alleviate poverty.",
+      "website": "https://www.kiva.org",
+      "icon": "Kiva.svg"
+    },
+    "MineLabz donations": {
+      "cats": [
+        111
+      ],
+      "scripts": [
+        "minelabz\\.com"
+      ],
+      "description": "Minelabz is a donations platform built on WordPress and WooCommerce, enabling cracked Minecraft servers to accept donations through their stores.",
+      "website": "https://minelabz.com",
+      "icon": "MineLabz.svg"
+    },
+    "Network for Good": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.networkforgood.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.networkforgood\\.com/"
+      ],
+      "description": "Network for Good is an American certified B Corporation software company that offers fundraising software and coaching for charities and non-profit organisations.",
+      "website": "https://www.networkforgood.com",
+      "icon": "Network for Good.svg"
+    },
+    "OneCause": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='.onecause.com/'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.onecause\\.com/"
+      ],
+      "description": "OneCause is a fundraising platform designed for nonprofits to manage all types of fundraising campaigns.",
+      "website": "https://www.onecause.com",
+      "icon": "OneCause.svg"
+    },
+    "Optimy": {
+      "cats": [
+        111
+      ],
+      "headers": {
+        "content-security-policy": "optimyapp-css\\.s3"
+      },
+      "scriptSrc": [
+        "/js/optimy\\.js"
+      ],
+      "description": "Optimy is an all-in-one CSR platform that enhances social and business impact by streamlining social programs.",
+      "website": "https://www.optimy.com",
+      "icon": "Optimy.svg"
+    },
+    "Pushpay": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='//ppay.co/'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "//pushpay\\.com/"
+      ],
+      "description": "Pushpay is a digital giving and engagement platform designed to help churches manage processes related to donations and fundraising.",
+      "website": "https://pushpay.com",
+      "icon": "Pushpay.svg"
+    },
+    "Qgiv": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='//secure.qgiv.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "//secure\\.qgiv\\.com/"
+      ],
+      "description": "Qgiv is an online fundraising platform helping nonprofit, faith-based, healthcare, and education organisations raise funds.",
+      "website": "https://www.qgiv.com",
+      "icon": "Qgiv.svg"
+    },
+    "RaiseDonors": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='//raisedonors.com/'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "meta": {
+        "author": [
+          "^raisedonors$"
+        ]
+      },
+      "description": "RaiseDonors is for anyone raising money and cultivating donor relationships online.",
+      "website": "https://explore.raisedonors.com",
+      "icon": "RaiseDonors.png"
+    },
+    "Raisely": {
+      "cats": [
+        111
+      ],
+      "js": {
+        "RaiselyComponents": "",
+        "__raiselyDebug": "",
+        "wpRaisely": ""
+      },
+      "description": "Raisely is a cloud-based fundraising platform that helps non-profits and charities drive fundraising campaigns and collect donations.",
+      "website": "https://raisely.com",
+      "icon": "Raisely.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RaiselyComponents !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof RaiselyComponents !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof RaiselyComponents !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Resupply": {
+      "cats": [
+        111
+      ],
+      "scriptSrc": [
+        "widget\\.resupplyapp\\.com"
+      ],
+      "description": "Resupply is a service that offers 24-hour furniture donation pickups, supporting local nonprofits by facilitating the collection and redistribution of donated items.",
+      "website": "https://resupplyapp.com",
+      "icon": "Resupply.svg"
+    },
+    "Revv": {
+      "cats": [
+        111
+      ],
+      "meta": {
+        "revv-api-domain": []
+      },
+      "description": "Revv is a lead optimisation and donation platform.",
+      "website": "https://revv.com",
+      "icon": "Revv.png"
+    },
+    "Thrinacia": {
+      "cats": [
+        111
+      ],
+      "scriptSrc": [
+        "\\.thrinacia\\.com/"
+      ],
+      "description": "Thrinacia is a scalable Enterprise SaaS crowdfunding engine that enables the operation of custom white-labeled crowdfunding websites.",
+      "website": "https://www.thrinacia.com",
+      "icon": "Thrinacia.svg"
+    },
+    "Twingle": {
+      "cats": [
+        111
+      ],
+      "scripts": [
+        "spenden\\.twingle\\.de"
+      ],
+      "description": "Twingle is a fundraising platform that enables users to create campaigns and collect donations for various causes.",
+      "website": "https://www.twingle.de",
+      "icon": "Twingle.svg"
+    },
+    "Vanco Payment Solutions": {
+      "cats": [
+        111,
+        41
+      ],
+      "dom": {
+        "a[href*='.eservicepayments.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.eservicepayments\\.com/"
+      ],
+      "description": "Vanco Payment Solutions provides credit card processing to nonprofits.",
+      "website": "https://www.vancopayments.com",
+      "icon": "Vanco.svg"
+    },
+    "Virtuous": {
+      "cats": [
+        111
+      ],
+      "scriptSrc": [
+        "\\.virtuoussoftware\\.com/"
+      ],
+      "description": "Virtuous is the responsive fundraising software platform.",
+      "website": "https://virtuous.org",
+      "icon": "Virtuous.svg"
+    },
+    "Yapla": {
+      "cats": [
+        111
+      ],
+      "dom": {
+        "a[href*='\\.yapla\\.com/'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "yaplaConsent.cookieName": "yapla-consent"
+      },
+      "meta": {
+        "generator": [
+          "^yapla\\sv([\\d\\.]+)\\;version:\\1"
+        ]
+      },
+      "description": "Yapla is a web-based software platform that provides event management and fundraising solutions for non-profit organisations, associations, and event planners.",
+      "website": "https://www.yapla.com",
+      "icon": "Yapla.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof yaplaConsent !== 'undefined' && typeof yaplaConsent.cookieName !== 'undefined' && yaplaConsent.cookieName === 'yapla-consent'"
+          }
+        ]
+      }
+    },
+    "iRaiser": {
+      "cats": [
+        111
+      ],
+      "js": {
+        "iRaiser.PaymentStartDate": "",
+        "iraiser_counter": ""
+      },
+      "scripts": [
+        "\\.iraiser\\.eu"
+      ],
+      "description": "iRaiser is a platform that provides charities with tailored solutions to optimize and manage fundraising activities.",
+      "website": "https://www.iraiser.com",
+      "icon": "iRaiser.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof iRaiser !== 'undefined' && typeof iRaiser.PaymentStartDate !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof iRaiser !== 'undefined' && typeof iRaiser.PaymentStartDate !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "apps": {
+    "AfterShip": {
+      "cats": [
+        107
+      ],
+      "js": {
+        "aftership.__VERSION__": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "AfterShip provides automated shipment tracking as a service.",
+      "website": "https://www.aftership.com",
+      "icon": "AfterShip.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof aftership !== 'undefined' && typeof aftership.__VERSION__ !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "aftership.__VERSION__ || \"\""
+          }
+        ]
+      }
+    },
+    "Bobgo": {
+      "cats": [
+        107
+      ],
+      "scripts": [
+        "api\\.bobgo\\.co\\.za"
+      ],
+      "description": "Bobgo is a smart shipping and order management solution designed to streamline logistics and simplify order fulfillment for businesses.",
+      "website": "https://www.bobgo.co.za",
+      "icon": "Bobgo.svg"
+    },
+    "Deliverr": {
+      "cats": [
+        107
+      ],
+      "js": {
+        "deliverrScript": ""
+      },
+      "scriptSrc": [
+        "fast-tags\\.deliverr\\.com"
+      ],
+      "implies": [
+        "Cart Functionality"
+      ],
+      "description": "Deliverr is a fulfilment service that facilitates shipping services for ecommerce businesses.",
+      "website": "https://deliverr.com",
+      "icon": "Deliverr.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof deliverrScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Descartes": {
+      "cats": [
+        107
+      ],
+      "scripts": [
+        "ies\\.descartes"
+      ],
+      "scriptSrc": [
+        "\\.descartes\\.com/"
+      ],
+      "description": "Descartes is a technology platform that offers solutions for logistics and supply chain management.",
+      "website": "https://www.descartes.com",
+      "icon": "Descartes.svg"
+    },
+    "Enviopack": {
+      "cats": [
+        107
+      ],
+      "scripts": [
+        "api\\.enviopack\\.com"
+      ],
+      "description": "Enviopack is a technological solution designed to optimize ecommerce logistics by improving efficiency and streamlining operational processes.",
+      "website": "https://enviopack.com",
+      "icon": "Enviopack.svg"
+    },
+    "Extend": {
+      "cats": [
+        107
+      ],
+      "js": {
+        "Extend": ""
+      },
+      "scriptSrc": [
+        "sdk\\.helloextend\\.com/extend-sdk-client/v([\\d.]+)/extend-sdk-client\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Extend is a service that offers brands product and shipping protection, creating a new revenue source while enhancing customer loyalty and trust.",
+      "website": "https://www.extend.com",
+      "icon": "Extend.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Extend !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Malomo": {
+      "cats": [
+        107
+      ],
+      "js": {
+        "Malomo": ""
+      },
+      "scriptSrc": [
+        "\\.gomalomo\\.com/"
+      ],
+      "description": "Malomo is a cloud-based shipment tracking solution that helps small to midsize eCommerce businesses provide customers with shipping updates via white-label package tracking pages.",
+      "website": "https://gomalomo.com",
+      "icon": "Malomo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Malomo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MapMyChannel": {
+      "cats": [
+        107
+      ],
+      "scriptSrc": [
+        "\\.mapmychannel\\.com/"
+      ],
+      "description": "MapMyChannel is a cloud-based fulfillment platform that integrates with ecommerce systems to automate inventory, shipping, and order management.",
+      "website": "https://www.mapmychannel.com",
+      "icon": "MapMyChannel.svg"
+    },
+    "Planzer": {
+      "cats": [
+        107
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/planzer-jobs/"
+      ],
+      "description": "Planzer is a provider of transport and warehouse logistics services, specializing in efficient and reliable solutions for supply chain management across various industries.",
+      "website": "https://www.planzer.ch",
+      "icon": "Planzer.svg"
+    },
+    "Route": {
+      "cats": [
+        107
+      ],
+      "js": {
+        "Routeapp": "",
+        "routeWidgetInitialized": ""
+      },
+      "scriptSrc": [
+        "cdn\\.routeapp\\.io",
+        "shopify-widget\\.route\\.com"
+      ],
+      "description": "Route is a delivery and shipping tracking app",
+      "website": "https://route.com/",
+      "icon": "route.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Routeapp !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Routeapp !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Shoprunner": {
+      "cats": [
+        107,
+        102
+      ],
+      "dom": {
+        "link[href*='content.shoprunner.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "_shoprunner_com": "",
+        "_shoprunner_com.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/shoprunner/shoprunner_init\\.js"
+      ],
+      "description": "ShopRunner is a service offering consumers free two-day shipping and returns on online orders placed with certain retailers.",
+      "website": "https://www.shoprunner.com",
+      "icon": "Shoprunner.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _shoprunner_com !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

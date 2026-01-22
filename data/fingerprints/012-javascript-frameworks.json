@@ -1,0 +1,1928 @@
+{
+  "apps": {
+    "AMP": {
+      "cats": [
+        12
+      ],
+      "html": [
+        "<html[^>]* (?:amp|⚡)[^-]",
+        "<link rel=\"amphtml\""
+      ],
+      "description": "AMP, originally created by Google, is an open-source HTML framework developed by the AMP open-source Project. AMP is designed to help webpages load faster.",
+      "website": "https://www.amp.dev",
+      "icon": "Accelerated-Mobile-Pages.svg"
+    },
+    "Adobe Client Data Layer": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "adobeDataLayer.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "Adobe Client Data Layer is a framework of JavaScript objects on your site that contains all variable values used in your implementation.",
+      "website": "https://github.com/adobe/adobe-client-data-layer",
+      "icon": "Adobe.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adobeDataLayer !== 'undefined' && typeof adobeDataLayer.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "adobeDataLayer.version || \"\""
+          }
+        ]
+      }
+    },
+    "Ajax.NET Professional": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "AjaxPro": "",
+        "AjaxPro.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "description": "Ajax.NET Professional is a legacy framework that generates JavaScript proxies to call .NET server-side methods via AJAX.",
+      "website": "https://github.com/michaelschwarz/Ajax.NET-Professional",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AjaxPro !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AlertifyJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "alertify.defaults.autoReset": ""
+      },
+      "scriptSrc": [
+        "/alertify/alertify\\.min\\.js"
+      ],
+      "description": "AlertifyJS is a javascript framework for developing browser dialogs and notifications.",
+      "website": "https://alertifyjs.com",
+      "icon": "AlertifyJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof alertify !== 'undefined' && typeof alertify.defaults !== 'undefined' && typeof alertify.defaults.autoReset !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AlloyUI": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "AUI": ""
+      },
+      "scriptSrc": [
+        "^https?://cdn\\.alloyui\\.com/"
+      ],
+      "implies": [
+        "Bootstrap",
+        "YUI"
+      ],
+      "website": "https://www.alloyui.com",
+      "icon": "AlloyUI.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AUI !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Alpine.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Alpine.version": "^(.+)$\\;version:\\1"
+      },
+      "html": [
+        "<[^>]+[^\\w-]x-data[^\\w-][^<]+\\;confidence:75"
+      ],
+      "scriptSrc": [
+        "/alpine(?:\\.min)?\\.js"
+      ],
+      "website": "https://github.com/alpinejs/alpine",
+      "icon": "Alpine.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Alpine !== 'undefined' && typeof Alpine.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Alpine.version || \"\""
+          }
+        ]
+      }
+    },
+    "Angular": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "[ng-version]": {
+          "attributes": {
+            "ng-version": "^([\\d\\.]+)\\;version:\\1"
+          }
+        }
+      },
+      "html": [
+        "ng-version=\"([\\d\\.]+)[^\"]*\"\\;version:\\1"
+      ],
+      "js": {
+        "ng.coreTokens": "",
+        "ng.probe": ""
+      },
+      "browser": {
+        "detection": [
+          {
+            "type": "dom-selector",
+            "selector": "[ng-version]"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ng !== 'undefined' && ng.probe"
+          }
+        ],
+        "version": [
+          {
+            "type": "dom-attribute",
+            "selector": "[ng-version]",
+            "attribute": "ng-version",
+            "pattern": "^(\\d+\\.\\d+\\.\\d+)"
+          }
+        ]
+      },
+      "implies": [
+        "TypeScript"
+      ],
+      "description": "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google.",
+      "website": "https://angular.io",
+      "cpe": "cpe:2.3:a:angularjs:angular:*:*:*:*:*:*:*:*",
+      "icon": "Angular.svg"
+    },
+    "AngularJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "angular": "",
+        "angular.version.full": "^(.+)$\\;version:\\1"
+      },
+      "html": [
+        "<(?:div|html)[^>]+ng-app=",
+        "<ng-app"
+      ],
+      "scriptSrc": [
+        "(?!angular\\.io)\\bangular.{0,32}\\.js",
+        "/([\\d.]+(?:-?rc[.\\d]*)*)/angular(?:\\.min)?\\.js\\;version:\\1",
+        "angular[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1"
+      ],
+      "description": "AngularJS is a JavaScript-based open-source web application framework led by the Angular Team at Google.",
+      "website": "https://angularjs.org",
+      "cpe": "cpe:2.3:a:angularjs:angular.js:*:*:*:*:*:*:*:*",
+      "icon": "AngularJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof angular !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Aurelia": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "div[aurelia-app], body[aurelia-app], a[au-target-id]": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "_aureliaConfigureModuleLoader": "",
+        "localAurelia": ""
+      },
+      "scriptSrc": [
+        "/aurelia[\\d\\w\\-\\.]+\\.js"
+      ],
+      "description": "Aurelia is an open-source UI JavaScript framework designed to create single page applications.",
+      "website": "https://aurelia.io",
+      "icon": "Aurelia.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _aureliaConfigureModuleLoader !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _aureliaConfigureModuleLoader !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "BEM": {
+      "cats": [
+        12
+      ],
+      "html": [
+        "<[^>]+data-bem"
+      ],
+      "description": "BEM (Block, Element, Modifier) is a naming convention for classes in HTML and CSS what was developed by Yandex.",
+      "website": "https://en.bem.info",
+      "icon": "BEM.png"
+    },
+    "Backbone.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Backbone": "",
+        "Backbone.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "backbone.*\\.js"
+      ],
+      "implies": [
+        "Underscore.js"
+      ],
+      "description": "BackboneJS is a JavaScript library that allows to develop and structure the client side applications that run in a web browser.",
+      "website": "https://backbonejs.org",
+      "cpe": "cpe:2.3:a:backbone_project:backbone:*:*:*:*:*:*:*:*",
+      "icon": "Backbone.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Backbone !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Batman.js": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "(^|/)(batman\\.js)(\\?|$)"
+      ],
+      "description": "Batman.js is a framework for building rich web applications using CoffeeScript or JavaScript.",
+      "website": "https://batmanjs.org",
+      "icon": "BatmanJS.svg"
+    },
+    "Bool TypeScript": {
+      "cats": [
+        12
+      ],
+      "headers": {
+        "x-powered-by": "^bool typescript$"
+      },
+      "description": "Bool TypeScript is a framework optimized for high performance, leveraging Bun.sh to accelerate JavaScript and TypeScript application development.",
+      "website": "https://boolts.dev",
+      "icon": "BoolTypeScript.svg"
+    },
+    "CanJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "can.Animation": ""
+      },
+      "scriptSrc": [
+        "/canjs/can\\.custom\\.min\\.js"
+      ],
+      "description": "CanJS is an MIT-licensed client-side JavaScript framework used for building maintainable and performant web applications.",
+      "website": "https://canjs.com",
+      "icon": "CanJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof can !== 'undefined' && typeof can.Animation !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Catberry.js": {
+      "cats": [
+        12,
+        18
+      ],
+      "js": {
+        "catberry": "",
+        "catberry.version": "^(.+)$\\;version:\\1"
+      },
+      "headers": {
+        "x-powered-by": "catberry"
+      },
+      "implies": [
+        "Node.js"
+      ],
+      "website": "https://catberry.github.io/",
+      "icon": "Catberry.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof catberry !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chosen": {
+      "cats": [
+        12,
+        18
+      ],
+      "scriptSrc": [
+        "chosen(?:\\.jquery)?(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Chosen is a jQuery plugin that makes long, unwieldy select boxes much more user-friendly.",
+      "website": "https://harvesthq.github.io/chosen/"
+    },
+    "Coffee Script": {
+      "cats": [
+        12,
+        59
+      ],
+      "scriptSrc": [
+        "coffee-?script(?:-lint)?(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "CoffeeScript is a language that compiles into JavaScript.",
+      "website": "https://coffeescript.org/",
+      "icon": "Coffee Script.png"
+    },
+    "Datastar": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "https?://(?:[^/]+/.*)?datastar\\.js(?:\\?.*)?$"
+      ],
+      "description": "Datastar is a lightweight framework for developing websites and real-time collaborative web applications.",
+      "website": "https://data-star.dev",
+      "icon": "Datastar.svg"
+    },
+    "Ember.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Ember": "",
+        "Ember.VERSION": "^(.+)$\\;version:\\1",
+        "EmberENV": ""
+      },
+      "scripts": [
+        "@overview\\s+ember -[\\s\\s]+@version\\s+(.+)\\;version:\\1"
+      ],
+      "website": "https://emberjs.com",
+      "cpe": "cpe:2.3:a:emberjs:ember.js:*:*:*:*:*:*:*:*",
+      "icon": "Ember.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Ember !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Ember !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Emotion": {
+      "cats": [
+        12,
+        47
+      ],
+      "dom": {
+        "style[data-emotion], style[data-emotion-css]": {
+          "exists": ""
+        }
+      },
+      "description": "Emotion is a library designed for writing CSS styles with JavaScript.",
+      "website": "https://emotion.sh",
+      "icon": "Emotion.png"
+    },
+    "Enyo": {
+      "cats": [
+        12,
+        26
+      ],
+      "js": {
+        "enyo": ""
+      },
+      "scriptSrc": [
+        "enyo\\.js"
+      ],
+      "description": "Enyo is an open-source JavaScript framework for cross-platform for mobile, desktop, TV and web applications.",
+      "website": "https://enyojs.com",
+      "icon": "Enyo.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof enyo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Essential JS 2": {
+      "cats": [
+        12,
+        59
+      ],
+      "html": [
+        "<[^>]+ class ?= ?\"(?:e-control|[^\"]+ e-control)(?: )[^\"]* e-lib\\b"
+      ],
+      "website": "https://www.syncfusion.com/javascript-ui-controls",
+      "icon": "syncfusion.svg"
+    },
+    "ExtJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Ext": "",
+        "Ext.version": "^(.+)$\\;version:\\1",
+        "Ext.versions.extjs.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "ext-base\\.js"
+      ],
+      "website": "https://www.sencha.com",
+      "cpe": "cpe:2.3:a:sencha:ext_js:*:*:*:*:*:*:*:*",
+      "icon": "ExtJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Ext !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Fluid Framework": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "webpackChunk_fluidx_loop_app": ""
+      },
+      "description": "Fluid Framework is a high-performance technology stack that supports real-time, collaborative innovation across applications.",
+      "website": "https://fluidframework.com",
+      "icon": "FluidFramework.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webpackChunk_fluidx_loop_app !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Frontity": {
+      "cats": [
+        12,
+        18
+      ],
+      "meta": {
+        "generator": [
+          "^frontity"
+        ]
+      },
+      "implies": [
+        "React",
+        "Webpack",
+        "WordPress"
+      ],
+      "description": "Frontity is a React open-source framework focused on WordPress.",
+      "website": "https://frontity.org",
+      "icon": "frontity.png"
+    },
+    "GSAP": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "TweenLite.version": "([\\d.]+)\\;version:\\1",
+        "TweenMax.version": "([\\d.]+)\\;version:\\1",
+        "gsap.version": "([\\d.]+)\\;version:\\1",
+        "gsapVersions": ""
+      },
+      "scriptSrc": [
+        "tweenmax(?:\\.min)?\\.js"
+      ],
+      "description": "GSAP is an animation library that allows you to create animations with JavaScript.",
+      "website": "https://greensock.com/gsap",
+      "icon": "TweenMax.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TweenLite !== 'undefined' && typeof TweenLite.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TweenLite !== 'undefined' && typeof TweenLite.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TweenLite !== 'undefined' && typeof TweenLite.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TweenLite !== 'undefined' && typeof TweenLite.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "TweenLite.version || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "TweenMax.version || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "gsap.version || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "gsapVersions || \"\""
+          }
+        ]
+      }
+    },
+    "Handlebars": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "script[type='text/x-handlebars-template']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Handlebars": "",
+        "Handlebars.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "handlebars(?:\\.runtime)?(?:-v([\\d.]+?))?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Handlebars is a JavaScript library used to create reusable webpage templates.",
+      "website": "https://handlebarsjs.com",
+      "cpe": "cpe:2.3:a:handlebars.js_project:handlebars.js:*:*:*:*:*:*:*:*",
+      "icon": "Handlebars.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Handlebars !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Hogan.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Hogan": ""
+      },
+      "scriptSrc": [
+        "([\\d.]+)/hogan(?:\\.min)?\\.js\\;version:\\1",
+        "hogan-[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1"
+      ],
+      "website": "https://twitter.github.io/hogan.js/",
+      "icon": "Hogan.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Hogan !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Hydrogen": {
+      "cats": [
+        12
+      ],
+      "headers": {
+        "powered-by": "^hydrogen$|shopify.+hydrogen"
+      },
+      "implies": [
+        "React",
+        "Shopify",
+        "Vite"
+      ],
+      "description": "Hydrogen is a front-end web development framework used for building Shopify custom storefronts.",
+      "website": "https://hydrogen.shopify.dev",
+      "icon": "Hydrogen.svg"
+    },
+    "Inertia.js": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "div[data-page*='component']": {
+          "attributes": {
+            "data-page": "component.+props.+url"
+          }
+        }
+      },
+      "headers": {
+        "vary": "x-inertia",
+        "x-inertia": ""
+      },
+      "description": "Inertia.js is a protocol for creating monolithic single-page applications.",
+      "website": "https://inertiajs.com",
+      "icon": "Inertia.svg"
+    },
+    "InfernoJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Inferno": "",
+        "Inferno.version": "^(.+)$\\;version:\\1"
+      },
+      "website": "https://infernojs.org",
+      "icon": "InfernoJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Inferno !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "JSS": {
+      "cats": [
+        12,
+        47
+      ],
+      "dom": {
+        "style[data-jss]": {
+          "exists": ""
+        }
+      },
+      "description": "JSS is an authoring tool for CSS which allows you to use JavaScript to describe styles in a declarative, conflict-free and reusable way.",
+      "website": "https://cssinjs.org/",
+      "icon": "JSS.png"
+    },
+    "Knockout.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "ko.version": "^(.+)$\\;version:\\1"
+      },
+      "description": "Knockout.js is basically a library written in JavaScript, based on MVVM pattern that helps developers build rich and responsive websites.",
+      "website": "https://knockoutjs.com",
+      "icon": "Knockout.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ko !== 'undefined' && typeof ko.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "ko.version || \"\""
+          }
+        ]
+      }
+    },
+    "Koishi.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "KOISHI_CONFIG": ""
+      },
+      "implies": [
+        "TypeScript"
+      ],
+      "description": "Koishi.js is a cross-platform chatbot framework.",
+      "website": "https://github.com/koishijs",
+      "icon": "Koishi.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof KOISHI_CONFIG !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Marionette.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Marionette": "",
+        "Marionette.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "backbone\\.marionette.*\\.js"
+      ],
+      "implies": [
+        "Backbone.js",
+        "Underscore.js"
+      ],
+      "description": "Marionette is a composite application library for Backbone.js that aims to simplify the construction of large scale JavaScript applications. It is a collection of common design and implementation patterns found in applications.",
+      "website": "https://marionettejs.com",
+      "icon": "Marionette.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Marionette !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Meteor": {
+      "cats": [
+        12,
+        18
+      ],
+      "js": {
+        "Meteor": "",
+        "Meteor.release": "^METEOR@([\\d.]+)\\;version:\\1"
+      },
+      "html": [
+        "<link[^>]+__meteor-css__"
+      ],
+      "implies": [
+        "MongoDB",
+        "Node.js"
+      ],
+      "website": "https://www.meteor.com",
+      "icon": "Meteor.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Meteor !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mithril": {
+      "cats": [
+        12,
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?mithril(?:[\\.-]min)?\\.js\\;version:\\1",
+        "mithril(?:[\\.-]min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "A Javascript Framework for building applications.",
+      "website": "https://mithril.js.org/",
+      "icon": "Mithril.svg"
+    },
+    "Mithril.js": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "/mithril(?:\\.min)?\\.js"
+      ],
+      "description": "Mithril.js is a lightweight JavaScript framework for building efficient and declarative single-page applications (SPAs).",
+      "website": "https://mithril.js.org",
+      "icon": "Mithril.js.svg"
+    },
+    "MooTools": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "MooTools": "",
+        "MooTools.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "mootools.*\\.js"
+      ],
+      "website": "https://mootools.net",
+      "icon": "MooTools.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MooTools !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Moon": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "/moon(?:\\.min)?\\.js$"
+      ],
+      "website": "https://kbrsh.github.io/moon/",
+      "icon": "moon.svg"
+    },
+    "Mustache": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Mustache.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "mustache(?:\\.min)?\\.js"
+      ],
+      "description": "Mustache is a web template system.",
+      "website": "https://mustache.github.io",
+      "icon": "Mustache.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Mustache !== 'undefined' && typeof Mustache.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Mustache.version || \"\""
+          }
+        ]
+      }
+    },
+    "Next.js": {
+      "cats": [
+        12,
+        18
+      ],
+      "js": {
+        "next.version": "^(.+)$\\;version:\\1"
+      },
+      "headers": {
+        "x-powered-by": "^next\\.js ?([0-9.]+)?\\;version:\\1"
+      },
+      "html": [
+        "<div [^>]*id=\"__next(?:js)?\""
+      ],
+      "implies": [
+        "Node.js",
+        "React",
+        "Webpack"
+      ],
+      "description": "Next.js is a React framework for developing single page Javascript applications.",
+      "website": "https://nextjs.org",
+      "cpe": "cpe:2.3:a:zeit:next.js:*:*:*:*:*:*:*:*",
+      "icon": "Next.js.svg",
+      "browser": {
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "(function() { if (typeof next !== 'undefined' && next.version) return next.version; if (typeof __NEXT_DATA__ !== 'undefined' && __NEXT_DATA__.buildId) { var v = __NEXT_DATA__.buildId.match(/^(\\d+\\.\\d+\\.\\d+)/); if (v) return v[1]; } return ''; })()"
+          }
+        ]
+      }
+    },
+    "Next.js App Router": {
+      "cats": [
+        12,
+        22
+      ],
+      "js": {
+        "next.appDir": "true"
+      },
+      "implies": [
+        "Next.js"
+      ],
+      "description": "The Next.js App Router is a new paradigm for building applications using React's latest features.",
+      "website": "https://nextjs.org/docs/app",
+      "icon": "Next.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof next !== 'undefined' && typeof next.appDir !== 'undefined' && next.appDir === 'true'"
+          }
+        ]
+      }
+    },
+    "Nuxt.js": {
+      "cats": [
+        12,
+        18,
+        22,
+        57
+      ],
+      "js": {
+        "$nuxt": "",
+        "useNuxtApp": ""
+      },
+      "html": [
+        "<div [^>]*id=\"__nuxt\"",
+        "<script [^>]*>window\\.__nuxt__"
+      ],
+      "scriptSrc": [
+        "/_nuxt/"
+      ],
+      "implies": [
+        "Node.js",
+        "Vue.js"
+      ],
+      "description": "Nuxt is a Vue framework for developing modern web applications.",
+      "website": "https://nuxt.com",
+      "icon": "Nuxt.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $nuxt !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $nuxt !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "OpenUI5": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "sap.ui.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "sap-ui-core\\.js"
+      ],
+      "website": "https://openui5.org/",
+      "icon": "OpenUI5.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof sap !== 'undefined' && typeof sap.ui !== 'undefined' && typeof sap.ui.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "sap.ui.version || \"\""
+          }
+        ]
+      }
+    },
+    "Phaser": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Phaser": "",
+        "Phaser.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "website": "https://phaser.io",
+      "icon": "Phaser.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Phaser !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Polymer": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Polymer.version": "^(.+)$\\;version:\\1"
+      },
+      "html": [
+        "(?:<polymer-[^>]+|<link[^>]+rel=\"import\"[^>]+/polymer\\.html\")"
+      ],
+      "scriptSrc": [
+        "polymer\\.js"
+      ],
+      "website": "https://polymer-project.org",
+      "icon": "Polymer.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Polymer !== 'undefined' && typeof Polymer.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Polymer.version || \"\""
+          }
+        ]
+      }
+    },
+    "Prototype": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Prototype.Version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "(?:prototype|protoaculous)(?:-([\\d.]*[\\d]))?.*\\.js\\;version:\\1"
+      ],
+      "description": "Prototype is a JavaScript Framework that aims to ease development of web applications.",
+      "website": "https://www.prototypejs.org",
+      "cpe": "cpe:2.3:a:prototypejs:prototype:*:*:*:*:*:*:*:*",
+      "icon": "Prototype.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Prototype !== 'undefined' && typeof Prototype.Version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Prototype.Version || \"\""
+          }
+        ]
+      }
+    },
+    "Quasar": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "div#q-app": {
+          "attributes": {
+            "id": "\\;confidence:50"
+          }
+        },
+        "div.q-page-container": {
+          "attributes": {
+            "class": "\\;confidence:50"
+          }
+        }
+      },
+      "description": "Quasar is an open-source Vue.js based framework.",
+      "website": "https://quasar.dev",
+      "icon": "Quasar.svg"
+    },
+    "React": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "body > div": {
+          "properties": {
+            "_reactRootContainer": ""
+          }
+        },
+        "div[id*='react-root'], span[id*='react-']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "React.version": "^([\\d\\.]+)$\\;version:\\1",
+        "ReactOnRails": "",
+        "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": ""
+      },
+      "html": [
+        "<[^>]+data-react"
+      ],
+      "scriptSrc": [
+        "/([\\d\\.]+)/react(?:\\.min)?\\.js\\;version:\\1",
+        "^react\\b.*\\.js",
+        "react(?:-with-addons)?[.-](\\d+(?:\\.\\d+)+)[^/]*\\.js\\;version:\\1"
+      ],
+      "meta": {
+        "description": [
+          "^web site created using create-react-app$"
+        ]
+      },
+      "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
+      "website": "https://reactjs.org",
+      "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
+      "icon": "React.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof React !== 'undefined' && typeof React.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof React !== 'undefined' && typeof React.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof React !== 'undefined' && typeof React.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "React.version || \"\""
+          }
+        ]
+      }
+    },
+    "React Redux": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "/react-redux(@|/)([\\d.]+)(?:/[a-z]+)?/react-redux(?:.min)?\\.js\\;version:\\2"
+      ],
+      "implies": [
+        "React",
+        "Redux"
+      ],
+      "description": "React Redux is the official React binding for Redux.",
+      "website": "https://react-redux.js.org/",
+      "icon": "Redux.svg"
+    },
+    "React Router": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "__reactRouterVersion": "([\\d\\.]+)\\;version:\\1"
+      },
+      "implies": [
+        "React"
+      ],
+      "description": "React Router provides declarative routing for React.",
+      "website": "https://reactrouter.com",
+      "icon": "React Router.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __reactRouterVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "__reactRouterVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Redux": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "/redux(@|/)([\\d.]+)(?:/[a-z]+)?/redux(?:.min)?\\.js\\;version:\\2"
+      ],
+      "description": "Redux is a predictable state container for JavaScript applications.",
+      "website": "https://redux.js.org",
+      "icon": "Redux.svg"
+    },
+    "RedwoodJS": {
+      "cats": [
+        12,
+        18
+      ],
+      "dom": {
+        "div#redwood-app": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "GraphQL",
+        "React",
+        "TypeScript"
+      ],
+      "description": "RedwoodJS is a full-stack serverless web application framework built by Tom Preston Werner (co-founder of Github) et al.",
+      "website": "https://redwoodjs.com",
+      "icon": "RedwoodJS.svg"
+    },
+    "Replicache": {
+      "cats": [
+        12,
+        23
+      ],
+      "headers": {
+        "x-replicache-requestid": ""
+      },
+      "description": "Replicache is a JavaScript framework for building high-performance, offline-capable, collaborative web apps.",
+      "website": "https://replicache.dev/",
+      "icon": "Replicache.svg"
+    },
+    "RequireJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "requirejs.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "require.*\\.js"
+      ],
+      "description": "RequireJS is a JavaScript library and file loader which manages the dependencies between JavaScript files and in modular programming.",
+      "website": "https://requirejs.org",
+      "icon": "RequireJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof requirejs !== 'undefined' && typeof requirejs.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "requirejs.version || \"\""
+          }
+        ]
+      }
+    },
+    "Reveal.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Reveal.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "(?:^|/)reveal(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "Highlight.js"
+      ],
+      "website": "https://lab.hakim.se/reveal-js",
+      "icon": "Reveal.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Reveal !== 'undefined' && typeof Reveal.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Reveal.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "RightJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "RightJS": ""
+      },
+      "description": "RightJS is a modular JavaScript framework.",
+      "website": "https://github.com/rightjs",
+      "icon": "RightJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RightJS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Riot": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "riot": ""
+      },
+      "scriptSrc": [
+        "riot(?:\\+compiler)?(?:\\.min)?\\.js"
+      ],
+      "website": "https://riot.js.org/",
+      "icon": "Riot.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof riot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Riot.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "riot": "",
+        "riot.version": "v([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "riot(?:\\+compiler)?(?:\\.min)?\\.js"
+      ],
+      "description": "Riot.js is a minimalistic, component-based UI library that enables developers to create custom elements in modern browsers with a small footprint and simple API.",
+      "website": "https://riot.js.org",
+      "cpe": "cpe:2.3:a:riot.js:riot-compiler:*:*:*:*:*:*:*:*",
+      "icon": "Riot.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof riot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ripple": {
+      "cats": [
+        12
+      ],
+      "headers": {
+        "x-sdp-app-type": "ripple"
+      },
+      "implies": [
+        "Drupal",
+        "Nuxt.js",
+        "Vue.js"
+      ],
+      "description": "Ripple is the frontend framework for Single Digital Presence, delivered using Nuxt and Vue.js.",
+      "website": "https://dpc-sdp.github.io/sdp-docs/ripple/",
+      "icon": "ripple.png"
+    },
+    "RxJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Rx.CompositeDisposable": "",
+        "Rx.Symbol": ""
+      },
+      "scriptSrc": [
+        "rx(?:\\.\\w+)?(?:\\.compat|\\.global)?(?:\\.min)?\\.js"
+      ],
+      "description": "RxJS is a reactive library used to implement reactive programming to deal with async implementation, callbacks, and event-based programs.",
+      "website": "https://reactivex.io",
+      "icon": "RxJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Rx !== 'undefined' && typeof Rx.CompositeDisposable !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sencha Touch": {
+      "cats": [
+        12,
+        26
+      ],
+      "scriptSrc": [
+        "sencha-touch.*\\.js"
+      ],
+      "description": "Sencha Touch is a user interface (UI) JavaScript library, or web framework, specifically built for the Mobile Web.",
+      "website": "https://www.sencha.com/products/touch",
+      "icon": "Sencha Touch.png"
+    },
+    "Socket.io": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "io.Socket": "",
+        "io.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "socket\\.io.*\\.js"
+      ],
+      "implies": [
+        "Node.js"
+      ],
+      "website": "https://socket.io",
+      "icon": "Socket.io.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof io !== 'undefined' && typeof io.Socket !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SolidJS": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Solid$$": ""
+      },
+      "description": "SolidJS is a purely reactive library. It was designed from the ground up with a reactive core. It's influenced by reactive principles developed by previous libraries.",
+      "website": "https://www.solidjs.com/",
+      "icon": "SolidJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Solid$$ !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Stimulus": {
+      "cats": [
+        12
+      ],
+      "html": [
+        "<[^>]+data-controller"
+      ],
+      "description": "A modest JavaScript framework for the HTML you already have.",
+      "website": "https://stimulusjs.org/",
+      "icon": "Stimulus.svg"
+    },
+    "Stitches": {
+      "cats": [
+        12,
+        47
+      ],
+      "dom": {
+        "style#stitches": {
+          "exists": ""
+        }
+      },
+      "meta": {
+        "generator": [
+          "^c-[a-za-z]{5}$"
+        ]
+      },
+      "description": "Stitches is a is a CSS-in-JS styling framework with near-zero runtime, SSR, and multi-variant support.",
+      "website": "https://stitches.dev",
+      "icon": "Stitches.svg"
+    },
+    "Strapdown.js": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "strapdown\\.js"
+      ],
+      "implies": [
+        "Bootstrap",
+        "Google Code Prettify"
+      ],
+      "website": "https://strapdownjs.com",
+      "icon": "strapdown.js.png"
+    },
+    "Svelte": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "[class*='svelte-']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "__svelte": ""
+      },
+      "description": "Svelte is a free and open-source front end compiler created by Rich Harris and maintained by the Svelte core team members.",
+      "website": "https://svelte.dev",
+      "icon": "Svelte.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __svelte !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Transifex": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Transifex.live.lib_version": "(.+)\\;version:\\1"
+      },
+      "website": "https://www.transifex.com",
+      "icon": "transifex.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Transifex !== 'undefined' && typeof Transifex.live !== 'undefined' && typeof Transifex.live.lib_version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Transifex.live.lib_version || \"\""
+          }
+        ]
+      }
+    },
+    "Twitter Flight": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "flight": ""
+      },
+      "implies": [
+        "jQuery"
+      ],
+      "website": "https://flightjs.github.io/",
+      "icon": "Twitter Flight.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof flight !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "UmiJs": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "g_umi.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/umi(\\.[\\w\\d]{8})?\\.js"
+      ],
+      "implies": [
+        "Node.js"
+      ],
+      "description": "UmiJs is a scalable, enterprise-class frontend application framework that supports both configuration and conventional routing while maintaining functional completeness, such as dynamic routing, nested routing, and permission routing.",
+      "website": "https://umijs.org",
+      "icon": "UmiJs.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof g_umi !== 'undefined' && typeof g_umi.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "g_umi.version || \"\""
+          }
+        ]
+      }
+    },
+    "Unpoly": {
+      "cats": [
+        12
+      ],
+      "cookies": {
+        "_unpoly_demo_layers_session": ""
+      },
+      "js": {
+        "up.CompilerPass": "\\;confidence:25",
+        "up.framework": "\\;confidence:26",
+        "up.version": "([\\d\\.]+)\\;version:\\1\\;confidence:0"
+      },
+      "scriptSrc": [
+        "/unpoly@([\\d\\.]+)/unpoly\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Unpoly is an unobtrusive Javascript framework for applications that render on the server.",
+      "website": "https://unpoly.com",
+      "icon": "Unpoly.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof up !== 'undefined' && typeof up.CompilerPass !== 'undefined' && up.CompilerPass === '\\;confidence:25'"
+          }
+        ]
+      }
+    },
+    "Vike": {
+      "cats": [
+        12
+      ],
+      "dom": {
+        "script#vike_pageContext": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "__vike": ""
+      },
+      "implies": [
+        "TypeScript",
+        "Vite"
+      ],
+      "description": "Vike is a framework that enhances Vite applications with server-side rendering (SSR) and static site generation (SSG) capabilities, allowing for flexible integration and progressive enhancement​.",
+      "website": "https://vike.dev",
+      "icon": "Vike.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __vike !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Vue.js": {
+      "cats": [
+        12
+      ],
+      "css": [
+        "\\.vue-notification-group"
+      ],
+      "dom": {
+        ".vue-app": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Vue": "",
+        "Vue.version": "^(.+)$\\;version:\\1",
+        "VueRoot": "",
+        "__VUE_HOT_MAP__": "",
+        "__VUE__": "",
+        "vueDLL": ""
+      },
+      "html": [
+        "<[^>]+\\sdata-v(?:ue)?-"
+      ],
+      "scriptSrc": [
+        "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js\\;version:\\1",
+        "vue[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1"
+      ],
+      "description": "Vue.js is an open-source model–view–viewmodel JavaScript framework for building user interfaces and single-page applications.",
+      "website": "https://vuejs.org",
+      "icon": "vue.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Vue !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Vue !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Vue !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Vue !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Vue !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "VueStrap": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "VueStrap.$": ""
+      },
+      "scriptSrc": [
+        "/vue-strap/([\\d\\.]+)/vue-strap\\.min\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "Vue.js"
+      ],
+      "description": "VueStrap is a collection of Bootstrap components built with Vue.js.",
+      "website": "https://yuche.github.io/vue-strap",
+      "icon": "vue.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof VueStrap !== 'undefined' && typeof VueStrap.$ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WOW": {
+      "cats": [
+        12,
+        18,
+        25
+      ],
+      "scriptSrc": [
+        "wow(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Reveal CSS animation as you scroll down a page.",
+      "website": "https://www.delac.io/WOW"
+    },
+    "WeBlocks": {
+      "cats": [
+        12
+      ],
+      "scriptSrc": [
+        "//weblocks\\.io/"
+      ],
+      "description": "WeBlocks is an educational platform for creating custom JavaScript and Webflow projects using Blocks.",
+      "website": "https://www.weblocks.com",
+      "icon": "WeBlocks.svg"
+    },
+    "Webix": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "webix": ""
+      },
+      "scriptSrc": [
+        "\\bwebix\\.js"
+      ],
+      "website": "https://webix.com",
+      "icon": "Webix.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webix !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Zone.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "Zone.root": ""
+      },
+      "implies": [
+        "Angular"
+      ],
+      "website": "https://github.com/angular/angular/tree/master/packages/zone.js",
+      "icon": "Angular.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Zone !== 'undefined' && typeof Zone.root !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ef.js": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "ef.version": "^(.+)$\\;version:\\1",
+        "efCore": ""
+      },
+      "scriptSrc": [
+        "/ef(?:-core)?(?:\\.min|\\.dev)?\\.js"
+      ],
+      "website": "https://ef.js.org",
+      "icon": "ef.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ef !== 'undefined' && typeof ef.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ef !== 'undefined' && typeof ef.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "ef.version || \"\""
+          }
+        ]
+      }
+    },
+    "jComponent": {
+      "cats": [
+        12,
+        59
+      ],
+      "js": {
+        "MAIN.version": ".*\\;version:\\1"
+      },
+      "implies": [
+        "jQuery"
+      ],
+      "website": "https://componentator.com",
+      "icon": "jComponent.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MAIN !== 'undefined' && typeof MAIN.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "MAIN.version || \"\""
+          }
+        ]
+      }
+    },
+    "styled-components": {
+      "cats": [
+        12,
+        47
+      ],
+      "dom": {
+        "[sc-component-id]": {
+          "text": ""
+        },
+        "style[data-styled-version]": {
+          "attributes": {
+            "data-styled-version": "(^.+$)\\;version:\\1"
+          }
+        },
+        "style[data-styled], style[data-styled-components], [sc-component-id]": {
+          "text": ""
+        }
+      },
+      "js": {
+        "styled": ""
+      },
+      "implies": [
+        "React"
+      ],
+      "description": "Styled components is a CSS-in-JS styling framework that uses tagged template literals in JavaScript.",
+      "website": "https://styled-components.com",
+      "icon": "styled-components.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof styled !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "toastr": {
+      "cats": [
+        12
+      ],
+      "js": {
+        "toastr.version": "(.*)\\;version:\\1"
+      },
+      "description": "toastr is a Javascript library for non-blocking notifications. The goal is to create a simple core library that can be customized and extended.",
+      "website": "https://github.com/CodeSeven/toastr",
+      "icon": "toastr.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof toastr !== 'undefined' && typeof toastr.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "toastr.version || \"\""
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "apps": {
+    "Bablic": {
+      "cats": [
+        89
+      ],
+      "js": {
+        "bablic": ""
+      },
+      "description": "Bablic is a localisation solution to translate your website.",
+      "website": "https://www.bablic.com/",
+      "icon": "bablic.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof bablic !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ConveyThis": {
+      "cats": [
+        89
+      ],
+      "scriptSrc": [
+        "cdn\\.conveythis\\.com"
+      ],
+      "description": "ConveyThis is a website translation service.",
+      "website": "https://www.conveythis.com/",
+      "icon": "ConveyThis.png"
+    },
+    "Conword": {
+      "cats": [
+        89
+      ],
+      "scriptSrc": [
+        "static\\.conword\\.io"
+      ],
+      "description": "Conword is a platform that provides automatic translations for websites, enabling multilingual content delivery without manual intervention.",
+      "website": "https://conword.io",
+      "icon": "Conword.svg"
+    },
+    "Crowdin": {
+      "cats": [
+        89
+      ],
+      "scriptSrc": [
+        "\\.app\\.crowdin\\.net"
+      ],
+      "description": "Crowdin is a localization management platform that streamlines the process of translating, organizing, and maintaining multilingual content for software, websites, and other digital products.",
+      "website": "https://crowdin.com",
+      "icon": "Crowdin.svg"
+    },
+    "Easyling": {
+      "cats": [
+        89
+      ],
+      "scriptSrc": [
+        "app\\.easyling\\.com"
+      ],
+      "description": "Easyling is a website translation solution that provides tools for localizing websites through multiple methods.",
+      "website": "https://www.easyling.com",
+      "icon": "Easyling.svg"
+    },
+    "Linguise": {
+      "cats": [
+        89
+      ],
+      "dom": {
+        "script[type='linguise/json']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "linguise_configs": ""
+      },
+      "scriptSrc": [
+        "/modules/mod_linguise/assets/"
+      ],
+      "description": "Linguise is an automatic translation service with a front-end translation editor.",
+      "website": "https://www.linguise.com",
+      "icon": "Linguise.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof linguise_configs !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Pluglin": {
+      "cats": [
+        89
+      ],
+      "scripts": [
+        "app\\.pluglin\\.com"
+      ],
+      "description": "Pluglin is a platform that provides website translation services to support multilingual content.",
+      "website": "https://www.pluglin.com",
+      "icon": "Pluglin.svg"
+    },
+    "Smartling": {
+      "cats": [
+        89
+      ],
+      "js": {
+        "populateSmartlingDdl": ""
+      },
+      "scriptSrc": [
+        "\\.smartling\\.com/"
+      ],
+      "description": "Smartling is a cloud-based translation management system.",
+      "website": "https://www.smartling.com",
+      "icon": "Smartling.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof populateSmartlingDdl !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Transcy": {
+      "cats": [
+        89,
+        100
+      ],
+      "js": {
+        "_transcy": "",
+        "transcy_apiURI": "",
+        "transcy_shopifyLocales": ""
+      },
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Transcy is a Shopify translation app. Transcy allows you to translate your whole store content into target languages to reach different nation shoppers.",
+      "website": "https://transcy.io",
+      "icon": "Transcy.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _transcy !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _transcy !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _transcy !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Weglot": {
+      "cats": [
+        89
+      ],
+      "headers": {
+        "weglot-translated": ""
+      },
+      "scriptSrc": [
+        "cdn\\.weglot\\.com",
+        "wp-content/plugins/weglot"
+      ],
+      "website": "https://www.weglot.com",
+      "icon": "Weglot.png"
+    },
+    "langify": {
+      "cats": [
+        89
+      ],
+      "js": {
+        "Langify": "",
+        "langify": "",
+        "langify.settings.switcher.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "langify translate your shop into multiple languages. langify comes with a visual configurator that allows you to add language switchers that integrate seamlessly into your existing design.",
+      "website": "https://langify-app.com",
+      "icon": "langify.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Langify !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Langify !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

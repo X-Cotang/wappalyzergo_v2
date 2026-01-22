@@ -1,0 +1,1590 @@
+{
+  "apps": {
+    "2B Advice": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "BBCookieControler": ""
+      },
+      "scriptSrc": [
+        "2badvice-cdn\\.azureedge\\.net"
+      ],
+      "description": "2B Advice provides a plug-in to manage GDPR cookie consent.",
+      "website": "https://www.2b-advice.com/en/data-privacy-software/cookie-consent-plugin/",
+      "icon": "2badvice.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BBCookieControler !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Acconsento.click": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "link[href*='//acconsento.click/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "AcconsentoAPI": "",
+        "acconsentoCreateElement": ""
+      },
+      "description": "Acconsento.click is a software solution designed to assist users in achieving cookie policy compliance for their websites.",
+      "website": "https://shop.acconsento.click",
+      "icon": "Acconsento.click.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AcconsentoAPI !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AcconsentoAPI !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdFixus": {
+      "cats": [
+        67
+      ],
+      "cookies": {
+        "afx_profile_hs": ""
+      },
+      "js": {
+        "AfxIdentity": "",
+        "_afxProfile": ""
+      },
+      "description": "AdFixus is a privacy-focused solution that enables businesses to manage their data and empower individuals with consent control, addressing the decline of third-party cookies.",
+      "website": "https://www.adfixus.com",
+      "icon": "AdFixus.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AfxIdentity !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AfxIdentity !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdOpt": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "adoptApp.domain": "",
+        "adopt_website_code": ""
+      },
+      "scriptSrc": [
+        "tag\\.goadopt\\.io/"
+      ],
+      "implies": [
+        "Svelte"
+      ],
+      "description": "AdOpt is a consent tool that prioritises privacy and usability towards the LGPD.",
+      "website": "https://goadopt.io",
+      "icon": "AdOpt.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adoptApp !== 'undefined' && typeof adoptApp.domain !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adoptApp !== 'undefined' && typeof adoptApp.domain !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdRoll CMP System": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "__adroll_consent": "",
+        "__adroll_consent_is_gdpr": ""
+      },
+      "description": "AdRoll CMP System is a consent management solution.",
+      "website": "https://www.adroll.com/features/consent-management",
+      "icon": "AdRoll.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __adroll_consent !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __adroll_consent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Alfright": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "iframe[src*='app.alfright.eu/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "app\\.alfright\\.eu/"
+      ],
+      "description": "Alfright is a service that ensures GDPR compliance for websites, enhancing privacy standards.",
+      "website": "https://www.alfright.eu",
+      "icon": "Alfright.svg"
+    },
+    "Axeptio": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "img[src*='axeptio.imgix.net/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "axeptioSDK": "",
+        "axeptioSettings": ""
+      },
+      "description": "Axeptio is a trusted third party that collects and archive users' consent in a GDPR compliant fashion.",
+      "website": "https://www.axeptio.eu",
+      "icon": "Axeptio.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof axeptioSDK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof axeptioSDK !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Borlabs Cookie": {
+      "cats": [
+        67,
+        87
+      ],
+      "dom": {
+        "#BorlabsCookieBox": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "borlabsCookieConfig": ""
+      },
+      "description": "Borlabs Cookie is a GDPR cookie consent plugin for WordPress.",
+      "website": "https://borlabs.io/borlabs-cookie/",
+      "icon": "Borlabs Cookie.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof borlabsCookieConfig !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Byscuit": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "onloadByscuit": ""
+      },
+      "scriptSrc": [
+        "api\\.byscuit\\.com/"
+      ],
+      "description": "Byscuit is a tool for managing cookies on websites, allowing users to control and customise their cookie preferences for enhanced privacy and browsing experience.",
+      "website": "https://www.byscuit.com",
+      "icon": "Byscuit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof onloadByscuit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CIVIC": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "cc\\.cdn\\.civiccomputing\\.com"
+      ],
+      "description": "Civic provides cookie control for user consent and the use of cookies.",
+      "website": "https://www.civicuk.com/cookie-control",
+      "icon": "civic.png"
+    },
+    "Clarip": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "claripCdnHost": "",
+        "claripHost": "",
+        "pageData.claripConsentJSUrl": ""
+      },
+      "scriptSrc": [
+        "//cdn\\.clarip\\.com/"
+      ],
+      "description": "Clarip is an enterprise data privacy and risk management platform.",
+      "website": "https://www.clarip.com",
+      "icon": "Clarip.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof claripCdnHost !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof claripCdnHost !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof claripCdnHost !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Clickskeks": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "Clickskeks": ""
+      },
+      "description": "Clickskeks is an all-in-one cookie consent management platform for businesses.",
+      "website": "https://www.clickskeks.at/",
+      "icon": "Clickskeks.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Clickskeks !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Clym": {
+      "cats": [
+        67
+      ],
+      "cookies": {
+        "clym_compliance_sid": ""
+      },
+      "scripts": [
+        "\\.clym-sdk\\.net"
+      ],
+      "description": "Clym is a data privacy tool designed to support compliance with data protection obligations.",
+      "website": "https://clym.io",
+      "icon": "Clym.svg"
+    },
+    "Commanders Act TrustCommander": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "\\.trustcommander\\.net/privacy/.+_v([\\d]+)_([\\d]+)\\.js\\;version:\\1.\\2"
+      ],
+      "description": "Commanders Act TrustCommander is a consent management platform (CMP) which allows you to comply with the general data protection regulation (GDPR) regulation in terms of collecting consent.",
+      "website": "https://www.commandersact.com/en/solutions/trustcommander/",
+      "icon": "Commanders Act.svg"
+    },
+    "Consent Manager": {
+      "cats": [
+        67
+      ],
+      "cookies": {
+        "__cmpcccx274": "",
+        "__cmpconsentx274": "",
+        "__cmpiuid": ""
+      },
+      "js": {
+        "cmpCCPA": "",
+        "cmpConsentPurposes": "",
+        "cmpConsentString": "",
+        "cmpCustomPurposeConsent": "",
+        "cmpGDPR": "",
+        "cmpGoogleVendorsConsent": "",
+        "cmp_closevendor": "",
+        "cmp_vendordelivery": ""
+      },
+      "description": "Consent Manager is a provider ensuring GDPR and CCPA compliance for websites.",
+      "website": "https://www.consentmanager.net",
+      "icon": "ConsentManager.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cmpCCPA !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Conversant Consent Tool": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "conversant": ""
+      },
+      "scriptSrc": [
+        "cdn\\.conversant\\.mgr\\.consensu\\.org/"
+      ],
+      "description": "Conversant Consent Tool is a free tool to gain GDPR and ePD compliant consent for digital advertising.",
+      "website": "https://www.conversantmedia.eu/consent-tool",
+      "icon": "Conversant.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof conversant !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cookie Control": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "CookieControl": ""
+      },
+      "scriptSrc": [
+        "cc\\.cdn\\.civiccomputing\\.com"
+      ],
+      "website": "https://www.civicuk.com/cookie-control",
+      "icon": "CookieControl.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CookieControl !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cookie Information": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "CookieInformation.config.cdnUrl": ""
+      },
+      "description": "Cookie Information is a privacy tech company that develops software that helps making company websites and mobile apps GDPR and ePrivacy compliant.",
+      "website": "https://cookieinformation.com",
+      "icon": "Cookie Information.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CookieInformation !== 'undefined' && typeof CookieInformation.config !== 'undefined' && typeof CookieInformation.config.cdnUrl !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cookie Notice": {
+      "cats": [
+        67,
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/cookie-notice/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Cookie Notice provides a simple, customizable website banner that can be used to help your website comply with certain cookie consent requirements under the EU GDPR cookie law and CCPA regulations and includes seamless integration with Cookie Compliance to help your site comply with the latest updates to existing consent laws.",
+      "website": "https://wordpress.org/plugins/cookie-notice",
+      "icon": "Cookie Notice.png"
+    },
+    "Cookie Script": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "\\.cookie-script\\.com/"
+      ],
+      "description": "Cookie-Script automatically scans, categorizes and adds description to all cookies found on your website.",
+      "website": "https://cookie-script.com",
+      "icon": "CookieScript.svg"
+    },
+    "Cookie Seal": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "link[href*='assets.cookieseal.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "CookieSeal": "",
+        "cookieSeal.consentEnabled": ""
+      },
+      "scriptSrc": [
+        "\\.cookieseal\\.com/"
+      ],
+      "description": "Cookie Seal is a tool or system that helps you manage and configure the use of cookies on your website in accordance with data protection laws, ensuring compliance with relevant regulations.",
+      "website": "https://cookieseal.com",
+      "icon": "Cookie Seal.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CookieSeal !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CookieSeal !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CookieFirst": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "cookiefirst_show_settings": ""
+      },
+      "scriptSrc": [
+        "consent\\.cookiefirst\\.com/"
+      ],
+      "description": "CookieFirst is an GDPR and CCPA compliant consent management platform.",
+      "website": "https://cookiefirst.com",
+      "icon": "CookieFirst.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cookiefirst_show_settings !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CookieHub": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "cookiehub\\.net/.*\\.js"
+      ],
+      "website": "https://www.cookiehub.com",
+      "icon": "CookieHub.png"
+    },
+    "CookieYes": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "#cookie-law-info-bar": {
+          "text": ""
+        },
+        "link[href*='/wp-content/plugins/cookie-law-info/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "cookieYes": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/cookie-law-info/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1",
+        "app\\.cookieyes\\.com/client_data/",
+        "cdn-cookieyes\\.com/client_data/"
+      ],
+      "website": "https://www.cookieyes.com/",
+      "icon": "cookieyes.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cookieYes !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cookiebot": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "Cookiebot.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "consent\\.cookiebot\\.com"
+      ],
+      "description": "Cookiebot is a cloud-driven solution that automatically controls cookies and trackers, enabling full GDPR/ePrivacy and CCPA compliance for websites.",
+      "website": "https://www.cookiebot.com",
+      "icon": "Cookiebot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Cookiebot !== 'undefined' && typeof Cookiebot.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Cookiebot.version || \"\""
+          }
+        ]
+      }
+    },
+    "CrownPeak Universal Consent Platform": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "a[href*='info.evidon.com/pub_info/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "EB.EvidonConsent": "",
+        "evidon": ""
+      },
+      "scriptSrc": [
+        "\\.evidon\\.com/"
+      ],
+      "description": "CrownPeak Universal Consent Platform is a tool for managing user consent and ensuring compliance with data privacy regulations.",
+      "website": "https://www.crownpeak.com/products/privacy-and-consent-management",
+      "icon": "CrownPeak.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof EB !== 'undefined' && typeof EB.EvidonConsent !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof EB !== 'undefined' && typeof EB.EvidonConsent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cybot": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "div#CybotCookiebotDialog": {
+          "exists": ""
+        }
+      },
+      "description": "Cybot is a tool that facilitates compliance with data privacy laws for website operators and marketers.",
+      "website": "https://www.cybot.com/",
+      "icon": "Cybot.svg"
+    },
+    "Didomi": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "sdk\\.privacy-center\\.org/.*/loader\\.js"
+      ],
+      "description": "Didomi is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
+      "website": "https://www.didomi.io/en/consent-preference-management",
+      "icon": "didomi.png"
+    },
+    "Efilli": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "EFILLI_GLOBAL_OPTIONS": "",
+        "Efilli": "",
+        "efilli.__cookieBlocker": ""
+      },
+      "description": "Efilli is a tool used to manage cookies on websites, providing users with data privacy control through GDPR compliance.",
+      "website": "https://efilli.com",
+      "icon": "Efilli.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof EFILLI_GLOBAL_OPTIONS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof EFILLI_GLOBAL_OPTIONS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof EFILLI_GLOBAL_OPTIONS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Evidon": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "a[href*='info.evidon.com/pub_info/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "EB.EvidonConsent": "",
+        "evidon": ""
+      },
+      "scriptSrc": [
+        "\\.evidon\\.com/"
+      ],
+      "description": "Evidon is a transparency company that helps organizations educate consumers on how and why data is collected, as well as provide consumers with the ability to give and withdraw consent to their data being used.",
+      "website": "https://www.evidon.com",
+      "icon": "Evidon.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof EB !== 'undefined' && typeof EB.EvidonConsent !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof EB !== 'undefined' && typeof EB.EvidonConsent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Funding Choices": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        ".fc-consent-root, iframe[name='googlefcLoaded'], iframe[name='googlefcPresent'], .fc-dialog, .fc-choice-dialog": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "fundingchoicesmessages\\.google\\.com"
+      ],
+      "description": "Funding Choices is a messaging tool that can help you comply with the EU General Data Protection Regulation (GDPR), and recover lost revenue from ad blocking users.",
+      "website": "https://developers.google.com/funding-choices",
+      "icon": "Google.svg"
+    },
+    "GDPR Cookie Consent Plugin by Webtoffee": {
+      "cats": [
+        67
+      ],
+      "cookies": {
+        "wt_consent": ""
+      },
+      "js": {
+        "webtoffee._wccConsentStore": ""
+      },
+      "description": "GDPR Cookie Consent Plugin by Webtoffee is a WordPress solution that ensures GDPR and CCPA compliance, supports IAB standards, and integrates with Google Consent Mode.",
+      "website": "https://www.webtoffee.com/product/gdpr-cookie-consent/",
+      "icon": "GDPRCookieConsent.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webtoffee !== 'undefined' && typeof webtoffee._wccConsentStore !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "HubSpot Cookie Policy Banner": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "#hs-eu-cookie-confirmation": {
+          "exists": ""
+        }
+      },
+      "description": "HubSpot Cookie Policy banner is a cookie compliance functionality from HubSpot.",
+      "website": "https://knowledge.hubspot.com/reports/customize-your-cookie-tracking-settings-and-privacy-policy-alert",
+      "icon": "HubSpot.svg"
+    },
+    "HulkApps GDPR/CCPA Compliance Manager": {
+      "cats": [
+        67,
+        100
+      ],
+      "js": {
+        "hulkSetCookie": ""
+      },
+      "scriptSrc": [
+        "cookiebar\\.hulkapps\\.com/hulk_cookie_bar\\.js"
+      ],
+      "implies": [
+        "Shopify"
+      ],
+      "description": "HulkApps GDPR/CCPA Compliance Manager is a consent management solution.",
+      "website": "https://www.hulkapps.com/products/gdpr-ccpa-cookie-manager-shopify-app",
+      "icon": "HulkApps.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof hulkSetCookie !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ketch": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "\\.ketchcdn\\.com/"
+      ],
+      "description": "Ketch is a data control platform that manages compliance with privacy regulations.",
+      "website": "https://www.ketch.com",
+      "icon": "Ketch.svg"
+    },
+    "Klaro": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "klaro": "",
+        "klaroConfig": ""
+      },
+      "description": "Klaro is a simple consent management platform and privacy tool.",
+      "website": "https://heyklaro.com",
+      "icon": "Klaro.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof klaro !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof klaro !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Legal Monster": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "legal.__VERSION__": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.legalmonster\\.com/"
+      ],
+      "description": "Legal Monster is a consent and privacy management solution, which helps businesses maintain compliance with ePrivacy, marketing requirements and General Data Protection Regulation (GDPR).",
+      "website": "https://www.legalmonster.com",
+      "icon": "Legal Monster.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof legal !== 'undefined' && typeof legal.__VERSION__ !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "legal.__VERSION__ || \"\""
+          }
+        ]
+      }
+    },
+    "LiveRamp PCM": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "iframe[src*='gdpr-consent-tool\\.privacymanager\\.io']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "wpJsonpLiverampGdprCmp": ""
+      },
+      "scriptSrc": [
+        "gdpr\\.privacymanager\\.io"
+      ],
+      "description": "LiveRamp PCM is a preference and consent management platform that enables comply with the ePrivacy Directive, GDPR, CCPA, and other data protection and privacy laws and regulations.",
+      "website": "https://liveramp.com/our-platform/preference-consent-management",
+      "icon": "LiveRamp.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wpJsonpLiverampGdprCmp !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Metomic": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "metomic\\.js"
+      ],
+      "website": "https://metomic.io",
+      "icon": "metomic.png"
+    },
+    "Moove GDPR Consent": {
+      "cats": [
+        67,
+        87
+      ],
+      "js": {
+        "moove_frontend_gdpr_scripts": ""
+      },
+      "description": "Moove GDPR Consent is a GDPR Cookie Compliance plugin for Wordpress.",
+      "website": "https://www.mooveagency.com/wordpress/gdpr-cookie-compliance-plugin",
+      "icon": "Moove.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof moove_frontend_gdpr_scripts !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "My Agile Privacy": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "MyAgilePixel": "",
+        "MyAgilePixelProxyBeacon": ""
+      },
+      "scripts": [
+        "myagileprivacy_native"
+      ],
+      "description": "My Agile Privacy is a GDPR solution that ensures website compliance with data protection regulations.",
+      "website": "https://www.myagileprivacy.com/en/",
+      "icon": "MyAgilePrivacy.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MyAgilePixel !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof MyAgilePixel !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Normi": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "app\\.normi\\.ca/"
+      ],
+      "description": "Normi is a Compliance Management Platform designed to ensure adherence to Quebec's C-25 regulation.",
+      "website": "https://normi.ca",
+      "icon": "Normi.svg"
+    },
+    "OneTrust": {
+      "cats": [
+        67
+      ],
+      "cookies": {
+        "optanonconsent": ""
+      },
+      "scriptSrc": [
+        "cdn\\.cookielaw\\.org",
+        "cdn\\.cookielaw\\.org",
+        "optanon\\.blob\\.core\\.windows\\.net",
+        "optanon\\.blob\\.core\\.windows\\.net",
+        "otsdkstub\\.js"
+      ],
+      "description": "OneTrust is a cloud-based data privacy management compliance platform.",
+      "website": "https://www.onetrust.com",
+      "icon": "OneTrust.svg"
+    },
+    "Osano": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "Osano": "",
+        "Osano.cm.cmpVersion": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "ajax/libs/cookieconsent2?/([\\d\\.]+)/cookieconsent.min.js\\;version:\\1",
+        "cmp\\.osano\\.com/",
+        "npm/cookieconsent@(\\d)/build/cookieconsent.min.js\\;version:\\1"
+      ],
+      "description": "Osano is a data privacy platform that helps your website comply with regulations such as GDPR and CCPA.",
+      "website": "https://www.osano.com",
+      "icon": "Osano.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Osano !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Pandectes": {
+      "cats": [
+        67,
+        100
+      ],
+      "cookies": {
+        "_pandectes_gdpr": ""
+      },
+      "scriptSrc": [
+        "gdpr-privacy-policy-assets\\.s3-us-west-2\\.amazonaws\\.com/",
+        "pandectes-core\\.js",
+        "s3\\.us-west-2\\.amazonaws\\.com/gdpr-privacy-policy-assets/"
+      ],
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Pandectes is a cloud-based data privacy management compliance platform for Shopify stores, ensuring compliance with GDPR, CCPA/CPRA, VCDPA, APPI, PIPEDA, and PDPA regulations.",
+      "website": "https://pandectes.io",
+      "icon": "pandectes.svg"
+    },
+    "Pandectes GDPR Compliance": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "Pandectes": "",
+        "PandectesBlocker": "",
+        "PandectesCore": "",
+        "PandectesGeolocation": "",
+        "PandectesRules": "",
+        "PandectesSettings": ""
+      },
+      "description": "Pandectes GDPR Compliance is a solution for Shopify stores, ensuring compliance with GDPR, CCPA/CPRA, VCDPA, APPI, PIPEDA, and PDPA regulations.",
+      "website": "https://pandectes.io",
+      "icon": "PandectesGDPRCompliance.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Pandectes !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pandectes !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pandectes !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pandectes !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pandectes !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pandectes !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "PieEye": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "piEyeScript": ""
+      },
+      "scriptSrc": [
+        "\\.cookie\\.pii\\.ai/"
+      ],
+      "description": "PieEye is a data privacy solution for ecommerce platforms that supports privacy compliance requirements.",
+      "website": "https://pii.ai",
+      "icon": "PieEye.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof piEyeScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Privado": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "\\.cdn\\.privado\\.ai/"
+      ],
+      "description": "Privado is a privacy management platform that automates data mapping.",
+      "website": "https://www.privado.ai",
+      "icon": "Privado.svg"
+    },
+    "Privasee": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "privasee": ""
+      },
+      "scriptSrc": [
+        "\\.privasee\\.io/"
+      ],
+      "description": "Privasee is a self-compliance tool designed to simplify GDPR for SMEs, enabling them to understand their data and mitigate risks effectively.",
+      "website": "https://www.privasee.io",
+      "icon": "Privasee.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof privasee !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "PubTech": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "__pub_tech_cmp_config": ""
+      },
+      "scriptSrc": [
+        "pubtech-cmp-v(.+?)(?:-esm)?\\.js;version:\\1"
+      ],
+      "description": "PubTech is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
+      "website": "https://www.pubtech.ai/",
+      "icon": "PubTech.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __pub_tech_cmp_config !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Quantcast Choice": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "quantcast\\.mgr\\.consensu\\.org"
+      ],
+      "description": "Quantcast Choice is a free consent management platform to meet key privacy requirements stemming from ePrivacy Directive, GDPR, and CCPA.",
+      "website": "https://www.quantcast.com/products/choice-consent-management-platform",
+      "icon": "Quantcast.png"
+    },
+    "Seers": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "seersco.com/script/cb\\.js"
+      ],
+      "website": "https://www.seersco.com",
+      "icon": "seersco.png"
+    },
+    "Segment Consent Manager": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "consentManager.version": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "@segment/consent-manager@([\\d.]+)\\;version:\\1"
+      ],
+      "description": "Segment Consent Manager is a tool that automates the process of requesting consent for data usage, stores data on user privacy preferences, and updates these preferences when users request changes.",
+      "website": "https://segment.com/",
+      "icon": "Segment.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof consentManager !== 'undefined' && typeof consentManager.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "consentManager.version || \"\""
+          }
+        ]
+      }
+    },
+    "Segment Consent Manager ": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "consentManager.version": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "@segment/consent-manager@([\\d.]+)\\;version:\\1"
+      ],
+      "description": " Segment Consent Manager is a tool that automates the process of requesting consent for data usage, stores data on user privacy preferences, and updates these preferences when users request changes.",
+      "website": "https://segment.com/blog/how-to-build-consent-management-into-your-site-in-less-than-a-week",
+      "icon": "Segment.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof consentManager !== 'undefined' && typeof consentManager.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "consentManager.version || \"\""
+          }
+        ]
+      }
+    },
+    "Shopify Consent Management": {
+      "cats": [
+        67,
+        100
+      ],
+      "scriptSrc": [
+        "cookie_consent_shopify\\.js"
+      ],
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Shopify Consent Management let's you create a tracking consent banner for EU customers.",
+      "website": "https://apps.shopify.com/customer-privacy-banner",
+      "icon": "Shopify.svg"
+    },
+    "Sourcepoint": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "body.f_sourcepoint_ccpa_on": {
+          "exists": ""
+        }
+      },
+      "cookies": {
+        "_sp_enable_dfp_personalized_ads": ""
+      },
+      "js": {
+        "tealium_sourcepoint": ""
+      },
+      "scripts": [
+        "sourcepoint_mms_domain"
+      ],
+      "description": "Sourcepoint is the data privacy software company for the digital marketing ecosystem.",
+      "website": "https://sourcepoint.com",
+      "icon": "Sourcepoint.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tealium_sourcepoint !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Spatie Laravel Cookie Consent": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "laravelCookieConsent": ""
+      },
+      "implies": [
+        "Laravel"
+      ],
+      "description": "Spatie Laravel Cookie Consent is a banner that is displayed on websites to ask visitors for consent for the use of cookies.",
+      "website": "https://github.com/spatie/laravel-cookie-consent",
+      "icon": "Spatie.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof laravelCookieConsent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TRUENDO": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "Truendo": "",
+        "TruendoCookieControlCallback": ""
+      },
+      "scriptSrc": [
+        "cdn\\.priv\\.center/",
+        "cdn\\.truendo\\.com/"
+      ],
+      "description": "TRUENDO is a GDPR compliance software.",
+      "website": "https://truendo.com",
+      "icon": "TRUENDO.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Truendo !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Truendo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tealium Consent Management": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "script#__tealiumGDPRecScript,div#__tealiumGDPRecModal": {
+          "exists": ""
+        }
+      },
+      "description": "Tealium Consent Management adds consent and data privacy support.",
+      "website": "https://docs.tealium.com/platforms/getting-started/consent-management",
+      "icon": "Tealium.png"
+    },
+    "Termly": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "app\\.termly\\.io/embed\\.min\\.js"
+      ],
+      "description": "Termly provides free website policy resources and web-based policy creation software.",
+      "website": "https://termly.io/",
+      "icon": "termly.svg"
+    },
+    "Tramoce": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "app\\.tramoce\\.com/"
+      ],
+      "description": "Tramoce is a platform that helps websites maintain cookie compliance while ensuring a smooth and uninterrupted browsing experience for users.",
+      "website": "https://tramoce.com",
+      "icon": "Tramoce.svg"
+    },
+    "Transcend": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "transcend": ""
+      },
+      "description": "Transcend is data privacy management compliance platform.",
+      "website": "https://www.transcend.io",
+      "icon": "Transcend.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof transcend !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TrustArc": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "consent\\.trustarc\\.com"
+      ],
+      "description": "TrustArc provides software and services to help corporations update their privacy management processes so they comply with government laws and best practices.",
+      "website": "https://trustarc.com",
+      "icon": "TrustArc.svg"
+    },
+    "Ultimate GDPR & CCPA": {
+      "cats": [
+        67,
+        87
+      ],
+      "js": {
+        "ct_ultimate_gdpr_cookie": ""
+      },
+      "description": "Ultimate GDPR & CCPA is a compliance toolkit for WordPress by createIT",
+      "website": "https://www.createit.com/gdpr",
+      "icon": "Ultimate GDPR & CCPA.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ct_ultimate_gdpr_cookie !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Uniconsent": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "cmp\\.uniconsent\\.mgr\\.consensu\\.org/dfp\\.js"
+      ],
+      "website": "https://www.uniconsent.com/",
+      "icon": "Uniconsent.png"
+    },
+    "Usercentrics": {
+      "cats": [
+        67
+      ],
+      "dom": {
+        "link[href*='app.usercentrics.eu'], script[data-usercentrics]": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "usercentrics.appVersion": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.usercentrics\\.eu/.+\\.js"
+      ],
+      "description": "Usercentrics is a SaaS enterprise solution for Consent Management (CMP) that helps enterprise customers to obtain, manage and document the user consent.",
+      "website": "https://usercentrics.com",
+      "icon": "Usercentrics.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof usercentrics !== 'undefined' && typeof usercentrics.appVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "usercentrics.appVersion || \"\""
+          }
+        ]
+      }
+    },
+    "VeraSafe": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "www\\.verasafe\\.com/"
+      ],
+      "description": "VeraSafe is a privacy compliance system designed to help organizations adhere to global data protection regulations and maintain compliance with privacy laws.",
+      "website": "https://verasafe.com",
+      "icon": "VeraSafe.svg"
+    },
+    "Visible Privacy": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "//bc-prod-config\\.empathy\\.co/"
+      ],
+      "description": "Visible Privacy is a privacy-focused Consent Management Platform compatible with major CMS and ecommerce systems.",
+      "website": "https://visibleprivacy.com/",
+      "icon": "VisiblePrivacy.svg"
+    },
+    "Yett": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "YETT_BLACKLIST": ""
+      },
+      "scriptSrc": [
+        "/yett@([\\d\\.]+)/dist/yett\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Yett is a small webpage library to control the execution of (third party) scripts like analytics.",
+      "website": "https://github.com/elbywan/yett",
+      "icon": "Yett.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof YETT_BLACKLIST !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "biskoui": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "biskouiScriptLoaded": "",
+        "biskouiSettings": ""
+      },
+      "scriptSrc": [
+        "cdn\\.biskoui\\.com"
+      ],
+      "description": "biskoui is a Swiss platform designed to manage digital consent across services and technologies beyond traditional cookie-based methods.",
+      "website": "https://biskoui.ch",
+      "icon": "biskoui.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof biskouiScriptLoaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof biskouiScriptLoaded !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "c15t": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "c15tStore.getInitialState": ""
+      },
+      "description": "c15t is an open source framework for managing cookies, consent, and privacy compliance.",
+      "website": "https://c15t.com",
+      "icon": "c15t.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof c15tStore !== 'undefined' && typeof c15tStore.getInitialState !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "clickio": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "clickio\\.mgr\\.consensu\\.org/t/consent_[0-9]+\\.js"
+      ],
+      "description": "Clickio Consent Tool collects and communicates consent both to IAB Framework vendors and to Google Ads products.",
+      "website": "https://www.gdpr.clickio.com/",
+      "icon": "clickio.png"
+    },
+    "eucookie.eu": {
+      "cats": [
+        67
+      ],
+      "scriptSrc": [
+        "eucookie\\.eu/public/gdpr-cookie-consent\\.js"
+      ],
+      "website": "https://www.eucookie.eu/",
+      "icon": "eucookie.png"
+    },
+    "iubenda": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "_iub": "",
+        "addIubendaCs": ""
+      },
+      "scriptSrc": [
+        "iubenda\\.com/"
+      ],
+      "description": "iubenda is a compliance software used by businesses for their websites and apps.",
+      "website": "https://www.iubenda.com",
+      "icon": "iubenda.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _iub !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _iub !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "snigel AdConsent": {
+      "cats": [
+        67
+      ],
+      "js": {
+        "adconsent.version": "^([\\d.]+)$\\;version:\\1",
+        "snhb.baseSettings": "\\;confidence:50",
+        "snhb.info.cmpVersion": ""
+      },
+      "scriptSrc": [
+        "(?:staging-)?cdn\\.snigelweb\\.com/(?:snhb|adconsent)/"
+      ],
+      "description": "snigel AdConsent is a IAB-registered consent management platfrom (CMP) which help keep sites speed intact while remaining compliant with GDPR and CCPA.",
+      "website": "https://www.snigel.com/adconsent/",
+      "icon": "snigel.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adconsent !== 'undefined' && typeof adconsent.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adconsent !== 'undefined' && typeof adconsent.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "adconsent.version || \"\""
+          }
+        ]
+      }
+    }
+  }
+}

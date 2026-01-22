@@ -1,0 +1,139 @@
+{
+  "apps": {
+    "8base": {
+      "cats": [
+        3,
+        62
+      ],
+      "description": "8base is a low-code development platform for building and running enterprise-grade digital products including SaaS solutions, marketplaces and other go-to-market applications.",
+      "website": "https://8base.com",
+      "icon": "8base.svg"
+    },
+    "Adminer": {
+      "cats": [
+        3
+      ],
+      "html": [
+        "adminer</a> <span class=\"version\">([\\d.]+)</span>\\;version:\\1",
+        "onclick=\"bodyclick\\(event\\);\" onload=\"verifyversion\\('([\\d.]+)'\\);\">\\;version:\\1"
+      ],
+      "implies": [
+        "PHP"
+      ],
+      "website": "https://www.adminer.org",
+      "cpe": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*",
+      "icon": "adminer.png"
+    },
+    "Knack": {
+      "cats": [
+        3,
+        18
+      ],
+      "js": {
+        "Knack": ""
+      },
+      "scriptSrc": [
+        "loader\\.knack\\.com/"
+      ],
+      "description": "Knack is a tool designed to build online databases and web applications, providing a platform for creating custom applications without extensive programming knowledge.",
+      "website": "https://www.knack.com",
+      "icon": "Knack.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Knack !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SQL Buddy": {
+      "cats": [
+        3
+      ],
+      "html": [
+        "(?:<title>sql buddy</title>|<[^>]+onclick=\"sidemainclick\\(\"home\\.php)"
+      ],
+      "implies": [
+        "PHP"
+      ],
+      "description": "SQL Buddy is an open-source web-based application written in PHP to handle the administration of MySQL and SQLite with the use of a Web browser.",
+      "website": "https://www.sqlbuddy.com",
+      "icon": "SQL Buddy.png"
+    },
+    "Xano": {
+      "cats": [
+        3
+      ],
+      "js": {
+        "XanoBaseStorage": "",
+        "XanoClient": "",
+        "XanoCookieStorage": ""
+      },
+      "description": "Xano is a no-code backend development platform that allows users to build and manage databases, APIs, and server-side logic without writing code.",
+      "website": "https://www.xano.com",
+      "icon": "Xano.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof XanoBaseStorage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof XanoBaseStorage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof XanoBaseStorage !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "phpMyAdmin": {
+      "cats": [
+        3
+      ],
+      "js": {
+        "pma_absolute_uri": ""
+      },
+      "headers": {
+        "set-cookie": "phpmyadmin_https"
+      },
+      "html": [
+        "!\\[cdata\\[[^<]*pma_version:\\\"([\\d.]+)\\;version:\\1",
+        "(?: \\| phpmyadmin ([\\d.]+)<\\/title>|pma_sendheaderlocation\\(|<link [^>]*href=\"[^\"]*phpmyadmin\\.css\\.php)\\;version:\\1"
+      ],
+      "implies": [
+        "MySQL",
+        "PHP"
+      ],
+      "description": "PhpMyAdmin is a free and open-source administration tool for MySQL and MariaDB.",
+      "website": "https://www.phpmyadmin.net",
+      "cpe": "cpe:2.3:a:phpmyadmin:phpmyadmin:*:*:*:*:*:*:*:*",
+      "icon": "phpMyAdmin.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof pma_absolute_uri !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "phpPgAdmin": {
+      "cats": [
+        3
+      ],
+      "html": [
+        "(?:<title>phppgadmin</title>|<span class=\"appname\">phppgadmin)"
+      ],
+      "implies": [
+        "PHP"
+      ],
+      "website": "https://phppgadmin.sourceforge.net",
+      "cpe": "cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*",
+      "icon": "phpPgAdmin.png"
+    }
+  }
+}

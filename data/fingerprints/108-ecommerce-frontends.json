@@ -1,0 +1,335 @@
+{
+  "apps": {
+    "Aiden": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "_aiden.push": "",
+        "_aidenApp.openAdvisor": ""
+      },
+      "description": "Aiden is a tool designed for ecommerce, guiding customers in finding the right products, similar to an in-store experience, which helps improve conversion rates.",
+      "website": "https://www.aiden.cx",
+      "icon": "Aiden.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _aiden !== 'undefined' && typeof _aiden.push !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _aiden !== 'undefined' && typeof _aiden.push !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Argento": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "Argento": ""
+      },
+      "implies": [
+        "Magento"
+      ],
+      "description": "Argento is an optimised and a responsive Magento template designed to enhance website performance and improve user experience.",
+      "website": "https://argentotheme.com",
+      "icon": "Argento.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Argento !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Breeze": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "breeze.getScopeId": ""
+      },
+      "description": "Breeze is an open-source frontend framework designed for Magento.",
+      "website": "https://breezefront.com",
+      "icon": "Breeze.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof breeze !== 'undefined' && typeof breeze.getScopeId !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Deco.cx": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "DECO.events": "",
+        "DECO_SITES_STD": ""
+      },
+      "description": "Deco.cx is an enterprise frontend platform designed to optimize and accelerate ecommerce performance.",
+      "website": "https://deco.cx",
+      "icon": "Deco.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DECO !== 'undefined' && typeof DECO.events !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DECO !== 'undefined' && typeof DECO.events !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "E-Com Plus": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "ecomPassport.storageKey": "ecomPassportClient"
+      },
+      "meta": {
+        "generator": [
+          "^e-com\\splus\\sstorefront$"
+        ]
+      },
+      "implies": [
+        "TypeScript",
+        "Vue.js"
+      ],
+      "description": "E-Com Plus is an open fair-code ecommerce platform designed to be used with headless commerce APIs.",
+      "website": "https://www.ecomplus.io",
+      "icon": "E-Com Plus.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ecomPassport !== 'undefined' && typeof ecomPassport.storageKey !== 'undefined' && ecomPassport.storageKey === 'ecomPassportClient'"
+          }
+        ]
+      }
+    },
+    "Front-Commerce": {
+      "cats": [
+        108
+      ],
+      "dom": {
+        "link[data-chunk*='front-commerce-src-web-theme-routes'], script[data-chunk*='front-commerce-src-web-theme-routes']": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "GraphQL",
+        "Node.js",
+        "PWA",
+        "React",
+        "Webpack"
+      ],
+      "description": "Front-Commerce is a React-based ecommerce framework that provides a development environment and tools for building online stores, offering seamless integration with backend systems through GraphQL and supporting popular platforms like Adobe Commerce, BigCommerce, OpenMage, Contentful or Prismic.",
+      "website": "https://front-commerce.com",
+      "icon": "front-commerce.svg"
+    },
+    "GoMage": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "GomageNavigation": "",
+        "GomageNavigationClass": "",
+        "gomageSpinnerModal": "",
+        "gomage_navigation_loadinfo_text": "",
+        "gomage_navigation_urlhash": ""
+      },
+      "implies": [
+        "Magento\\;version:2",
+        "PWA"
+      ],
+      "description": "GoMage is a Magento development company with 10 years of experience.",
+      "website": "https://www.gomage.com/magento-2-pwa",
+      "icon": "GoMage.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof GomageNavigation !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GomageNavigation !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GomageNavigation !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GomageNavigation !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GomageNavigation !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Kickflip": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "kickflip.cart": ""
+      },
+      "scripts": [
+        "gokickflip\\.com"
+      ],
+      "description": "Kickflip is a product customizer that enables visual customization of products on platforms like Shopify, WooCommerce, Wix, and via API integration.",
+      "website": "https://gokickflip.com",
+      "icon": "Kickflip.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof kickflip !== 'undefined' && typeof kickflip.cart !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Makaira": {
+      "cats": [
+        108
+      ],
+      "headers": {
+        "content-security-policy": "\\.makaira\\.io",
+        "x-makaira-scenario": ""
+      },
+      "scriptSrc": [
+        "\\.makaira\\.io"
+      ],
+      "description": "Makaira is a commerce frontend designed for headless shop systems.",
+      "website": "https://www.makaira.io",
+      "icon": "Makaira.svg"
+    },
+    "PWA Studio": {
+      "cats": [
+        108
+      ],
+      "js": {
+        "__fetchLocaleData__": "\\;confidence:50",
+        "fetchRootComponent": "\\;confidence:50"
+      },
+      "scripts": [
+        "rootcmp_cms_page"
+      ],
+      "description": "PWA Studio is a collection of tools that lets developers build complex Progressive Web Applications on top of Magento 2 or Adobe Commerce stores.",
+      "website": "https://developer.adobe.com/commerce/pwa-studio/",
+      "icon": "PWA Studio.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __fetchLocaleData__ !== 'undefined' && __fetchLocaleData__ === '\\;confidence:50'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __fetchLocaleData__ !== 'undefined' && __fetchLocaleData__ === '\\;confidence:50'"
+          }
+        ]
+      }
+    },
+    "Platter": {
+      "cats": [
+        108
+      ],
+      "dom": {
+        "link[href*='/platter.css']": {
+          "exists": ""
+        }
+      },
+      "description": "Platter is a platform that provides integrated themes and apps for Shopify stores, allowing for efficient customization.",
+      "website": "https://www.platter.co",
+      "icon": "Platter.svg"
+    },
+    "ScandiPWA": {
+      "cats": [
+        108
+      ],
+      "dom": {
+        "link[href^='/static/frontend/scandipwa/']": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "Magento\\;version:2",
+        "PWA",
+        "React"
+      ],
+      "description": "ScandiPWA is the next generation Magento 2 PWA theme developed in React.",
+      "website": "https://scandipwa.com",
+      "cpe": "cpe:2.3:a:scandipwa:magento-scripts:*:*:*:*:*:node.js:*:*",
+      "icon": "ScandiPWA.png"
+    },
+    "Shogun Frontend": {
+      "cats": [
+        108
+      ],
+      "dom": {
+        "img[src*='.shgcdn.com/']": {
+          "exists": ""
+        }
+      },
+      "description": "Shogun Frontend is an all-in-one ecommerce frontend platform. Shogun Frontend pairs with leading backends: Shopify, BigCommerce, Magento (Adobe Commerce), and more.",
+      "website": "https://getshogun.com/frontend",
+      "icon": "Shogun Frontend.svg"
+    },
+    "Vue Storefront": {
+      "cats": [
+        108
+      ],
+      "scriptSrc": [
+        "vsf-layout\\;version:1"
+      ],
+      "meta": {
+        "generator": [
+          "^vue storefront ([0-9.]+)?$\\;version:\\1"
+        ]
+      },
+      "implies": [
+        "Vue.js"
+      ],
+      "description": "Vue Storefront is a frontend platform for headless ecommerce.",
+      "website": "https://www.vuestorefront.io/",
+      "icon": "vue-storefront.svg"
+    },
+    "Warp Store": {
+      "cats": [
+        108
+      ],
+      "dom": {
+        "link[href*='.warpstore.app/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "cdn\\.warpstore\\.app/"
+      ],
+      "implies": [
+        "Cloudflare",
+        "Next.js",
+        "Node.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "description": "Warp Store is a website creation platform, where you can create a website for any type of game and sell products automatically.",
+      "website": "https://warpstore.app",
+      "icon": "WarpStore.svg"
+    }
+  }
+}

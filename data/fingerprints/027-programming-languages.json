@@ -1,0 +1,403 @@
+{
+  "apps": {
+    "Adobe Flash": {
+      "cats": [
+        27
+      ],
+      "dom": {
+        "object[type='application/x-shockwave-flash']": {
+          "exists": ""
+        },
+        "param[value*='.swf']": {
+          "exists": ""
+        }
+      },
+      "description": "Adobe Flash is a multimedia software platform used for production of animations, rich web applications and embedded web browser video players.",
+      "website": "https://www.adobe.com/products/flashplayer",
+      "cpe": "cpe:2.3:a:adobe:flash:*:*:*:*:*:*:*:*",
+      "icon": "Adobe Flash.svg"
+    },
+    "C": {
+      "cats": [
+        27
+      ],
+      "description": "C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.",
+      "website": "https://www.open-std.org/jtc1/sc22/wg14/",
+      "icon": "C.png"
+    },
+    "CFML": {
+      "cats": [
+        27
+      ],
+      "description": "ColdFusion Markup Language (CFML), is a scripting language for web development that runs on the JVM, the .NET framework, and Google App Engine.",
+      "website": "https://adobe.com/products/coldfusion-family.html",
+      "icon": "CFML.png"
+    },
+    "Dart": {
+      "cats": [
+        27
+      ],
+      "js": {
+        "$__dart_deferred_initializers__": "",
+        "___dart__$dart_dartObject_ZxYxX_0_": "",
+        "___dart_dispatch_record_ZxYxX_0_": ""
+      },
+      "scriptSrc": [
+        "/(?:\\.)?(?:dart)(?:\\.js)?/"
+      ],
+      "description": "Dart is an open-source, general-purpose, object-oriented programming language developed by Google.",
+      "website": "https://dart.dev",
+      "icon": "Dart.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $__dart_deferred_initializers__ !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ___dart__$dart_dartObject_ZxYxX_0_ !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $__dart_deferred_initializers__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dragon": {
+      "cats": [
+        27
+      ],
+      "headers": {
+        "x-powered-by": "dragon native ([\\d.]+)\\;version:\\1"
+      },
+      "implies": [
+        "Apache HTTP Server"
+      ],
+      "description": "Dragon is a general-purpose programming language.",
+      "website": "https://dragon-lang.org",
+      "icon": "Dragon.png"
+    },
+    "Elixir": {
+      "cats": [
+        27
+      ],
+      "implies": [
+        "Erlang"
+      ],
+      "description": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications.",
+      "website": "https://elixir-lang.org",
+      "icon": "Elixir.svg"
+    },
+    "Elm": {
+      "cats": [
+        27,
+        12
+      ],
+      "js": {
+        "Elm.Main.embed": "\\;version:0.18",
+        "Elm.Main.init": "\\;version:0.19"
+      },
+      "description": "Elm is a statically typed functional programming language created by Evan Czaplicki in 2012 for building web applications.",
+      "website": "https://elm-lang.org/",
+      "icon": "elm.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Elm !== 'undefined' && typeof Elm.Main !== 'undefined' && typeof Elm.Main.embed !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Elm.Main.embed || \"\""
+          }
+        ]
+      }
+    },
+    "Erlang": {
+      "cats": [
+        27
+      ],
+      "headers": {
+        "server": "erlang( otp/(?:[\\d.abr-]+))?\\;version:\\1"
+      },
+      "description": "Erlang is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system.",
+      "website": "https://www.erlang.org",
+      "cpe": "cpe:2.3:a:erlang:erlang%2fotp:*:*:*:*:*:*:*:*",
+      "icon": "Erlang.png"
+    },
+    "GeneXus": {
+      "cats": [
+        27
+      ],
+      "js": {
+        "gx.gxVersion": "^(.+)-.*$\\;version:\\1"
+      },
+      "html": [
+        "<link[^>]+?id=\"gxtheme_css_reference\""
+      ],
+      "scriptSrc": [
+        "/static/gxgral\\.js",
+        "/static/gxtimezone\\.js"
+      ],
+      "website": "https://www.genexus.com/",
+      "icon": "GeneXus.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gx !== 'undefined' && typeof gx.gxVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "gx.gxVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Go": {
+      "cats": [
+        27
+      ],
+      "website": "https://golang.org",
+      "cpe": "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*",
+      "icon": "Go.svg"
+    },
+    "GraphQL": {
+      "cats": [
+        27
+      ],
+      "meta": {
+        "store-config": [
+          "graphqlmethod"
+        ]
+      },
+      "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.",
+      "website": "https://graphql.org",
+      "icon": "GraphQL.svg"
+    },
+    "Haskell": {
+      "cats": [
+        27
+      ],
+      "website": "https://wiki.haskell.org/Haskell",
+      "icon": "Haskell.png"
+    },
+    "Imba": {
+      "cats": [
+        27
+      ],
+      "js": {
+        "Imba": "",
+        "Imba.VERSION": "([\\d\\.]+)\\;version:\\1",
+        "imba": ""
+      },
+      "description": "Imba is a Web programming language that compiles to performant JavaScript, providing language-level support for defining, extending, subclassing, and instantiating.",
+      "website": "https://imba.io",
+      "icon": "Imba.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Imba !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Imba !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Java": {
+      "cats": [
+        27
+      ],
+      "cookies": {
+        "jsessionid": ""
+      },
+      "description": "Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
+      "website": "https://java.com",
+      "cpe": "cpe:2.3:a:oracle:jre:*:*:*:*:*:*:*:*",
+      "icon": "Java.svg"
+    },
+    "KPHP": {
+      "cats": [
+        27
+      ],
+      "headers": {
+        "x-powered-by": "^kphp/([\\d\\.]+)$\\;version:\\1"
+      },
+      "implies": [
+        "PHP"
+      ],
+      "description": "KPHP (kPHP or KittenPHP) is a free PHP-to- C++ source-to-source translator, developed by VKontakte.",
+      "website": "https://vkcom.github.io/kphp",
+      "icon": "default.svg"
+    },
+    "Kotlin": {
+      "cats": [
+        27
+      ],
+      "description": "Kotlin is a general purpose, free, open-source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features.",
+      "website": "https://kotlinlang.org",
+      "cpe": "cpe:2.3:a:jetbrains:kotlin:*:*:*:*:*:*:*:*",
+      "icon": "Kotlin.svg"
+    },
+    "Lua": {
+      "cats": [
+        27
+      ],
+      "headers": {
+        "x-powered-by": "\\blua(?: ([\\d.]+))?\\;version:\\1"
+      },
+      "description": "Lua is a multi-paradigm programming language designed primarily for embedded use in applications.",
+      "website": "https://www.lua.org",
+      "cpe": "cpe:2.3:a:lua:lua:*:*:*:*:*:*:*:*",
+      "icon": "Lua.png"
+    },
+    "Node.js": {
+      "cats": [
+        27
+      ],
+      "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "website": "https://nodejs.org",
+      "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
+      "icon": "Node.js.svg"
+    },
+    "PHP": {
+      "cats": [
+        27
+      ],
+      "cookies": {
+        "phpsessid": ""
+      },
+      "headers": {
+        "server": "php/?([\\d.]+)?\\;version:\\1",
+        "x-powered-by": "^php/?([\\d.]+)?\\;version:\\1"
+      },
+      "description": "PHP is a general-purpose scripting language used for web development.",
+      "website": "https://php.net",
+      "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
+      "icon": "PHP.svg"
+    },
+    "Perl": {
+      "cats": [
+        27
+      ],
+      "headers": {
+        "server": "\\bperl\\b(?: ?/?v?([\\d.]+))?\\;version:\\1"
+      },
+      "description": "Perl is a family of two high-level, general-purpose, interpreted, dynamic programming languages.",
+      "website": "https://perl.org",
+      "cpe": "cpe:2.3:a:perl:perl:*:*:*:*:*:*:*:*",
+      "icon": "Perl.png"
+    },
+    "Python": {
+      "cats": [
+        27
+      ],
+      "headers": {
+        "server": "(?:^|\\s)python(?:/([\\d.]+))?\\;version:\\1"
+      },
+      "description": "Python is an interpreted and general-purpose programming language.",
+      "website": "https://python.org",
+      "cpe": "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*",
+      "icon": "Python.png"
+    },
+    "Ruby": {
+      "cats": [
+        27
+      ],
+      "headers": {
+        "server": "(?:mongrel|ruby(?:/([\\d\\.]+))?)\\;version:\\1"
+      },
+      "description": "Ruby is an open-source object-oriented programming language.",
+      "website": "https://ruby-lang.org",
+      "cpe": "cpe:2.3:a:ruby-lang:ruby:*:*:*:*:*:*:*:*",
+      "icon": "Ruby.png"
+    },
+    "Rust": {
+      "cats": [
+        27
+      ],
+      "description": "Rust is a multi-paradigm, general-purpose programming language designed for performance and safety, especially safe concurrency.",
+      "website": "https://www.rust-lang.org",
+      "icon": "Rust.svg"
+    },
+    "Sass": {
+      "cats": [
+        27
+      ],
+      "dom": {
+        "link[href*='/index.scss']": {
+          "exists": ""
+        }
+      },
+      "description": "Sass is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more.",
+      "website": "https://sass-lang.com",
+      "icon": "Sass.svg"
+    },
+    "Scala": {
+      "cats": [
+        27
+      ],
+      "description": "Scala is a general-purpose programming language providing support for both object-oriented programming and functional programming.",
+      "website": "https://www.scala-lang.org",
+      "icon": "Scala.png"
+    },
+    "TypeScript": {
+      "cats": [
+        27
+      ],
+      "description": "TypeScript is an open-source language which builds on JavaScript  by adding static type definitions.",
+      "website": "https://www.typescriptlang.org",
+      "icon": "TypeScript.svg"
+    },
+    "WebAssembly": {
+      "cats": [
+        27
+      ],
+      "js": {
+        "wasmBinary": "",
+        "wasmBinaryFile": ""
+      },
+      "headers": {
+        "content-type": "application/wasm"
+      },
+      "scriptSrc": [
+        "/wasm_exec\\.js"
+      ],
+      "description": "WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.",
+      "website": "https://webassembly.org/",
+      "icon": "WebAssembly.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wasmBinary !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof wasmBinary !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "XSLT": {
+      "cats": [
+        27
+      ],
+      "html": [
+        "<xsl[^>]* version=\"(.+)\"\\;version:\\1"
+      ],
+      "description": "XSLT is designed for use as part of XSL, which is a stylesheet language for XML.",
+      "website": "https://www.w3.org/TR/xslt-10",
+      "icon": "W3C.png"
+    }
+  }
+}

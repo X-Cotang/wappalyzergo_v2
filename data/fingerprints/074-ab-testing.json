@@ -1,0 +1,996 @@
+{
+  "apps": {
+    "AB Tasty": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "ABTasty": "",
+        "_abtasty": "",
+        "loadABTasty": ""
+      },
+      "scriptSrc": [
+        "try\\.abtasty\\.com"
+      ],
+      "description": "AB Tasty is a customer experience optimisation company. AB Tasty offers AI-driven experimentation, personalisation, and product optimisation platforms for user testing.",
+      "website": "https://www.abtasty.com",
+      "icon": "AB Tasty.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ABTasty !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ABTasty !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ABTasty !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ABLyft": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "ablyft.get": "",
+        "ablyftClickListener": "",
+        "ablyftEventQueueInterv": "",
+        "ablyftStopQueue": ""
+      },
+      "description": "ABlyft is an A/B-Testing Platform made for developers.",
+      "website": "https://ablyft.com",
+      "icon": "ABlyft.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ablyft !== 'undefined' && typeof ablyft.get !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ablyft !== 'undefined' && typeof ablyft.get !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ablyft !== 'undefined' && typeof ablyft.get !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ablyft !== 'undefined' && typeof ablyft.get !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adobe Target": {
+      "cats": [
+        74,
+        76
+      ],
+      "js": {
+        "adobe.target": "",
+        "adobe.target.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "description": "Adobe Target is an A/B testing, multi-variate testing, personalisation, and optimisation application",
+      "website": "https://www.adobe.com/marketing/target.html",
+      "icon": "Adobe.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adobe !== 'undefined' && typeof adobe.target !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Bringie": {
+      "cats": [
+        74
+      ],
+      "scriptSrc": [
+        "app\\.bringie\\.com"
+      ],
+      "description": "Bringie is a conversion optimization platform that analyzes user behavior and performance metrics to enhance website effectiveness and increase engagement outcomes.",
+      "website": "https://www.bringie.com",
+      "icon": "Bringie.svg"
+    },
+    "Bunting": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "$_Bunting": ""
+      },
+      "description": "Bunting is a website personalization and AB testing tool.",
+      "website": "http://getbunting.com",
+      "icon": "Bunting.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $_Bunting !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Complianz": {
+      "cats": [
+        74,
+        67,
+        87
+      ],
+      "js": {
+        "complianz.version": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "wp-content/plugins/complianz-gdpr"
+      ],
+      "description": "Complianz is a GDPR/CCPA Cookie Consent plugin that supports GDPR, DSGVO, CCPA and PIPEDA with a conditional Cookie Notice and customized Cookie Policy based on the results of the built-in Cookie Scan.",
+      "website": "https://complianz.io",
+      "icon": "Complianz.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof complianz !== 'undefined' && typeof complianz.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "complianz.version || \"\""
+          }
+        ]
+      }
+    },
+    "Convert": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "convert": "\\;confidence:34",
+        "convertData": "\\;confidence:33",
+        "convert_temp": "\\;confidence:33"
+      },
+      "scriptSrc": [
+        "\\.convertexperiments\\.com/js"
+      ],
+      "description": "Convert Experiences is an enterprise A/B testing and personalisation solution for conversion optimisation and data-driven decisions in high-traffic websites.",
+      "website": "https://www.convert.com",
+      "icon": "Convert.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof convert !== 'undefined' && convert === '\\;confidence:34'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof convert !== 'undefined' && convert === '\\;confidence:34'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof convert !== 'undefined' && convert === '\\;confidence:34'"
+          }
+        ]
+      }
+    },
+    "Dexter": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "dexterLiquidVariables": "",
+        "dexterProduct": ""
+      },
+      "description": "Dexter is a tool that analyzes product pricing through A/B testing to identify potential revenue opportunities.",
+      "website": "https://www.thedexterapp.com",
+      "icon": "Dexter.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dexterLiquidVariables !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof dexterLiquidVariables !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dynamic Yield": {
+      "cats": [
+        74,
+        76
+      ],
+      "cookies": {
+        "_dy_geo": "",
+        "_dy_ses_load_seq": ""
+      },
+      "js": {
+        "DY.AdDetection": "",
+        "DYExps.sectionConfig": "",
+        "_dy_memStore": ""
+      },
+      "scriptSrc": [
+        "cdn(?:-eu)?\\.dynamicyield\\.\\w+/"
+      ],
+      "description": "Dynamic Yield is a provider of automated conversion optimisation tools for marketers and retailers.",
+      "website": "https://www.dynamicyield.com",
+      "icon": "DynamicYield.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DY !== 'undefined' && typeof DY.AdDetection !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DY !== 'undefined' && typeof DY.AdDetection !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DY !== 'undefined' && typeof DY.AdDetection !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Estore Compare": {
+      "cats": [
+        74
+      ],
+      "scriptSrc": [
+        "cdn\\d+\\.estore\\.jp/"
+      ],
+      "description": "Estore Compare is a website optimisation software that offers A/B testing, CVR and LTV measuring tools.",
+      "website": "https://estore.co.jp/estorecompare/",
+      "icon": "EstoreCompare.svg"
+    },
+    "Google Optimize": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "google_optimize": ""
+      },
+      "scriptSrc": [
+        "googleoptimize\\.com/optimize\\.js"
+      ],
+      "description": "Google Optimize allows you to test variants of web pages and see how they perform.",
+      "website": "https://optimize.google.com",
+      "icon": "Google Optimize.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof google_optimize !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "GrowthBook": {
+      "cats": [
+        74
+      ],
+      "dom": {
+        "link[href*='cdn.growthbook.io']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "_growthbook.version": "([\\d\\.]+)\\;version:\\1",
+        "_siteSetting.growthBookApiHost": "",
+        "growthbook": ""
+      },
+      "description": "GrowthBook is a platform for product teams to run and track experiments, analyze results, and make data-driven decisions to optimize their products for growth.",
+      "website": "https://www.growthbook.io",
+      "icon": "GrowthBook.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _growthbook !== 'undefined' && typeof _growthbook.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _growthbook !== 'undefined' && typeof _growthbook.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _growthbook !== 'undefined' && typeof _growthbook.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "_growthbook.version || \"\""
+          }
+        ]
+      }
+    },
+    "Intelligems": {
+      "cats": [
+        74,
+        76,
+        100
+      ],
+      "cookies": {
+        "ig-location": ""
+      },
+      "scriptSrc": [
+        "cdn\\.intelligems\\.io"
+      ],
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Intelligems is an experimentation platform that helps developers build and run A/B tests on websites.",
+      "website": "https://www.intelligems.io/",
+      "icon": "Intelligems.png"
+    },
+    "Intellimize": {
+      "cats": [
+        74,
+        76
+      ],
+      "js": {
+        "intellimize": ""
+      },
+      "scriptSrc": [
+        "\\.intellimize\\.co/"
+      ],
+      "description": "Intellimize is a platform that utilizes machine learning to optimize website experiences and increase conversions in real-time.",
+      "website": "https://www.intellimize.com",
+      "icon": "Intellimize.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof intellimize !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Juo": {
+      "cats": [
+        74
+      ],
+      "scriptSrc": [
+        "cdn\\.juo\\.io/"
+      ],
+      "description": "Juo is a centralised experimentation platform for innovative marketing and product teams.",
+      "website": "https://get.juo.io",
+      "icon": "Juo.svg"
+    },
+    "Kameleoon": {
+      "cats": [
+        74
+      ],
+      "dom": {
+        "link[href*='.kameleoon.eu/kameleoon.js']": {
+          "exists": ""
+        }
+      },
+      "cookies": {
+        "kameleoonvisitorcode": ""
+      },
+      "js": {
+        "Kameleoon.Gatherer.SCRIPT_VERSION": "(.+)\\;version:\\1",
+        "kameleoonEndLoadTime": "",
+        "kameleoonS": ""
+      },
+      "scriptSrc": [
+        "\\.kameleoon\\.\\w+/kameleoon\\.js"
+      ],
+      "description": "Kameleoon is a personalisation technology platform for real-time omnichannel optimisation and conversion.",
+      "website": "https://kameleoon.com/",
+      "icon": "Kameleoon.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Kameleoon !== 'undefined' && typeof Kameleoon.Gatherer !== 'undefined' && typeof Kameleoon.Gatherer.SCRIPT_VERSION !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Kameleoon !== 'undefined' && typeof Kameleoon.Gatherer !== 'undefined' && typeof Kameleoon.Gatherer.SCRIPT_VERSION !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Kameleoon !== 'undefined' && typeof Kameleoon.Gatherer !== 'undefined' && typeof Kameleoon.Gatherer.SCRIPT_VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Kameleoon.Gatherer.SCRIPT_VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Karte": {
+      "cats": [
+        74,
+        76
+      ],
+      "js": {
+        "__KARTE_REWRITE_ADMIN_CONFIG": "",
+        "__karte_live": "",
+        "__karte_loaded": "",
+        "__karte_tracker": ""
+      },
+      "description": "Karte is a customer engagement and marketing automation platform that enables businesses to understand their customers, deliver personalised experiences, and optimise marketing strategies.",
+      "website": "https://karte.io",
+      "icon": "Karte.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __KARTE_REWRITE_ADMIN_CONFIG !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __KARTE_REWRITE_ADMIN_CONFIG !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __KARTE_REWRITE_ADMIN_CONFIG !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __KARTE_REWRITE_ADMIN_CONFIG !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Monetate": {
+      "cats": [
+        74,
+        76
+      ],
+      "js": {
+        "monetate": "",
+        "monetateQ": "",
+        "monetateT": ""
+      },
+      "scriptSrc": [
+        "\\.monetate\\.net"
+      ],
+      "description": "Monetate is a company that specializes in providing personalisation and customer experience optimisation solutions to businesses.",
+      "website": "https://monetate.com",
+      "icon": "Monetate.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof monetate !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof monetate !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof monetate !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Neat A/B testing": {
+      "cats": [
+        74,
+        100
+      ],
+      "scriptSrc": [
+        "cdn\\.neatab\\.com/"
+      ],
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Neat A/B Testing is a Shopify app built by NeatShift.",
+      "website": "https://neatab.com",
+      "icon": "Neat.png"
+    },
+    "Nelio Testing": {
+      "cats": [
+        74
+      ],
+      "cookies": {
+        "nabuniqueviews": ""
+      },
+      "js": {
+        "nabSettings": ""
+      },
+      "description": "Nelio Testing is a plugin that allows testing everything on a WordPress site.",
+      "website": "https://neliosoftware.com/testing",
+      "cpe": "cpe:2.3:a:neliosoftware:nelio_ab_testing:*:*:*:*:*:*:*:*",
+      "icon": "NelioTesting.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof nabSettings !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Omniconvert": {
+      "cats": [
+        74
+      ],
+      "dom": {
+        "link[href*='app.omniconvert.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "_omni": ""
+      },
+      "scriptSrc": [
+        "cdn\\.omniconvert\\.com"
+      ],
+      "description": "Omniconvert is an award-winning conversion rate optimisation (CRO) software that can be used for A/B testing, online surveys, traffic segmentation.",
+      "website": "https://www.omniconvert.com",
+      "icon": "Omniconvert.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _omni !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Optibase": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "optibaseScriptLoaded": ""
+      },
+      "scriptSrc": [
+        "app\\.optibase\\.io/"
+      ],
+      "description": "Optibase is an A/B testing app for Webflow, enabling data-driven decisions by testing various elements such as copy, design, or entire pages, aimed at improving site conversions.",
+      "website": "https://www.optibase.io",
+      "icon": "Optibase.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof optibaseScriptLoaded !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Optimizely": {
+      "cats": [
+        74,
+        76
+      ],
+      "cookies": {
+        "optimizelyenduserid": ""
+      },
+      "js": {
+        "optimizely": "",
+        "optimizelyClient.clientVersion": "([\\d\\.]+)\\;version:\\1",
+        "optimizelySdk": ""
+      },
+      "scriptSrc": [
+        "optimizely\\.com.*\\.js"
+      ],
+      "description": "Optimizely is an experimentation platform that helps developers build and run A/B tests on websites.",
+      "website": "https://www.optimizely.com",
+      "icon": "Optimizely.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof optimizely !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof optimizely !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof optimizely !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "optimizelyClient.clientVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Oracle Maxymiser": {
+      "cats": [
+        74,
+        76
+      ],
+      "js": {
+        "maxy": "\\;confidence:20",
+        "mmsystem.getConfig": "\\;confidence:80"
+      },
+      "scriptSrc": [
+        "service\\.maxymiser\\.net"
+      ],
+      "description": "Oracle Maxymiser is a real-time behavioral targeting, in-session personalisation, and product recommendations platform.",
+      "website": "https://www.oracle.com/uk/cx/marketing/personalization-testing",
+      "icon": "Oracle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof maxy !== 'undefined' && maxy === '\\;confidence:20'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof maxy !== 'undefined' && maxy === '\\;confidence:20'"
+          }
+        ]
+      }
+    },
+    "Overheat": {
+      "cats": [
+        74
+      ],
+      "scriptSrc": [
+        "cdn\\.overheat\\.it"
+      ],
+      "description": "Overheat is a conversion optimization package designed to improve website performance by enhancing user experience and increasing conversion rates through data-driven strategies and tailored solutions.",
+      "website": "https://overheat.it"
+    },
+    "Pretty Damn Quick": {
+      "cats": [
+        74,
+        100
+      ],
+      "js": {
+        "initPDQscript": ""
+      },
+      "scriptSrc": [
+        "pdq-scripts\\.pdqprod\\.link"
+      ],
+      "description": "Pretty Damn Quick is a Shopify app for eCommerce brands to deliver personalized checkout experiences.",
+      "website": "https://www.prettydamnquick.com/",
+      "icon": "PrettyDamnQuick.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof initPDQscript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ptengine": {
+      "cats": [
+        74,
+        76,
+        10
+      ],
+      "js": {
+        "ptengine": ""
+      },
+      "scriptSrc": [
+        "js\\.ptengine\\.(?:jp|cn|com)?/'"
+      ],
+      "description": "Ptengine is a web analytics tool that offers heat mapping, session replays, and other insights to help businesses understand and optimize user behavior on their websites.",
+      "website": "https://www.ptengine.com",
+      "icon": "Ptengine.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ptengine !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Qubit": {
+      "cats": [
+        74,
+        76
+      ],
+      "js": {
+        "__qubit": "",
+        "onQubitReady": ""
+      },
+      "scriptSrc": [
+        "static\\.goqubit\\.com"
+      ],
+      "description": "Qubit is a SaaS based persuasive personalisation at scale services.",
+      "website": "https://www.qubit.com",
+      "icon": "Qubit.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __qubit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __qubit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RankScience": {
+      "cats": [
+        74
+      ],
+      "scriptSrc": [
+        "cdn\\.ranksci\\.com"
+      ],
+      "description": "RankScience is a split testing platform that uses data science to optimize search traffic.",
+      "website": "https://www.rankscience.com",
+      "icon": "RankScience.svg"
+    },
+    "Shoplift": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "shoplift.getVisitorData": "",
+        "shopliftInstance": ""
+      },
+      "scripts": [
+        "\\.shoplift\\.ai"
+      ],
+      "description": "Shoplift is a data-driven A/B testing platform for Shopify stores that optimizes conversion rates without requiring coding.",
+      "website": "https://www.shoplift.ai",
+      "icon": "Shoplift.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof shoplift !== 'undefined' && typeof shoplift.getVisitorData !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof shoplift !== 'undefined' && typeof shoplift.getVisitorData !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SiteSpect": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "ss_dom_var": ""
+      },
+      "scriptSrc": [
+        "/__ssobj/core\\.js"
+      ],
+      "description": "SiteSpect is the A/B testing and optimisation solution.",
+      "website": "https://www.sitespect.com",
+      "icon": "SiteSpect.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ss_dom_var !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Split Hero": {
+      "cats": [
+        74
+      ],
+      "scriptSrc": [
+        "app\\.splithero\\.com/"
+      ],
+      "description": "Split Hero is a WordPress tool for A/B split testing, enabling performance comparisons between different page variations to optimize user engagement and conversions.",
+      "website": "https://splithero.com",
+      "icon": "SplitHero.svg"
+    },
+    "Talkable": {
+      "cats": [
+        74,
+        84,
+        94
+      ],
+      "js": {
+        "talkable.config.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "Talkable is a cloud-based referral marketing system that assists medium to large businesses with campaign creation and channel performance tracking.",
+      "website": "https://www.talkable.com",
+      "icon": "Talkable.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof talkable !== 'undefined' && typeof talkable.config !== 'undefined' && typeof talkable.config.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "talkable.config.version || \"\""
+          }
+        ]
+      }
+    },
+    "Tontine": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "TontineApp.tontineAnalytics": ""
+      },
+      "description": "Tontine is an A/B price testing platform built specifically for high-growth Shopify merchants focused on optimizing their profit margins.",
+      "website": "https://www.tontine.ai",
+      "icon": "Tontine.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TontineApp !== 'undefined' && typeof TontineApp.tontineAnalytics !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Trbo": {
+      "cats": [
+        74,
+        76
+      ],
+      "cookies": {
+        "trbo_session": "^(?:[\\d]+)$",
+        "trbo_usr": "^(?:[\\d\\w]+)$"
+      },
+      "js": {
+        "_trbo": "",
+        "_trbo_start": "",
+        "_trboq": ""
+      },
+      "scriptSrc": [
+        "\\.trbo\\.com"
+      ],
+      "description": "Trbo is a personalisation, recommendations, A/B testing platform from Germany.",
+      "website": "https://www.trbo.com",
+      "icon": "Trbo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _trbo !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _trbo !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _trbo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Trident AB": {
+      "cats": [
+        74
+      ],
+      "scripts": [
+        "trident/"
+      ],
+      "description": "Trident AB is a platform for optimizing websites through A/B testing.",
+      "website": "https://tridentab.com",
+      "icon": "TridentAB.svg"
+    },
+    "UserZoom": {
+      "cats": [
+        74,
+        10
+      ],
+      "scriptSrc": [
+        "\\.userzoom\\.com/"
+      ],
+      "description": "UserZoom is a cloud-based user experience solution.",
+      "website": "https://www.userzoom.com",
+      "icon": "UserZoom.png"
+    },
+    "Varify": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "varify.debug": "",
+        "webpackChunkvarify_io": ""
+      },
+      "scriptSrc": [
+        "app\\.varify\\.io/"
+      ],
+      "description": "Varify is an A/B testing platform that provides traffic flat rates for data-driven web page optimization aimed at increasing conversions.",
+      "website": "https://varify.io",
+      "icon": "Varify.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof varify !== 'undefined' && typeof varify.debug !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof varify !== 'undefined' && typeof varify.debug !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Vertster": {
+      "cats": [
+        74
+      ],
+      "scripts": [
+        "cdn\\.vertster\\.com"
+      ],
+      "scriptSrc": [
+        "cdn\\.vertster\\.com"
+      ],
+      "description": "Vertster is a multivariate testing platform that enables users to compare multiple webpage or app variations simultaneously to identify which combination of elements performs best based on user behavior and data analysis.",
+      "website": "https://vertster.com"
+    },
+    "VisiOpt": {
+      "cats": [
+        74
+      ],
+      "js": {
+        "visiopt_code": ""
+      },
+      "scriptSrc": [
+        "visiopt\\.com"
+      ],
+      "description": "Visiopt™ is a powerful yet easy to use AI-driven Optimization System that enables you to manufacture your perfect customer at scale like a well oiled machine.",
+      "website": "https://visiopt.com",
+      "icon": "visiopt.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof visiopt_code !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Zoho PageSense": {
+      "cats": [
+        74,
+        76
+      ],
+      "js": {
+        "$pagesense": "",
+        "pagesense": ""
+      },
+      "scriptSrc": [
+        "\\.pagesense\\.(?:cn|io)?"
+      ],
+      "implies": [
+        "Zoho"
+      ],
+      "description": "Zoho PageSense is a conversion optimisation platform which combines the power of web analytics, A/B testing, and personalisation.",
+      "website": "https://www.zoho.com/pagesense/",
+      "icon": "Zoho.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $pagesense !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $pagesense !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

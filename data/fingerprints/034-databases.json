@@ -1,0 +1,239 @@
+{
+  "apps": {
+    "Amazon Aurora": {
+      "cats": [
+        34
+      ],
+      "implies": [
+        "Amazon Web Services"
+      ],
+      "description": "Amazon Aurora is a relational database service developed and offered by Amazon Web Services.",
+      "website": "https://aws.amazon.com/rds/aurora",
+      "icon": "Amazon Aurora.svg"
+    },
+    "Claris FileMaker": {
+      "cats": [
+        34
+      ],
+      "description": "Claris FileMaker is a cross-platform relational database application from Claris International.",
+      "website": "https://www.claris.com/filemaker",
+      "icon": "Claris.svg"
+    },
+    "Cloudera": {
+      "cats": [
+        34
+      ],
+      "headers": {
+        "server": "cloudera"
+      },
+      "description": "Cloudera is a software platform for data engineering, data warehousing, machine learning and analytics that runs in the cloud or on-premises.",
+      "website": "https://www.cloudera.com",
+      "icon": "Cloudera.png"
+    },
+    "Dimensions AI": {
+      "cats": [
+        34
+      ],
+      "js": {
+        "__dimensions_badge_config_loaded__": "",
+        "__dimensions_badge_server": ""
+      },
+      "scriptSrc": [
+        "\\.dimensions\\.ai"
+      ],
+      "description": "Dimensions AI is an advanced research database linking grants, publications, datasets, clinical trials, patents, and policy documents to support efficient translation from idea to impact.",
+      "website": "https://www.dimensions.ai",
+      "icon": "Dimensions.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __dimensions_badge_config_loaded__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __dimensions_badge_config_loaded__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Firebase": {
+      "cats": [
+        34,
+        47
+      ],
+      "dom": {
+        "iframe[src*='.firebaseapp.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "firebase.SDK_VERSION": "([\\d.]+)$\\;version:\\1"
+      },
+      "headers": {
+        "vary": "x-fh-requested-host"
+      },
+      "scripts": [
+        "\\.gstatic\\.com/firebasejs/([\\d\\.]+)/\\;version:\\1",
+        "firebase(?:config|io\\.com)"
+      ],
+      "scriptSrc": [
+        "/(?:([\\d.]+)/)?firebase(?:\\.min)?\\.js\\;version:\\1",
+        "/firebasejs/([\\d.]+)/firebase\\;version:\\1"
+      ],
+      "description": "Firebase is a Google-backed application development software that enables developers to develop iOS, Android and Web apps.",
+      "website": "https://firebase.google.com",
+      "cpe": "cpe:2.3:a:google:firebase_cloud_messaging:*:*:*:*:*:*:*:*",
+      "icon": "Firebase.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof firebase !== 'undefined' && typeof firebase.SDK_VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "firebase.SDK_VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Lucene": {
+      "cats": [
+        34
+      ],
+      "implies": [
+        "Java"
+      ],
+      "description": "Lucene is a free and open-source search engine software library.",
+      "website": "https://lucene.apache.org/core/",
+      "cpe": "cpe:2.3:a:apache:lucene:*:*:*:*:*:*:*:*",
+      "icon": "Lucene.png"
+    },
+    "MariaDB": {
+      "cats": [
+        34
+      ],
+      "description": "MariaDB is an open-source relational database management system compatible with MySQL.",
+      "website": "https://mariadb.org",
+      "cpe": "cpe:2.3:a:mariadb_project:mariadb:*:*:*:*:*:*:*:*",
+      "icon": "mariadb.svg"
+    },
+    "MongoDB": {
+      "cats": [
+        34
+      ],
+      "description": "MongoDB is a document-oriented NoSQL database used for high volume data storage.",
+      "website": "https://www.mongodb.org",
+      "cpe": "cpe:2.3:a:mongodb:mongodb:*:*:*:*:*:*:*:*",
+      "icon": "MongoDB.png"
+    },
+    "MySQL": {
+      "cats": [
+        34
+      ],
+      "description": "MySQL is an open-source relational database management system.",
+      "website": "https://mysql.com",
+      "cpe": "cpe:2.3:a:mysql:mysql:*:*:*:*:*:*:*:*",
+      "icon": "MySQL.svg"
+    },
+    "Percona": {
+      "cats": [
+        34
+      ],
+      "description": "Percona server is an opensource, fully compatible, enhanced drop-in replacement for MySQL, providing superior performance, scalability, and instrumentation.",
+      "website": "https://www.percona.com",
+      "icon": "percona.svg"
+    },
+    "PostgreSQL": {
+      "cats": [
+        34
+      ],
+      "description": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.",
+      "website": "https://www.postgresql.org/",
+      "cpe": "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*",
+      "icon": "PostgreSQL.png"
+    },
+    "PouchDB": {
+      "cats": [
+        34
+      ],
+      "js": {
+        "PouchDB.adapter": ""
+      },
+      "scriptSrc": [
+        "/js/pouchdb\\.min\\.js"
+      ],
+      "description": "PouchDB is an open-source NoSQL database written in JavaScript.",
+      "website": "https://pouchdb.com",
+      "icon": "PouchDB.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PouchDB !== 'undefined' && typeof PouchDB.adapter !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Qiyeku": {
+      "cats": [
+        34
+      ],
+      "scriptSrc": [
+        "\\.qiyeku\\.cn"
+      ],
+      "description": "Qiyeku is a Chinese enterprise database that provides business information, company listings, and industry resources for market research and trade connections.",
+      "website": "https://www.qiyeku.cn",
+      "icon": "Qiyeku.svg"
+    },
+    "Redis": {
+      "cats": [
+        34
+      ],
+      "description": "Redis is an in-memory data structure project implementing a distributed, in-memory key–value database with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, HyperLogLogs, bitmaps, streams, and spatial indexes.",
+      "website": "https://redis.io",
+      "cpe": "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+      "icon": "Redis.svg"
+    },
+    "SQLite": {
+      "cats": [
+        34
+      ],
+      "website": "https://www.sqlite.org",
+      "cpe": "cpe:2.3:a:sqlite:sqlite:*:*:*:*:*:*:*:*",
+      "icon": "SQLite.png"
+    },
+    "Solr": {
+      "cats": [
+        34
+      ],
+      "implies": [
+        "Lucene"
+      ],
+      "description": "Solr is an open-source enterprise-search platform, written in Java.",
+      "website": "https://lucene.apache.org/solr/",
+      "cpe": "cpe:2.3:a:apache:solr:*:*:*:*:*:*:*:*",
+      "icon": "Solr.png"
+    },
+    "Virtuoso": {
+      "cats": [
+        34
+      ],
+      "headers": {
+        "server": "virtuoso/?([0-9.]+)?\\;version:\\1"
+      },
+      "meta": {
+        "copyright": [
+          "^copyright &copy; \\d{4} openlink software"
+        ],
+        "keywords": [
+          "^openlink virtuoso sparql"
+        ]
+      },
+      "website": "https://virtuoso.openlinksw.com/"
+    }
+  }
+}

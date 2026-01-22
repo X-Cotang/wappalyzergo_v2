@@ -1,0 +1,310 @@
+{
+  "apps": {
+    "Blue": {
+      "cats": [
+        77
+      ],
+      "dom": {
+        "iframe[src*='.getblue.io']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "blueProductId": "",
+        "bluecpy_id": ""
+      },
+      "scriptSrc": [
+        "\\.getblue\\.io"
+      ],
+      "description": "Blue is a ecommerce data marketing, lead generation, real time bidding and recommendation solutions.",
+      "website": "https://web.getblue.io/en/",
+      "icon": "Blue.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof blueProductId !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof blueProductId !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Captify": {
+      "cats": [
+        77
+      ],
+      "scripts": [
+        "data\\.captifymedia\\.com"
+      ],
+      "description": "Captify is a platform that offers search retargeting by combining keyword-based search marketing with the reach of display advertising.",
+      "website": "https://www.captifytechnologies.com",
+      "icon": "Captify.svg"
+    },
+    "Cross Pixel": {
+      "cats": [
+        77
+      ],
+      "js": {
+        "cp_C4w1ldN2d9PmVrkN": ""
+      },
+      "scriptSrc": [
+        "tag\\.crsspxl\\.com"
+      ],
+      "description": "Cross Pixel is an advertising platform through which advertisers can leverage the marriage of partner audience synergies with the power of retargeting.",
+      "website": "https://crosspixel.net",
+      "icon": "Cross Pixel.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cp_C4w1ldN2d9PmVrkN !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Fixel": {
+      "cats": [
+        77,
+        86
+      ],
+      "scriptSrc": [
+        "script\\.fixel\\.ai/"
+      ],
+      "description": "Fixel is a remarketing and segmentation campaign builder utilising AI technology.",
+      "website": "https://fixel.ai",
+      "icon": "Fixel.svg"
+    },
+    "Linx Impulse": {
+      "cats": [
+        77,
+        76
+      ],
+      "dom": {
+        "link[href*='.linximpulse.net']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "linx.banner": "",
+        "linxImpulse.config": "",
+        "linxImpulseInitialized": ""
+      },
+      "description": "Linx Impulse is a personalisation, media and retargeting solutions built by Linx.",
+      "website": "https://www.linx.com.br/linx-impulse",
+      "icon": "Linx.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof linx !== 'undefined' && typeof linx.banner !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof linx !== 'undefined' && typeof linx.banner !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof linx !== 'undefined' && typeof linx.banner !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Meazy": {
+      "cats": [
+        77
+      ],
+      "scripts": [
+        "cdn\\.meazy\\.co/"
+      ],
+      "description": "Meazy is a tool that provides automated remarketing solutions tailored for online stores.",
+      "website": "https://meazy.co",
+      "icon": "Meazy.svg"
+    },
+    "Notix": {
+      "cats": [
+        77
+      ],
+      "scriptSrc": [
+        "notix\\.io/ent"
+      ],
+      "description": "Notix is a web push notifications service for audience re-engagement.",
+      "website": "https://notix.co",
+      "icon": "Notix.svg"
+    },
+    "PebblePost": {
+      "cats": [
+        77
+      ],
+      "scriptSrc": [
+        "cdn\\.pbbl\\.co/"
+      ],
+      "description": "PebblePost provides marketers a way to transform recent online data into intelligent direct mail programs that perform.",
+      "website": "https://www.pebblepost.com",
+      "icon": "PebblePost.svg"
+    },
+    "Picreel": {
+      "cats": [
+        77,
+        5
+      ],
+      "dom": {
+        "iframe[src*='app.picreel.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "picreel": ""
+      },
+      "scriptSrc": [
+        "\\.picreel\\.com"
+      ],
+      "description": "Picreel is a conversion optimisation software.",
+      "website": "https://www.picreel.com",
+      "icon": "Picreel.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof picreel !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RTB House": {
+      "cats": [
+        77
+      ],
+      "description": "RTB House is a company that provides learning-powered retargeting solutions for brands and agencies.",
+      "website": "https://www.rtbhouse.com",
+      "icon": "RTB House.png"
+    },
+    "Revenue Roll": {
+      "cats": [
+        77
+      ],
+      "scriptSrc": [
+        "\\.revenueroll\\.com"
+      ],
+      "description": "Revenue Roll is an identification and retargeting service designed to recognize website visitors and deliver targeted advertising based on user behavior.",
+      "website": "https://www.revenueroll.com",
+      "icon": "RevenueRoll.svg"
+    },
+    "SharpSpring Ads": {
+      "cats": [
+        77
+      ],
+      "js": {
+        "_pa": ""
+      },
+      "scriptSrc": [
+        "\\.perfectaudience\\.com"
+      ],
+      "description": "SharpSpring Ads is an all-in-one retargeting platform.",
+      "website": "https://sharpspring.com/ads",
+      "icon": "SharpSpring.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _pa !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Smarter Click": {
+      "cats": [
+        77
+      ],
+      "js": {
+        "$smcInstall": "",
+        "$smcT5": "",
+        "$smctData": ""
+      },
+      "scriptSrc": [
+        "\\.?smct\\.(?:io|co)/"
+      ],
+      "description": "Smarter Click is a marketing technology company.",
+      "website": "https://smarterclick.com",
+      "icon": "Smarter Click.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $smcInstall !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $smcT5 !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $smctData !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Socioh": {
+      "cats": [
+        77
+      ],
+      "dom": {
+        "link[href*='socioh.com'] [rel='canonical']": {
+          "exists": ""
+        }
+      },
+      "description": "Socioh is a social media marketing and retargeting platform designed to help businesses increase visibility, engagement, and conversions through targeted advertising and campaign management.",
+      "website": "https://socioh.com",
+      "icon": "Socioh.svg"
+    },
+    "Squadata": {
+      "cats": [
+        77
+      ],
+      "scriptSrc": [
+        "//asset\\.easydmp\\.net/"
+      ],
+      "description": "Squadata provides data based marketing and advertising solutions including email retargeting, CRM onboarding, data monetisation, data management platform.",
+      "website": "https://www.squadata.net",
+      "icon": "Squadata.png"
+    },
+    "SteelHouse": {
+      "cats": [
+        77
+      ],
+      "scriptSrc": [
+        "\\.steelhousemedia\\.com/(?:spx\\?dxver=([\\d.]+))?\\;version:\\1"
+      ],
+      "description": "SteelHouse is an advertising software company which provides services for brands, agencies, and direct marketers.",
+      "website": "https://steelhouse.com",
+      "icon": "SteelHouse.png"
+    },
+    "Struq": {
+      "cats": [
+        77
+      ],
+      "scriptSrc": [
+        "\\.struq\\.com/"
+      ],
+      "description": "Struq is a personalized retargeting solution that serves as an alternative to standard display advertising.",
+      "website": "http://struq.com",
+      "icon": "Struq.svg"
+    },
+    "Uzerly": {
+      "cats": [
+        77
+      ],
+      "headers": {
+        "content-security-policy": "\\.u(?:s|z)erly\\.net"
+      },
+      "scriptSrc": [
+        "\\.userly\\.net/"
+      ],
+      "description": "Uzerly is a technology-focused company specializing in retargeting.",
+      "website": "https://uzerly.fr",
+      "icon": "Uzerly.svg"
+    }
+  }
+}

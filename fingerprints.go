@@ -27,6 +27,29 @@ type Fingerprint struct {
 	Website     string                            `json:"website"`
 	CPE         string                            `json:"cpe"`
 	Icon        string                            `json:"icon"`
+	Browser     *BrowserDetection                 `json:"browser,omitempty"` // NEW: Browser-based detection
+}
+
+// BrowserDetection defines browser-based detection rules
+type BrowserDetection struct {
+	Detection []DetectionRule     `json:"detection,omitempty"`
+	Version   []VersionExtraction `json:"version,omitempty"`
+}
+
+// DetectionRule defines how to detect if a technology exists in browser
+type DetectionRule struct {
+	Type     string `json:"type"`               // "dom-selector" or "js-eval"
+	Query    string `json:"query,omitempty"`    // JavaScript code for js-eval
+	Selector string `json:"selector,omitempty"` // CSS selector for dom-selector
+}
+
+// VersionExtraction defines how to extract version in browser
+type VersionExtraction struct {
+	Type      string `json:"type"`                // "dom-attribute" or "js-eval"
+	Query     string `json:"query,omitempty"`     // JavaScript code
+	Selector  string `json:"selector,omitempty"`  // CSS selector
+	Attribute string `json:"attribute,omitempty"` // Attribute name
+	Pattern   string `json:"pattern,omitempty"`   // Regex pattern for extraction
 }
 
 // CompiledFingerprints contains a map of fingerprints for tech detection

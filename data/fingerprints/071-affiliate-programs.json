@@ -1,0 +1,1215 @@
+{
+  "apps": {
+    "A8.net": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "img[src*='.a8.net']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "A8salesCookieRepository": "",
+        "a8sales": "",
+        "map_A8": ""
+      },
+      "scriptSrc": [
+        "statics\\.a8\\.net"
+      ],
+      "description": " A8.net is an affiliate marketing network.",
+      "website": "https://www.a8.net",
+      "icon": "A8.net.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof A8salesCookieRepository !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof A8salesCookieRepository !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof A8salesCookieRepository !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AWIN": {
+      "cats": [
+        71
+      ],
+      "cookies": {
+        "_aw_xid": "",
+        "bagawin": ""
+      },
+      "js": {
+        "AWIN.Tracking": ""
+      },
+      "scriptSrc": [
+        "dwin1\\.com"
+      ],
+      "description": "AWIN is a global affiliate marketing network.",
+      "website": "https://www.awin.com",
+      "icon": "AWIN.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AWIN !== 'undefined' && typeof AWIN.Tracking !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AccessTrade": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "img[src*='.accesstrade.net'],img[data-src*='.accesstrade.net']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "accesstrade\\.net/js/",
+        "click\\.accesstra\\.de/js/nct/lp\\.js"
+      ],
+      "description": "AccessTrade is an affiliate marketing platform based on the CPA model developed by Interspace Co.",
+      "website": "https://accesstrade.global/",
+      "icon": "AccessTrade.png"
+    },
+    "Admitad": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "ADMITAD": "",
+        "admitad": ""
+      },
+      "scriptSrc": [
+        "artfut\\.com/static/(?:tracking|crossdevice)\\.min\\.js",
+        "cdn\\.admitad\\.com"
+      ],
+      "description": "Admitad is an affiliate network that acts as an intermediary between advertisers and publishers.",
+      "website": "https://www.admitad.com",
+      "icon": "Admitad.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ADMITAD !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ADMITAD !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Affilae": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "static\\.affilae\\.com/(?:.+v([\\d\\.]+)|.+)?\\.js\\;version:\\1"
+      ],
+      "description": "Affilae is an affiliate marketing platform that enables brands to connect, collaborate with influencers and affiliates.",
+      "website": "https://affilae.com",
+      "icon": "Affilae.png"
+    },
+    "Affiliate B": {
+      "cats": [
+        71,
+        36
+      ],
+      "dom": {
+        "img[src*='www.afi-b.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "t\\.afi-b\\.com"
+      ],
+      "description": "Affiliate B is an advertising system that allows site operators (HP, blogs, e-mail newsletters, etc.) to place advertiser advertisements on their own sites.",
+      "website": "https://affiliate-b.com",
+      "icon": "Affiliate B.svg"
+    },
+    "Affiliate Future": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "img[src*='banners.affiliatefuture.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "tags\\.affiliatefuture\\.com"
+      ],
+      "description": "Affiliate Future is a provider of advertisers with marketing solution through its affiliate network and tools.",
+      "website": "https://affiliatefuture.com",
+      "icon": "Affiliate Future.png"
+    },
+    "Affiliatly": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "static\\.affiliatly\\.com/"
+      ],
+      "description": "Affiliatly is an affiliate marketing software for ecommerce store owners.",
+      "website": "https://www.affiliatly.com",
+      "icon": "Affiliatly.png"
+    },
+    "Affilio": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "a[href*='.affilio.ir/'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Affilio.widget": ""
+      },
+      "description": "Affilio is an Iranian affiliate marketing platform.",
+      "website": "https://affilio.ir",
+      "icon": "Affilio.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Affilio !== 'undefined' && typeof Affilio.widget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Affilo": {
+      "cats": [
+        71,
+        100
+      ],
+      "scriptSrc": [
+        "//affilo\\.io/"
+      ],
+      "description": "Affilo is an all-in-one solution for referrals and affiliate marketing.",
+      "website": "https://affilo.io",
+      "icon": "Affilo.png"
+    },
+    "Amazon Associates": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "a[href*='amazon.com']": {
+          "attributes": {
+            "href": "^https?://amazon.com.+&tag="
+          }
+        },
+        "a[href*='amzn.to']": {
+          "attributes": {
+            "href": ""
+          }
+        }
+      },
+      "scriptSrc": [
+        "\\.associates-amazon\\.com"
+      ],
+      "description": "Amazon Associates is an affiliate marketing program that allows website owners and bloggers to create links and earn referral fees when customers click through and buy products from Amazon.",
+      "website": "https://affiliate-program.amazon.com",
+      "icon": "Amazon.svg"
+    },
+    "Backstage": {
+      "cats": [
+        71
+      ],
+      "scripts": [
+        "app\\.yourbackstage\\.io"
+      ],
+      "description": "Backstage is a provider of premium marketing templates designed for affiliates, offering ready-made emails, videos, and funnels to streamline campaign performance.",
+      "website": "https://yourbackstage.io",
+      "icon": "Backstage.svg"
+    },
+    "Booking.com": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "aff\\.bstatic\\.com/"
+      ],
+      "description": "Booking.com is one of the largest ecommerce travel companies in the world. As an affiliate member, you can make up to 40% commission.",
+      "website": "https://www.booking.com/affiliate-program/v2/selfmanaged.html",
+      "icon": "Booking.com.svg"
+    },
+    "CPABuild": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "CPABuildLock": ""
+      },
+      "description": "CPABuild is a next generation CPA network with integrated template building and sharing functionality.",
+      "website": "https://cpabuild.com",
+      "icon": "CPABuild.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CPABuildLock !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cellxpert": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "link[href*='.cellxpert.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.cellxpert\\.com/"
+      ],
+      "description": "Cellxpert is a SaaS platform for affiliate and partner program management, providing tools for tracking, reporting, and optimizing performance-based marketing campaigns.",
+      "website": "https://www.cellxpert.com",
+      "icon": "Cellxpert.svg"
+    },
+    "Clickbank": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "a[href*='pay.clickbank.net?cbfid'], img[width='1'][src*='hop.clickbank.net?affiliate']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "cbtb": ""
+      },
+      "scriptSrc": [
+        "r\\.wdfl\\.co"
+      ],
+      "website": "https://www.clickbank.com/",
+      "icon": "Clickbank.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cbtb !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Convertiser": {
+      "cats": [
+        71
+      ],
+      "scripts": [
+        "\\.convertiser\\.com"
+      ],
+      "scriptSrc": [
+        "\\.convertiser\\.com"
+      ],
+      "description": "Convertiser is a website monetization platform from Poland that helps publishers and advertisers optimize revenue through performance-based marketing solutions.",
+      "website": "https://convertiser.com",
+      "icon": "Convertiser.svg"
+    },
+    "Digistore24": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "a[href*='www.digistore24.com'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "DIGISTORE_LINK_ID_KEY": "",
+        "DIGISTORE_VENDORKEY": "",
+        "getTheSourceForDigistoreLinks": ""
+      },
+      "scriptSrc": [
+        "digistore/digistore\\.js",
+        "www\\.digistore24\\.com"
+      ],
+      "description": "Digistore24 is a German digital reselling and affiliate marketing platform.",
+      "website": "https://www.digistore24.com",
+      "icon": "Digistore24.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DIGISTORE_LINK_ID_KEY !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DIGISTORE_LINK_ID_KEY !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DIGISTORE_LINK_ID_KEY !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dovetale": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "Dovetale": ""
+      },
+      "scriptSrc": [
+        "dttrk\\.com"
+      ],
+      "description": "Dovetale (Acquired by Shopify) helps e-commerce stores recruit, manage, & grow their sales with communities of people who love their products.",
+      "website": "https://dovetale.com/",
+      "icon": "Dovetale.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Dovetale !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Duel": {
+      "cats": [
+        71
+      ],
+      "cookies": {
+        "_duelcsrf": ""
+      },
+      "js": {
+        "DUEL.apiURL": "api\\.duel\\.me"
+      },
+      "scriptSrc": [
+        "\\.duel\\.me/"
+      ],
+      "implies": [
+        "Angular",
+        "MongoDB",
+        "Node.js"
+      ],
+      "description": "Duel is a customer advocacy marketing platform.",
+      "website": "https://www.duel.tech",
+      "icon": "Duel.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DUEL !== 'undefined' && typeof DUEL.apiURL !== 'undefined' && DUEL.apiURL === 'api\\.duel\\.me'"
+          }
+        ]
+      }
+    },
+    "Effiliation": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "\\.effiliation\\.com/"
+      ],
+      "description": "Effiliation is a performance marketing platform and affiliate network that facilitates partnerships between advertisers and publishers for commission-based promotion of products and services.",
+      "website": "https://www.effiliation.com",
+      "icon": "Effiliation.png"
+    },
+    "Evermos": {
+      "cats": [
+        71
+      ],
+      "scripts": [
+        "assets\\.evermos\\.com"
+      ],
+      "description": "Evermos is a connected commerce platform that enables resellers and drop shippers to earn commissions.",
+      "website": "https://evermos.com",
+      "icon": "Evermos.svg"
+    },
+    "FinanceAds": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "link[href*='js.financeads.net'], link[href*='js.financeads.com'], a[href*='www.financeads.net/tc.php']": {
+          "exists": ""
+        }
+      },
+      "description": "FinanceAds is a performance marketing agency that has grown affiliate network for the financial sector.",
+      "website": "https://www.financeads.com",
+      "icon": "Financeads.png"
+    },
+    "FirstPromoter": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "link[href*='//firstpromoter.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "FirstPromoterAPI": "",
+        "fprom_obj_": ""
+      },
+      "scriptSrc": [
+        "cdn\\.firstpromoter\\.com/"
+      ],
+      "description": "FirstPromoter is a software platform that helps businesses to create, manage and track their affiliate marketing programs.",
+      "website": "https://firstpromoter.com",
+      "icon": "FirstPromoter.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FirstPromoterAPI !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FirstPromoterAPI !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "GoAffPro": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "gfp_api_server": ""
+      },
+      "scriptSrc": [
+        "api\\.goaffpro\\.com/loader\\.js"
+      ],
+      "description": "Goaffpro is an affiliate marketing solution for ecommerce stores.",
+      "website": "https://goaffpro.com/",
+      "icon": "GoAffPro.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gfp_api_server !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Hotmart": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "HotmartLauncherObject": ""
+      },
+      "scriptSrc": [
+        "\\.hotmart\\.com/"
+      ],
+      "description": "HotMart is a Brazilian-based affiliate marketing system.",
+      "website": "https://hotmart.com",
+      "icon": "Hotmart.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HotmartLauncherObject !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Impact": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "ImpactRadiusEvent": "",
+        "irEvent": ""
+      },
+      "scriptSrc": [
+        "d\\.impactradius-event\\.com"
+      ],
+      "description": "Impact helps businesses contract and pay partners.",
+      "website": "https://impact.com/",
+      "icon": "Impact.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ImpactRadiusEvent !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ImpactRadiusEvent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "JANet": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "img[src*='.j-a-net.jp'],img[data-src*='.j-a-net.jp']": {
+          "exists": ""
+        }
+      },
+      "description": "JANet is an affiliate marketing network.",
+      "website": "https://j-a-net.jp",
+      "icon": "JANet.png"
+    },
+    "Klook": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "\\.klook\\.com/"
+      ],
+      "description": "Klook is a travel affiliate system designed to connect users with various travel services and experiences.",
+      "website": "https://www.klook.com",
+      "icon": "Klook.svg"
+    },
+    "LeadDyno": {
+      "cats": [
+        71,
+        10
+      ],
+      "cookies": {
+        "_leaddyno_session": ""
+      },
+      "js": {
+        "LeadDyno": ""
+      },
+      "description": "LeadDyno is a platform that provides affiliate marketing and tracking services, allowing businesses to set up, manage, and analyse their affiliate programs.",
+      "website": "https://www.leaddyno.com",
+      "icon": "LeadDyno.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof LeadDyno !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Line2": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "Line2_W_OBJ": ""
+      },
+      "scriptSrc": [
+        "//line2text\\.me/s/"
+      ],
+      "description": "Line2 is an affiliate network that enables travel-related publishers and partners to monetize web traffic through targeted travel offers and commissions.",
+      "website": "https://www.line2.com",
+      "icon": "Line2.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Line2_W_OBJ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Moshimo": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "link[href*='i.moshimo.com'], img[src*='i.moshimo.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.moshimo\\.com/af/"
+      ],
+      "description": "Moshimo is a free affiliate service for individuals.",
+      "website": "https://af.moshimo.com",
+      "icon": "Moshimo.png"
+    },
+    "Narrativ": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "static\\.narrativ\\.com/"
+      ],
+      "description": "Narrativ is a subscription technology platform for brands to acquire new customers through trusted creators.",
+      "website": "https://narrativ.com/",
+      "icon": "Narrativ.png"
+    },
+    "OSI Tracker": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "\\.ositracker\\.com/"
+      ],
+      "description": "OSI Tracker is an affiliate marketing and tracking software.",
+      "website": "https://ositracker.com",
+      "icon": "OSITracker.svg"
+    },
+    "Optimise": {
+      "cats": [
+        71,
+        36
+      ],
+      "js": {
+        "OMID": "^[0-9]+$"
+      },
+      "scriptSrc": [
+        "track\\.omguk\\.com"
+      ],
+      "description": "Optimise Media Group is a UK-based performance advertising network.",
+      "website": "https://www.optimisemedia.com",
+      "icon": "Optimise.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof OMID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Partner Driven": {
+      "cats": [
+        71
+      ],
+      "scripts": [
+        "app\\.partnerdriven\\.com"
+      ],
+      "description": "Partner Driven is a real estate investment approach that involves partnerships between investors to pool resources and share risks, aimed at maximizing returns through collaborative efforts.",
+      "website": "https://partnerdriven.com",
+      "icon": "PartnerDriven.svg"
+    },
+    "PartnerStack": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "growsumo": ""
+      },
+      "scriptSrc": [
+        "\\.growsumo\\.com",
+        "\\.partnerstack\\.com"
+      ],
+      "description": "PartnerStack is a platform facilitating SaaS brand growth through streamlined partner management.",
+      "website": "https://partnerstack.com",
+      "icon": "PartnerStack.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof growsumo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Partnerize": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "a[href*='prf.hn/click'], img[src*='.prf.hn/']": {
+          "exists": ""
+        }
+      },
+      "description": "Partnerize is the only partnership management solution for marketers seeking high quality, scalable subsidies to primary channels.",
+      "website": "https://prf.hn",
+      "icon": "Partnerize.png"
+    },
+    "Partnero": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "\\.partnero\\.com/"
+      ],
+      "description": "Partnero is a partnership management platform designed for relationship-building.",
+      "website": "https://www.partnero.com",
+      "icon": "Partnero.svg"
+    },
+    "Pepperjam": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "Pepperjam": "",
+        "PepperjamTracking": ""
+      },
+      "scriptSrc": [
+        "\\.pepperjam\\.com/"
+      ],
+      "description": "Pepperjam is an affiliate marketing solutions provider.",
+      "website": "https://www.pepperjam.com",
+      "icon": "Pepperjam.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Pepperjam !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pepperjam !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Post Affiliate Pro": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "PostAffAction": "",
+        "PostAffCookie": "",
+        "PostAffInfo": "",
+        "PostAffTracker": ""
+      },
+      "scriptSrc": [
+        "(?:affiliate|associate)\\..+/scripts/trackjs\\.js",
+        "postaffiliatepro\\.com/scripts/trackjs\\.js"
+      ],
+      "description": "Post Affiliate Pro is a software built for online stores and ecommerce websites that need to track and monitor their affiliate network.",
+      "website": "https://www.postaffiliatepro.com",
+      "icon": "Post Affiliate Pro.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PostAffAction !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PostAffAction !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PostAffAction !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PostAffAction !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Rakuten": {
+      "cats": [
+        71
+      ],
+      "cookies": {
+        "rakuten-source": ""
+      },
+      "js": {
+        "rakutenRanMID": "",
+        "rakutenSource": ""
+      },
+      "scriptSrc": [
+        "\\.linksynergy\\.com",
+        "tag\\.rmp\\.rakuten\\.com"
+      ],
+      "description": "Rakuten (formerly Ebates) allows you to earn cash-back rewards.",
+      "website": "https://www.rakuten.com/",
+      "icon": "Rakuten.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rakutenRanMID !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof rakutenRanMID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Reditus": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "\\.getreditus\\.com/"
+      ],
+      "description": "Reditus is a partner management tool for B2B SaaS companies.",
+      "website": "https://www.getreditus.com",
+      "icon": "Reditus.svg"
+    },
+    "Refersion": {
+      "cats": [
+        71,
+        36
+      ],
+      "dom": {
+        "a[href*='.refersion.com']": {
+          "attributes": {
+            "href": ""
+          }
+        },
+        "img[src*='cdn.refersion.com'],img[src*='s3.amazonaws.com/refersion_client/']": {
+          "attributes": {
+            "src": ""
+          }
+        }
+      },
+      "scriptSrc": [
+        "\\.refersion\\.com"
+      ],
+      "description": "Refersion is an affiliate management app.",
+      "website": "https://refersion.com",
+      "icon": "Refersion.svg"
+    },
+    "RevenueHunt": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "admin\\.revenuehunt\\.com/"
+      ],
+      "description": "RevenueHunt is an affiliate marketing and advertising company specializing in paid surveys and cost per lead campaigns.",
+      "website": "https://revenuehunt.com",
+      "icon": "RevenueHunt.png"
+    },
+    "Rewardful": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "Rewardful": ""
+      },
+      "scriptSrc": [
+        "r\\.wdfl\\.co"
+      ],
+      "description": "Rewardful is a way for SaaS companies to setup affiliate and referral programs with Stripe.",
+      "website": "https://www.getrewardful.com/",
+      "icon": "Rewardful.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Rewardful !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ShoutOut": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "\\.shoutout\\.global/"
+      ],
+      "description": "ShoutOut is a multi-level marketing SaaS solution that allows tracking of affiliates.",
+      "website": "https://www.shoutout.global",
+      "icon": "ShoutOut.png"
+    },
+    "Skimlinks": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "__SKIM_JS_GLOBAL__": "",
+        "addSkimlinks": "",
+        "skimlinksAPI": ""
+      },
+      "scriptSrc": [
+        "\\.skimresources\\.com"
+      ],
+      "description": "Skimlinks is a content monetization platform for online publishers.",
+      "website": "https://skimlinks.com",
+      "icon": "Skimlinks.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __SKIM_JS_GLOBAL__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __SKIM_JS_GLOBAL__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __SKIM_JS_GLOBAL__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Social Snowball": {
+      "cats": [
+        71
+      ],
+      "cookies": {
+        "_omappvp": "",
+        "social_snowball_session": ""
+      },
+      "js": {
+        "snowballTrackScript": ""
+      },
+      "description": "Social Snowball is an affiliate and referral marketing platform tailored for ecommerce brands.",
+      "website": "https://socialsnowball.io",
+      "icon": "SocialSnowball.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof snowballTrackScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sovrn//Commerce": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "vglnk": "",
+        "vl_cB": "",
+        "vl_disable": ""
+      },
+      "scriptSrc": [
+        "(?:^[^/]*//[^/]*viglink\\.com/api/|vglnk\\.js)"
+      ],
+      "description": "Sovrn//Commerce is  a content monetization tool for publishers.",
+      "website": "https://www.sovrn.com/publishers/commerce/",
+      "icon": "Sovrn.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof vglnk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof vglnk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof vglnk !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TSA Commerce": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/tsa-commerce/']": {
+          "exists": ""
+        }
+      },
+      "description": "TSA Commerce is a Turbo SEO Affiliate Commerce plugin for WordPress that integrates search engine optimization with affiliate marketing to enhance site monetization.",
+      "website": "https://tsacommerce.com",
+      "icon": "TSACommerce.svg"
+    },
+    "Tapfiliate": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "TapfiliateObject": ""
+      },
+      "scriptSrc": [
+        "\\.tapfiliate\\.com/"
+      ],
+      "description": "Tapfiliate is a cloud-based affiliate marketing software that helps businesses to create, track, and optimise their own affiliate marketing programs.",
+      "website": "https://tapfiliate.com",
+      "icon": "Tapfiliate.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TapfiliateObject !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "The Rave": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "raveStateManager": ""
+      },
+      "scriptSrc": [
+        "scripts\\.therave\\.co"
+      ],
+      "description": "The Rave is a platform offering affiliate, referral, and user-generated content tools to set up post-purchase incentives.",
+      "website": "https://therave.co",
+      "icon": "TheRave.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof raveStateManager !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tolt": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "toltAPI": "\\.tolt\\.io/",
+        "tolt_referral": "",
+        "toltio": ""
+      },
+      "scriptSrc": [
+        "\\.tolt\\.io/"
+      ],
+      "description": "Tolt is an affiliate marketing software designed for SaaS startups.",
+      "website": "https://tolt.io",
+      "icon": "Tolt.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof toltAPI !== 'undefined' && toltAPI === '\\.tolt\\.io/'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof toltAPI !== 'undefined' && toltAPI === '\\.tolt\\.io/'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof toltAPI !== 'undefined' && toltAPI === '\\.tolt\\.io/'"
+          }
+        ]
+      }
+    },
+    "Tradedoubler": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "a[href*='clk.tradedoubler.com/click']": {
+          "text": ""
+        },
+        "img[src*='impes.tradedoubler.com/imp']": {
+          "text": ""
+        }
+      },
+      "scriptSrc": [
+        "swrap\\.tradedoubler\\.com"
+      ],
+      "description": "Tradedoubler is a global affiliate marketing network.",
+      "website": "https://www.tradedoubler.com/",
+      "icon": "Tradedoubler.svg"
+    },
+    "TravelPayouts": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "www\\.travelpayouts\\.com"
+      ],
+      "description": "TravelPayouts is a global affiliate network that helps monetize travel-related web traffic through partnerships with airlines, hotels, and other travel service providers.",
+      "website": "https://www.travelpayouts.com",
+      "icon": "TravelPayouts.svg"
+    },
+    "Upfluence": {
+      "cats": [
+        71
+      ],
+      "scriptSrc": [
+        "\\.upfluence\\.co/"
+      ],
+      "description": "Upfluence is the all-in-one affiliate and influencer marketing platform for ecommerce and direct-to-consumer brands.",
+      "website": "https://www.upfluence.com",
+      "icon": "Upfluence.svg"
+    },
+    "ValueCommerce": {
+      "cats": [
+        71
+      ],
+      "dom": {
+        "a[href*='ap.valuecommerce.com']": {
+          "attributes": {
+            "href": ""
+          }
+        },
+        "img[src*='ap.valuecommerce.com'],img[data-src*='ap.valuecommerce.com']": {
+          "attributes": {
+            "src": ""
+          }
+        }
+      },
+      "scriptSrc": [
+        "\\.valuecommerce\\.com"
+      ],
+      "description": "ValueCommerce is a pay-per-performance advertising affiliate marketing network.",
+      "website": "https://www.valuecommerce.co.jp",
+      "icon": "ValueCommerce.png"
+    },
+    "Webgains": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "ITCLKQ": ""
+      },
+      "scriptSrc": [
+        "analytics\\.webgains\\.io"
+      ],
+      "description": "Webgains is an affiliate marketing network.",
+      "website": "https://www.webgains.com/",
+      "icon": "Webgains.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ITCLKQ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "eBay Partner Network": {
+      "cats": [
+        71,
+        94
+      ],
+      "scriptSrc": [
+        "epnt\\.ebay\\.com/"
+      ],
+      "description": "eBay Partner Network is an online referral program where eBay pays commissions to referrers on sales generated by customers they’ve referred.",
+      "website": "https://partnernetwork.ebay.com",
+      "icon": "eBay.svg"
+    },
+    "eBay Store": {
+      "cats": [
+        71
+      ],
+      "js": {
+        "$ebay.tracking": "",
+        "ebay.gadgetMonitoring": ""
+      },
+      "headers": {
+        "server": "^ebay server$"
+      },
+      "description": "eBay is a platform that either redirects users to eBay or displays a link to an eBay store.",
+      "website": "https://www.ebay.com",
+      "icon": "eBay.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $ebay !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $ebay !== 'undefined' && typeof $ebay.tracking !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

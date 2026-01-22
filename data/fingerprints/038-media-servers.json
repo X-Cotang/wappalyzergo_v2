@@ -1,0 +1,138 @@
+{
+  "apps": {
+    "Ausha": {
+      "cats": [
+        38
+      ],
+      "scriptSrc": [
+        "widget\\.ausha\\.co"
+      ],
+      "description": "Ausha is an all-in-one platform for hosting, distributing, and monetizing podcasts.",
+      "website": "https://www.ausha.co",
+      "icon": "Ausha.svg"
+    },
+    "AzuraCast": {
+      "cats": [
+        38
+      ],
+      "dom": {
+        "link[href*='/public/azuratest_radio/']": {
+          "exists": ""
+        }
+      },
+      "description": "AzuraCast is an open-source self-hosted web radio station in a box.",
+      "website": "https://www.azuracast.com",
+      "icon": "AzuraCast.svg"
+    },
+    "BigPoint": {
+      "cats": [
+        38
+      ],
+      "dom": {
+        "form[action*='/Authentication/Bigpoint']": {
+          "exists": ""
+        }
+      },
+      "meta": {
+        "author": [
+          "bigpoint gmbh"
+        ]
+      },
+      "description": "BigPoint is a browser game portal that offers a collection of free online games.",
+      "website": "https://www.bigpoint.net",
+      "icon": "BigPoint.svg"
+    },
+    "Muvi": {
+      "cats": [
+        38
+      ],
+      "scriptSrc": [
+        "\\.muvi\\.com/"
+      ],
+      "meta": {
+        "author": [
+          "www\\.muvi\\.com"
+        ],
+        "publisher": [
+          "www\\.muvi\\.com"
+        ]
+      },
+      "description": "Muvi is a SaaS-based provider of over-the-top (OTT) platform solutions for video streaming, offering end-to-end infrastructure for content delivery and monetization.",
+      "website": "https://www.muvi.com",
+      "icon": "Muvi.svg"
+    },
+    "Odeum": {
+      "cats": [
+        38
+      ],
+      "js": {
+        "OdeumAccount": ""
+      },
+      "description": "Odeum is a SaaS platform for creating a video-based subscription service including a completely branded website & set of apps.",
+      "website": "https://odeum.io",
+      "icon": "Odeum.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof OdeumAccount !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sardius Media": {
+      "cats": [
+        38
+      ],
+      "js": {
+        "sardius.libs": ""
+      },
+      "scriptSrc": [
+        "sardiuslive\\.sardius\\.media"
+      ],
+      "description": "Sardius Media is a platform focused on streamlining broadcast workflows by developing solutions that improve efficiency, organization, and content delivery across digital media platforms.",
+      "website": "https://www.sardius.media",
+      "icon": "Sardius.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof sardius !== 'undefined' && typeof sardius.libs !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Uplynk": {
+      "cats": [
+        38
+      ],
+      "dom": {
+        "video[src*='.uplynk.com/'], img[data-thumbnailurl*='.uplynk.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "UPLYNK": "",
+        "_uplynk_async_wget2_data": ""
+      },
+      "headers": {
+        "content-security-policy": "\\.uplynk\\.com"
+      },
+      "description": "Uplynk is a video streaming platform that provides tools for live and on-demand video delivery, including encoding, transcoding, and content management.",
+      "website": "https://www.uplynk.com",
+      "icon": "Uplynk.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof UPLYNK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof UPLYNK !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

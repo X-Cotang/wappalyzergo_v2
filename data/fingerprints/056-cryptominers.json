@@ -1,0 +1,154 @@
+{
+  "apps": {
+    "CoinHive": {
+      "cats": [
+        56
+      ],
+      "js": {
+        "CoinHive": ""
+      },
+      "scriptSrc": [
+        "\\/(?:coinhive|(authedmine))(?:\\.min)?\\.js\\;version:\\1?opt-in:",
+        "coinhive\\.com/lib"
+      ],
+      "description": "Coinhive is a cryptocurrency mining service.",
+      "website": "https://coinhive.com",
+      "icon": "CoinHive.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CoinHive !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Coinhave": {
+      "cats": [
+        56
+      ],
+      "scriptSrc": [
+        "https?://coin-have\\.com/c/[0-9a-za-z]{4}\\.js"
+      ],
+      "description": "CoinHave is a cryptocurrency mining service.",
+      "website": "https://coin-have.com/",
+      "icon": "coinhave.png"
+    },
+    "Coinimp": {
+      "cats": [
+        56
+      ],
+      "js": {
+        "Client.Anonymous": "\\;confidence:50"
+      },
+      "scriptSrc": [
+        "https?://www\\.hashing\\.win/scripts/min\\.js"
+      ],
+      "description": "CoinImp is a cryptocurrency mining service.",
+      "website": "https://www.coinimp.com",
+      "icon": "coinimp.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Client !== 'undefined' && typeof Client.Anonymous !== 'undefined' && Client.Anonymous === '\\;confidence:50'"
+          }
+        ]
+      }
+    },
+    "Crypto-Loot": {
+      "cats": [
+        56
+      ],
+      "js": {
+        "CRLT.CONFIG.ASMJS_NAME": "",
+        "CryptoLoot": ""
+      },
+      "scriptSrc": [
+        "/crlt\\.js\\;confidence:75",
+        "^/crypto-loot\\.com/lib/",
+        "^/cryptoloot\\.pro/",
+        "^/webmine\\.pro/"
+      ],
+      "description": "Crypto-Loot is a browser based web miner for the uPlexa Blockchain.",
+      "website": "https://crypto-loot.com/",
+      "icon": "Crypto-Loot.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CRLT !== 'undefined' && typeof CRLT.CONFIG !== 'undefined' && typeof CRLT.CONFIG.ASMJS_NAME !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CRLT !== 'undefined' && typeof CRLT.CONFIG !== 'undefined' && typeof CRLT.CONFIG.ASMJS_NAME !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "JSEcoin": {
+      "cats": [
+        56
+      ],
+      "js": {
+        "jseMine": ""
+      },
+      "scriptSrc": [
+        "^(?:https):?//load\\.jsecoin\\.com/load/"
+      ],
+      "description": "JSEcoin is a way to mine, receive payments for your goods or services and transfer cryptocurrency",
+      "website": "https://jsecoin.com/",
+      "icon": "JSEcoin.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jseMine !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Minero.cc": {
+      "cats": [
+        56
+      ],
+      "scriptSrc": [
+        "//minero\\.cc/lib/minero(?:-miner|-hidden)?\\.min\\.js"
+      ],
+      "description": "Minero.cc is a bot that helps run crypto mining application.",
+      "website": "https://minero.cc/"
+    },
+    "Minerstat": {
+      "cats": [
+        56
+      ],
+      "scriptSrc": [
+        "api\\.minerstat\\.com"
+      ],
+      "description": "Minerstat is a software provider offering management solutions for crypto mining professionals and mining farms.",
+      "website": "https://minerstat.com",
+      "icon": "Minerstat.svg"
+    },
+    "deepMiner": {
+      "cats": [
+        56
+      ],
+      "js": {
+        "deepMiner": ""
+      },
+      "scriptSrc": [
+        "deepminer\\.js"
+      ],
+      "website": "https://github.com/deepwn/deepMiner",
+      "icon": "deepminer.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof deepMiner !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

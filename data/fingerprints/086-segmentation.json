@@ -1,0 +1,151 @@
+{
+  "apps": {
+    "Adobe Audience Manager": {
+      "cats": [
+        86
+      ],
+      "cookies": {
+        "aam_uuid": "",
+        "demdex": ""
+      },
+      "description": "Adobe Audience Manager is a versatile audience data management platform.",
+      "website": "https://business.adobe.com/products/audience-manager/adobe-audience-manager.html",
+      "icon": "Adobe.svg"
+    },
+    "Bloom Labs": {
+      "cats": [
+        86
+      ],
+      "scriptSrc": [
+        "api\\.bloom\\.li/"
+      ],
+      "description": "Bloom Labs is a local content targeting system that uses data analytics to distribute content based on geographic relevance.",
+      "website": "https://bloom.li",
+      "icon": "Bloom.svg"
+    },
+    "Omeda": {
+      "cats": [
+        86,
+        97
+      ],
+      "scriptSrc": [
+        "olytics\\.omeda\\.com/"
+      ],
+      "description": "Omeda is a platform that enables the creation of new products by starting with accurate audience segmentation and targeting.",
+      "website": "https://www.omeda.com",
+      "icon": "Omeda.svg"
+    },
+    "Oracle BlueKai": {
+      "cats": [
+        86
+      ],
+      "dom": {
+        "link[href*='tags.bluekai.com'],link[href*='tags.bkrtx.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "bluekaiLoaded": ""
+      },
+      "scriptSrc": [
+        "tags\\.(?:bluekai|bkrtx)\\.com/"
+      ],
+      "description": "Oracle BlueKai is a cloud-based big data platform that enables companies to personalise online, offline, and mobile marketing campaigns.",
+      "website": "https://www.oracle.com/cx/marketing/data-management-platform",
+      "icon": "Oracle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof bluekaiLoaded !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Poltio": {
+      "cats": [
+        86
+      ],
+      "scriptSrc": [
+        "\\.poltio\\.com/"
+      ],
+      "description": "Poltio is a platform enabling brands to enhance user segment understanding, driving revenue growth and fostering customer relationships.",
+      "website": "https://poltio.com",
+      "icon": "Poltio.svg"
+    },
+    "Salesforce Audience Studio": {
+      "cats": [
+        86,
+        97
+      ],
+      "dom": {
+        "link[href*='.krxd.net']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Krux": "",
+        "updateKruxCookie": ""
+      },
+      "scriptSrc": [
+        "\\.krxd\\.net/"
+      ],
+      "description": "Salesforce Audience Studio is a customer data marketplace that only other platform users can access.",
+      "website": "https://www.salesforce.com/products/marketing-cloud/data-management",
+      "icon": "Salesforce.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Krux !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Krux !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tealium AudienceStream": {
+      "cats": [
+        86
+      ],
+      "dom": {
+        "link[href*='.tealiumiq.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.tealiumiq\\.com"
+      ],
+      "description": "Tealium AudienceStream is an omnichannel customer segmentation and real-time action engine.",
+      "website": "https://tealium.com/products/audiencestream",
+      "icon": "Tealium.png"
+    },
+    "Viafoura": {
+      "cats": [
+        86
+      ],
+      "js": {
+        "dfm_viafoura_options": "",
+        "viafoura.bootstrap": "",
+        "viafoura.core": ""
+      },
+      "description": "Viafoura is an audience engagement and social monetisation platform.",
+      "website": "https://viafoura.com",
+      "icon": "viafoura.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dfm_viafoura_options !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof dfm_viafoura_options !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "apps": {
+    "Code Climate": {
+      "cats": [
+        44
+      ],
+      "dom": {
+        "a[href*='codeclimate.com'] > img[src*='api.codeclimate.com']": {
+          "exists": ""
+        }
+      },
+      "description": "Code Climate is a platform that enhances code quality and efficiency.",
+      "website": "https://codeclimate.com",
+      "icon": "CodeClimate.svg"
+    },
+    "GitLab CI/CD": {
+      "cats": [
+        44,
+        47
+      ],
+      "meta": {
+        "description": [
+          "gitlab ci/cd is a tool built into gitlab for software development through continuous methodologies."
+        ]
+      },
+      "implies": [
+        "Ruby on Rails"
+      ],
+      "website": "https://about.gitlab.com/gitlab-ci",
+      "icon": "GitLab CI.png"
+    },
+    "Jenkins": {
+      "cats": [
+        44
+      ],
+      "js": {
+        "jenkinsCIGlobal": "",
+        "jenkinsRules": ""
+      },
+      "headers": {
+        "x-jenkins": "([\\d.]+)\\;version:\\1"
+      },
+      "html": [
+        "<span class=\"jenkins_ver\"><a href=\"https://jenkins\\.io/\">jenkins ver\\. ([\\d.]+)\\;version:\\1"
+      ],
+      "implies": [
+        "Java"
+      ],
+      "description": "Jenkins is an open-source automation tool written in Java with plugins built for Continuous Integration (CI) purposes.",
+      "website": "https://jenkins.io/",
+      "cpe": "cpe:2.3:a:jenkins:jenkins:*:*:*:*:*:*:*:*",
+      "icon": "Jenkins.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jenkinsCIGlobal !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof jenkinsCIGlobal !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TeamCity": {
+      "cats": [
+        44
+      ],
+      "html": [
+        "<span class=\"versiontag\"><span class=\"vword\">version</span> ([\\d\\.]+)\\;version:\\1"
+      ],
+      "meta": {
+        "application-name": [
+          "teamcity"
+        ]
+      },
+      "implies": [
+        "Apache Tomcat",
+        "Java",
+        "Moment.js",
+        "Prototype",
+        "React",
+        "Underscore.js",
+        "jQuery"
+      ],
+      "description": "TeamCity is a build management and continuous integration server from JetBrains.",
+      "website": "https://www.jetbrains.com/teamcity/",
+      "icon": "TeamCity.svg"
+    }
+  }
+}

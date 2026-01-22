@@ -1,0 +1,1251 @@
+{
+  "apps": {
+    "API Spreadsheets": {
+      "cats": [
+        47
+      ],
+      "scripts": [
+        "api\\.apispreadsheets\\.com"
+      ],
+      "description": "API Spreadsheets is a developer tool for integrating spreadsheet features into applications, enabling data management, automation, and real-time updates.",
+      "website": "https://apispreadsheets.com",
+      "icon": "APISpreadsheets.svg"
+    },
+    "Acquia Cloud IDE": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "https?:\\/\\/.+\\.web\\.ahdev\\.cloud"
+      ],
+      "implies": [
+        "Acquia Cloud Platform"
+      ],
+      "description": "Acquia Cloud IDE is a browser-based source code editor and a Drupal development stack running on the Acquia Cloud Platform.",
+      "website": "https://www.acquia.com/products/drupal-cloud/cloud-ide",
+      "icon": "acquia-cloud-ide.png"
+    },
+    "Anima": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "__ANIMA_PROJECT_DATA__": ""
+      },
+      "description": "Anima is an AI-powered tool designed to assist users in converting their designs into functional code, creating interactive prototypes, and streamlining the automation of design systems.",
+      "website": "https://www.animaapp.com/",
+      "icon": "Anima.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __ANIMA_PROJECT_DATA__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Apiary": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "Apiary": "",
+        "apiaryUserModel": ""
+      },
+      "meta": {
+        "author": [
+          "^apiary$"
+        ]
+      },
+      "description": "Apiary is an API design stack that provides tools for designing, testing, and documenting APIs, built specifically to support developers throughout the API development process.",
+      "website": "https://apiary.io",
+      "icon": "Apiary.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Apiary !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Apiary !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Appifiny": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "recently\\.appifiny\\.io/"
+      ],
+      "description": "Appifiny is a platform that provides a streamlined solution for developing, customizing, and launching apps.",
+      "website": "https://www.appifiny.co.uk",
+      "icon": "Appifiny.svg"
+    },
+    "Appwrite": {
+      "cats": [
+        47
+      ],
+      "description": "Appwrite is an end-to-end backend server for web, mobile or native applications packaged as a set of Docker microservices.",
+      "website": "https://appwrite.io",
+      "cpe": "cpe:2.3:a:appwrite:appwrite:*:*:*:*:*:*:*:*",
+      "icon": "Appwrite.svg"
+    },
+    "Artifactory": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "ArtifactoryUpdates": ""
+      },
+      "html": [
+        "<span class=\"version\">artifactory(?: pro)?(?: power pack)?(?: ([\\d.]+))?\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "wicket/resource/org\\.artifactory\\."
+      ],
+      "website": "https://jfrog.com/open-source/#os-arti",
+      "cpe": "cpe:2.3:a:jfrog:artifactory:*:*:*:*:*:*:*:*",
+      "icon": "Artifactory.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ArtifactoryUpdates !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Atlassian Bitbucket": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "bitbucket": ""
+      },
+      "html": [
+        "<li>atlassian bitbucket <span title=\"[a-z0-9]+\" id=\"product-version\" data-commitid=\"[a-z0-9]+\" data-system-build-number=\"[a-z0-9]+\"> v([\\d.]+)<\\;version:\\1"
+      ],
+      "meta": {
+        "application-name": [
+          "bitbucket"
+        ]
+      },
+      "implies": [
+        "Python"
+      ],
+      "description": "Bitbucket is a web-based version control repository hosting service for source code and development projects that use either Mercurial or Git revision control systems.",
+      "website": "https://www.atlassian.com/software/bitbucket/overview/",
+      "cpe": "cpe:2.3:a:atlassian:bitbucket:*:*:*:*:*:*:*:*",
+      "icon": "Atlassian Bitbucket.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof bitbucket !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Atlassian FishEye": {
+      "cats": [
+        47
+      ],
+      "cookies": {
+        "fesessionid": ""
+      },
+      "html": [
+        "<title>(?:log in to )?fisheye (?:and crucible )?([\\d.]+)?</title>\\;version:\\1"
+      ],
+      "website": "https://www.atlassian.com/software/fisheye/overview/",
+      "cpe": "cpe:2.3:a:atlassian:fisheye:*:*:*:*:*:*:*:*",
+      "icon": "Atlassian FishEye.svg"
+    },
+    "Betty Blocks": {
+      "cats": [
+        47,
+        62
+      ],
+      "meta": {
+        "description": [
+          "^made with betty blocks$"
+        ]
+      },
+      "implies": [
+        "React"
+      ],
+      "description": "Betty Blocks is a cloud-based application development solution featuring a no-code, drag-and-drop interface for developing business applications.",
+      "website": "https://www.bettyblocks.com",
+      "icon": "Betty Blocks.svg"
+    },
+    "CheerPJ": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "CheerpJDataFolder": "",
+        "CheerpJDevFolder": "",
+        "CheerpJWebFolder": ""
+      },
+      "scripts": [
+        "\\.cheerpj\\.com"
+      ],
+      "description": "CheerpJ is a WebAssembly-based Java Virtual Machine and OpenJDK distribution designed to run Java applications in modern browsers.",
+      "website": "https://cheerpj.com",
+      "icon": "CheerPJ.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CheerpJDataFolder !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CheerpJDataFolder !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CheerpJDataFolder !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Clarifai": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "sdk\\.clarifai\\.com"
+      ],
+      "description": "Clarifai is a unified platform that enables creation and management of AI workloads while optimizing compute costs across preferred environments.",
+      "website": "https://www.clarifai.com",
+      "icon": "Clarifai.svg"
+    },
+    "ClickOnce": {
+      "cats": [
+        47
+      ],
+      "css": [
+        "\\.ClickOnceInfoText"
+      ],
+      "dom": {
+        "a[href='https://go.microsoft.com/fwlink/?LinkId=154571']": {
+          "text": "ClickOnce and .NET Framework Resources"
+        }
+      },
+      "description": "ClickOnce is a Microsoft .NET deployment technology that enables the creation of self-updating Windows-based applications that can be installed and run with minimal user interaction.",
+      "website": "https://learn.microsoft.com/en-us/visualstudio/deployment/clickonce-security-and-deployment",
+      "icon": "default.svg"
+    },
+    "Clockwork": {
+      "cats": [
+        47
+      ],
+      "headers": {
+        "x-clockwork-version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "implies": [
+        "PHP"
+      ],
+      "description": "Clockwork is a development tool for PHP available right in your browser.",
+      "website": "https://github.com/underground-works/clockwork-app",
+      "icon": "default.svg"
+    },
+    "Conduit": {
+      "cats": [
+        47
+      ],
+      "scripts": [
+        "\\.conduit\\.com/"
+      ],
+      "description": "Conduit is a data integration tool designed to synchronize production systems through an extensible, event-first approach with minimal dependencies for integration into existing workflows.",
+      "website": "https://conduit.io",
+      "icon": "Conduit.svg"
+    },
+    "Construct 3": {
+      "cats": [
+        47
+      ],
+      "meta": {
+        "generator": [
+          "^construct 3$"
+        ]
+      },
+      "description": "Construct 3 is a browser-based game development platform that enables the creation of 2D games using a visual, drag-and-drop interface without requiring programming knowledge.",
+      "website": "https://www.construct.net/",
+      "icon": "Construct3.svg"
+    },
+    "Developing Azerbaijan": {
+      "cats": [
+        47
+      ],
+      "meta": {
+        "author": [
+          "developing.az"
+        ]
+      },
+      "description": "Developing Azerbaijan is a provider of services including website creation, optimization, technical support, and hosting.",
+      "website": "https://www.developing.az/",
+      "icon": "DevelopingAzerbaijan.svg"
+    },
+    "Dimml": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "\\.dimml\\.io/"
+      ],
+      "description": "Dimml is a data flow management software.",
+      "website": "https://www.dimml.io",
+      "icon": "Dimml.svg"
+    },
+    "EasyEngine": {
+      "cats": [
+        47,
+        9
+      ],
+      "headers": {
+        "x-powered-by": "^easyengine (.*)$\\;version:\\1"
+      },
+      "implies": [
+        "Docker"
+      ],
+      "description": "EasyEngine is a command-line tool for the Nginx web servers to manage WordPress sites that are running on the LEMP Stack.",
+      "website": "https://easyengine.io",
+      "icon": "EasyEngine.png"
+    },
+    "Feednami": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "feednami.load": "",
+        "feednami.promiseLoaded": ""
+      },
+      "description": "Feednami is a web service developed as a replacement for the discontinued Google Feed API, enabling applications to access and parse RSS and Atom feeds.",
+      "website": "https://toolkit.sekando.com/docs/en/feednami",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof feednami !== 'undefined' && typeof feednami.load !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Filamentphp": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "FilamentNotification": "",
+        "filamentData": "",
+        "webpackChunkfilament": ""
+      },
+      "description": "Filamentphp is a set of full-stack components designed to serve as a foundational starting point for developing applications.",
+      "website": "https://filamentphp.com",
+      "icon": "Filament.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FilamentNotification !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FilamentNotification !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FilamentNotification !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Forgejo": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "link[href*='/theme-forgejo-auto.css']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "window.config.assetVersionEncoded": "([\\d.]+).+gitea-[\\d.]+\\;version:\\1"
+      },
+      "meta": {
+        "author": [
+          "forgejo – beyond coding\\. we forge\\."
+        ]
+      },
+      "implies": [
+        "Go",
+        "PWA",
+        "RSS",
+        "jQuery"
+      ],
+      "description": "Forgejo is a community-driven fork of Gitea that provides a self-hosted Git service with enhancements in governance, transparency, and long-term sustainability.",
+      "website": "https://forgejo.org",
+      "icon": "Forgejo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof window !== 'undefined' && typeof window.config !== 'undefined' && typeof window.config.assetVersionEncoded !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "window.config.assetVersionEncoded || \"\""
+          }
+        ]
+      }
+    },
+    "FormWise": {
+      "cats": [
+        47
+      ],
+      "scripts": [
+        "app\\.formwise\\.ai"
+      ],
+      "description": "FormWise is a platform that enables the creation of white-label AI tools using ChatGPT prompts for customizable applications across industries.",
+      "website": "https://www.formwise.ai",
+      "icon": "FormWise.svg"
+    },
+    "Gamma": {
+      "cats": [
+        47
+      ],
+      "cookies": {
+        "gamma_visitor_id": ""
+      },
+      "js": {
+        "gammaSiteAnimationsInitialized": "",
+        "gammaTiming": ""
+      },
+      "description": "Gamma is an AI-powered platform for creating presentations, documents, and websites without requiring design or coding skills.",
+      "website": "https://gamma.app",
+      "icon": "Gamma.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gammaSiteAnimationsInitialized !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof gammaSiteAnimationsInitialized !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gerrit": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "Gerrit": "",
+        "gerrit_ui": ""
+      },
+      "html": [
+        "<(?:div|style) id=\"gerrit_",
+        ">gerrit code review</a>\\s*\"\\s*\\(([0-9.]+)\\)\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "^gerrit_ui/gerrit_ui"
+      ],
+      "meta": {
+        "title": [
+          "^gerrit code review$"
+        ]
+      },
+      "implies": [
+        "Java",
+        "git"
+      ],
+      "website": "https://www.gerritcodereview.com",
+      "icon": "gerrit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Gerrit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Gerrit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gitea": {
+      "cats": [
+        47
+      ],
+      "cookies": {
+        "i_like_gitea": ""
+      },
+      "html": [
+        "<div class=\"ui left\">\\n\\s+© gitea version: ([\\d.]+)\\;version:\\1"
+      ],
+      "meta": {
+        "keywords": [
+          "^go,git,self-hosted,gitea$"
+        ]
+      },
+      "implies": [
+        "Go"
+      ],
+      "description": "Gitea is an open-source forge software package for hosting software development version control using Git as well as other collaborative features like bug tracking, wikis and code review. It supports self-hosting but also provides a free public first-party instance hosted on DiDi's cloud.",
+      "website": "https://gitea.io",
+      "cpe": "cpe:2.3:a:gitea:gitea:*:*:*:*:*:*:*:*",
+      "icon": "gitea.svg"
+    },
+    "Gitiles": {
+      "cats": [
+        47
+      ],
+      "html": [
+        "powered by <a href=\"https://gerrit\\.googlesource\\.com/gitiles/\">gitiles<"
+      ],
+      "implies": [
+        "Java",
+        "git"
+      ],
+      "website": "https://gerrit.googlesource.com/gitiles/"
+    },
+    "Gogs": {
+      "cats": [
+        47
+      ],
+      "cookies": {
+        "i_like_gogits": ""
+      },
+      "html": [
+        "<button class=\"ui basic clone button\" id=\"repo-clone-ssh\" data-link=\"gogs@",
+        "<div class=\"ui left\">\\n\\s+© \\d{4} gogs version: ([\\d.]+) page:\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "js/gogs\\.js"
+      ],
+      "meta": {
+        "keywords": [
+          "go, git, self-hosted, gogs"
+        ]
+      },
+      "implies": [
+        "Go",
+        "Macaron"
+      ],
+      "description": "Gogs is a self-hosted Git service written in Go.",
+      "website": "https://gogs.io",
+      "cpe": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+      "icon": "gogs.png"
+    },
+    "Grain Harvest": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "cdn\\.harvest\\.graindata\\.com"
+      ],
+      "description": "Grain Harvest is an online platform that provides data science tools and resources for professionals and learners in the field.",
+      "website": "https://graindata.com",
+      "icon": "GrainData.svg"
+    },
+    "Hexia": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "hexia.address": ""
+      },
+      "scriptSrc": [
+        "sdk\\.hexia\\.io"
+      ],
+      "description": "Hexia is a public Application Programming Interface (API) provided by Hex Technologies for accessing its services and data.",
+      "website": "https://sdk.hexia.io",
+      "icon": "Hexia.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof hexia !== 'undefined' && typeof hexia.address !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Infinity": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "iframe[src*='app.startinfinity.com/']": {
+          "exists": ""
+        }
+      },
+      "scripts": [
+        "app\\.startinfinity\\.com"
+      ],
+      "description": "Infinity is an all-in-one workspace that allows project organization, task tracking, and team collaboration in a centralized platform.",
+      "website": "https://startinfinity.com",
+      "icon": "Infinity.svg"
+    },
+    "Kubernetes Dashboard": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "[ng-app='kubernetesDashboard']": {
+          "exists": ""
+        }
+      },
+      "website": "https://kubernetes.io/",
+      "cpe": "cpe:2.3:a:kubernetes:kubernetes:*:*:*:*:*:*:*:*",
+      "icon": "Kubernetes.svg"
+    },
+    "Kuroco": {
+      "cats": [
+        47
+      ],
+      "headers": {
+        "x-kuroco-edge-log": "",
+        "x-rcms-hash": ""
+      },
+      "description": "Kuroco is an API-centric platform that enables developers to create customizable APIs, manage content, and leverage a CDN for fast content delivery across various devices.",
+      "website": "https://kuroco.app",
+      "icon": "Kuroco.svg"
+    },
+    "Loop Web": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "link[href*='.loopweb.net']": {
+          "exists": ""
+        }
+      },
+      "meta": {
+        "id": [
+          "loopweb"
+        ],
+        "loopweb": []
+      },
+      "description": "Loop Web is a provider in web, internet, network, and design services. Their offerings encompass website design, SMS, VoIP&IVR, Type, hosting, VPS, and more.",
+      "website": "https://www.loopweb.net",
+      "icon": "Loop Web.svg"
+    },
+    "MarsX": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "analytic-api\\.marsx\\.dev/"
+      ],
+      "description": "MarsX is an AI-powered coding platform designed to develop Software as a Service (SaaS) tools.",
+      "website": "https://www.marsx.dev",
+      "icon": "MarsX.svg"
+    },
+    "Mendix": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "script[type='mendix/widget']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "CKEditorForMendix": "",
+        "mendix": ""
+      },
+      "description": "Mendix is a low-code platform utilized by businesses for development of mobile and web applications at scale.",
+      "website": "https://www.mendix.com",
+      "icon": "Mendix.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CKEditorForMendix !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CKEditorForMendix !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MichiJS": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "michi-fragment > michi-fragment": {
+          "exists": ""
+        }
+      },
+      "description": "MichiJS is a library enabling the creation of web components using TSX.",
+      "website": "https://dev.michijs.com",
+      "icon": "MichiJS.svg"
+    },
+    "Microsoft Visual Studio": {
+      "cats": [
+        47
+      ],
+      "meta": {
+        "generator": [
+          "^microsoft\\svisual\\sstudio"
+        ]
+      },
+      "description": "Microsoft Visual Studio is an integrated development environment from Microsoft.",
+      "website": "https://visualstudio.microsoft.com",
+      "icon": "Microsoft Visual Studio.svg"
+    },
+    "MindStudio": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "MindStudioSettings": ""
+      },
+      "description": "MindStudio is a platform for creating AI solutions that are simple and hassle-free.",
+      "website": "https://www.mindstudio.ai",
+      "icon": "MindStudio.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MindStudioSettings !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MsCode.pl": {
+      "cats": [
+        47
+      ],
+      "headers": {
+        "x-hosting-provider": "mscode\\.pl"
+      },
+      "meta": {
+        "application-name": [
+          "mscode\\.pl"
+        ]
+      },
+      "description": "MsCode.pl is a platform focused on developing innovative solutions in programming, hosting, and marketing.",
+      "website": "https://mscode.pl",
+      "icon": "MsCode.svg"
+    },
+    "Opal": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "script#opal-elementor-frontend-js, link[href*='opal-boostrap.css']": {
+          "exists": ""
+        }
+      },
+      "description": "Opal is a Ruby-to-JavaScript compiler that allows Ruby code to run in web browsers by converting it into JavaScript.",
+      "website": "https://opalrb.org"
+    },
+    "OutSystems": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "OutSystemsDebugger": "",
+        "outsystems": ""
+      },
+      "scriptSrc": [
+        "scripts/outsystems(?:[\\w]+)?\\.js"
+      ],
+      "implies": [
+        "IIS",
+        "Windows Server"
+      ],
+      "description": "OutSystems is a low-code platform which provides tools for companies to develop, deploy and manage omnichannel enterprise applications.",
+      "website": "https://www.outsystems.com",
+      "icon": "OutSystems.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof OutSystemsDebugger !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof OutSystemsDebugger !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Overwolf": {
+      "cats": [
+        47
+      ],
+      "scripts": [
+        "download\\.overwolf\\.com"
+      ],
+      "description": "Overwolf is a platform that enables the creation, sharing, and monetization of in-game apps and mods.",
+      "website": "https://www.overwolf.com",
+      "icon": "Overwolf.svg"
+    },
+    "PHPDebugBar": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "PhpDebugBar": "",
+        "phpdebugbar": ""
+      },
+      "scriptSrc": [
+        "debugbar.*\\.js"
+      ],
+      "website": "https://phpdebugbar.com/",
+      "icon": "phpdebugbar.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PhpDebugBar !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PhpDebugBar !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Prisme": {
+      "cats": [
+        47
+      ],
+      "scripts": [
+        "api\\.prisme\\.ai"
+      ],
+      "description": "Prisme is an event-driven studio designed for building and automating workflows with minimal coding.",
+      "website": "https://www.prisme.ai",
+      "icon": "Prisme.svg"
+    },
+    "Replit": {
+      "cats": [
+        47
+      ],
+      "headers": {
+        "expect-ct": "\\.repl\\.it/",
+        "replit-cluster": ""
+      },
+      "description": "Replit is a platform for creating and sharing software.",
+      "website": "https://replit.com",
+      "icon": "Replit.svg"
+    },
+    "Retool": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "RETOOL_PAGE_SUSPEND_DETECTED": ""
+      },
+      "scriptSrc": [
+        "retool(?:-edge)?(?:\\.com)?(?:\\/embed)?\\/?(?:runtime)?~?(?:app)?(?:custom-components)?(?:\\.\\w{0,20})?\\.js"
+      ],
+      "description": "Retool is a development platform that enables the rapid creation and customisation of internal tools, including admin dashboards and database interfaces, through a combination of drag-and-drop components and code.",
+      "website": "https://retool.com",
+      "icon": "Retool.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RETOOL_PAGE_SUSPEND_DETECTED !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RobixCM DV Team": {
+      "cats": [
+        47
+      ],
+      "meta": {
+        "robixcmteam": [
+          "robixcm"
+        ]
+      },
+      "description": "RobixCM DV Team is a provider of web design and management services, offering solutions for website creation, maintenance, and optimization.",
+      "website": "https://robixcm.ir",
+      "icon": "Robixcm.png"
+    },
+    "Rual": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "RUALCONFIG.api": ""
+      },
+      "description": "Rual is a software development platform that designs and builds tailor-made digital solutions to meet specific business or operational requirements.",
+      "website": "https://rual.nl",
+      "icon": "Rual.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RUALCONFIG !== 'undefined' && typeof RUALCONFIG.api !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RunKit": {
+      "cats": [
+        47,
+        59
+      ],
+      "js": {
+        "RunKit": "",
+        "RunKit.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.runkit\\.com"
+      ],
+      "description": "RunKit is a tool for prototyping server-side JavaScript.",
+      "website": "https://runkit.com",
+      "icon": "RunKit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RunKit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ScapBot": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "script[data-host*='analytics.scapbot.com']": {
+          "exists": ""
+        }
+      },
+      "description": "ScapBot is a tool designed to automate tasks and workflows, helping streamline repetitive processes across various work environments.",
+      "website": "https://scapbot.com",
+      "icon": "ScapBot.svg"
+    },
+    "Sheety": {
+      "cats": [
+        47
+      ],
+      "scripts": [
+        "api\\.sheety\\.co/"
+      ],
+      "description": "Sheety is a service that transforms your Google Sheet into an API, enabling easy access to your data for integration with other applications.",
+      "website": "https://sheety.co/",
+      "icon": "Sheety.svg"
+    },
+    "SlickStack": {
+      "cats": [
+        47,
+        9
+      ],
+      "headers": {
+        "x-powered-by": "slickstack"
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "description": "SlickStack is a free LEMP stack automation script written in Bash designed to enhance and simplify WordPress provisioning, performance, and security.",
+      "website": "https://slickstack.io",
+      "icon": "SlickStack.png"
+    },
+    "SonarQube": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "SonarMeasures": "",
+        "SonarRequest": ""
+      },
+      "html": [
+        "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)\\;version:\\1",
+        "<title>sonarqube</title>"
+      ],
+      "scriptSrc": [
+        "^/js/bundles/sonar\\.js?v=([\\d.]+)$\\;version:\\1"
+      ],
+      "meta": {
+        "application-name": [
+          "^sonarqube$"
+        ]
+      },
+      "implies": [
+        "Java"
+      ],
+      "description": "SonarQube is an open-source platform for the continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 20+ programming languages.",
+      "website": "https://www.sonarqube.org/",
+      "icon": "SonarQube.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SonarMeasures !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SonarMeasures !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SonarQubes": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "SonarMeasures": "",
+        "SonarRequest": ""
+      },
+      "html": [
+        "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)\\;version:\\1",
+        "<title>sonarqube</title>"
+      ],
+      "scriptSrc": [
+        "^/js/bundles/sonar\\.js?v=([\\d.]+)$\\;version:\\1"
+      ],
+      "meta": {
+        "application-name": [
+          "^sonarqubes$"
+        ]
+      },
+      "implies": [
+        "Java"
+      ],
+      "description": "SonarQube is an open-source platform for the continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 20+ programming languages.",
+      "website": "https://www.sonarqube.org/",
+      "icon": "sonar.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SonarMeasures !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SonarMeasures !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Spicy Rocket": {
+      "cats": [
+        47
+      ],
+      "cookies": {
+        "spicyrocket_session": ""
+      },
+      "scriptSrc": [
+        "\\.spicyrocket\\.com/"
+      ],
+      "description": "Spicy Rocket is a web design and digital development platform providing innovative solutions to enhance online business performance.",
+      "website": "https://spicyrocket.xyz"
+    },
+    "Stammer.ai": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "app\\.stammer\\.ai"
+      ],
+      "description": "Stammer.ai is a platform that enables the creation of custom AI agents tailored for various business needs across different industries.",
+      "website": "https://stammer.ai",
+      "icon": "Stammer.svg"
+    },
+    "Storybook": {
+      "cats": [
+        47,
+        66
+      ],
+      "js": {
+        "__STORYBOOK_ADDONS": ""
+      },
+      "description": "Storybook is a frontend workshop for building UI components and pages in isolation.",
+      "website": "https://storybook.js.org",
+      "icon": "storybook.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __STORYBOOK_ADDONS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Subversion": {
+      "cats": [
+        47
+      ],
+      "headers": {
+        "server": "\\ssvn/([\\d\\.]+)\\s\\;version:\\1"
+      },
+      "description": "Subversion is a centralized version control system for managing files and directories across software development teams.",
+      "website": "https://subversion.apache.org",
+      "cpe": "cpe:2.3:a:apache:subversion:*:*:*:*:*:*:*:*",
+      "icon": "Subversion.svg"
+    },
+    "Supabase": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "__NUXT__.config.public.SUPABASE_URL": "",
+        "__NUXT__.config.public.supabase": ""
+      },
+      "implies": [
+        "PostgreSQL"
+      ],
+      "description": "Supabase is an open-source platform that offers a Postgres database, Authentication, APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings for project development.",
+      "website": "https://supabase.com",
+      "icon": "Supabase.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __NUXT__ !== 'undefined' && typeof __NUXT__.config !== 'undefined' && typeof __NUXT__.config.public !== 'undefined' && typeof __NUXT__.config.public.SUPABASE_URL !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tryzens": {
+      "cats": [
+        47
+      ],
+      "scripts": [
+        "\\.tryzens-analytics\\.com"
+      ],
+      "scriptSrc": [
+        "\\.tryzens-analytics\\.com"
+      ],
+      "description": "Tryzens is a digital transformation specialist focused on implementing technology-driven strategies to improve business processes.",
+      "website": "https://tryzens.com",
+      "icon": "Tryzens.svg"
+    },
+    "Turbopack": {
+      "cats": [
+        47
+      ],
+      "js": {
+        "TURBOPACK": ""
+      },
+      "description": "Turbopack is an open-source JavaScript module bundler.",
+      "website": "https://nextjs.org/docs/app/api-reference/turbopack",
+      "icon": "Turbopack.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TURBOPACK !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Upvoty": {
+      "cats": [
+        47
+      ],
+      "dom": {
+        "div.upvotyContainer": {
+          "text": ""
+        }
+      },
+      "js": {
+        "upvoty": ""
+      },
+      "implies": [
+        "PHP"
+      ],
+      "website": "https://upvoty.com",
+      "icon": "upvoty.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof upvoty !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WordPress Project Manager": {
+      "cats": [
+        47
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/wedevs-project-manager/"
+      ],
+      "description": "WordPress Project Manager is an open-source project management tool designed to organize tasks and ensure timely project delivery.",
+      "website": "https://wedevs.com/wp-project-manager-pro",
+      "icon": "WPProjectManager.svg"
+    },
+    "genezio": {
+      "cats": [
+        47
+      ],
+      "headers": {
+        "x-powered-by": "^genezio$"
+      },
+      "description": "Genezio is a code generation tool that facilitates app logic focus, organises backend API code in deployable classes, autogenerates class interfaces with JSON-RPC for typesafe API calls, supports REST and Webhooks, enables simple API code deployment on pre-configured infrastructure using a shell command, and provides an SDK that eliminates the need to handle URLs, headers.",
+      "website": "https://genez.io",
+      "icon": "genezio.svg"
+    },
+    "git": {
+      "cats": [
+        47
+      ],
+      "meta": {
+        "generator": [
+          "\\bgit/([\\d.]+\\d)\\;version:\\1"
+        ]
+      },
+      "website": "https://git-scm.com",
+      "cpe": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*",
+      "icon": "git.svg"
+    },
+    "gitlist": {
+      "cats": [
+        47
+      ],
+      "html": [
+        "<p>powered by <a[^>]+>gitlist ([\\d.]+)\\;version:\\1"
+      ],
+      "implies": [
+        "PHP",
+        "git"
+      ],
+      "website": "https://gitlist.org",
+      "cpe": "cpe:2.3:a:gitlist:gitlist:*:*:*:*:*:*:*:*"
+    },
+    "gitweb": {
+      "cats": [
+        47
+      ],
+      "html": [
+        "<!-- git web interface version ([\\d.]+)?\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "static/gitweb\\.js$"
+      ],
+      "meta": {
+        "generator": [
+          "gitweb(?:/([\\d.]+\\d))?\\;version:\\1"
+        ]
+      },
+      "implies": [
+        "Perl",
+        "git"
+      ],
+      "website": "https://git-scm.com",
+      "icon": "git.svg"
+    }
+  }
+}

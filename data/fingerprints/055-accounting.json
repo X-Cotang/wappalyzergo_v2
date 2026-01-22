@@ -1,0 +1,128 @@
+{
+  "apps": {
+    "Akaunting": {
+      "cats": [
+        55
+      ],
+      "headers": {
+        "x-akaunting": "^free accounting software$"
+      },
+      "html": [
+        "<link[^>]+akaunting-green\\.css",
+        "powered by akaunting: <a [^>]*href=\"https?://(?:www\\.)?akaunting\\.com[^>]+>"
+      ],
+      "implies": [
+        "Laravel"
+      ],
+      "description": "Akaunting is a free and online accounting software.",
+      "website": "https://akaunting.com",
+      "icon": "akaunting.svg"
+    },
+    "Carta": {
+      "cats": [
+        55
+      ],
+      "dom": {
+        "link[href*='.app.carta.com/']": {
+          "exists": ""
+        }
+      },
+      "scripts": [
+        "app\\.carta\\.com"
+      ],
+      "description": "Carta is an equity management platform.",
+      "website": "https://carta.com",
+      "icon": "Carta.svg"
+    },
+    "Epicor": {
+      "cats": [
+        55
+      ],
+      "js": {
+        "Epicor_Common": "",
+        "Epicor_SalesrepPricing": ""
+      },
+      "description": "Epicor is an enterprise resource planning software suite built to support manufacturing, distribution, retail, and service industries.",
+      "website": "https://www.epicor.com",
+      "icon": "Epicor.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Epicor_Common !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Epicor_Common !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ignition": {
+      "cats": [
+        55
+      ],
+      "scriptSrc": [
+        "\\.practiceignition\\.com/"
+      ],
+      "description": "Ignition is an all-in-one platform streamlining proposals, billing, payments, and workflows for accounting and professional services firms.",
+      "website": "https://www.ignitionapp.com",
+      "icon": "Ignition.svg"
+    },
+    "Iress": {
+      "cats": [
+        55
+      ],
+      "js": {
+        "IRESSWebToolbox": ""
+      },
+      "description": "Iress is a platform that provides software solutions for the financial services industry.",
+      "website": "https://www.iress.com",
+      "icon": "Iress.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof IRESSWebToolbox !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Lendi": {
+      "cats": [
+        55
+      ],
+      "headers": {
+        "access-control-allow-origin": "www\\.lendi\\.pl"
+      },
+      "scriptSrc": [
+        "\\.lendi\\.pl"
+      ],
+      "description": "Lendi is a Poland-based provider of loan system solutions designed to support financial operations and lending processes.",
+      "website": "https://www.lendi.pl",
+      "icon": "Lendi.svg"
+    },
+    "Taxdome": {
+      "cats": [
+        55
+      ],
+      "scriptSrc": [
+        "\\.taxdome\\.com/"
+      ],
+      "description": "Taxdome is a practice management software designed for tax and accounting firms to streamline workflows, manage clients, and organize documents.",
+      "website": "https://taxdome.com",
+      "icon": "Taxdome.svg"
+    },
+    "Tiller": {
+      "cats": [
+        55
+      ],
+      "scriptSrc": [
+        "\\.by\\.tiller\\.co/"
+      ],
+      "description": "Tiller is a tool that automatically tracks your spending, balances, and budgets in flexible spreadsheets owned by you.",
+      "website": "https://www.tillerhq.com",
+      "icon": "Tiller.svg"
+    }
+  }
+}

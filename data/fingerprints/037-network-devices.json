@@ -1,0 +1,32 @@
+{
+  "apps": {
+    "Paessler": {
+      "cats": [
+        37
+      ],
+      "dom": {
+        "span[class*='paesslerlogo'] > a[href*='www.paessler.com']": {
+          "exists": ""
+        }
+      },
+      "scripts": [
+        "\\.paessler\\.com"
+      ],
+      "description": "Paessler is a network monitoring platform that provides complete visibility into IT infrastructure through a single solution, helping detect, analyze, and resolve performance issues across systems and devices.",
+      "website": "https://www.paessler.com",
+      "icon": "Paessler.svg"
+    },
+    "TeamViewer": {
+      "cats": [
+        37,
+        45
+      ],
+      "scriptSrc": [
+        "rum\\.monitis\\.com/"
+      ],
+      "description": "TeamViewer is a network and IT systems uptime monitoring service, formerly known as Monitis.",
+      "website": "https://monitis.com",
+      "icon": "TeamViewer.svg"
+    }
+  }
+}

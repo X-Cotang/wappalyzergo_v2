@@ -1,0 +1,1112 @@
+{
+  "apps": {
+    "Able CDP": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "app\\.ablecdp\\.com"
+      ],
+      "description": "Able CDP is a customer journey tracking system that monitors and analyzes user interactions across multiple touchpoints to provide insights into engagement and behavior.",
+      "website": "https://www.ablecdp.com",
+      "icon": "AbleCDP.svg"
+    },
+    "Acquia Customer Data Platform": {
+      "cats": [
+        97
+      ],
+      "dom": {
+        "[data-function*='Agilone']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "$A1": "",
+        "$A1Config": "",
+        "agiloneObject": ""
+      },
+      "scriptSrc": [
+        "^https?:\\/\\/.+\\.agilone\\.com",
+        "^https?:\\/\\/scripts\\.agilone\\.com\\/latest\\/a1.js"
+      ],
+      "description": "Acquia Customer Data Platform (formerly AgilOne) is a customer data platform for Drupal.",
+      "website": "https://www.acquia.com/products/marketing-cloud/customer-data-platform",
+      "icon": "acquia-cdp.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $A1 !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $A1Config !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $A1 !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adobe Experience Platform Identity Service": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "s_c_il.0._c": "Visitor",
+        "s_c_il.1._c": "Visitor",
+        "s_c_il.2._c": "Visitor",
+        "s_c_il.3._c": "Visitor",
+        "s_c_il.4._c": "Visitor",
+        "s_c_il.5._c": "Visitor"
+      },
+      "description": "Adobe Experience Platform Identity Service creates identity graphs that hold customer profiles and the known identifiers that belong to individual consumers.",
+      "website": "https://docs.adobe.com/content/help/en/id-service/using/home.html",
+      "icon": "Adobe.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof s_c_il !== 'undefined' && typeof s_c_il.0 !== 'undefined' && typeof s_c_il.0._c !== 'undefined' && s_c_il.0._c === 'Visitor'"
+          }
+        ]
+      }
+    },
+    "Antsomi CDP 365": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "\\.cdp\\.asia/"
+      ],
+      "description": "Antsomi CDP 365 is a AI-enabled customer data platform from Southeast Asia.",
+      "website": "https://www.antsomi.com",
+      "icon": "Antsomi.svg"
+    },
+    "Aptania": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "analytics\\.aptania\\.com/"
+      ],
+      "description": "Aptania is an all-in-one customer data platform that provides web analytics, lead generation, and customer insights in a single system.",
+      "website": "https://www.aptania.com",
+      "icon": "Aptania.svg"
+    },
+    "Asapp": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "ASAPP.Host": ""
+      },
+      "scriptSrc": [
+        "sdk\\.asapp\\.com/"
+      ],
+      "description": "Asapp is a platform that guides agents in providing responses to queries using AI technology.",
+      "website": "https://www.asapp.com",
+      "icon": "Asapp.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ASAPP !== 'undefined' && typeof ASAPP.Host !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Bandwango": {
+      "cats": [
+        97
+      ],
+      "dom": {
+        "a[href*='www.bandwango.com'] > img[src*='app.bandwango.com']": {
+          "exists": ""
+        }
+      },
+      "description": "Bandwango is a platform that boosts community revenue by promoting local businesses and attractions while tracking visitor interactions to support economic growth.",
+      "website": "https://www.bandwango.com",
+      "icon": "Bandwango.svg"
+    },
+    "BlueConic": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "BlueConicEngagement": "",
+        "blueConicClient": "",
+        "blueConicPreListeners": "",
+        "loadValuesFromBlueConic": ""
+      },
+      "description": "BlueConic is the advanced customer data platform that liberates companies' first-party data from disparate systems.",
+      "website": "https://www.blueconic.com",
+      "icon": "BlueConic.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BlueConicEngagement !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BlueConicEngagement !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BlueConicEngagement !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BlueConicEngagement !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Bread & Butter": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "BreadButter.breadbutter": ""
+      },
+      "scriptSrc": [
+        "api\\.breadbutter\\.io"
+      ],
+      "description": "Bread & Butter is a platform that offers a first-party data CDP for lead generation.",
+      "website": "https://breadbutter.io",
+      "icon": "BreadButter.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BreadButter !== 'undefined' && typeof BreadButter.breadbutter !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChurnZero": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "ChurnZero": "",
+        "ChurnZero.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "ChurnZero is a real-time customer success platform that helps subscription businesses fight customer churn.",
+      "website": "https://churnzero.net",
+      "icon": "ChurnZero.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ChurnZero !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CleverData": {
+      "cats": [
+        97
+      ],
+      "scripts": [
+        "\\.cdp\\.cleverdata\\.ru"
+      ],
+      "description": "CleverData is a CDP platform that manages customer data and enables personalized user experiences through robust data processing capabilities.",
+      "website": "https://cleverdata.ru",
+      "icon": "CleverData.svg"
+    },
+    "Cooladata": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "cooladata": ""
+      },
+      "scriptSrc": [
+        "cdn\\.cooladata\\.com/"
+      ],
+      "description": "Cooladata is a data warehouse and behavioral analytics platform designed for gaming, elearning, ecommerce, SaaS, and media companies.",
+      "website": "https://www.cooladata.com",
+      "icon": "Cooladata.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cooladata !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Custobar": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "custobar.config": ""
+      },
+      "scripts": [
+        "script\\.custobar\\.com"
+      ],
+      "description": "Custobar is a customer data platform that enables personalized marketing by leveraging data to tailor campaigns and communications.",
+      "website": "https://www.custobar.com",
+      "icon": "Custobar.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof custobar !== 'undefined' && typeof custobar.config !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Datatrics": {
+      "cats": [
+        97
+      ],
+      "dom": {
+        "link[href*='.datatrics.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "DatatricsClick": "",
+        "datatricsEvents": ""
+      },
+      "description": "Datatrics is a data-driven marketing platform that provides businesses with advanced tools and analytics to optimise customer experiences, personalise marketing campaigns, and drive engagement through data-driven insights and automation.",
+      "website": "https://datatrics.com",
+      "icon": "Datatrics.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DatatricsClick !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DatatricsClick !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Exponea": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "exponea.version": "^v([\\d.]+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "(?:\\.exponea\\.com)?/js/exponea\\.min\\.js"
+      ],
+      "description": "Exponea is a cloud-based marketing analysis platform suitable for large and midsize organisations in a variety of industries.",
+      "website": "https://go.exponea.com",
+      "icon": "Exponea.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof exponea !== 'undefined' && typeof exponea.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "exponea.version || \"\""
+          }
+        ]
+      }
+    },
+    "FirstHive": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "firsthive\\.com/engage/"
+      ],
+      "description": "FirstHive is a full-stack customer data platform that enables consumer marketers and brands to take control of their first-party data from all sources.",
+      "website": "https://firsthive.com",
+      "icon": "FirstHive.svg"
+    },
+    "Fueled": {
+      "cats": [
+        97
+      ],
+      "scripts": [
+        "mb-cdn\\.fueled\\.io"
+      ],
+      "scriptSrc": [
+        "mb-cdn\\.fueled\\.io"
+      ],
+      "description": "Fueled is a platform that manages and analyzes first-party data for ecommerce businesses to support insights and decision making.",
+      "website": "https://fueled.io",
+      "icon": "Fueled.svg"
+    },
+    "Fullpath": {
+      "cats": [
+        97
+      ],
+      "scripts": [
+        "\\.autoleadstar\\.com"
+      ],
+      "description": "Fullpath is a Customer Data and Experience Platform (CDXP) for the automotive retail industry, formerly known as AutoLeadStar.",
+      "website": "https://www.fullpath.com",
+      "icon": "Fullpath.svg"
+    },
+    "Gravito": {
+      "cats": [
+        97
+      ],
+      "cookies": {
+        "gravitosync": ""
+      },
+      "js": {
+        "gravito.init": "",
+        "gravitoCMP": ""
+      },
+      "description": "Gravito is a service that enables centralized consumer consent and the collection of observed data from multiple digital touchpoints, securely integrating it with personal data.",
+      "website": "https://www.gravito.net",
+      "icon": "Gravito.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gravito !== 'undefined' && typeof gravito.init !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof gravito !== 'undefined' && typeof gravito.init !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Hull": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "Hull._initialized": "",
+        "Hull.js._initialized": "",
+        "HullShopify": ""
+      },
+      "description": "Hull is a platform that collects, unifies, enriches product, marketing, and sales data, then synchronizes it across various tools.",
+      "website": "https://www.hull.io",
+      "icon": "Hull.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Hull !== 'undefined' && typeof Hull._initialized !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Hull !== 'undefined' && typeof Hull._initialized !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Insider": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "Insider": "\\;confidence:20"
+      },
+      "scriptSrc": [
+        "api\\.useinsider\\.\\w+/"
+      ],
+      "description": "Insider is the first integrated Growth Management Platform helping digital marketers drive growth across the funnel, from Acquisition to Activation, Retention, and Revenue from a unified platform powered by Artificial Intelligence and Machine Learning.",
+      "website": "https://useinsider.com",
+      "icon": "Insider.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Insider !== 'undefined' && Insider === '\\;confidence:20'"
+          }
+        ]
+      }
+    },
+    "Klaviyo Data Platform": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "static-tracking\\.klaviyo\\.com/onsite/js/web_personalization"
+      ],
+      "description": "Klaviyo Data Platform is Klaviyo's CDP offering.",
+      "website": "https://www.klaviyo.com/solutions/customer-data-platform",
+      "icon": "Klaviyo.svg"
+    },
+    "Leadspace": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "sfc\\.leadspace\\.com/"
+      ],
+      "description": "Leadspace is a customer data platform catering to B2B sales and marketing needs.",
+      "website": "https://www.leadspace.com",
+      "icon": "Leadspace.svg"
+    },
+    "Lexer": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "___lexer_tag": ""
+      },
+      "scriptSrc": [
+        "tag\\.lexer\\.io"
+      ],
+      "description": "Lexer is a platform providing AI-powered tools for managing customer data and automating business workflows.",
+      "website": "https://www.lexer.io",
+      "icon": "Lexer.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ___lexer_tag !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Lytics": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "__lytics__jstag__.version": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.lytics\\.io/"
+      ],
+      "description": "Lytics is a customer data platform built for marketing teams.",
+      "website": "https://www.lytics.com",
+      "icon": "Lytics.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __lytics__jstag__ !== 'undefined' && typeof __lytics__jstag__.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "__lytics__jstag__.version || \"\""
+          }
+        ]
+      }
+    },
+    "Merge": {
+      "cats": [
+        97
+      ],
+      "headers": {
+        "content-security-policy": "\\.merge\\.dev"
+      },
+      "description": "Merge is a data infrastructure platform for AI products that enables connection to multiple customer data sources through a single API.",
+      "website": "https://www.merge.dev",
+      "icon": "Merge.svg"
+    },
+    "Netcore Cloud": {
+      "cats": [
+        97,
+        32
+      ],
+      "scriptSrc": [
+        "\\.netcoresmartech\\.com/"
+      ],
+      "description": "Netcore Cloud is a globally recognised marketing technology SaaS company.",
+      "website": "https://netcorecloud.com",
+      "icon": "Netcore Cloud.svg"
+    },
+    "Optimove": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "optimoveSDK": "",
+        "optimoveSDKVersion": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.optimove\\.net/.+v([\\d\\.]+)\\.js\\;version:\\1"
+      ],
+      "description": "Optimove is a relationship marketing hub powered by a combination of advanced customer modeling, predictive micro-segmentation and campaign automation technologies.",
+      "website": "https://www.optimove.com",
+      "icon": "Optimove.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof optimoveSDK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof optimoveSDK !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "optimoveSDKVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Pinpoll": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "cdn\\.pinpoll\\.com"
+      ],
+      "description": "Pinpoll is a tool that collects contact data from users for analytics, marketing, or customer engagement purposes.",
+      "website": "https://www.pinpoll.com",
+      "icon": "Pinpoll.svg"
+    },
+    "PriceSpider": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "PriceSpider.version": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "cdn\\.pricespider\\.com/"
+      ],
+      "description": "PriceSpider is an advanced retail data technology company that provides insights about consumer purchasing behavior.",
+      "website": "https://www.pricespider.com",
+      "icon": "PriceSpider.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PriceSpider !== 'undefined' && typeof PriceSpider.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "PriceSpider.version || \"\""
+          }
+        ]
+      }
+    },
+    "Raaft": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "RAAFT_APP_ID": "",
+        "raaft": ""
+      },
+      "description": "Raaft is a tool designed to help SaaS companies lower customer churn and gather feedback from users who choose to cancel their subscriptions.",
+      "website": "https://raaft.io",
+      "icon": "Raaft.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RAAFT_APP_ID !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof RAAFT_APP_ID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Registria": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "Registria.Cases": "",
+        "getRegistriaData": "",
+        "getRegistriaDateData": ""
+      },
+      "description": "Registria is a platform that enables durable product companies to engage with customers and deliver personalized experiences.",
+      "website": "https://www.registria.com",
+      "icon": "Registria.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Registria !== 'undefined' && typeof Registria.Cases !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Registria !== 'undefined' && typeof Registria.Cases !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Registria !== 'undefined' && typeof Registria.Cases !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Rocket Tools": {
+      "cats": [
+        97
+      ],
+      "scripts": [
+        "script\\.rocket-tools\\.io"
+      ],
+      "description": "Rocket Tools is an AI platform that connects brands with customers, transforming mall data into actionable insights for marketing performance.",
+      "website": "https://www.rocket-tools.io",
+      "icon": "RocketTools.svg"
+    },
+    "Rudderstack": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "rudderanalytics": ""
+      },
+      "scriptSrc": [
+        "cdn\\.rudderlabs\\.com"
+      ],
+      "description": "Rudderstack is a customer data platform (CDP) that helps you collect, clean, and control your customer data.",
+      "website": "https://rudderstack.com/",
+      "icon": "Rudderstack.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rudderanalytics !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SALESmanago": {
+      "cats": [
+        97,
+        32
+      ],
+      "js": {
+        "SalesmanagoObject": ""
+      },
+      "scriptSrc": [
+        "\\.salesmanago\\.com/"
+      ],
+      "description": "SALESmanago is a no-code marketing automation and customer data platform designed for mid-sized buinesses and enterprises.",
+      "website": "https://www.salesmanago.com",
+      "icon": "SALESmanago.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SalesmanagoObject !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Segment": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "__SEGMENT_INSPECTOR__": "",
+        "analytics.SNIPPET_VERSION": "(.+)\\;version:\\1",
+        "analytics.VERSION": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/segment-wrapper\\.min\\.js",
+        "cdn\\.segment\\.com/analytics\\.js"
+      ],
+      "description": "Segment is a customer data platform (CDP) that helps you collect, clean, and control your customer data.",
+      "website": "https://segment.com",
+      "icon": "Segment.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __SEGMENT_INSPECTOR__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __SEGMENT_INSPECTOR__ !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "analytics.SNIPPET_VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Simon": {
+      "cats": [
+        97
+      ],
+      "dom": {
+        "link[href*='.simonsignal.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "SimonData": ""
+      },
+      "scriptSrc": [
+        "static\\.simonsignal\\.com"
+      ],
+      "description": "Simon is a customer data platform (CDP) that helps you collect, clean, and control your customer data.",
+      "website": "https://www.simondata.com/",
+      "icon": "Simon.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SimonData !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sirdata": {
+      "cats": [
+        97,
+        67,
+        86
+      ],
+      "js": {
+        "SDDAN.cmp": "",
+        "Sddan.cmpLoaded": ""
+      },
+      "scriptSrc": [
+        "(?:choices|cache)\\.consentframework\\.com/",
+        "js\\.sddan\\.com/"
+      ],
+      "description": "Sirdata is a self-service, third party data-collecting platform that specialises in the collection of behavioural data, predictive targeting and selling of audience segments.",
+      "website": "https://www.sirdata.com",
+      "icon": "Sirdata.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SDDAN !== 'undefined' && typeof SDDAN.cmp !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SDDAN !== 'undefined' && typeof SDDAN.cmp !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sitecore Engagement Cloud": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "/sitecore-engage-v\\.([\\d\\.]+)\\.min\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "Sitecore"
+      ],
+      "description": "Sitecore Engagement Cloud is a cloud-based customer experience management platform offering content management, personalisation, marketing automation, analytics, and omni-channel delivery for enhancing digital marketing efforts and improving customer experiences.",
+      "website": "https://www.sitecore.com/products/engagement-cloud",
+      "icon": "Sitecore.svg"
+    },
+    "Skeepers": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "skeepersStarsCounter": ""
+      },
+      "scriptSrc": [
+        "sdk\\.skeepers\\.io"
+      ],
+      "description": "Skeepers is a platform designed to improve customer satisfaction and support business growth through enhanced engagement and feedback tools.",
+      "website": "https://skeepers.io",
+      "icon": "Skeepers.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof skeepersStarsCounter !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SmartDX": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "sdk\\.smartdx\\.co/"
+      ],
+      "description": "SmartDX is a nimble alternative to cookies that revolutionizes the tracking and identification of individual audience members, maps cross-device journeys, delivers contextual omnichannel interactions, and attributes conversions at the segment-of-one level.",
+      "website": "https://smartdx.co",
+      "icon": "SmartDX.svg"
+    },
+    "Spotler Activate": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "sqzlCommon.getVariantName": "",
+        "sqzlPersonalization": ""
+      },
+      "scriptSrc": [
+        "//squeezely\\.tech/"
+      ],
+      "description": "Spotler Activate is a customer data platform (CDP) that provides technical capabilities for data collection, segmentation, audience targeting, campaign orchestration, and analytics, empowering businesses to personalise customer experiences and optimise marketing efforts.",
+      "website": "https://spotleractivate.com",
+      "icon": "SpotlerActivate.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof sqzlCommon !== 'undefined' && typeof sqzlCommon.getVariantName !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof sqzlCommon !== 'undefined' && typeof sqzlCommon.getVariantName !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Squeezely": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "sqzlCommon.getVariantName": "",
+        "sqzlPersonalization": ""
+      },
+      "scriptSrc": [
+        "//squeezely\\.tech/"
+      ],
+      "description": "Squeezely is a customer data platform (CDP) that provides technical capabilities for data collection, segmentation, audience targeting, campaign orchestration, and analytics, empowering businesses to personalise customer experiences and optimise marketing efforts.",
+      "website": "https://www.squeezely.tech",
+      "icon": "Squeezely.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof sqzlCommon !== 'undefined' && typeof sqzlCommon.getVariantName !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof sqzlCommon !== 'undefined' && typeof sqzlCommon.getVariantName !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Stibo": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "product-analytics\\.stibo\\.com"
+      ],
+      "description": "Stibo is a cloud-based software solution designed to help businesses manage organizational data.",
+      "website": "https://www.stibo.com",
+      "icon": "Stibo.svg"
+    },
+    "Sub2Tech": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "SUB2.codebaseversion": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "cdn\\.sub2tech\\.com/"
+      ],
+      "description": "Sub2Tech is combining real time customer data with industry-leading technology.",
+      "website": "https://www.sub2tech.com",
+      "icon": "Sub2Tech.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SUB2 !== 'undefined' && typeof SUB2.codebaseversion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "SUB2.codebaseversion || \"\""
+          }
+        ]
+      }
+    },
+    "Tail": {
+      "cats": [
+        97
+      ],
+      "scriptSrc": [
+        "\\.tailtarget\\.com/"
+      ],
+      "description": "Tail is a customer data management platform.",
+      "website": "https://www.tail.digital",
+      "icon": "Tail.svg"
+    },
+    "Totango": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "totango": "",
+        "totangoLoader": ""
+      },
+      "scriptSrc": [
+        "\\.amazonaws\\.com/totango-cdn/totango\\d\\.js",
+        "\\.totango\\.com/totango([\\d\\.]+)\\.js\\;version:\\1"
+      ],
+      "description": "Totango is a customer success platform that helps recurring revenue businesses simplify the complexities of customer success by connecting the dots of customer data, actively monitoring customer health changes, and driving proactive engagements.",
+      "website": "https://www.totango.com",
+      "icon": "Totango.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof totango !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof totango !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Treasure Data": {
+      "cats": [
+        97
+      ],
+      "dom": {
+        "link[href*='.treasuredata.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Treasure.version": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "cdn\\.treasuredata\\.com/"
+      ],
+      "description": "Treasure Data is the only enterprise customer data platform.",
+      "website": "https://www.treasuredata.com",
+      "icon": "Treasure Data.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Treasure !== 'undefined' && typeof Treasure.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Treasure.version || \"\""
+          }
+        ]
+      }
+    },
+    "Unito Hub": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "Unito": "",
+        "Unito.app_version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/unito\\.min\\.js"
+      ],
+      "description": "Unito Hub is a unified data platform that integrates and consolidates data from multiple sources.",
+      "website": "https://unitohub.com",
+      "icon": "UnitoHub.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Unito !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Wootric": {
+      "cats": [
+        97
+      ],
+      "scripts": [
+        "\\.wootric\\.com"
+      ],
+      "scriptSrc": [
+        "\\.wootric\\.com"
+      ],
+      "description": "Wootric is a customer feedback platform designed to enhance customer experience management for digital applications and B2B SaaS.",
+      "website": "https://www.wootric.com",
+      "icon": "Wootric.svg"
+    },
+    "Zeotap": {
+      "cats": [
+        97
+      ],
+      "dom": {
+        "link[href*='.zeotap.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.zeotap\\.com"
+      ],
+      "description": "Zeotap is a customer intelligence platform that helps brands better understand their customers and predict behaviors.",
+      "website": "https://zeotap.com",
+      "icon": "Zeotap.png"
+    },
+    "inSided": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "inSidedData": "",
+        "insided": ""
+      },
+      "description": "inSided is the only Customer Success Community Platform built to help SaaS companies improve customer success and retention.",
+      "website": "https://www.insided.com",
+      "icon": "inSided.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof inSidedData !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof inSidedData !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "mParticle": {
+      "cats": [
+        97
+      ],
+      "js": {
+        "mParticle": "",
+        "mParticle.config.snippetVersion": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.mparticle\\.com/"
+      ],
+      "description": "mParticle is a mobile-focused event tracking and data ingestion tool.",
+      "website": "https://www.mparticle.com",
+      "icon": "mParticle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mParticle !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

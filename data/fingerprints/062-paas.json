@@ -1,0 +1,692 @@
+{
+  "apps": {
+    "Acquia Cloud Platform": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-ah-environment": "^(next)?.*$\\;version:\\1?next:"
+      },
+      "implies": [
+        "Amazon Web Services"
+      ],
+      "description": "Acquia Cloud Platform is a Drupal-tuned application lifecycle management suite with an infrastructure to support Drupal deployment workflow processes.",
+      "website": "https://www.acquia.com/products/drupal-cloud/cloud-platform",
+      "icon": "acquia-cloud.png"
+    },
+    "Agora": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "content-security-policy": "\\.agora\\.io"
+      },
+      "description": "Agora is a real-time engagement platform that provides infrastructure for interactive communication across applications.",
+      "website": "https://www.agora.io",
+      "icon": "Agora.svg"
+    },
+    "Akamai Connected Cloud": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^volt-adc$",
+        "x-volterra-location": ""
+      },
+      "implies": [
+        "Akamai"
+      ],
+      "description": "Akamai Connected Cloud is a distributed cloud platform that combines core compute, edge services, and security to run applications at global scale.",
+      "website": "https://www.akamai.com/solutions/cloud-computing",
+      "icon": "Akamai.svg"
+    },
+    "Amazon Web Services": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-amz-delete-marker": "",
+        "x-amz-err-code": "",
+        "x-amz-err-message": "",
+        "x-amz-id-2": "",
+        "x-amz-req-time-micros": "",
+        "x-amz-request-id": "",
+        "x-amz-rid": "",
+        "x-amz-version-id": ""
+      },
+      "description": "Amazon Web Services (AWS) is a comprehensive cloud services platform offering compute power, database storage, content delivery and other functionality.",
+      "website": "https://aws.amazon.com/",
+      "icon": "Amazon Web Services.svg"
+    },
+    "Appian": {
+      "cats": [
+        62
+      ],
+      "js": {
+        "APPIAN": "",
+        "Appian": "",
+        "_APPIAN_PROXIES_INITIALIZED": "",
+        "webpackJsonpAppian": ""
+      },
+      "scriptSrc": [
+        "tempo/ui/sail-client/embeddedbootstrap\\.nocache\\.js"
+      ],
+      "description": "Appian is an enterprise low-code application platform.",
+      "website": "https://www.appian.com",
+      "icon": "Appian.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof APPIAN !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof APPIAN !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof APPIAN !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof APPIAN !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Azure": {
+      "cats": [
+        62
+      ],
+      "cookies": {
+        "arraffinity": "",
+        "tipmix": ""
+      },
+      "headers": {
+        "azure-regionname": "",
+        "azure-sitename": "",
+        "azure-slotname": "",
+        "azure-version": "",
+        "server": "^windows-azure",
+        "x-ms-client-request-id": "",
+        "x-ms-correlation-request-id": "",
+        "x-ms-gateway-requestid": ""
+      },
+      "description": "Azure is a cloud computing service for building, testing, deploying, and managing applications and services through Microsoft-managed data centers.",
+      "website": "https://azure.microsoft.com",
+      "icon": "Azure.svg"
+    },
+    "Bask Health": {
+      "cats": [
+        62
+      ],
+      "scriptSrc": [
+        "analytics\\.bask\\.health"
+      ],
+      "description": "Bask Health is a telehealth platform that enables the creation of custom digital health solutions for virtual care delivery and patient engagement.",
+      "website": "https://bask.health",
+      "icon": "BaskHealth.svg"
+    },
+    "Bernet Cloud": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "bc-powered-by": "bernet\\.cloud"
+      },
+      "description": "Bernet Cloud is a cloud management platform that enables global application deployment without requiring advanced technical expertise.",
+      "website": "https://bernet.cloud",
+      "icon": "BernetCloud.svg"
+    },
+    "Brimble": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^brimble$",
+        "x-brimble-id": ""
+      },
+      "description": "Brimble is a cloud platform for deploying frontend web applications.",
+      "website": "https://brimble.io",
+      "icon": "brimble.svg"
+    },
+    "Chabokan": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "ch-powered-by": "chabokan\\s\\(chabokan\\.net\\)"
+      },
+      "description": "Chabokan is a cloud services provider, offering a wide range of incorporated cloud services including Cloud Object Storage, DBaaS, BaaS, and PaaS.",
+      "website": "https://chabokan.net",
+      "icon": "Chabokan.svg"
+    },
+    "Cloudflare Workers": {
+      "cats": [
+        62
+      ],
+      "implies": [
+        "Cloudflare"
+      ],
+      "description": "Cloudflare Workers is a serverless execution environment that allows you to create entirely new applications or augment existing ones without configuring or maintaining infrastructure.",
+      "website": "https://workers.cloudflare.com",
+      "icon": "Cloudflare Workers.svg"
+    },
+    "Cloudways": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "cache-provider": "cloudways-cache-de"
+      },
+      "description": "Cloudways offers managed cloud-hosting services for WordPress sites on a cloud server where multiple copies of your content will be replicated throughout your chosen data center.",
+      "website": "https://www.cloudways.com",
+      "icon": "Cloudways.png"
+    },
+    "Deno Deploy": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^deno/*"
+      },
+      "implies": [
+        "Deno"
+      ],
+      "description": "Deno Deploy is a distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge, worldwide.",
+      "website": "https://deno.land/",
+      "icon": "deno.svg"
+    },
+    "Deta": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^deta$"
+      },
+      "description": "Deta is a cloud platform for building and deploying apps.",
+      "website": "https://deta.sh",
+      "icon": "deta.svg"
+    },
+    "F5 Distributed Cloud Services": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-volterra-location": ""
+      },
+      "description": "F5 Distributed Cloud Services is a SaaS platform providing security, networking, and application management to deploy, secure, and operate applications in cloud-native environments.",
+      "website": "https://www.f5.com/products/distributed-cloud-services",
+      "icon": "F5DistributedCloudServices.svg"
+    },
+    "Fing": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^fing"
+      },
+      "description": "Fing is a cloud service to deploy and manage your applications without being worried about your infrastructure and environment.",
+      "website": "https://fing.ir",
+      "icon": "Fing.svg"
+    },
+    "Fly.io": {
+      "cats": [
+        62
+      ],
+      "cookies": {
+        "_fly": ""
+      },
+      "headers": {
+        "fly-request-id": "",
+        "server": "^fly/[\\w]+\\s\\(.*\\)$",
+        "via": "^.*\\sfly\\.io$"
+      },
+      "description": "Fly is a platform for running full stack apps and databases.",
+      "website": "https://fly.io",
+      "icon": "Fly.io.png"
+    },
+    "Flywheel": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "x-fw-hash": "",
+        "x-fw-serve": "",
+        "x-fw-server": "^flywheel(?:/([\\d.]+))?\\;version:\\1",
+        "x-fw-static": "",
+        "x-fw-type": ""
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "website": "https://getflywheel.com",
+      "icon": "flywheel.svg"
+    },
+    "Gigalixir": {
+      "cats": [
+        62
+      ],
+      "description": "Gigalixir is a PaaS focused on deployments of Elixir and Phoenix web apps",
+      "website": "https://gigalixir.com/",
+      "icon": "Gigalixir.svg"
+    },
+    "GitHub Pages": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^github\\.com$",
+        "x-github-request-id": ""
+      },
+      "description": "GitHub Pages is a static site hosting service.",
+      "website": "https://pages.github.com/",
+      "icon": "GitHub.svg"
+    },
+    "Glitch": {
+      "cats": [
+        62
+      ],
+      "description": "Glitch is a collaborative programming environment that lives in your browser and deploys code as you type.",
+      "website": "https://glitch.com",
+      "icon": "Glitch.svg"
+    },
+    "Heroku": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "via": "[\\d.-]+ vegur$"
+      },
+      "description": "Heroku is a cloud platform as a service (PaaS) supporting several programming languages.",
+      "website": "https://www.heroku.com/",
+      "icon": "heroku.svg"
+    },
+    "Kinsta": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "x-kinsta-cache": ""
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "description": "Kinsta is a leading managed WordPress hosting provider, prioritizing speed and security.",
+      "website": "https://kinsta.com",
+      "icon": "kinsta.svg"
+    },
+    "Lagoon": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-lagoon": ""
+      },
+      "description": "The Open Source Application Delivery Platform for Kubernetes.",
+      "website": "https://lagoon.sh/",
+      "icon": "lagoon.svg"
+    },
+    "Liquid Web": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "x-lw-cache": ""
+      },
+      "description": "Liquid Web is a US-based host offering premium managed web hosting solutions.",
+      "website": "https://www.liquidweb.com",
+      "icon": "Liquid Web.svg"
+    },
+    "Mirus": {
+      "cats": [
+        62
+      ],
+      "scripts": [
+        "\\.mirus\\.io"
+      ],
+      "description": "Mirus is a platform that provides scalable solutions capable of adjusting capacity to meet demand while maintaining resilience against unexpected challenges.",
+      "website": "https://mirusresearch.com",
+      "icon": "Mirus.svg"
+    },
+    "Netlify": {
+      "cats": [
+        62,
+        31
+      ],
+      "headers": {
+        "server": "^netlify",
+        "x-nf-request-id": ""
+      },
+      "description": "Netlify providers hosting and server-less backend services for web applications and static websites.",
+      "website": "https://www.netlify.com/",
+      "icon": "Netlify.svg"
+    },
+    "Nexcess": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "x-hostname": "nxcli\\.net$"
+      },
+      "description": "Nexcess is a web hosting service.",
+      "website": "https://www.nexcess.net",
+      "icon": "nexcess.png"
+    },
+    "OVHcloud": {
+      "cats": [
+        62,
+        88
+      ],
+      "description": "OVHcloud is a global, cloud provider delivering hosted private cloud, public cloud, and dedicated server solutions.",
+      "website": "https://www.ovhcloud.com",
+      "icon": "OVHcloud.svg"
+    },
+    "Ocea": {
+      "cats": [
+        62
+      ],
+      "dom": {
+        "link[href*='.ocea.app/']": {
+          "exists": ""
+        }
+      },
+      "description": "Ocea is a web service facilitating website and app creation, leveraging cloud infrastructure.",
+      "website": "https://ocea.app",
+      "icon": "Ocea.svg"
+    },
+    "Pagely": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "server": "^pagely"
+      },
+      "implies": [
+        "Amazon Web Services",
+        "WordPress"
+      ],
+      "website": "https://pagely.com/",
+      "icon": "pagely.svg"
+    },
+    "Pantheon": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^pantheon",
+        "x-pantheon-styx-hostname": "",
+        "x-styx-req-id": ""
+      },
+      "implies": [
+        "Fastly",
+        "MariaDB",
+        "Nginx",
+        "PHP"
+      ],
+      "description": "Pantheon is a WebOps (Website Operations) and Management Platform for WordPress and Drupal.",
+      "website": "https://pantheon.io/",
+      "icon": "Pantheon.svg"
+    },
+    "Platform.sh": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-platform-cluster": "",
+        "x-platform-processor": "",
+        "x-platform-router": "",
+        "x-platform-server": ""
+      },
+      "website": "https://platform.sh",
+      "icon": "platformsh.svg"
+    },
+    "Pressable": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "host-header": "^pressable"
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "description": "Pressable is a managed hoting platform for WordPress.",
+      "website": "https://pressable.com",
+      "icon": "pressable.svg"
+    },
+    "Pxxl App": {
+      "cats": [
+        62
+      ],
+      "description": "Pxxl App is a no-code platform that allows users to build and host web projects using custom subdomains on pxxl-managed domains.",
+      "website": "https://pxxl.app",
+      "icon": "Pxxl App.svg"
+    },
+    "PythonAnywhere": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "server": "^pythonanywhere$"
+      },
+      "implies": [
+        "Python"
+      ],
+      "description": "PythonAnywhere is an online integrated development environment (IDE) and web hosting service (Platform as a service) based on the Python programming language.",
+      "website": "https://www.pythonanywhere.com",
+      "icon": "PythonAnywhere.svg"
+    },
+    "Railway": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^railway$"
+      },
+      "scripts": [
+        "railway\\.app"
+      ],
+      "description": "Railway is a cloud platform that simplifies building, deploying, and managing applications with easy setup and scalable infrastructure.",
+      "website": "https://railway.app",
+      "icon": "Railway.svg"
+    },
+    "Render": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-render-origin-server": "render"
+      },
+      "description": "Render is a cloud computing platform that provides a wide range of services, including web hosting, cloud computing, and application development. Render offers several hosting options, including static site hosting, web application hosting, and managed databases.",
+      "website": "https://render.com",
+      "icon": "Render.svg"
+    },
+    "Seravo": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "x-powered-by": "^seravo"
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "website": "https://seravo.com",
+      "icon": "Seravo.svg"
+    },
+    "SiteGround": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "host-header": "192fc2e7e50945beb8231a492d6a8024|b7440e60b07ee7b8044761568fab26e8|624d5be7be38418a3e2a818cc8b7029b|6b7412fb82ca5edfd0917e3957f05d89"
+      },
+      "description": "SiteGround is a web hosting service.",
+      "website": "https://www.siteground.com",
+      "icon": "siteground.svg"
+    },
+    "ThingPark Enterprise": {
+      "cats": [
+        62
+      ],
+      "dom": {
+        "input[value*='.thingpark.com']": {
+          "exists": ""
+        }
+      },
+      "description": "ThingPark Enterprise is an enterprise IoT connectivity solution designed with a strong focus on security.",
+      "website": "https://www.thingpark.com/thingpark-enterprise",
+      "icon": "ThingPark.svg"
+    },
+    "Tiiny Host": {
+      "cats": [
+        62
+      ],
+      "scriptSrc": [
+        "(?://|\\.)tiiny\\.(?:host|site)/"
+      ],
+      "description": "Tiiny Host is a web hosting service for static sites with support for custom domains, SSL, password protection, and built-in analytics.",
+      "website": "https://tiiny.host",
+      "icon": "Tiiny Host.png"
+    },
+    "Vercel": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "server": "^now|vercel$",
+        "x-now-trace": "",
+        "x-vercel-cache": "",
+        "x-vercel-id": ""
+      },
+      "description": "Vercel is a cloud platform for static frontends and serverless functions.",
+      "website": "https://vercel.com",
+      "icon": "vercel.svg"
+    },
+    "Voximplant": {
+      "cats": [
+        62
+      ],
+      "js": {
+        "Zingaya.analytics_id": "",
+        "ZingayaClass": ""
+      },
+      "scripts": [
+        "zingaya\\.com"
+      ],
+      "description": "Voximplant is a cloud-based communication platform that enables voice calls directly from a webpage using a computer, formerly known as Zingaya.",
+      "website": "https://voximplant.com/products/click-to-call",
+      "icon": "Voximplant.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Zingaya !== 'undefined' && typeof Zingaya.analytics_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Zingaya !== 'undefined' && typeof Zingaya.analytics_id !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Vultr": {
+      "cats": [
+        62
+      ],
+      "description": "Vultr is a cloud computing service provider.",
+      "website": "https://www.vultr.com",
+      "icon": "Vultr.svg"
+    },
+    "WP Engine": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "wpe-backend": "",
+        "x-pass-why": "",
+        "x-powered-by": "wp engine",
+        "x-wpe-loopback-upstream-addr": ""
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "description": "WP Engine is a website hosting provider.",
+      "website": "https://wpengine.com",
+      "icon": "wpengine.svg"
+    },
+    "WordPress VIP": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-powered-by": "^wordpress vip|wpvip\\.com"
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "description": "WordPress VIP is a managed hosting platform for WordPress.",
+      "website": "https://wpvip.com",
+      "icon": "wpvip.svg"
+    },
+    "WordPress.com": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "host-header": "wordpress\\.com"
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "description": "WordPress.com is a platform for self-publishing that is popular for blogging and other works.",
+      "website": "https://wordpress.com",
+      "icon": "WordPress.svg"
+    },
+    "Yandex.Cloud": {
+      "cats": [
+        62
+      ],
+      "description": "Yandex.Cloud is a public cloud platform where companies can create and develop projects using Yandex's scalable computing power, advanced technologies, and infrastructure.",
+      "website": "https://cloud.yandex.com/en/",
+      "icon": "Yandex.Cloud.svg"
+    },
+    "Zeabur": {
+      "cats": [
+        62
+      ],
+      "headers": {
+        "x-zeabur-request-id": ""
+      },
+      "description": "Zeabur is a platform for running full stack apps and databases.",
+      "website": "https://zeabur.com",
+      "icon": "zeabur.svg"
+    },
+    "wp.cloud": {
+      "cats": [
+        62,
+        88
+      ],
+      "headers": {
+        "host-header": "wpcloud"
+      },
+      "implies": [
+        "WordPress"
+      ],
+      "description": "WordPress-first cloud hosting.",
+      "website": "https://wp.cloud/",
+      "icon": "wp-cloud.png"
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "apps": {
+    "Apache JSPWiki": {
+      "cats": [
+        8
+      ],
+      "html": [
+        "<html[^>]* xmlns:jspwiki="
+      ],
+      "scriptSrc": [
+        "jspwiki"
+      ],
+      "implies": [
+        "Apache Tomcat"
+      ],
+      "description": "Apache JSPWiki is an open-source Wiki engine, built around standard JEE components (Java, servlets, JSP).",
+      "website": "https://jspwiki.org",
+      "cpe": "cpe:2.3:a:apache:jspwiki:*:*:*:*:*:*:*:*",
+      "icon": "Apache.svg"
+    },
+    "Atlassian Confluence": {
+      "cats": [
+        8
+      ],
+      "dom": {
+        "li.print-only": {
+          "text": "Atlassian Confluence ([\\d.]+)\\;version:\\1"
+        }
+      },
+      "headers": {
+        "x-confluence-request-time": ""
+      },
+      "meta": {
+        "confluence-request-time": []
+      },
+      "implies": [
+        "Java"
+      ],
+      "description": "Atlassian Confluence is a web-based collaboration wiki tool.",
+      "website": "https://www.atlassian.com/software/confluence/overview/team-collaboration-software",
+      "cpe": "cpe:2.3:a:atlassian:confluence:*:*:*:*:*:*:*:*",
+      "icon": "Atlassian Confluence.svg"
+    },
+    "DokuWiki": {
+      "cats": [
+        8
+      ],
+      "cookies": {
+        "dokuwiki": ""
+      },
+      "js": {
+        "DOKU_TPL": "\\;confidence:50",
+        "doku_edit_text_content": "\\;confidence:50"
+      },
+      "meta": {
+        "generator": [
+          "^dokuwiki( release [\\d-]+)?\\;version:\\1"
+        ]
+      },
+      "implies": [
+        "PHP"
+      ],
+      "description": "DokuWiki is a free open-source wiki software.",
+      "website": "https://www.dokuwiki.org",
+      "cpe": "cpe:2.3:a:dokuwiki:dokuwiki:*:*:*:*:*:*:*:*",
+      "icon": "DokuWiki.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DOKU_TPL !== 'undefined' && DOKU_TPL === '\\;confidence:50'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DOKU_TPL !== 'undefined' && DOKU_TPL === '\\;confidence:50'"
+          }
+        ]
+      }
+    },
+    "Foswiki": {
+      "cats": [
+        8
+      ],
+      "cookies": {
+        "foswikistrikeone": "",
+        "sfoswikisid": ""
+      },
+      "js": {
+        "foswiki": ""
+      },
+      "headers": {
+        "x-foswikiaction": "",
+        "x-foswikiuri": ""
+      },
+      "html": [
+        "<div class=\"foswiki(?:copyright|page|main)\">"
+      ],
+      "meta": {
+        "foswiki.servertime": [],
+        "foswiki.wikiname": []
+      },
+      "implies": [
+        "Perl"
+      ],
+      "description": "Foswiki is a free open-source collaboration platform.",
+      "website": "https://foswiki.org",
+      "cpe": "cpe:2.3:a:foswiki:foswiki:*:*:*:*:*:*:*:*",
+      "icon": "foswiki.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof foswiki !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MediaWiki": {
+      "cats": [
+        8
+      ],
+      "js": {
+        "mw.util.toggleToc": "",
+        "wgTitle": "",
+        "wgVersion": "^(.+)$\\;version:\\1"
+      },
+      "html": [
+        "<(?:a|img)[^>]+>powered by mediawiki</a>",
+        "<a[^>]+/special:whatlinkshere/",
+        "<body[^>]+class=\"mediawiki\""
+      ],
+      "meta": {
+        "generator": [
+          "^mediawiki ?(.+)$\\;version:\\1"
+        ]
+      },
+      "implies": [
+        "PHP"
+      ],
+      "description": "MediaWiki is a free and open-source wiki engine.",
+      "website": "https://www.mediawiki.org",
+      "cpe": "cpe:2.3:a:mediawiki:mediawiki:*:*:*:*:*:*:*:*",
+      "icon": "MediaWiki.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mw !== 'undefined' && typeof mw.util !== 'undefined' && typeof mw.util.toggleToc !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof mw !== 'undefined' && typeof mw.util !== 'undefined' && typeof mw.util.toggleToc !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof mw !== 'undefined' && typeof mw.util !== 'undefined' && typeof mw.util.toggleToc !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "wgVersion || \"\""
+          }
+        ]
+      }
+    },
+    "MoinMoin": {
+      "cats": [
+        8
+      ],
+      "cookies": {
+        "moin_session": ""
+      },
+      "js": {
+        "show_switch2gui": ""
+      },
+      "scriptSrc": [
+        "moin(?:_static(\\d)(\\d)(\\d)|.+)/common/js/common\\.js\\;version:\\1.\\2.\\3"
+      ],
+      "implies": [
+        "Python"
+      ],
+      "description": "MoinMoin is a wiki engine implemented in Python.",
+      "website": "https://moinmo.in",
+      "cpe": "cpe:2.3:a:moinmo:moinmoin:*:*:*:*:*:*:*:*",
+      "icon": "MoinMoin.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof show_switch2gui !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "PukiWiki": {
+      "cats": [
+        8
+      ],
+      "dom": {
+        "link[href*='/pukiwiki.css'], link[href*='/skin/pukiwiki.min.css']": {
+          "exists": ""
+        }
+      },
+      "description": "PukiWiki is a web-based WikiEngine that enables collaborative editing by allowing anyone to modify pages.",
+      "website": "https://pukiwiki.sourceforge.io",
+      "icon": "PukiWiki.svg"
+    },
+    "TWiki": {
+      "cats": [
+        8
+      ],
+      "cookies": {
+        "twikisid": ""
+      },
+      "html": [
+        "<img [^>]*(?:title|alt)=\"this site is powered by the twiki collaboration platform"
+      ],
+      "scriptSrc": [
+        "(?:twikijavascripts|twikilib(?:\\.min)?\\.js)"
+      ],
+      "implies": [
+        "Perl"
+      ],
+      "description": "TWiki is an open-source wiki and application platform.",
+      "website": "https://twiki.org",
+      "icon": "TWiki.png"
+    },
+    "WikkaWiki": {
+      "cats": [
+        8
+      ],
+      "html": [
+        "powered by <a href=\"[^>]+wikkawiki"
+      ],
+      "meta": {
+        "generator": [
+          "wikkawiki"
+        ]
+      },
+      "description": "WikkaWiki is an open-source wiki application written in PHP.",
+      "website": "https://wikkawiki.org",
+      "icon": "WikkaWiki.png"
+    },
+    "XWiki": {
+      "cats": [
+        8
+      ],
+      "html": [
+        "<html[^>]data-xwiki-[^>]>"
+      ],
+      "meta": {
+        "wiki": [
+          "xwiki"
+        ]
+      },
+      "implies": [
+        "Java\\;confidence:99"
+      ],
+      "description": "XWiki is a free wiki software platform written in Java.",
+      "website": "https://www.xwiki.org",
+      "icon": "xwiki.png"
+    },
+    "YesWiki": {
+      "cats": [
+        8
+      ],
+      "dom": {
+        "#yw-container": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "javascripts/yeswiki-base\\.js"
+      ],
+      "implies": [
+        "PHP"
+      ],
+      "description": "YesWiki is a collaborative website creation and management Free Software under the AGPL license, enabling any web user to create, delete, edit, or comment on site pages with unlimited editors or pages.",
+      "website": "https://yeswiki.net",
+      "icon": "YesWiki.svg"
+    },
+    "ikiwiki": {
+      "cats": [
+        8
+      ],
+      "html": [
+        "<a href=\"/(?:cgi-bin/)?ikiwiki\\.cgi\\?do=",
+        "<link rel=\"alternate\" type=\"application/x-wiki\" title=\"edit this page\" href=\"[^\"]*/ikiwiki\\.cgi"
+      ],
+      "description": "ikiwiki is a free and open-source wiki application.",
+      "website": "https://ikiwiki.info",
+      "icon": "ikiwiki.png"
+    }
+  }
+}

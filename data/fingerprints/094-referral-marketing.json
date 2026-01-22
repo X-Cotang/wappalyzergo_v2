@@ -1,0 +1,498 @@
+{
+  "apps": {
+    "Aklamio": {
+      "cats": [
+        94
+      ],
+      "dom": {
+        "a[href*='.aklamio.com/']": {
+          "exists": ""
+        }
+      },
+      "headers": {
+        "content-security-policy": "\\.aklamio\\.com"
+      },
+      "scriptSrc": [
+        "\\.aklamio\\.com/"
+      ],
+      "description": "Aklamio is a solution for enterprise level referral marketing and customer incentivisation.",
+      "website": "https://www.aklamio.com",
+      "icon": "Aklamio.svg"
+    },
+    "Ambassador": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "_mbsy.integrations": ""
+      },
+      "scriptSrc": [
+        "cdn\\.getambassador\\.com/"
+      ],
+      "description": "Ambassador is a marketer-friendly software that simplifies referral marketing and helps automating the enrolment, tracking, rewarding and management process.",
+      "website": "https://www.getambassador.com",
+      "icon": "Ambassador.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _mbsy !== 'undefined' && typeof _mbsy.integrations !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Buyapowa": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "Buyapowa.CanaryCheck": ""
+      },
+      "scriptSrc": [
+        "cdn\\.co-buying\\.com/"
+      ],
+      "description": "Buyapowa is a scalable referral marketing and advocacy platform designed for all industries.",
+      "website": "https://www.buyapowa.com",
+      "icon": "Buyapowa.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Buyapowa !== 'undefined' && typeof Buyapowa.CanaryCheck !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CloudSponge": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "cloudsponge.init": "",
+        "cloudspongeProxy": ""
+      },
+      "scriptSrc": [
+        "\\.cloudsponge\\.com/"
+      ],
+      "description": "CloudSponge is a software-as-a-service tool for importing contacts from address book providers like Gmail, Yahoo Mail, Outlook.com, iCloud and AOL.",
+      "website": "https://www.cloudsponge.com",
+      "icon": "CloudSponge.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cloudsponge !== 'undefined' && typeof cloudsponge.init !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof cloudsponge !== 'undefined' && typeof cloudsponge.init !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ContextBar": {
+      "cats": [
+        94
+      ],
+      "scriptSrc": [
+        "\\.contextbar\\.ru/"
+      ],
+      "description": "ContextBar is a tool designed to attract consistent, thematically relevant visitors to a website.",
+      "website": "https://contextbar.ru"
+    },
+    "Coopt": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "cooptjQuery.Animation": ""
+      },
+      "scriptSrc": [
+        "app\\.getcoopt\\.com/"
+      ],
+      "description": "Coopt is a tool designed to boost sales by transforming customers into social media advertisers, leveraging their networks to promote products and services, thus enhancing brand visibility and engagement.",
+      "website": "https://www.getcoopt.com",
+      "icon": "Coopt.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof cooptjQuery !== 'undefined' && typeof cooptjQuery.Animation !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "EarlyParrot": {
+      "cats": [
+        94
+      ],
+      "scripts": [
+        "app\\.earlyparrot\\.com"
+      ],
+      "description": "EarlyParrot is a referral marketing platform that supports coaches, course creators, and event hosts in expanding launches, webinars, and email lists through effective referral strategies.",
+      "website": "https://www.earlyparrot.com",
+      "icon": "EarlyParrot.svg"
+    },
+    "Extole": {
+      "cats": [
+        94,
+        84
+      ],
+      "dom": {
+        "li > a[href*='.extole.com/'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "extole.VERSION": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.(?:extole|xtlo)\\.(?:com|net)/"
+      ],
+      "description": "Extole is an online marketing platform that enables brands and businesses to get new customers through loyalty and referral programs.",
+      "website": "https://www.extole.com",
+      "icon": "Extole.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof extole !== 'undefined' && typeof extole.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "extole.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Flocktory": {
+      "cats": [
+        94,
+        84
+      ],
+      "dom": {
+        "iframe[src*='.flocktory.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "flocktory": "",
+        "flocktoryPurchase": ""
+      },
+      "scriptSrc": [
+        "\\.flocktory\\.com/"
+      ],
+      "description": "Flocktory is a social referral marketing platform that enables users to share personalised offers via social networks.",
+      "website": "https://www.flocktory.com",
+      "icon": "Flocktory.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof flocktory !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof flocktory !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Friendbuy": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "friendbuy": "",
+        "friendbuyAPI.merchantId": ""
+      },
+      "scriptSrc": [
+        "\\.cloudfront\\.net/js/friendbuy\\.min\\.js",
+        "static\\.fbot\\.me/friendbuy\\.js"
+      ],
+      "description": "Friendbuy is a cloud-based referral marketing solution designed to help ecommerce businesses of all sizes.",
+      "website": "https://www.friendbuy.com",
+      "icon": "Friendbuy.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof friendbuy !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof friendbuy !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Guuru": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "Guuru": "",
+        "guuru.init": ""
+      },
+      "description": "Guuru is a platform that connects shoppers with customers who share their enthusiasm for specific products or services.",
+      "website": "https://www.guuru.com",
+      "icon": "Guuru.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Guuru !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Guuru !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Indi": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "indi.formatStats": "",
+        "indiCountly.check_any_consent": "",
+        "indi_carousel.productCta": ""
+      },
+      "description": "Indi is a video social network where everyone - artists, brands, retailers, nonprofits, celebrities and individuals - can connect with fans and supporters to interact directly with your brand utilising exclusive Video Challenges and Video Threads tailor made by you.",
+      "website": "https://indi.com",
+      "icon": "Indi.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof indi !== 'undefined' && typeof indi.formatStats !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof indi !== 'undefined' && typeof indi.formatStats !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof indi !== 'undefined' && typeof indi.formatStats !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mention Me": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "MentionMe": ""
+      },
+      "scriptSrc": [
+        "\\.mention-me\\.com/"
+      ],
+      "description": "Mention Me is a referral marketing platform for conversion-obsessed ecommerce brands.",
+      "website": "https://www.mention-me.com",
+      "icon": "Mention Me.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MentionMe !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Peachs": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "PEACHS_AFFILIATE_STARTED_PROGRAMS": "",
+        "PEACHS_SQUARESPACE_STARTED": ""
+      },
+      "scriptSrc": [
+        "//peachs\\.co/"
+      ],
+      "description": "Peachs is a Squarespace ecommerce word-of-mouth marketing system designed to promote products through customer referrals and social sharing.",
+      "website": "https://peachs.co",
+      "icon": "Peachs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PEACHS_AFFILIATE_STARTED_PROGRAMS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PEACHS_AFFILIATE_STARTED_PROGRAMS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Profity": {
+      "cats": [
+        94
+      ],
+      "scriptSrc": [
+        "static\\.profity\\.ch/"
+      ],
+      "description": "Profity is a network of ecommerce companies that enables partner shops to market their offers to customers after a sale in any shop, enhancing mutual benefits and sales opportunities.",
+      "website": "https://www.profity.online",
+      "icon": "Profity.svg"
+    },
+    "Refericon": {
+      "cats": [
+        94
+      ],
+      "scriptSrc": [
+        "//app\\.refericon\\.pl/"
+      ],
+      "description": "Refericon is a tool that enhances conversion and sales by using referral marketing.",
+      "website": "https://refericon.pl/",
+      "icon": "Refericon.svg"
+    },
+    "Referral Rocket": {
+      "cats": [
+        94
+      ],
+      "scriptSrc": [
+        "app\\.referralrocket\\.io"
+      ],
+      "description": "Referral Rocket is a software solution for referral and affiliate marketing.",
+      "website": "https://referralrocket.io",
+      "icon": "ReferralRocket.svg"
+    },
+    "ReferralCandy": {
+      "cats": [
+        94,
+        84
+      ],
+      "dom": {
+        "iframe[src*='.referralcandy.com/'],li > a[href*='.referralcandy.com/'],div > a[href*='.referralcandy.com/'] ": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.referralcandy\\.com/"
+      ],
+      "description": "ReferralCandy is a marketing platform that gets shoppers to refer their friends.",
+      "website": "https://www.referralcandy.com",
+      "icon": "ReferralCandy.svg"
+    },
+    "SaaSquatch": {
+      "cats": [
+        94,
+        84
+      ],
+      "js": {
+        "SAASQUATCH_TENANT_ALIAS": "",
+        "squatch.CtaWidget": "",
+        "squatchQuery": ""
+      },
+      "scriptSrc": [
+        "(?:\\.cloudfront\\.net/assets/javascripts/(?:v2/)?|/sas)squatch\\.min\\.js"
+      ],
+      "description": "SaaSquatch is a cloud-based loyalty, referral and rewards marketing platform.",
+      "website": "https://www.saasquatch.com",
+      "icon": "SaaSquatch.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SAASQUATCH_TENANT_ALIAS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SAASQUATCH_TENANT_ALIAS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SAASQUATCH_TENANT_ALIAS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sharpay": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "gaSharpay": "",
+        "sharpayAPI.append": ""
+      },
+      "scriptSrc": [
+        "app\\.sharpay\\.io/"
+      ],
+      "description": "Sharpay is a share button that integrates with blockchain technology, enabling decentralized sharing and tracking of content across multiple platforms.",
+      "website": "https://sharpay.io",
+      "icon": "Sharpay.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gaSharpay !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof gaSharpay !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SparkLoop": {
+      "cats": [
+        94
+      ],
+      "js": {
+        "SLConfig.script_url": "\\.sparkloop\\.app"
+      },
+      "scriptSrc": [
+        "js\\.sparkloop\\.app/"
+      ],
+      "description": "SparkLoop is a newsletter growth platform that offers referral and partner tools to help newsletter operators expand their audience.",
+      "website": "https://sparkloop.app",
+      "icon": "SparkLoop.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SLConfig !== 'undefined' && typeof SLConfig.script_url !== 'undefined' && SLConfig.script_url === '\\.sparkloop\\.app'"
+          }
+        ]
+      }
+    },
+    "Viral Loops": {
+      "cats": [
+        94
+      ],
+      "dom": {
+        "link[href*='wp-content/plugins/viral-loops-wp-integration/assets/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "app\\.viral-loops\\.com/"
+      ],
+      "description": "Viral Loops is a viral and referral marketing platform to launch ranking competitions, sweepstakes, pre-launch and referral programs.",
+      "website": "https://viral-loops.com",
+      "icon": "Viral Loops.svg"
+    },
+    "Zuberance": {
+      "cats": [
+        94
+      ],
+      "dom": {
+        "link[href*='static.zuberance.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.zuberance\\.com/"
+      ],
+      "description": "Zuberance is a platform that transforms enthusiastic customers into a marketing force, driving recommendations and sales for leading B2B and B2C brands.",
+      "website": "https://zuberance.com",
+      "icon": "Zuberance.svg"
+    }
+  }
+}

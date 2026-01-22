@@ -1,0 +1,6982 @@
+{
+  "apps": {
+    "11Sight": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "elevensight": "",
+        "elevensightApp": ""
+      },
+      "scriptSrc": [
+        "app\\.11sight\\.com/"
+      ],
+      "description": "11Sight is an AI-powered, omnichannel platform enabling users to receive inbound video calls from any online channel, facilitating sales conversations and lead conversions.",
+      "website": "https://www.11sight.com",
+      "icon": "11Sight.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof elevensight !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof elevensight !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "42Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "api\\.42chat\\.com"
+      ],
+      "description": "42Chat is a provider of conversational AI solutions and text-based chatbots designed to connect clients with their communities.",
+      "website": "https://www.42chat.com",
+      "icon": "42Chat.svg"
+    },
+    "8x8": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Chat8x8": "",
+        "__8x8Chat": ""
+      },
+      "description": "8x8 is a communication tool offering chat functionality for streamlined business communication.",
+      "website": "https://www.8x8.com",
+      "icon": "8x8.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Chat8x8 !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Chat8x8 !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AINIRO": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ainiro.init": "",
+        "ainiro_faq_question": ""
+      },
+      "scriptSrc": [
+        "\\.ainiro\\.io"
+      ],
+      "description": "AINIRO is a provider of AI chatbots, AI agents, and custom AI solutions designed for various applications.",
+      "website": "https://ainiro.io",
+      "icon": "AINIRO.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ainiro !== 'undefined' && typeof ainiro.init !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ainiro !== 'undefined' && typeof ainiro.init !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Acquire Live Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_acquire_init_config": "",
+        "acquire": ""
+      },
+      "scriptSrc": [
+        "\\.acquire\\.io/(?!cobrowse)"
+      ],
+      "description": "Acquire is a multi-channel customer support platform designed to provide real-time customer support to customers.",
+      "website": "https://acquire.io",
+      "icon": "Acquire.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _acquire_init_config !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _acquire_init_config !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ada": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "__AdaEmbedConstructor": "",
+        "adaEmbed": ""
+      },
+      "scriptSrc": [
+        "\\.ada\\.support"
+      ],
+      "description": "Ada is an automated customer experience company that provides chat bots used in customer support.",
+      "website": "https://www.ada.cx",
+      "icon": "Ada.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __AdaEmbedConstructor !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __AdaEmbedConstructor !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Aircall": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "^https?://cdn\\.aircall\\.io/"
+      ],
+      "description": "Aircall is a cloud-based phone system for customer support and sales teams.",
+      "website": "https://aircall.io",
+      "icon": "aircall.png"
+    },
+    "Aivo": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "$aivo": "",
+        "aivoStorage": ""
+      },
+      "description": "Aivo is a conversational AI platform offering omnichannel tools and live agent solutions to automate customer experiences.",
+      "website": "https://www.aivo.co",
+      "icon": "Aivo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $aivo !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $aivo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Alive5": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "alive5_environment": ""
+      },
+      "scriptSrc": [
+        "\\.websitealive\\.com/"
+      ],
+      "description": "Alive5 is a unified inbox for teams, handling SMS, web chat, and social conversations. It was formerly known as Website Alive.",
+      "website": "https://www.alive5.com",
+      "icon": "Alive5.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof alive5_environment !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AnimalChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "widget\\.animalchat\\.net"
+      ],
+      "description": "AnimalChat is a messaging platform that connects pet owners and professionals, providing a flexible alternative to traditional communication methods.",
+      "website": "https://animalchat.net",
+      "icon": "AnimalChat.svg"
+    },
+    "AnyChat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "anychat.CHATBOX_FRAME": "",
+        "anychatWidget": ""
+      },
+      "scripts": [
+        "api\\.anychat\\.one"
+      ],
+      "description": "AnyChat is a real-time conversation system designed to enable communication and message exchange between users.",
+      "website": "https://anychat.one",
+      "icon": "AnyChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof anychat !== 'undefined' && typeof anychat.CHATBOX_FRAME !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof anychat !== 'undefined' && typeof anychat.CHATBOX_FRAME !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ApexChat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ApexChat": "",
+        "apexchat_dompopup_chatwindow_client": ""
+      },
+      "description": "ApexChat is a company that provides businesses with live chat software and services to facilitate real-time customer engagement, support, lead generation, and enhanced online interactions.",
+      "website": "https://www.apexchat.com",
+      "icon": "ApexChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ApexChat !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ApexChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Apple Business Chat": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "a[href*='bcrw.apple.com/business/api']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "appleBusinessChat.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/apple_business_chat_commerce/.+/apple_message_button_v([\\d\\.]+)\\.js\\;version:\\1"
+      ],
+      "description": "Apple Business Chat is a service from Apple that allows your organization to directly chat with your customers using the Messages app.",
+      "website": "https://developer.apple.com/documentation/businesschat",
+      "icon": "Apple.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof appleBusinessChat !== 'undefined' && typeof appleBusinessChat.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "appleBusinessChat.version || \"\""
+          }
+        ]
+      }
+    },
+    "Arabot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "arabotChatScript": "",
+        "arabotSelector": "",
+        "injectArabotScript": ""
+      },
+      "description": "Arabot is a no-code chatbot platform designed to automate customer interactions and service fulfillment at scale.",
+      "website": "https://arabot.io",
+      "icon": "Arabot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof arabotChatScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof arabotChatScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof arabotChatScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ArrowChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "/arrowchat/.*/jquery\\.js"
+      ],
+      "description": "ArrowChat is a communication tool that enables users to send text messages and engage in video chats with one another.",
+      "website": "https://www.arrowchat.com",
+      "icon": "ArrowChat.svg"
+    },
+    "ArtiBot": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "ArtiBot": "",
+        "_artibotLauncherInitializer": "",
+        "artibotApi": ""
+      },
+      "description": "ArtiBot is a chatbot designed for websites, providing automated assistance and customer engagement through conversational interactions.",
+      "website": "https://www.artibot.ai",
+      "icon": "ArtiBot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ArtiBot !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ArtiBot !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ArtiBot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AsisteClick": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "loadAsisteClick": ""
+      },
+      "scriptSrc": [
+        "app\\.asisteclick\\.com"
+      ],
+      "description": "AsisteClick is a customer service solution that uses chatbots and an omnichannel platform to streamline support across multiple communication channels.",
+      "website": "https://asisteclick.com",
+      "icon": "AsisteClick.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof loadAsisteClick !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AskSpot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "askspot.Chatbot": ""
+      },
+      "scripts": [
+        "app\\.askspot\\.ai"
+      ],
+      "description": "AskSpot is an AI chatbot platform tailored for marketing, digital, and web development agencies.",
+      "website": "https://askspot.ai",
+      "icon": "AskSpot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof askspot !== 'undefined' && typeof askspot.Chatbot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Atlasmic": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "atlasmic": "",
+        "atlasmic.VERSION": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "scripts": [
+        "\\.atlasmic\\.com"
+      ],
+      "description": "Atlasmic is a live chat and business messenger platform designed to support modern online businesses.",
+      "website": "https://atlasmic.com",
+      "icon": "Atlasmic.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof atlasmic !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "B2Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "b2chat_livechat_setup": ""
+      },
+      "scriptSrc": [
+        "app\\.b2chat\\.io"
+      ],
+      "description": "B2Chat is an all-in-one multi-channel platform that unites WhatsApp, Facebook, Instagram, Telegram, and LiveChat in a single interface.",
+      "website": "https://www.b2chat.io",
+      "icon": "B2Chat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof b2chat_livechat_setup !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "BespokeChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.bespokechat\\.com"
+      ],
+      "description": "BespokeChat is a Polish-developed chat solution designed to support real-time online communication.",
+      "website": "https://www.bespokechat.com",
+      "icon": "BespokeChat.svg"
+    },
+    "BetterBot": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "(?:dashboard\\.betterbot\\.ai|\\.betterbot\\.com)"
+      ],
+      "description": "BetterBot is a conversational leasing tool tailored for real estate.",
+      "website": "https://betterbot.com",
+      "icon": "BetterBot.svg"
+    },
+    "BirdSeed": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "birdseed_widget_controller": ""
+      },
+      "scriptSrc": [
+        "\\.birdseed\\.io/"
+      ],
+      "description": "BirdSeed is a suite of website tools designed to enhance customer experience, enable real-time engagement, and support revenue growth.",
+      "website": "https://birdseed.io",
+      "icon": "BirdSeed.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof birdseed_widget_controller !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Blinger": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Blinger": "",
+        "blingerInit": ""
+      },
+      "scriptSrc": [
+        "app\\.blinger\\.io/"
+      ],
+      "description": "Blinger is an omnichannel customer support and sales platform that aggregates messaging apps and live chat into a single helpdesk interface.",
+      "website": "https://blinger.io",
+      "cpe": "cpe:2.3:a:blinger:blinger:*:*:*:*:*:*:*:*",
+      "icon": "Blinger.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Blinger !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Blinger !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Blip": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "/santander-partner-blipchat\\.min\\.js"
+      ],
+      "description": "Blip is an intelligent conversation platform designed to facilitate interactive communication.",
+      "website": "https://www.blip.ai",
+      "icon": "Blip.svg"
+    },
+    "BoatChat": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.boatchat\\.com"
+      ],
+      "description": "BoatChat is a customer service tool that provides live chat support for inquiries and assistance related to boat dealerships.",
+      "website": "https://www.boatchat.com",
+      "icon": "BoatChat.svg"
+    },
+    "Bold Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "^https?://vmss\\.boldchat\\.com/aid/\\d{18}/bc\\.vms4/vms\\.js"
+      ],
+      "description": "BoldChat is a live chat platform.",
+      "website": "https://www.boldchat.com/",
+      "icon": "BoldChat.png"
+    },
+    "Boost.ai": {
+      "cats": [
+        52,
+        53
+      ],
+      "dom": {
+        "link[href*='.boost.ai']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "boost": "",
+        "boostChatPanel": "",
+        "boostInit": ""
+      },
+      "scriptSrc": [
+        "\\.boost\\.ai/chatpanel/"
+      ],
+      "description": "Boost.ai is a conversational AI platform designed to increase self-service rates and elevate customer satisfaction levels through end-to-end solutions.",
+      "website": "https://boost.ai",
+      "icon": "BoostAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof boost !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof boost !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof boost !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Bot9": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "BOT9_DATA.bot9Id": "",
+        "Bot9ChatbotInstance": "",
+        "bot9CopyCodeToClipboard": ""
+      },
+      "description": "Bot9 is an AI chatbot builder, tailored for customer support.",
+      "website": "https://bot9.ai",
+      "icon": "Bot9.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BOT9_DATA !== 'undefined' && typeof BOT9_DATA.bot9Id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BOT9_DATA !== 'undefined' && typeof BOT9_DATA.bot9Id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BOT9_DATA !== 'undefined' && typeof BOT9_DATA.bot9Id !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "BotPenguin": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "BotPenguin": "",
+        "BotPenguinWindow": ""
+      },
+      "scriptSrc": [
+        "cdn\\.botpenguin\\.com/"
+      ],
+      "description": "BotPenguin is an AI chatbot creator for websites, WhatsApp, Facebook, and Telegram.",
+      "website": "https://botpenguin.com",
+      "icon": "BotPenguin.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BotPenguin !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BotPenguin !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "BotStar": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "BotStar.appId": "",
+        "BotStarApi": "",
+        "BotStarUp": ""
+      },
+      "description": "BotStar is a platform for creating chatbots for websites and messaging applications.",
+      "website": "https://botstar.com",
+      "icon": "BotStar.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BotStar !== 'undefined' && typeof BotStar.appId !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BotStar !== 'undefined' && typeof BotStar.appId !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BotStar !== 'undefined' && typeof BotStar.appId !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "BotUp": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_Botup": ""
+      },
+      "description": "BotUp is a chatbot software that helps build your chatbot without coding.",
+      "website": "https://botup.com",
+      "icon": "BotUp.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _Botup !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Botmind": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "botmindWidget": ""
+      },
+      "scriptSrc": [
+        "\\.botmind\\.io/"
+      ],
+      "description": "Botmind is a software that automates responses to frequently asked questions.",
+      "website": "https://www.botmind.io",
+      "icon": "Botmind.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof botmindWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Botpress": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "botpressWebChat.init": ""
+      },
+      "description": "Botpress is a conversational AI platform that empowers individuals and teams of all sizes to design, build, and deploy AI-powered chatbots for various applications.",
+      "website": "https://botpress.com",
+      "icon": "Botpress.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof botpressWebChat !== 'undefined' && typeof botpressWebChat.init !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Botsify": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "botsify.load": "",
+        "setbotsifyIcon": ""
+      },
+      "description": "Botsify is a platform that enables businesses to create chatbots without requiring any coding knowledge.",
+      "website": "https://botsify.com",
+      "icon": "Botsify.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof botsify !== 'undefined' && typeof botsify.load !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof botsify !== 'undefined' && typeof botsify.load !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Botsonic": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Botsonic": "",
+        "botsonicConfig-Botsonic": "",
+        "botsonic_widget": "",
+        "loaded-Botsonic": ""
+      },
+      "description": "Botsonic is a no-code, custom AI chatbot builder that enables businesses to interact with their website visitors/users through natural language conversations.",
+      "website": "https://botsonic.com",
+      "icon": "Botsonic.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Botsonic !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof botsonicConfig-Botsonic !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Botsonic !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof loaded-Botsonic !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Brevo": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "iframe[src*='meet.brevo.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "BrevoConversations": ""
+      },
+      "description": "Brevo is a live chat system designed for customer support and engagement on websites.",
+      "website": "https://www.brevo.com",
+      "icon": "Brevo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BrevoConversations !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CEMax": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "div[data-chat-url*='.cemaxai.com/']": {
+          "exists": ""
+        }
+      },
+      "description": "CEMax is a premium customer engagement platform.",
+      "website": "https://cemax.ai",
+      "icon": "CEMax.png"
+    },
+    "CU Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "chatapp.api": "api\\.cu\\.chat"
+      },
+      "description": "CU Chat is a custom AI chatbot designed to provide 24/7 support, tailored to the specific needs of members.",
+      "website": "https://cu.chat",
+      "icon": "CUChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chatapp !== 'undefined' && typeof chatapp.api !== 'undefined' && chatapp.api === 'api\\.cu\\.chat'"
+          }
+        ]
+      }
+    },
+    "Callbell": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Callbell": "",
+        "callbellSettings": ""
+      },
+      "scriptSrc": [
+        "\\.callbell\\.eu/"
+      ],
+      "description": "Callbell is a web-based live chat solution designed to help businesses manage team collaboration via multiple communication channels.",
+      "website": "https://www.callbell.eu",
+      "icon": "Callbell.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Callbell !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Callbell !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Capacity": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.needle\\.com/"
+      ],
+      "description": "Capacity is a live chat system for ecommerce websites, formerly known as Needle.",
+      "website": "https://capacity.com",
+      "icon": "Capacity.svg"
+    },
+    "CarChat24": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "service11\\.carchat24\\.com"
+      ],
+      "description": "CarChat24 is a live chat solution built specifically for the automotive industry to facilitate real-time customer engagement and lead generation.",
+      "website": "http://carchat24.com",
+      "icon": "CarChat24.svg"
+    },
+    "Centribal": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "centribot_services": ""
+      },
+      "scriptSrc": [
+        "\\.centribal\\.com/"
+      ],
+      "description": "Centribal is a conversational platform designed for creating, managing, and training chatbots.",
+      "website": "https://centribal.com",
+      "icon": "Centribal.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof centribot_services !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Channel.io": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "ChannelIO": ""
+      },
+      "description": "Channel.io is an all-in-one business communication platform that helps businesses connect with customers.",
+      "website": "https://channel.io",
+      "icon": "Channel.io.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ChannelIO !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chaport": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "chaport": "",
+        "chaportConfig": ""
+      },
+      "scriptSrc": [
+        "\\.chaport\\.com"
+      ],
+      "description": "Chaport is a multi-channel live chat and chatbot software for business.",
+      "website": "https://www.chaport.com",
+      "icon": "Chaport.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chaport !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof chaport !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chat Chasers": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_FetchChatChasersApp": ""
+      },
+      "scriptSrc": [
+        "\\.chatchasers\\.com/"
+      ],
+      "description": "Chat Chasers is a chat system designed for car dealers to streamline communication with customers.",
+      "website": "https://www.chatchasers.com",
+      "icon": "ChatChasers.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _FetchChatChasersApp !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chat Robot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "CRChat": "",
+        "_crChat.browserInfo": ""
+      },
+      "description": "Chat Robot is a live chat system.",
+      "website": "https://chat-robot.com",
+      "icon": "ChatRobot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CRChat !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CRChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChatBot": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.chatbot\\.com/"
+      ],
+      "description": "ChatBot is a framework for AI chatbots, enabling users to create chatbots for various web services.",
+      "website": "https://www.chatbot.com",
+      "icon": "ChatBot.svg"
+    },
+    "ChatBotBuilder": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.chatgptbuilder\\.io/"
+      ],
+      "description": "ChatBotBuilderAI is an AI chatbot development platform that enables deployment of custom GPT-powered chatbots.",
+      "website": "https://www.chatbotbuilder.ai",
+      "icon": "ChatBotBuilder.svg"
+    },
+    "ChatBullet": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "widget\\.chatbullet\\.com"
+      ],
+      "description": "ChatBullet is a platform that integrates chatbots and AI tools to automate customer interactions.",
+      "website": "https://chatbullet.com",
+      "icon": "ChatBullet.svg"
+    },
+    "ChatFood": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ChatFoodWidget": "",
+        "ChatFoodWidgetClient": ""
+      },
+      "description": "ChatFood is a platform providing mobile ordering tailored for hospitality brands.",
+      "website": "https://www.chatfood.io",
+      "icon": "ChatFood.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ChatFoodWidget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatFoodWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChatGen": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ChatGen": "",
+        "loadChatgen": ""
+      },
+      "scriptSrc": [
+        "\\.chatgen\\.ai/"
+      ],
+      "description": "ChatGen is a hybrid chatbot platform designed to facilitate communication with prospects, customers, and internal employees, aiming to reduce turnaround time and improve productivity.",
+      "website": "https://chatgen.ai",
+      "icon": "ChatGen.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ChatGen !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatGen !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChatLab": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "script\\.chatlab\\.com"
+      ],
+      "description": "ChatLab is an AI-powered customer service agent that operates as a chatbot on websites to assist with user inquiries.",
+      "website": "https://www.chatlab.com",
+      "icon": "ChatLab.svg"
+    },
+    "ChatNode": {
+      "cats": [
+        52,
+        53
+      ],
+      "scriptSrc": [
+        "embed\\.chatnode\\.ai/"
+      ],
+      "description": "ChatNode is a platform for building advanced AI chatbots that provide deep business insights, designed to enhance customer interactions through innovative technology.",
+      "website": "https://www.chatnode.ai",
+      "icon": "ChatNode.svg"
+    },
+    "ChatPlus": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ChatplusAction.addAgentTag": "",
+        "ChatplusAppScript.getLead": "",
+        "ChatplusScript.focusPrompt": "",
+        "jpChatplusOnComplete": "",
+        "jp_chatplus_app_accessTime": ""
+      },
+      "description": "ChatPlus is a provider of chat and chatbot tool with (or without) AI in Japan and abroad.",
+      "website": "https://chatplus.jp",
+      "icon": "ChatPlus.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ChatplusAction !== 'undefined' && typeof ChatplusAction.addAgentTag !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatplusAction !== 'undefined' && typeof ChatplusAction.addAgentTag !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatplusAction !== 'undefined' && typeof ChatplusAction.addAgentTag !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatplusAction !== 'undefined' && typeof ChatplusAction.addAgentTag !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatplusAction !== 'undefined' && typeof ChatplusAction.addAgentTag !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChatStack": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Chatstack.chatState": "",
+        "Chatstack.server": ""
+      },
+      "description": "ChatStack is a self-hosted live chat software for websites.",
+      "website": "https://www.chatstack.com",
+      "icon": "ChatStack.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Chatstack !== 'undefined' && typeof Chatstack.chatState !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChatThing": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "chatThing.chatFrame": "",
+        "chatThingConfig": ""
+      },
+      "description": "Chat Thing is a platform that provides tools to build AI agents trained on custom content.",
+      "website": "https://chatthing.ai",
+      "icon": "ChatThing.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chatThing !== 'undefined' && typeof chatThing.chatFrame !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof chatThing !== 'undefined' && typeof chatThing.chatFrame !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChatWING": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "iframe[src*='chatwing.com/chatbox/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "chatwing.browser": ""
+      },
+      "scripts": [
+        "\\.chatwing\\.com"
+      ],
+      "description": "ChatWING is a live website chat system designed to facilitate real-time communication between businesses and website visitors.",
+      "website": "https://chatwing.com",
+      "icon": "ChatWING.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chatwing !== 'undefined' && typeof chatwing.browser !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ChatWith.io": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "a[href*='//chatwith.io/'][target='_self']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "widget\\.tochat\\.be/"
+      ],
+      "description": "ChatWith.io is a versatile platform enabling WhatsApp link management, statistics tracking, and specialised services like WhatsApp Business Dating and widgets for efficient customer engagement.",
+      "website": "https://chatwith.io",
+      "icon": "ChatWith.io.svg"
+    },
+    "Chatbaby": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$$chatbaby": ""
+      },
+      "scriptSrc": [
+        "\\.chatbaby\\.co/"
+      ],
+      "description": "Chatbaby is a service for creating custom ChatGPT chatbots tailored to website content.",
+      "website": "https://chatbaby.co",
+      "icon": "Chatbaby.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $$chatbaby !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Chatbase": {
+      "cats": [
+        52
+      ],
+      "cookies": {
+        "chatbase_anon_id": ""
+      },
+      "js": {
+        "chatbaseConfig.chatbotId": "",
+        "embedChatbaseChatbot": ""
+      },
+      "scripts": [
+        "www\\.chatbase\\.co"
+      ],
+      "description": "Chatbase is an AI chatbot builder, it trains ChatGPT on your data and lets you add a chat widget to your website.",
+      "website": "https://www.chatbase.co",
+      "icon": "Chatbase.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chatbaseConfig !== 'undefined' && typeof chatbaseConfig.chatbotId !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof chatbaseConfig !== 'undefined' && typeof chatbaseConfig.chatbotId !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chatgo": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.chatgo\\.cz"
+      ],
+      "description": "Chatgo is a messenger widget designed for integration with websites and e-shops, enabling communication and engagement.",
+      "website": "https://www.chatgo.cz",
+      "icon": "Chatgo.svg"
+    },
+    "Chatify": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.chatify\\.com/"
+      ],
+      "description": "Chatify is a chat solution for websites seeking to enhance customer engagement.",
+      "website": "https://www.chatify.com",
+      "icon": "Chatify.svg"
+    },
+    "Chative": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Chative.app_id": "",
+        "ChativeApi": "",
+        "ChativeEvents": ""
+      },
+      "scriptSrc": [
+        "\\.chative\\.io/"
+      ],
+      "description": "Chative is a platform that provides live chat and chatbot solutions for real-time customer interactions.",
+      "website": "https://chative.io",
+      "icon": "Chative.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Chative !== 'undefined' && typeof Chative.app_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Chative !== 'undefined' && typeof Chative.app_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Chative !== 'undefined' && typeof Chative.app_id !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chatlio": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ChatlioReact": "",
+        "ChatlioReactDOM": ""
+      },
+      "scriptSrc": [
+        "w\\.chatlio\\.com/"
+      ],
+      "description": "Chatlio is a live chat solution that integrates with Slack, enabling real-time communication and customer support directly within the Slack platform.",
+      "website": "https://chatlio.com",
+      "icon": "Chatlio.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ChatlioReact !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatlioReact !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chatlyn": {
+      "cats": [
+        52,
+        53
+      ],
+      "scriptSrc": [
+        "app\\.chatlyn\\.com/"
+      ],
+      "description": "Chatlyn is an AI-powered customer engagement platform designed to automate client communication and optimize engagement, enhancing customer satisfaction.",
+      "website": "https://chatlyn.com",
+      "icon": "Chatlyn.svg"
+    },
+    "Chatra": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ChatraID": "",
+        "ChatraSetup": ""
+      },
+      "scriptSrc": [
+        "call\\.chatra\\.io/chatra\\.js"
+      ],
+      "description": "Chatra is a cloud-based live chat platform aimed at small businesses and ecommerce retailers.",
+      "website": "https://chatra.com",
+      "icon": "Chatra.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ChatraID !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ChatraID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chatroll": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "iframe[src*='chatroll.com/']": {
+          "exists": ""
+        }
+      },
+      "description": "Chatroll is a chat platform designed for live events, enabling real-time audience engagement and interaction.",
+      "website": "https://chatroll.com",
+      "icon": "Chatroll.svg"
+    },
+    "Chatsimple": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "chatsimpleCoPilot": ""
+      },
+      "scriptSrc": [
+        "cdn\\.chatsimple\\.ai/"
+      ],
+      "description": "Chatsimple provides AI chatbots for sales and support, facilitating lead generation and multilingual customer assistance.",
+      "website": "https://www.chatsimple.ai",
+      "icon": "Chatsimple.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chatsimpleCoPilot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chatway": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$chatway": ""
+      },
+      "scriptSrc": [
+        "cdn\\.chatway\\.app/"
+      ],
+      "description": "Chatway is a live chat tool for websites, designed to facilitate customer engagement through real-time conversations.",
+      "website": "https://chatway.app",
+      "icon": "Chatway.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $chatway !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Chatwee": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\bchatwee(?:-api)?\\.com/.*\\.js"
+      ],
+      "description": "Chatwee is a live chat and instant messaging app designed to facilitate real-time communication on websites and online communities.",
+      "website": "https://chatwee.com",
+      "icon": "Chatwee.svg"
+    },
+    "Chatwoot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$chatwoot": "",
+        "chatwootSDK": ""
+      },
+      "description": "Chatwoot is a customer support tool for instant messaging channels.",
+      "website": "https://www.chatwoot.com",
+      "icon": "Chatwoot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $chatwoot !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $chatwoot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chaty": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "close_chaty": "",
+        "launch_chaty": ""
+      },
+      "scriptSrc": [
+        "cdn\\.chaty\\.app/"
+      ],
+      "description": "Chaty is a communication tool that enables customer engagement through messaging apps like WhatsApp and Messenger.",
+      "website": "https://chaty.app/",
+      "icon": "Chaty.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof close_chaty !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof close_chaty !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chekkit": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "chekkitSettings.toggleChat": ""
+      },
+      "description": "Chekkit is an all-in-one review, messaging, and lead inbox software.",
+      "website": "https://www.chekkit.io",
+      "icon": "Chekkit.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chekkitSettings !== 'undefined' && typeof chekkitSettings.toggleChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chord": {
+      "cats": [
+        52,
+        103
+      ],
+      "js": {
+        "CHORDCONNECT": "",
+        "ChordConnect.__esModule": ""
+      },
+      "scriptSrc": [
+        "chord\\.us/embeddable/client-([\\d\\.]+)\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Chord is a video-enabled social community and communication platform completely customised to your brand.",
+      "website": "https://m.chord.us",
+      "icon": "Chord.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CHORDCONNECT !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CHORDCONNECT !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Clearstream": {
+      "cats": [
+        52,
+        75
+      ],
+      "scriptSrc": [
+        "app\\.clearstream\\.io/"
+      ],
+      "description": "Cloudstream is a communication platform that provides texting and email services for congregational outreach and engagement.",
+      "website": "https://clearstream.io",
+      "icon": "Clearstream.svg"
+    },
+    "ClickChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "script\\.click-chat\\.ru"
+      ],
+      "description": "Click Chat is a web-based solution that enables chat installation on any website, facilitating real-time communication and customer engagement.",
+      "website": "https://click-chat.ru",
+      "icon": "ClickChat.svg"
+    },
+    "ClickDesk": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "CLICKDESK_CHAT_WINDOW_UI": "",
+        "CLICKDESK_LIVECHAT": "",
+        "CLICKDESK_Live_Chat": ""
+      },
+      "description": "ClickDesk is a live chat and online engagement software that enables real-time interaction with website visitors.",
+      "website": "https://www.clickdesk.com",
+      "icon": "ClickDesk.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CLICKDESK_CHAT_WINDOW_UI !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CLICKDESK_CHAT_WINDOW_UI !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CLICKDESK_CHAT_WINDOW_UI !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cliengo": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Cliengo.chatConfig": ""
+      },
+      "scriptSrc": [
+        "s\\.cliengo\\.com/"
+      ],
+      "description": "Cliengo is a platform that automates website conversations using Artificial Intelligence to enhance customer engagement and drive sales.",
+      "website": "https://www.cliengo.com",
+      "icon": "Cliengo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Cliengo !== 'undefined' && typeof Cliengo.chatConfig !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Client Chat Live": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "link[href*='platform.clientchatlive.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.clientchatlive\\.com/"
+      ],
+      "description": "Client Chat Live is a tool that converts website visitors into clients through live chat functionality.",
+      "website": "https://clientchatlive.com",
+      "icon": "ClientChatLive.svg"
+    },
+    "CoRover": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "CoRover_tag": ""
+      },
+      "scriptSrc": [
+        "\\.corover\\.mobi/"
+      ],
+      "description": "CoRover is a conversational AI chatbot platform with proprietary cognitive AI technology.",
+      "website": "https://corover.ai",
+      "icon": "CoRover.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CoRover_tag !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Coax": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "coaxAppStorage": "",
+        "coaxCurrentWebDomain": "",
+        "openCoaxWidget": ""
+      },
+      "scriptSrc": [
+        "app\\.coax\\.com\\.au"
+      ],
+      "description": "Coax is a communication platform that consolidates chat histories from multiple channels to improve business communication and customer service.",
+      "website": "https://coax.com.au",
+      "icon": "Coax.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof coaxAppStorage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof coaxAppStorage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof coaxAppStorage !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cognigy": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "__COGNIGY_WEBCHAT": "",
+        "cognigyWebchatInputPlugins": "",
+        "cognigyWebchatMessagePlugins": ""
+      },
+      "description": "Cognigy is a provider of generative and conversational AI-powered customer service agents for businesses.",
+      "website": "https://www.cognigy.com",
+      "icon": "Cognigy.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __COGNIGY_WEBCHAT !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __COGNIGY_WEBCHAT !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __COGNIGY_WEBCHAT !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Collect.chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "CollectAlwaysOpen": "",
+        "CollectChatLauncher": ""
+      },
+      "scriptSrc": [
+        "collectorcdn\\.com/launcher\\.js"
+      ],
+      "description": "Collect.chat is an interactive chatbot that collects data from website visitors.",
+      "website": "https://collect.chat",
+      "icon": "CollectChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CollectAlwaysOpen !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CollectAlwaysOpen !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "CometChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "widget-js\\.cometchat\\.io"
+      ],
+      "description": "CometChat is a SaaS solution that provides apps and websites with scalable text, voice, and video chat functionality.",
+      "website": "https://www.cometchat.com",
+      "icon": "CometChat.svg"
+    },
+    "Comm100": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Comm100API": "",
+        "comm100_chatButton": "",
+        "comm100_livechat_open_link": ""
+      },
+      "description": "Comm100 is a provider of customer service and communication products.",
+      "website": "https://www.comm100.com",
+      "icon": "Comm100.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Comm100API !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Comm100API !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Comm100API !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Conferbot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ConferbotWidget": ""
+      },
+      "scriptSrc": [
+        "conferbot\\.defaults.*\\.min\\.js"
+      ],
+      "description": "Conferbot is a platform designed to improve website engagement through customisable chatbots, catering to various business requirements.",
+      "website": "https://www.conferbot.com",
+      "icon": "Conferbot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ConferbotWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ConvertoBot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "botUrl": "app\\.convertobot\\.com"
+      },
+      "scriptSrc": [
+        "app\\.convertobot\\.com/"
+      ],
+      "description": "ConvertoBot is a chatbot and conversational marketing tool.",
+      "website": "https://convertobot.com",
+      "icon": "ConvertoBot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof botUrl !== 'undefined' && botUrl === 'app\\.convertobot\\.com'"
+          }
+        ]
+      }
+    },
+    "Copilot.Live": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "script\\.copilot\\.live"
+      ],
+      "description": "Copilot.Live is an AI agent with human-level capabilities, enabling the creation of AI agents for customer support.",
+      "website": "https://www.copilot.live",
+      "icon": "CopilotLive.svg"
+    },
+    "Crikle": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "crikle.contactId": "",
+        "crikle.openConvertWidget": ""
+      },
+      "description": "Crikle is a multichannel customer engagement software.",
+      "website": "https://www.crikle.com",
+      "icon": "Crikle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof crikle !== 'undefined' && typeof crikle.contactId !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Crisp Live Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$__CRISP_INCLUDED": "",
+        "$crisp": "",
+        "CRISP_WEBSITE_ID": ""
+      },
+      "scriptSrc": [
+        "client\\.crisp\\.chat/"
+      ],
+      "description": "Crisp Live Chat is a live chat solution with free and paid options.",
+      "website": "https://crisp.chat/",
+      "icon": "Crisp Live Chat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $__CRISP_INCLUDED !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $crisp !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $__CRISP_INCLUDED !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Czater": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$czater": "",
+        "$czaterMethods": ""
+      },
+      "scriptSrc": [
+        "\\.czater\\.pl"
+      ],
+      "description": "Czater is an live chat solution with extended CRM and videochat features.",
+      "website": "https://www.czater.pl",
+      "icon": "Czater.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $czater !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $czaterMethods !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "DeskPro Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "DESKPRO_WIDGET_OPTIONS.chat": ""
+      },
+      "description": "DeskPro is multi channel helpdesk software for managing customer and citizen requests via email, forms, chat, social and voice.",
+      "website": "https://www.deskpro.com/product/chat",
+      "icon": "DeskPro.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DESKPRO_WIDGET_OPTIONS !== 'undefined' && typeof DESKPRO_WIDGET_OPTIONS.chat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Desku": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Desku": "",
+        "isDeskuManagerRunning": "",
+        "isDeskuWidgetAuthSetup": "",
+        "isdeskuManagerRunning": ""
+      },
+      "scriptSrc": [
+        "livechat\\.desku\\.io/cdn/widget\\.js",
+        "widget\\.desku\\.io/chat-widget\\.js"
+      ],
+      "description": "Desku is a customer support tool that helps ecommerce businesses manage and respond to customer inquiries.",
+      "website": "https://desku.io",
+      "icon": "Desku.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Desku !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Desku !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Desku !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Desku !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "DevRev": {
+      "cats": [
+        52,
+        53
+      ],
+      "scriptSrc": [
+        "plug-platform\\.devrev\\.ai/"
+      ],
+      "description": "DevRev PLuG is a customer support platform offering live chat, help documentation, search functionality, an observability engine, and product announcements, all integrated within a widget similar to a support chat widget for website assistance.",
+      "website": "https://devrev.ai/plug-observability",
+      "icon": "DevRev.svg"
+    },
+    "DialogShift": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Dialogshift.instance": ""
+      },
+      "scriptSrc": [
+        "assets\\.dialogshift\\.com"
+      ],
+      "description": "DialogShift is a hotel AI solution for chat, email, and telephone communication.",
+      "website": "https://www.dialogshift.com",
+      "icon": "DialogShift.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Dialogshift !== 'undefined' && typeof Dialogshift.instance !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dialogity": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "js\\.dialogity\\.com"
+      ],
+      "description": "Dialogity Chat is a customer service chatbot platform.",
+      "website": "https://dialogity.com",
+      "icon": "Dialogity.svg"
+    },
+    "Dina Kunder": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "app\\.dinakunder\\.se"
+      ],
+      "description": "Dina Kunder is a provider of AI chatbots designed for automating customer support.",
+      "website": "https://dinakunder.se",
+      "icon": "DinaKunder.svg"
+    },
+    "DocsBot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "DocsBotAI.el": ""
+      },
+      "description": "DocsBot is an AI-powered chatbot that helps automate customer support and improve team productivity.",
+      "website": "https://docsbot.ai",
+      "icon": "DocsBotAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DocsBotAI !== 'undefined' && typeof DocsBotAI.el !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dotdigital Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_ddgChatConfig.urlBase": "\\.dotdigital\\.com"
+      },
+      "implies": [
+        "Dotdigital"
+      ],
+      "description": "Dotdigital Chat is a smart, customisable widget that makes it easy for shoppers to communicate in real-time with members of your team.",
+      "website": "https://dotdigital.com",
+      "icon": "Dotdigital.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _ddgChatConfig !== 'undefined' && typeof _ddgChatConfig.urlBase !== 'undefined' && _ddgChatConfig.urlBase === '\\.dotdigital\\.com'"
+          }
+        ]
+      }
+    },
+    "DoubleTick": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "dt.resetConfig": ""
+      },
+      "scripts": [
+        "api\\.doubletick\\.io"
+      ],
+      "description": "DoubleTick is a phone-based WhatsApp API for B2C and B2B sales, enabling bulk messaging, chatbots, and order booking.",
+      "website": "https://doubletick.io",
+      "icon": "DoubleTick.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dt !== 'undefined' && typeof dt.resetConfig !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Drift": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "drift": "",
+        "driftt": ""
+      },
+      "description": "Drift is a conversational marketing platform.",
+      "website": "https://www.drift.com/",
+      "icon": "Drift.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof drift !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof drift !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Droxy": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.droxy\\.ai/chat"
+      ],
+      "description": "Droxy is a tool that transforms content into interactive AI chatbots for educational and business use, enabling more engaging knowledge sharing.",
+      "website": "https://www.droxy.ai",
+      "icon": "Droxy.svg"
+    },
+    "Droz Bot": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "chat-app\\.meudroz\\.com/"
+      ],
+      "description": "Droz Bot is a multi-channel, customisable chatbot designed to help brands provide customer service across commonly used social apps.",
+      "website": "https://meudroz.com/droz-bot/",
+      "icon": "Droz.svg"
+    },
+    "EasiChat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "easiChat.widget": ""
+      },
+      "scriptSrc": [
+        "widget\\.easichat\\.co\\.uk"
+      ],
+      "description": "Easichat is an online customer service platform that uses AI to automate and manage customer interactions.",
+      "website": "https://easichat.co.uk",
+      "icon": "EasiChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof easiChat !== 'undefined' && typeof easiChat.widget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "EasyLiao": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "easyliaoIsPC": "",
+        "easyliao_design_init": ""
+      },
+      "scriptSrc": [
+        "\\.easyliao\\.com"
+      ],
+      "description": "EasyLiao is a pre-sales customer agent system developed in China, designed to support businesses in handling customer inquiries and engagement before a sale.",
+      "website": "https://easyliao.com",
+      "icon": "EasyLiao.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof easyliaoIsPC !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof easyliaoIsPC !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Element": {
+      "cats": [
+        52
+      ],
+      "meta": {
+        "application-name": [
+          "^element$"
+        ]
+      },
+      "description": "Element is a Matrix-based end-to-end encrypted messenger and secure collaboration app.",
+      "website": "https://element.io",
+      "icon": "elementio.svg"
+    },
+    "EliseAI": {
+      "cats": [
+        52,
+        53
+      ],
+      "dom": {
+        "div#meetelise-chat-launcher-container": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "eliseAi": ""
+      },
+      "description": "EliseAI is an AI-powered conversational platform for business automation.",
+      "website": "https://www.eliseai.com",
+      "icon": "EliseAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof eliseAi !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Engati": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.engati\\.com/"
+      ],
+      "description": "Engati is a chatbot platform that allows users to build bots without requiring programming skills.",
+      "website": "https://www.engati.com",
+      "icon": "Engati.svg"
+    },
+    "Enterprise Bot": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.enterprisebot\\.co/"
+      ],
+      "description": "Enterprise Bot specializes in developing and deploying complex conversational AI systems tailored for enterprise settings, leveraging natural language processing, machine learning, and automation to improve customer interactions and streamline operations.",
+      "website": "https://www.enterprisebot.ai",
+      "icon": "Enterprise Bot.svg"
+    },
+    "Envolve Tech": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "envolveChatInitialized": "",
+        "envolveJsonp": ""
+      },
+      "scriptSrc": [
+        "\\.envolvetech\\.com"
+      ],
+      "description": "Envolve Tech is a platform that provides virtual shopping assistants designed to guide customers through online purchases.",
+      "website": "https://envolvetech.com",
+      "icon": "EnvolveTech.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof envolveChatInitialized !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof envolveChatInitialized !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Facebook Chat Plugin": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "iframe[src*='.facebook.com/']": {
+          "attributes": {
+            "src": "\\.facebook\\.com/v([\\d\\.]+)/plugins/customerchat\\;version:\\1"
+          }
+        }
+      },
+      "js": {
+        "facebookChatSettings": ""
+      },
+      "scriptSrc": [
+        "connect\\.facebook\\.net/.+\\.customerchat\\.js"
+      ],
+      "description": "Facebook Chat Plugin is a website plugin that businesses with a Facebook Page can install on their website.",
+      "website": "https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/",
+      "icon": "Facebook.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof facebookChatSettings !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Fastmind": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.fastmind\\.ai/"
+      ],
+      "description": "Fastmind is an AI-powered chatbot builder that enables customer engagement using live data retrieved directly from a search engine.",
+      "website": "https://fastmind.ai",
+      "icon": "Fastmind.svg"
+    },
+    "Five9": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Five9.Api": "",
+        "Five9Modules": ""
+      },
+      "scripts": [
+        "app\\.five9\\.com"
+      ],
+      "scriptSrc": [
+        "app\\.five9\\.com"
+      ],
+      "description": "Five9 is a cloud-based contact center platform that enables businesses to manage customer interactions across multiple communication channels, including voice, email, chat, and social media.",
+      "website": "https://www.five9.com",
+      "icon": "Five9.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Five9 !== 'undefined' && typeof Five9.Api !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Five9 !== 'undefined' && typeof Five9.Api !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Flashchat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "widget\\.flashchat\\.ai"
+      ],
+      "description": "Flashchat is an automated messenger conversation tool.",
+      "website": "https://flashchat.ai",
+      "icon": "Flashchat.svg"
+    },
+    "Floatbot": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "#flb-widget-handle": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "flb.base_url": "\\.floatbot\\.ai/",
+        "flb.botId ": ""
+      },
+      "scriptSrc": [
+        "\\.floatbot\\.ai/"
+      ],
+      "description": "Floatbot is a conversational AI Platform, facilitating the construction and deployment of voicebot, chatbot, and agent assist functionalities.",
+      "website": "https://floatbot.ai",
+      "icon": "Floatbot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof flb !== 'undefined' && typeof flb.base_url !== 'undefined' && flb.base_url === '\\.floatbot\\.ai/'"
+          }
+        ]
+      }
+    },
+    "Flyzoo": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Flyzoo.AT": ""
+      },
+      "scriptSrc": [
+        "\\.flyzoo\\.co/"
+      ],
+      "description": "Flyzoo is a platform that provides real-time chat functionality designed to support online communities.",
+      "website": "https://flyzoo.co",
+      "icon": "Flyzoo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Flyzoo !== 'undefined' && typeof Flyzoo.AT !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Forethought AI": {
+      "cats": [
+        52,
+        53
+      ],
+      "dom": {
+        "iframe#forethought-chat": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Forethought": ""
+      },
+      "description": "Forethought is a customer support AI platform designed to lower support costs and enhance customer experience.",
+      "website": "https://forethought.ai",
+      "icon": "ForethoughtAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Forethought !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Freshchat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Freshbots": ""
+      },
+      "scriptSrc": [
+        "wchat\\.freshchat\\.com/js/widget\\.js"
+      ],
+      "description": "Freshchat is a cloud-hosted live messaging and engagement application.",
+      "website": "https://www.freshworks.com/live-chat-software/",
+      "icon": "Freshchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Freshbots !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Frisbie": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Frisbie.app": ""
+      },
+      "description": "Frisbie is a Russian chat widget designed for online communication.",
+      "website": "https://frisbie.me",
+      "icon": "Frisbie.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Frisbie !== 'undefined' && typeof Frisbie.app !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Froged": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Froged": "",
+        "frogedAutoClick": ""
+      },
+      "scriptSrc": [
+        "sdk\\.froged\\.com"
+      ],
+      "description": "Froged is an all-in-one omnichannel communication platform designed to streamline messaging across multiple channels.",
+      "website": "https://froged.com",
+      "icon": "Froged.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Froged !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Froged !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Front AI": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "FrontCFcreateCookie": ""
+      },
+      "scriptSrc": [
+        "\\.front\\.ai/"
+      ],
+      "description": "Front AI is a platform that offers services for Conversational AI, Virtual Agents, and Service Bots to support automated customer interactions.",
+      "website": "https://front.ai",
+      "icon": "FrontAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FrontCFcreateCookie !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Front Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "FrontChat": ""
+      },
+      "scriptSrc": [
+        "//chat-assets\\.frontapp\\.com/"
+      ],
+      "description": "Front Chat is the live website chat solution that you can manage straight from your inbox.",
+      "website": "https://front.com",
+      "icon": "Front Chat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FrontChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Genesys Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.boldchat\\.com/"
+      ],
+      "description": "Genesys Chat is a customer engagement platform that facilitates real-time communication between businesses and their customers through web messaging and live chat functionalities.",
+      "website": "https://www.genesys.com/capabilities/live-chat-software",
+      "icon": "Genesys Cloud.svg"
+    },
+    "Geniee Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "GenooCSS.add": ""
+      },
+      "scripts": [
+        "\\.chamo-chat\\.com/"
+      ],
+      "description": "Geniee Chat is a chat-based web customer service platform.",
+      "website": "https://chamo-chat.com",
+      "icon": "GenieeChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof GenooCSS !== 'undefined' && typeof GenooCSS.add !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "GetChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "getchat\\.app/"
+      ],
+      "description": "GetChat is a platform enabling communication with website visitors via preferred messaging applications.",
+      "website": "https://getchat.app",
+      "icon": "GetChat.svg"
+    },
+    "Giosg": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "giosgWebpackJsonp": ""
+      },
+      "scripts": [
+        "service\\.giosg\\.com"
+      ],
+      "description": "Giosg is a live chat solution designed to support ecommerce platforms by enabling real-time customer communication and engagement.",
+      "website": "https://www.giosg.com",
+      "icon": "Giosg.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof giosgWebpackJsonp !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gist": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "gist.setAppId ": ""
+      },
+      "description": "Gist is email marketing automation, live chat, and helpdesk software.",
+      "website": "https://getgist.com/live-chat",
+      "icon": "gist_live_chat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gist !== 'undefined' && typeof gist.setAppId  !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gista": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$gista.config": ""
+      },
+      "description": "Gista is an AI conversion agent that helps websites turn visitors into leads and customers through automated engagement.",
+      "website": "https://gista.co",
+      "icon": "Gista.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $gista !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Gitter": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "gitter.chat": ""
+      },
+      "description": "Gitter is a chat and networking platform that helps to manage, grow and connect communities through messaging.",
+      "website": "https://gitter.im",
+      "icon": "Gitter.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gitter !== 'undefined' && typeof gitter.chat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gladly": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Gladly": ""
+      },
+      "scriptSrc": [
+        "cdn\\.gladly\\.com"
+      ],
+      "description": "Gladly is a customer service platform.",
+      "website": "https://www.gladly.com",
+      "icon": "Gladly.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Gladly !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Glassix": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "GlassixWidgetClient": ""
+      },
+      "description": "Glassix is an omnichannel messaging platform for service, sales, and support centers.",
+      "website": "https://glassix.co.il",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof GlassixWidgetClient !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gleap": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Gleap": ""
+      },
+      "description": "Gleap is an all-in-one customer feedback platform offering features like in-app bug reporting, live chat, AI support bots, product roadmaps, customer surveys, and marketing automation to enhance customer service and product development.",
+      "website": "https://www.gleap.io",
+      "icon": "Gleap.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Gleap !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gleen": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "gleenWidget": ""
+      },
+      "scriptSrc": [
+        "app\\.gleen\\.ai/"
+      ],
+      "description": "Gleen is a generative AI chatbot designed to provide customers with trustworthy answers, automate actions, and integrate unified knowledge.",
+      "website": "https://gleen.ai",
+      "icon": "Gleen.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gleenWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Glia": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "api\\.glia\\.com/"
+      ],
+      "description": "Glia is a chat and digital assistant utilised across various industries.",
+      "website": "https://www.glia.com",
+      "icon": "Glia.svg"
+    },
+    "Gobot": {
+      "cats": [
+        52
+      ],
+      "cookies": {
+        "_gobot": ""
+      },
+      "js": {
+        "gobot": ""
+      },
+      "scriptSrc": [
+        "\\.getgobot\\.com/"
+      ],
+      "description": "Gobot is a tool that increases website leads, sales, and engagement through a conversational bot.",
+      "website": "https://www.getgobot.com",
+      "icon": "Gobot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gobot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Goftino": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Goftino.setWidget": "",
+        "goftinoRemoveLoad": "",
+        "goftino_1": "",
+        "goftino_getUrl": ""
+      },
+      "scriptSrc": [
+        "\\.goftino\\.com/"
+      ],
+      "description": "Goftino is an online chat service for web users.",
+      "website": "https://www.goftino.com",
+      "icon": "Goftino.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Goftino !== 'undefined' && typeof Goftino.setWidget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Goftino !== 'undefined' && typeof Goftino.setWidget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Goftino !== 'undefined' && typeof Goftino.setWidget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Goftino !== 'undefined' && typeof Goftino.setWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gorgias": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "gorgiasChat": ""
+      },
+      "description": "Gorgias is a helpdesk and chat solution designed for ecommerce stores.",
+      "website": "https://www.gorgias.com/",
+      "icon": "Gorgias.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gorgiasChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Grasp": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "CASENGO.widget": "",
+        "CASENGO_INLINE_COOKIE": "",
+        "casengoUpdateWidget": ""
+      },
+      "description": "Grasp is a customer support software company that offers a cloud-based helpdesk and live chat solution for businesses of all sizes.",
+      "website": "https://www.getgrasp.com",
+      "icon": "Grasp.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CASENGO !== 'undefined' && typeof CASENGO.widget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CASENGO !== 'undefined' && typeof CASENGO.widget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CASENGO !== 'undefined' && typeof CASENGO.widget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gravity": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "gravi_api.chatMode": "",
+        "gravi_init": "",
+        "gravi_version": "^([\\d\\.]+[a-z]?)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.gravi\\.org/"
+      ],
+      "description": "Gravity is a live chat solution designed to facilitate real-time communication for businesses.",
+      "website": "https://gravi.org",
+      "icon": "Gravity.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof gravi_api !== 'undefined' && typeof gravi_api.chatMode !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof gravi_api !== 'undefined' && typeof gravi_api.chatMode !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof gravi_api !== 'undefined' && typeof gravi_api.chatMode !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "gravi_version || \"\""
+          }
+        ]
+      }
+    },
+    "Groove": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Groove": "",
+        "GrooveWidget": ""
+      },
+      "scriptSrc": [
+        "\\.groovehq\\.com/"
+      ],
+      "description": "Groove is a help desk software offering a shared inbox, knowledge base, and chat features.",
+      "website": "https://www.groovehq.com",
+      "icon": "Groove.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Groove !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Groove !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "HappyFox Live Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "HappyFoxChatObject": ""
+      },
+      "scriptSrc": [
+        "\\.happyfoxchat\\.com/"
+      ],
+      "description": "HappyFox is a help desk ticketing system that is hosted on cloud, supporting multiple customer support channels like email, voice and live chat.",
+      "website": "https://www.happyfox.com/live-chat",
+      "icon": "HappyFox.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HappyFoxChatObject !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Haptik": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "HaptikSDK": "",
+        "haptik": "",
+        "haptikInitSettings": ""
+      },
+      "scriptSrc": [
+        "\\.haptikapi\\.com/"
+      ],
+      "description": "Haptik is an Indian enterprise conversational AI platform founded in August 2013, and acquired by Reliance Industries Limited in 2019.",
+      "website": "https://www.haptik.ai",
+      "icon": "Haptik.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HaptikSDK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof HaptikSDK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof HaptikSDK !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "HelpOnClick": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "HelpOnClickLogoRoundMask": "",
+        "HelpOnClick_ChatPrinter_Button": ""
+      },
+      "scriptSrc": [
+        "\\.helponclick\\.com"
+      ],
+      "description": "HelpOnClick is a live chat and customer tracking platform designed to support real-time communication and monitor visitor interactions on websites.",
+      "website": "https://helponclick.com",
+      "icon": "HelpOnClick.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HelpOnClickLogoRoundMask !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof HelpOnClickLogoRoundMask !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Hoiio": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "hoiio\\.notifyempty"
+      ],
+      "description": "Hoiio is a cloud communications platform that simplifies the setup of messaging, voice, and other communication services.",
+      "website": "https://www.hoiio.com",
+      "icon": "Hoiio.svg"
+    },
+    "Hoory": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$hoory": "",
+        "hoorySDK.reRun": "",
+        "hoorySettings": ""
+      },
+      "description": "Hoory is a Conversational AI platform that automates customer support.",
+      "website": "https://www.hoory.com",
+      "icon": "Hoory.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $hoory !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $hoory !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $hoory !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "HubSpot Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "HubSpotConversations": ""
+      },
+      "scriptSrc": [
+        "js\\.usemessages\\.com"
+      ],
+      "description": "HubSpot Chat is a tool where you can view, manage, and reply to incoming messages from multiple channels.",
+      "website": "https://www.hubspot.com/products/crm/live-chat",
+      "icon": "HubSpot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HubSpotConversations !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Huggy": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Huggy.closeBox": ""
+      },
+      "scriptSrc": [
+        "\\.huggy\\.io/"
+      ],
+      "description": "Huggy is a service automation platform that centralizes operations and integrates chatbots capable of responding at any time.",
+      "website": "https://www.huggy.io",
+      "icon": "Huggy.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Huggy !== 'undefined' && typeof Huggy.closeBox !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ideta": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "webpackChunkideta_platoon": ""
+      },
+      "scriptSrc": [
+        "ideta-prod\\.appspot\\.com"
+      ],
+      "description": "Ideta is a platform that provides chatbots and callbots to streamline company operations through AI and automation.",
+      "website": "https://www.ideta.io",
+      "icon": "Ideta.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webpackChunkideta_platoon !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ikeono": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ikeono": ""
+      },
+      "scriptSrc": [
+        "widget\\.ikeono\\.com"
+      ],
+      "description": "Ikeono is an all-in-one communication tool that provides business text messaging solutions for independent retailers.",
+      "website": "https://www.ikeono.com",
+      "icon": "Ikeono.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ikeono !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ImBox": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "__IMBOX_GLOBAL__": "",
+        "__IMBOX_INITIALIZED__": "",
+        "_imbox": "",
+        "imboxBuilt": "",
+        "imboxManager": ""
+      },
+      "description": "Imbox is a live chat platform that includes co-browsing features.",
+      "website": "https://imbox.se",
+      "icon": "Imbox.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __IMBOX_GLOBAL__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __IMBOX_GLOBAL__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __IMBOX_GLOBAL__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __IMBOX_GLOBAL__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __IMBOX_GLOBAL__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Imber": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$imber.getVisitor": "",
+        "IMBER_ID": "",
+        "IMBER_SOCKET": ""
+      },
+      "description": "Imber is an all-in-one marketing automation platform built for customer support (live chat), sales, and marketing.",
+      "website": "https://imber.live",
+      "icon": "Imber.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $imber !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $imber !== 'undefined' && typeof $imber.getVisitor !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $imber !== 'undefined' && typeof $imber.getVisitor !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "InSyncai": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "iframe[src*='insync_iframe_webchat_js_prod'], iframe#insync-iframe": {
+          "exists": ""
+        }
+      },
+      "description": "InSyncai offers a conversational platform for enterprises to design and build chatbots having applications in customer support and services.",
+      "website": "https://www.insyncai.com",
+      "icon": "InSyncai.png"
+    },
+    "InforUMobile": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "iframe[src*='bot.frontcld.com/bot/chat']": {
+          "exists": ""
+        }
+      },
+      "description": "InforUMobile is a multi-channel system that enables digital communication with customers, offering various channels for interacting and engaging with users, developed by the Shamir Systems Group.",
+      "website": "https://www.inforu.co.il"
+    },
+    "Infoset": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "InfosetChat": "",
+        "InfosetRoot": ""
+      },
+      "description": "Infoset is an advanced communication and support solutions.",
+      "website": "https://infoset.app",
+      "icon": "Infoset.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof InfosetChat !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof InfosetChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Intaker": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "link[href*='chat-api.intaker.com/api/']": {
+          "attributes": {
+            "href": "api/v([\\d]+)\\;version:\\1"
+          }
+        }
+      },
+      "js": {
+        "Intaker": ""
+      },
+      "description": "Intaker is a service that enables law firms to send and receive text messages with clients, including automated follow-up messages.",
+      "website": "https://intaker.com",
+      "icon": "Intaker.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Intaker !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Interakt": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.interakt\\.ai/"
+      ],
+      "description": "Interakt is a messaging platform tailored for business communication, offering features such as secure messaging, file sharing, and customer support functionalities.",
+      "website": "https://www.interakt.shop",
+      "icon": "Interakt.svg"
+    },
+    "Intercom": {
+      "cats": [
+        52,
+        53
+      ],
+      "dom": {
+        "div.live-chat-loader-placeholder": {
+          "exists": ""
+        },
+        "iframe#intercom-frame": {
+          "exists": ""
+        },
+        "link[href^='https://widget.intercom.io']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Intercom": ""
+      },
+      "scriptSrc": [
+        "(?:api\\.intercom\\.io/api|static\\.intercomcdn\\.com/intercom\\.v1)"
+      ],
+      "description": "Intercom is an American software company that produces a messaging platform which allows businesses to communicate with prospective and existing customers within their app, on their website, through social media, or via email.",
+      "website": "https://www.intercom.com",
+      "icon": "Intercom.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Intercom !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Jenny": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "webpackJsonpget-jenny": ""
+      },
+      "scriptSrc": [
+        "\\.getjenny\\.com/"
+      ],
+      "description": "Jenny is a customer service chatbot platform.",
+      "website": "https://www.getjenny.com",
+      "icon": "Jenny.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webpackJsonpget-jenny !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Jitsi": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "lib-jitsi-meet.*\\.js"
+      ],
+      "description": "Jitsi is a free and open-source multiplatform voice (VoIP), videoconferencing and instant messaging applications for the web platform.",
+      "website": "https://jitsi.org",
+      "icon": "Jitsi.png"
+    },
+    "JivoChat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "jivo_api": "",
+        "jivo_version": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.jivosite\\.com"
+      ],
+      "description": "JivoChat is a live chat solution for websites offering customizable web and mobile chat widgets.",
+      "website": "https://www.jivosite.com",
+      "icon": "JivoChat.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jivo_api !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof jivo_api !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "jivo_version || \"\""
+          }
+        ]
+      }
+    },
+    "Joinchat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "joinchat_obj": ""
+      },
+      "scriptSrc": [
+        "/js/joinchat\\.min\\.js"
+      ],
+      "description": "Joinchat is a tool that enables businesses to convert customer conversations into sales or leads through integrated communication features.",
+      "website": "https://join.chat",
+      "icon": "Joinchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof joinchat_obj !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Joonbot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "JOONBOT_WIDGET_ID": "",
+        "joonbot.hide": ""
+      },
+      "description": "Joonbot is a chatbot builder that enables users to create automated conversational flows without programming knowledge.",
+      "website": "https://joonbot.com",
+      "icon": "Joonbot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof JOONBOT_WIDGET_ID !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof JOONBOT_WIDGET_ID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Kapture CRM": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Kapchat": "",
+        "kap_chat_js": ""
+      },
+      "scriptSrc": [
+        "\\.kapturecrm\\.com/.+\\?ver=([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "Kapture CRM is an enterprise-grade SaaS-based customer support automation platform.",
+      "website": "https://www.kapturecrm.com",
+      "icon": "Kapture CRM.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Kapchat !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Kapchat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Karoo Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_kwp.host": "widget\\.karoo\\.com\\.br"
+      },
+      "description": "Karoo Chat is a platform that combines human and automated customer service, offering online live chat for customer support.",
+      "website": "https://karoo.com.br",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _kwp !== 'undefined' && typeof _kwp.host !== 'undefined' && _kwp.host === 'widget\\.karoo\\.com\\.br'"
+          }
+        ]
+      }
+    },
+    "KeyReply": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "keyreply\\.com/chat/widget\\.js"
+      ],
+      "description": "KeyReply is a mobile-friendly chat widget that enables websites to provide real-time messaging and user support across devices.",
+      "website": "https://www.keyreply.com",
+      "icon": "KeyReply.svg"
+    },
+    "Klara": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "klaraWidget": ""
+      },
+      "scriptSrc": [
+        "\\.klara\\.com/"
+      ],
+      "description": "Klara is a healthcare communication platform that enables staff to communicate with patients and with each other.",
+      "website": "https://www.klara.com",
+      "icon": "Klara.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof klaraWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Knock Knock App": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Knock_knock_user": "",
+        "knock_widget_init": ""
+      },
+      "scriptSrc": [
+        "api\\.knock-knockapp\\.com"
+      ],
+      "description": "Knock Knock App is a video call solution for instant communication with website visitors, designed to optimize inbound inquiries and increase sales from website and landing page traffic.",
+      "website": "https://knockknockapp.ai",
+      "icon": "KnockKnockApp.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Knock_knock_user !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Knock_knock_user !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Krible": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.krible\\.ru"
+      ],
+      "scriptSrc": [
+        "\\.krible\\.com"
+      ],
+      "description": "Krible is a live chat management platform designed to facilitate real-time customer interactions and support.",
+      "website": "https://krible.ru",
+      "icon": "Krible.svg"
+    },
+    "Kustomer": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Kustomer": ""
+      },
+      "scriptSrc": [
+        "cdn\\.kustomerapp\\.com"
+      ],
+      "description": "Kustomer is a CRM platform.",
+      "website": "https://www.kustomer.com/",
+      "icon": "Kustomer.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Kustomer !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Landbot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "LandbotLivechat": "",
+        "initLandbot": ""
+      },
+      "scriptSrc": [
+        "\\.landbot\\.io/.*-([\\d\\.]+)\\.js"
+      ],
+      "description": "Landbot is a no code conversational chatbots, conversational landing pages and website, interactive survey and lead generation bot.",
+      "website": "https://landbot.io",
+      "icon": "landbot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof LandbotLivechat !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof LandbotLivechat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Lead-Finity Webchat": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "app\\.lead-finity\\.com"
+      ],
+      "description": "Lead-Finity Webchat is a platform that converts website visitors into leads and facilitates sales conversations.",
+      "website": "https://lead-finity.com",
+      "icon": "LeadFinity.svg"
+    },
+    "Leadster": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "neurolead.convoScript": "",
+        "neurolead.elChatbot": "",
+        "neuroleadLanguage": ""
+      },
+      "description": "Leadster is a conversation marketing plataform based on chatbot.",
+      "website": "https://leadster.com.br",
+      "icon": "Leadster.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof neurolead !== 'undefined' && typeof neurolead.convoScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof neurolead !== 'undefined' && typeof neurolead.convoScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Leadtex": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.leadteh\\.ru/"
+      ],
+      "description": "Leadtex is a software solution focused on the development of chatbots.",
+      "website": "https://leadteh.ru",
+      "icon": "Leadteh.svg"
+    },
+    "Let's Connect": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.letsconnect\\.at/"
+      ],
+      "description": "Let's Connect is a digital tool for businesses to manage customer interactions and communications.",
+      "website": "https://www.letsconnect.at",
+      "icon": "LetsConnect.svg"
+    },
+    "Lime Talk": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "limetalk": "",
+        "limetalkLoader": ""
+      },
+      "scriptSrc": [
+        "\\.limetalk\\.com/"
+      ],
+      "description": "Lime Talk is a real-time customer messaging platform designed for businesses to engage with website visitors and customers through live chat functionality.",
+      "website": "https://www.limetalk.com",
+      "icon": "LimeTalk.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof limetalk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof limetalk !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LimeChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.limechat\\.ai/"
+      ],
+      "description": "LimeChat is India's first level-3 AI chatbot company.",
+      "website": "https://www.limechat.ai",
+      "icon": "LimeChat.png"
+    },
+    "Lindy": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "api\\.lindy\\.ai"
+      ],
+      "description": "Lindy is an AI assistant that helps complete tasks using custom AI, with no coding required.",
+      "website": "https://www.lindy.ai",
+      "icon": "Lindy.svg"
+    },
+    "LiveAgent": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "LiveAgent": ""
+      },
+      "description": "LiveAgent is an online live chat platform. The software provides a ticket management system.",
+      "website": "https://www.liveagent.com",
+      "icon": "LiveAgent.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof LiveAgent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LiveChat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "LiveChatWidget": ""
+      },
+      "scriptSrc": [
+        "cdn\\.livechatinc\\.com/.*tracking\\.js"
+      ],
+      "description": "LiveChat is an online customer service software with online chat, help desk software, and web analytics capabilities.",
+      "website": "https://www.livechat.com/",
+      "icon": "LiveChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof LiveChatWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LiveHelp": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "LHready": ""
+      },
+      "description": "LiveHelp is an online chat tool.",
+      "website": "https://www.livehelp.it",
+      "icon": "LiveHelp.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof LHready !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LivePerson": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "lpTag.Chronos": ""
+      },
+      "scriptSrc": [
+        "\\.(?:liveperson|contactatonce)?\\.(?:com|net|co\\.uk)/"
+      ],
+      "description": "LivePerson is a tool for conversational chatbots and messaging.",
+      "website": "https://www.liveperson.com",
+      "icon": "LivePerson.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof lpTag !== 'undefined' && typeof lpTag.Chronos !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LiveTex": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "liveTex": "",
+        "liveTexID": "",
+        "liveTex_object": ""
+      },
+      "description": "LiveTex is a universal chat platform that provides digital communication solutions, allowing businesses to interact with clients across various digital channels.",
+      "website": "https://livetex.ru",
+      "icon": "LiveTex.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof liveTex !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof liveTex !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof liveTex !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LiveZilla": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "#lz_overlay_chat": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "lz_chat_execute": "",
+        "lz_code_id": "(?:[\\w\\d]+)",
+        "lz_tracking_set_widget_visibility": ""
+      },
+      "description": "LiveZilla is a web-based live support platform.",
+      "website": "https://www.livezilla.net",
+      "icon": "LiveZilla.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof lz_chat_execute !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof lz_chat_execute !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof lz_chat_execute !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mainstay": {
+      "cats": [
+        52,
+        53
+      ],
+      "scriptSrc": [
+        "webbot\\.mainstay\\.com/"
+      ],
+      "description": "Mainstay is a student engagement platform that is powered by human-centered, AI-enhanced chatbots.",
+      "website": "https://mainstay.com",
+      "icon": "Mainstay.svg"
+    },
+    "Maisie": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "maisieChatBotContext": "",
+        "maisieWebpackJsonpFunction": ""
+      },
+      "scriptSrc": [
+        "app\\.mymaisie\\.com"
+      ],
+      "description": "Maisie is an AI-powered conversational assistant that provides automated sales and customer support by handling queries around the clock.",
+      "website": "https://www.maisieai.com",
+      "icon": "Maisie.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof maisieChatBotContext !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof maisieChatBotContext !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mava": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Mava.identify": "",
+        "MavaWebChatToggle": ""
+      },
+      "description": "Mava is an AI-driven customer support platform that scales customer support and success by connecting to private, group, and community channels.",
+      "website": "https://www.mava.app",
+      "icon": "Mava.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Mava !== 'undefined' && typeof Mava.identify !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Mava !== 'undefined' && typeof Mava.identify !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Medchat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "MedChat": "",
+        "MedChatApp": ""
+      },
+      "scriptSrc": [
+        "widget-ui\\.medchatapp\\.com/"
+      ],
+      "description": "Medchat is a HIPAA-compliant platform that provides patient chat services powered by AI agents.",
+      "website": "https://medchatapp.com",
+      "icon": "Medchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MedChat !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof MedChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Melibo": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "melibo.openWidget": ""
+      },
+      "scriptSrc": [
+        "\\.melibo\\.de/"
+      ],
+      "description": "Melibo is an AI platform focused on enhancing customer service and advancing chatbot technology.",
+      "website": "https://www.melibo.de",
+      "icon": "Melibo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof melibo !== 'undefined' && typeof melibo.openWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Merlin": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Merlin.Chat": ""
+      },
+      "scriptSrc": [
+        "scripts\\.gomerlin\\.com\\.br"
+      ],
+      "description": "Merlin is a platform that builds bots for interactive visitor, lead, and customer engagement, integrating with tools and databases to automate processes and improve lead conversion without requiring a developer.",
+      "website": "https://gomerlin.com.br",
+      "icon": "Merlin.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Merlin !== 'undefined' && typeof Merlin.Chat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mioot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "miootChat.addTicket": "",
+        "miootFunctions": ""
+      },
+      "scripts": [
+        "\\.mioot\\.com"
+      ],
+      "description": "Mioot is a live chat software that facilitates real-time communication between service agents and customers on digital platforms.",
+      "website": "https://mioot.com",
+      "icon": "Mioot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof miootChat !== 'undefined' && typeof miootChat.addTicket !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof miootChat !== 'undefined' && typeof miootChat.addTicket !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MoinAI": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "___moinloader": "",
+        "__moinrpc": "",
+        "moin.addContext": ""
+      },
+      "scripts": [
+        "\\.moin\\.ai"
+      ],
+      "scriptSrc": [
+        "\\.moin\\.ai"
+      ],
+      "description": "MoinAI is an AI platform for digital customer communication, enabling businesses to automate interactions.",
+      "website": "https://www.moin.ai",
+      "icon": "MoinAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ___moinloader !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ___moinloader !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ___moinloader !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mottle": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "link[href*='embed.mottle.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Mottle": ""
+      },
+      "description": "Mottle is a custom chatbot creation tool that allows users to build expressive ChatGPT-like chatbots using their own data.",
+      "website": "https://mottle.com",
+      "icon": "Mottle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Mottle !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Moveo.AI": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "MoveoAI": ""
+      },
+      "description": "Moveo.AI is a no-code platform that allows businesses to create, manage and deploy AI virtual agents (chatbots).",
+      "website": "https://moveo.ai",
+      "icon": "Moveo.AI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MoveoAI !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Muchat": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "div[class^='muchat-chatbox'], style[data-emotion*='muchat-chatbox-bubble']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Muchat": ""
+      },
+      "description": "Muchat is a customer support tool that uses artificial intelligence to deliver personalized conversations by leveraging customer data.",
+      "website": "https://mu.chat",
+      "icon": "Muchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Muchat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MyLiveChat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "MyLiveChat.Version": "(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "mylivechat\\.com/"
+      ],
+      "description": "MyLiveChat is a live chat developed by CuteSoft.",
+      "website": "https://mylivechat.com",
+      "icon": "MyLiveChat.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MyLiveChat !== 'undefined' && typeof MyLiveChat.Version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "MyLiveChat.Version || \"\""
+          }
+        ]
+      }
+    },
+    "Myma": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "messenger\\.myma\\.ai/"
+      ],
+      "description": "Myma is an AI-powered multi-channel chatbot designed for hotels, enabling automated guest interactions across various communication platforms.",
+      "website": "https://www.myma.ai",
+      "icon": "Myma.svg"
+    },
+    "Neexa": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "neexa_xgmx_cc_wpq_ms": ""
+      },
+      "description": "Neexa is an AI-powered inquiry and sales agent designed to handle customer queries.",
+      "website": "https://neexa.ai",
+      "icon": "NeexaAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof neexa_xgmx_cc_wpq_ms !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Netrox": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.netroxsc\\.ru"
+      ],
+      "scriptSrc": [
+        "\\.netroxsc\\.ru"
+      ],
+      "description": "Netrox SC is a Russian online consultant technology platform that provides live chat and customer support tools for websites.",
+      "website": "https://netroxsc.ru",
+      "icon": "NetroxSC.svg"
+    },
+    "Newo": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "static\\.newo\\.ai"
+      ],
+      "description": "Newo is an AI platform offering automated solutions for sales, reception, and concierge services across various industries.",
+      "website": "https://newo.ai",
+      "icon": "Newo.svg"
+    },
+    "Ngage Live Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "NgageKillScript": "",
+        "StartNgageChat": ""
+      },
+      "scriptSrc": [
+        "messenger\\.ngageics\\.com"
+      ],
+      "description": "Ngage Live Chat is an industry-specific live chat solution that converts website visitors into clients.",
+      "website": "https://www.ngagelive.com",
+      "icon": "NgageLiveChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof NgageKillScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof NgageKillScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ninchat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Ninchat.ERROR": "",
+        "NinchatAntics": "",
+        "NinchatAsyncInit": ""
+      },
+      "scriptSrc": [
+        "api\\.ninchat\\.com"
+      ],
+      "description": "Ninchat is a secure messaging platform designed for organizations to facilitate encrypted communication and collaboration.",
+      "website": "https://ninchat.com",
+      "icon": "Ninchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Ninchat !== 'undefined' && typeof Ninchat.ERROR !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Ninchat !== 'undefined' && typeof Ninchat.ERROR !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Ninchat !== 'undefined' && typeof Ninchat.ERROR !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Norby": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "norbyChat": ""
+      },
+      "scriptSrc": [
+        "chat\\.norby\\.io/"
+      ],
+      "description": "Norby is an AI-powered chat solution catering to ecommerce, healthcare, crypto, and fintech industries.",
+      "website": "https://norby.io",
+      "icon": "NorbyAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof norbyChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Oct8ne": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "oct8ne.agentsAvailable": "",
+        "oct8neApi": "",
+        "oct8neVars.pluginVersion": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.oct8ne\\.com/"
+      ],
+      "description": "Oct8ne is a visual customer service software.",
+      "website": "https://oct8ne.com",
+      "icon": "Oct8ne.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof oct8ne !== 'undefined' && typeof oct8ne.agentsAvailable !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof oct8ne !== 'undefined' && typeof oct8ne.agentsAvailable !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof oct8ne !== 'undefined' && typeof oct8ne.agentsAvailable !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "oct8neVars.pluginVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Olark": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "olark": "",
+        "olarkUserData": ""
+      },
+      "scriptSrc": [
+        "\\.olark\\.com/"
+      ],
+      "description": "Olark is a cloud-based live chat solution.",
+      "website": "https://www.olark.com/",
+      "icon": "Olark.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof olark !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof olark !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ometrics": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Ometrics.Animation": "",
+        "OmetricsBody": ""
+      },
+      "scriptSrc": [
+        "www\\.ometrics\\.com"
+      ],
+      "description": "Ometrics is an AI chatbot solution that engages website visitors by understanding queries and delivering helpful responses.",
+      "website": "https://www.ometrics.com",
+      "icon": "Ometrics.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Ometrics !== 'undefined' && typeof Ometrics.Animation !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Ometrics !== 'undefined' && typeof Ometrics.Animation !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "OnSip": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Onsip": ""
+      },
+      "scriptSrc": [
+        "js\\.onsip\\.com"
+      ],
+      "description": "OnSip is a hosted VoIP solution that includes website chat functionality for business communication.",
+      "website": "https://www.onsip.com",
+      "icon": "OnSip.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Onsip !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ondestek": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$ondestek": ""
+      },
+      "scriptSrc": [
+        "panel\\.ondestek\\.com/"
+      ],
+      "description": "Ondestek is a live chat software that enables real-time customer communication through websites.",
+      "website": "https://ondestek.com",
+      "icon": "Ondestek.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $ondestek !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Onicon": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.onicon\\.ru"
+      ],
+      "description": "Onicon is a Russian-based live chat software developed by Megagroup.",
+      "website": "https://onicon.ru",
+      "icon": "Onicon.svg"
+    },
+    "Onlim": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Onlim": "",
+        "OnlimChatbot": ""
+      },
+      "scriptSrc": [
+        "app\\.onlim\\.com/"
+      ],
+      "description": "Onlim is a software platform designed for chatbots, social media management, and intelligent personal assistants.",
+      "website": "https://onlim.com",
+      "icon": "Onlim.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Onlim !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Onlim !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Online Chat Centers": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "occEmbedClick": ""
+      },
+      "scripts": [
+        "www\\.onlinechatcenters\\.com"
+      ],
+      "description": "Online Chat Centers is a live chat software platform designed to integrate with websites, enabling real-time customer communication and support across different online environments.",
+      "website": "https://www.onlinechatcenters.com",
+      "icon": "OCC.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof occEmbedClick !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Onsite Support": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "static\\.onsitesupport\\.io"
+      ],
+      "description": "Onsite Support is a platform that uses AI-enhanced helpdesk tools to reduce operational costs, minimize product returns, and accelerate customer service response times.",
+      "website": "https://onsitesupport.io",
+      "icon": "OnSiteSupport.svg"
+    },
+    "OpenChat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cloud\\.openchat\\.so"
+      ],
+      "description": "OpenChat is a community-owned chat application designed to prioritize privacy, security, and anonymity.",
+      "website": "https://oc.app",
+      "icon": "OpenChat.svg"
+    },
+    "P3chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "//p3chat\\.com/"
+      ],
+      "description": "P3chat is a live chat platform integrated into websites to enable real-time communication with visitors.",
+      "website": "https://p3chat.com",
+      "icon": "P3chat.svg"
+    },
+    "Phonon": {
+      "cats": [
+        52,
+        75
+      ],
+      "scripts": [
+        "c4c\\.phonon\\.in"
+      ],
+      "description": "Phonon is a communication automation platform that supports voice, chat, SMS, and email channels.",
+      "website": "https://www.phonon.io",
+      "icon": "Phonon.svg"
+    },
+    "Ping Parrot": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.pingparrot\\.com/"
+      ],
+      "description": "Ping Parrot is an AI powered chatbot that allows any website to create a bot that is trained on their data.",
+      "website": "https://www.pingparrot.com",
+      "icon": "PingParrot.svg"
+    },
+    "Pipedrive": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "LeadBooster": ""
+      },
+      "description": "Pipedrive is a cloud-based sales CRM.",
+      "website": "https://www.pipedrive.com/",
+      "icon": "Pipedrive.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof LeadBooster !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Plivo": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.plivo\\.com/"
+      ],
+      "description": "Plivo is a global platform that provides SMS and voice call services for businesses of all sizes to connect with customers worldwide.",
+      "website": "https://www.plivo.com",
+      "icon": "Plivo.svg"
+    },
+    "Posh": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "posh.close": "",
+        "poshie.close": ""
+      },
+      "scriptSrc": [
+        "js\\.poshdevelopment\\.com"
+      ],
+      "description": "Posh is a conversational AI platform that enables machines to understand, process, and respond to human language in real time.",
+      "website": "https://www.posh.ai",
+      "icon": "Posh.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof posh !== 'undefined' && typeof posh.close !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof posh !== 'undefined' && typeof posh.close !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Poster": {
+      "cats": [
+        52,
+        86
+      ],
+      "scriptSrc": [
+        "cdn\\.poster\\.ooo"
+      ],
+      "description": "Poster is a live chat and visitor segmentation tool designed to support real-time communication and audience targeting on websites.",
+      "website": "https://poster.ooo",
+      "icon": "Poster.svg"
+    },
+    "Provide Support": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.providesupport\\.com"
+      ],
+      "description": "Provide Support is a SaaS for customer service that includes live chat, real-time website monitoring, chat statistics.",
+      "website": "https://www.providesupport.com",
+      "icon": "Provide Support.svg"
+    },
+    "Pubble": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Pubble.Pubble": "",
+        "pubble_proActiveChat": "",
+        "pubblebot": ""
+      },
+      "scriptSrc": [
+        "cdn\\.pubble\\.io/"
+      ],
+      "description": "Pubble is a messaging platform that simplifies how teams interact with their customers.",
+      "website": "https://www.pubble.io",
+      "icon": "Pubble.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Pubble !== 'undefined' && typeof Pubble.Pubble !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pubble !== 'undefined' && typeof Pubble.Pubble !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pubble !== 'undefined' && typeof Pubble.Pubble !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Pure Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "PCWidget": "",
+        "purechatApi": ""
+      },
+      "scriptSrc": [
+        "app\\.purechat\\.com"
+      ],
+      "description": "Pure Chat is a live chat solution for small to mid-sized teams.",
+      "website": "https://www.purechat.com",
+      "icon": "Pure Chat.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PCWidget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PCWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Pusher": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "PUSHER_APP_ID": "",
+        "Pusher.Runtime": ""
+      },
+      "description": "Pusher is a platform that enables real-time experiences for mobile and web applications through scalable messaging and data synchronization.",
+      "website": "https://pusher.com",
+      "icon": "Pusher.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PUSHER_APP_ID !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PUSHER_APP_ID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Qiscus": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "QiscusSDK": "",
+        "qiscusWidgetshowBadge": ""
+      },
+      "scriptSrc": [
+        "\\.qiscus\\.com/js/qiscus-sdk\\.([\\d\\.]+)\\.js\\?v=([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "Qiscus is a platform offering a Chat SDK and messaging API, enabling integration of real-time chat features into applications.",
+      "website": "https://www.qiscus.com",
+      "icon": "Qiscus.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof QiscusSDK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof QiscusSDK !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Qpien": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "QpienWidget": "",
+        "qpienIframeAction": ""
+      },
+      "description": "Qpien is a SaaS platform that provides multi-channel customer communication management with AI reply automation, smart inbox, call center integration, and workflow orchestration.",
+      "website": "https://qpien.com",
+      "icon": "Qpien.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof QpienWidget !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof QpienWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Qualified": {
+      "cats": [
+        52,
+        32
+      ],
+      "js": {
+        "QualifiedObject": "^qualified$"
+      },
+      "scriptSrc": [
+        "\\.qualified\\.com/"
+      ],
+      "description": "Qualified is a B2B marketer that allows buyers and sales reps to connect through real-time website conversations.",
+      "website": "https://www.qualified.com",
+      "icon": "Qualified.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof QualifiedObject !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Quality Unit Help Desk": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.qualityunit\\.liveagent"
+      ],
+      "description": "Quality Unit Help Desk is a customer support and help desk software designed to manage and streamline customer service operations.",
+      "website": "https://www.qualityunit.com",
+      "icon": "QualityUnitHelpDesk.svg"
+    },
+    "Querlo": {
+      "cats": [
+        52,
+        53
+      ],
+      "dom": {
+        "#querloEmbd": {
+          "exists": ""
+        }
+      },
+      "description": "Querlo is a provider of custom artificial intelligence solutions tailored for business applications.",
+      "website": "https://www.querlo.com",
+      "icon": "Querlo.svg"
+    },
+    "QuickCEP": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.quickcep\\.com"
+      ],
+      "scriptSrc": [
+        "\\.quickcep\\.com/"
+      ],
+      "description": "QuickCEP is an AI-powered chatbot solution to improve business conversions, sales, and customer satisfaction through automated interactions.",
+      "website": "https://www.quickcep.com",
+      "icon": "QuickCEP.svg"
+    },
+    "Quickchat AI": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "link[href*='/quickchat-files/appquickchat/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "quickchat": "",
+        "quickchat_busy": ""
+      },
+      "description": "Quickchat AI is a no-code platform that lets you create custom AI Assistants for your business.",
+      "website": "https://quickchat.ai",
+      "icon": "QuickchatAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof quickchat !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof quickchat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Quicktext": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.quicktext\\.im/"
+      ],
+      "description": "Quicktext is an AI-powered hotel chatbot and instant communication platform designed to increase direct bookings for hotels.",
+      "website": "https://www.quicktext.im",
+      "icon": "Quicktext.svg"
+    },
+    "Quiq Messaging": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Quiq": "",
+        "QuiqUtils": "",
+        "QuiqUtils._.VERSION": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.goquiq\\.com"
+      ],
+      "description": "Quiq Messaging is a business messaging solution designed to facilitate customer communication across multiple channels.",
+      "website": "https://quiq.com",
+      "icon": "QuiqMessaging.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Quiq !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Quiq !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Quixchat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "QuixChatClearChat": ""
+      },
+      "scriptSrc": [
+        "api\\.quixchat\\.com/assets/js/quixchat\\.js\\?ver=(\\d+\\.\\d+)(?:\\.\\d+)*\\;version:\\1"
+      ],
+      "description": "Quixchat is a chat support widget for websites, facilitating real-time communication with visitors via WhatsApp, Facebook Messenger, Telegram, Viber, or Line.",
+      "website": "https://quixchat.com",
+      "icon": "Quixchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof QuixChatClearChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "REI Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "my\\.reichat\\.ai"
+      ],
+      "description": "REI Chat is an AI-powered chatbot designed to understand and communicate within the real estate domain.",
+      "website": "https://reichat.ai",
+      "icon": "REIChat.svg"
+    },
+    "REVE Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$REVECHAT_MEDIA_GALLERY": ""
+      },
+      "scriptSrc": [
+        "static\\.revechat\\.com"
+      ],
+      "description": "REVE Chat is an AI-powered platform that automates and enhances customer service interactions through chatbots and live chat support.",
+      "website": "https://www.revechat.com",
+      "icon": "REVEChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $REVECHAT_MEDIA_GALLERY !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Rake": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "widget\\.rake\\.ai/"
+      ],
+      "description": "Rake is a messaging platform and conversion optimization solution designed for communication between customers, visitors, and co-workers.",
+      "website": "https://www.rake.ai",
+      "icon": "Rake.svg"
+    },
+    "Raychat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Raychat": ""
+      },
+      "scriptSrc": [
+        "app\\.raychat\\.io/scripts/js"
+      ],
+      "description": "Raychat is a free customer messaging platform.",
+      "website": "https://raychat.io",
+      "icon": "raychat.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Raychat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Re:amaze": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "reamaze.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.reamaze\\.com/"
+      ],
+      "description": "Re:amaze is a multi-brand customer service, live chat, and help desk solution.",
+      "website": "https://www.reamaze.com",
+      "icon": "Re-amaze.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof reamaze !== 'undefined' && typeof reamaze.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "reamaze.version || \"\""
+          }
+        ]
+      }
+    },
+    "Re:plain": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "replainInitialized": ""
+      },
+      "scriptSrc": [
+        "\\.replain\\.cc/"
+      ],
+      "description": "Re:plain is a live chat integration for WhatsApp, Facebook Messenger, and Telegram, allowing you to connect live chat to your website.",
+      "website": "https://replain.cc",
+      "icon": "Replain.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof replainInitialized !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Replyco": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "replycoChat": ""
+      },
+      "scriptSrc": [
+        "app\\.replyco\\.com/"
+      ],
+      "description": "Replyco is a helpdesk software designed for ecommerce sellers to manage and centralise inbox messages across various marketplaces.",
+      "website": "https://replyco.com",
+      "icon": "Replyco.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof replycoChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Respond.io": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "script#respondio__growth_tool": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "$__respond": "",
+        "$respond": ""
+      },
+      "description": "Respond.io is an AI-powered customer conversation management software.",
+      "website": "https://www.respond.io",
+      "icon": "RespondIO.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $__respond !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $respond !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Responsa": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "//goresponsa\\.com/"
+      ],
+      "description": "Responsa is a conversational AI platform designed to increase sales and reduce operational costs by automating customer interactions and streamlining communication processes.",
+      "website": "https://responsa.ai",
+      "icon": "Responsa.svg"
+    },
+    "Retain": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.retain\\.ir/"
+      ],
+      "description": "Retain is an online conversation system developed in Iran designed to facilitate digital communication.",
+      "website": "https://retain.ir"
+    },
+    "RoboReception": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.bot\\.roboreception\\.co\\.uk"
+      ],
+      "scriptSrc": [
+        "\\.bot\\.roboreception\\.co\\.uk"
+      ],
+      "description": "RoboReception is a digital assistant that manages patient inquiries, reduces queues, and tracks new leads to ease the workload on reception staff.",
+      "website": "https://www.roboreception.co.uk",
+      "icon": "RoboReception.svg"
+    },
+    "Robofy": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.robofy\\.ai/"
+      ],
+      "description": "Robofy is a platform providing AI chatbots for websites, enabling the creation of custom ChatGPT models trained on user-specific content.",
+      "website": "https://www.robofy.ai",
+      "icon": "Robofy.svg"
+    },
+    "Rocket.Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "RocketChat.livechat": ""
+      },
+      "description": "Rocket.Chat is a communication hub that facilitates team collaboration and organizes conversations.",
+      "website": "https://rocket.chat",
+      "icon": "Rocket.Chat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RocketChat !== 'undefined' && typeof RocketChat.livechat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Rotic": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Rotic.setting": ""
+      },
+      "description": "Rotic is a conversion chatbot that answers questions, captures contacts, and books meetings.",
+      "website": "https://rotic.io",
+      "icon": "Rotic.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Rotic !== 'undefined' && typeof Rotic.setting !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ruby Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "rubyChatLoading": ""
+      },
+      "scriptSrc": [
+        "chatwidget\\.ruby\\.com/"
+      ],
+      "description": "Ruby Chat is a service offering live virtual receptionists and live chat to assist businesses in managing customer interactions and inquiries in real-time.",
+      "website": "https://www.ruby.com/solutions/live-chat",
+      "icon": "RubyChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rubyChatLoading !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Salesforce Service Cloud": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "embedded_svc": ""
+      },
+      "scriptSrc": [
+        "service\\.force\\.com"
+      ],
+      "implies": [
+        "Salesforce"
+      ],
+      "description": "Salesforce Service Cloud is a customer relationship management (CRM) platform for customer service and support.",
+      "website": "https://www.salesforce.com/au/products/service-cloud/",
+      "icon": "Salesforce.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof embedded_svc !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Schedule Engine": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "webchat.scheduleengine.net"
+      ],
+      "description": "Schedule Engine is a customer support solution built for contractors.",
+      "website": "https://www.scheduleengine.com/",
+      "icon": "Schedule Engine.svg"
+    },
+    "Screets": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "screetsxi.appid": ""
+      },
+      "description": "Screets is a chat widget compatible with WordPress, HTML, and PHP websites.",
+      "website": "https://screets.com",
+      "icon": "Screets.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof screetsxi !== 'undefined' && typeof screetsxi.appid !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SegMate": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.segmate\\.io/"
+      ],
+      "description": "SegMate is a platform that allows businesses to create and manage Facebook Messenger bots for marketing and customer engagement.",
+      "website": "https://segmateapp.com",
+      "icon": "SegMateApp.svg"
+    },
+    "Sharpen": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "chat\\.sharpen\\.cx"
+      ],
+      "description": "Sharpen is a platform focused on developing AI-empowered human agents to enhance communication.",
+      "website": "https://sharpencx.com",
+      "icon": "Sharpen.svg"
+    },
+    "Shopify Chat": {
+      "cats": [
+        52,
+        100
+      ],
+      "dom": {
+        "div#shopify-chat": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Shopify Chat is Shopify's native live chat function that allows you to have real-time conversations with customers visiting your Shopify store.",
+      "website": "https://www.shopify.com/inbox",
+      "icon": "Shopify.svg"
+    },
+    "SignalZen": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "cdn\\.signalzen\\.com"
+      ],
+      "scriptSrc": [
+        "cdn\\.signalzen\\.com"
+      ],
+      "description": "SignalZen is a customer support platform that enables teams to manage AI-powered conversations directly from Slack or Microsoft Teams.",
+      "website": "https://www.signalzen.com",
+      "icon": "SignalZen.svg"
+    },
+    "Simla": {
+      "cats": [
+        52,
+        53
+      ],
+      "scriptSrc": [
+        "\\.retailcrm\\.tech/"
+      ],
+      "description": "Simla is a multi-agent, all-in-one solution for businesses selling products and services through WhatsApp, Facebook, Instagram, and websites.",
+      "website": "https://www.simla.com",
+      "icon": "Simla.svg"
+    },
+    "Sitehood": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "vtrack\\.sitehood\\.co\\.il"
+      ],
+      "description": "Sitehood is a live chat tool for websites that enables instant support for site visitors.",
+      "website": "https://www.sitehood.co.il",
+      "icon": "Sitehood.svg"
+    },
+    "Slaask": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_slaaskLoader": "",
+        "_slaaskSettings": ""
+      },
+      "scriptSrc": [
+        "cdn\\.slaask\\.com/"
+      ],
+      "description": "Slaask is a customer messaging app designed for all Slack users to streamline customer service communication within the Slack interface.",
+      "website": "https://get.slaask.com",
+      "icon": "Slaask.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _slaaskLoader !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _slaaskLoader !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Smallchat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Smallchat": ""
+      },
+      "description": "Smallchat is a tool that allows users to engage with website visitors directly within Slack.",
+      "website": "https://small.chat",
+      "icon": "Smallchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Smallchat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Smartsupp": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$smartsupp.options.widgetVersion": "([\\d.]+)\\;version:\\1",
+        "smartsupp": ""
+      },
+      "scriptSrc": [
+        "\\.smartsuppchat\\.com"
+      ],
+      "description": "Smartsupp is a live chat tool that offers visitor recording feature.",
+      "website": "https://www.smartsupp.com",
+      "icon": "Smartsupp.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $smartsupp !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $smartsupp !== 'undefined' && typeof $smartsupp.options !== 'undefined' && typeof $smartsupp.options.widgetVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "$smartsupp.options.widgetVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Smilee": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "saas\\.smilee\\.io"
+      ],
+      "description": "Smilee is a professionally managed chat solution designed to facilitate customer communication.",
+      "website": "https://smilee.io",
+      "icon": "Smilee.svg"
+    },
+    "SnapCall": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "sc_api": "api\\.snapcall\\.io",
+        "snapcallAPI": ""
+      },
+      "scripts": [
+        "api\\.snapcall\\.io"
+      ],
+      "description": "SnapCall is a Video AI solution designed to enhance customer support by providing real-time video interactions.",
+      "website": "https://www.snapcall.io",
+      "icon": "SnapCall.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof sc_api !== 'undefined' && sc_api === 'api\\.snapcall\\.io'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof sc_api !== 'undefined' && sc_api === 'api\\.snapcall\\.io'"
+          }
+        ]
+      }
+    },
+    "SnapEngage": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "SnapEngage": "",
+        "SnapEngageChat": "",
+        "snapengage_mobile": ""
+      },
+      "html": [
+        "<!-- begin snapengage"
+      ],
+      "description": "SnapEngage is a live chat solution that caters to businesses across various industries.",
+      "website": "https://snapengage.com/",
+      "icon": "SnapEngage.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SnapEngage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SnapEngage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SnapEngage !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sobot Live Chat": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "\\.sobot\\.com/"
+      ],
+      "scriptSrc": [
+        "\\.sobot\\.com/"
+      ],
+      "description": "Sobot Live Chat is a platform for instant customer engagement, enabling real-time communication on a single interface.",
+      "website": "https://www.sobot.io",
+      "icon": "Sobot.svg"
+    },
+    "Solvemate": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "link[href*='.solvemate.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "solvemate.config.solvemateCDN": "",
+        "solvemateCli": "",
+        "solvemateConfig": ""
+      },
+      "description": "Solvemate is a customer service automation platform that enables brands to deliver quality customer service through meaningful conversations via chatbots.",
+      "website": "https://www.solvemate.com",
+      "icon": "Solvemate.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof solvemate !== 'undefined' && typeof solvemate.config !== 'undefined' && typeof solvemate.config.solvemateCDN !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof solvemate !== 'undefined' && typeof solvemate.config !== 'undefined' && typeof solvemate.config.solvemateCDN !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof solvemate !== 'undefined' && typeof solvemate.config !== 'undefined' && typeof solvemate.config.solvemateCDN !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Solvvy": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Solvvy": ""
+      },
+      "scriptSrc": [
+        "cdn\\.solvvy\\.com/"
+      ],
+      "description": "Solvvy provides live chat and chatbot services.",
+      "website": "https://solvvy.com/",
+      "icon": "solvvy.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Solvvy !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sonetel Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "SonetelWidget": ""
+      },
+      "scriptSrc": [
+        "widget\\.sonetel\\.com"
+      ],
+      "description": "Sonetel is a website chat system that enables online communication between businesses and their website visitors.",
+      "website": "https://sonetel.com",
+      "icon": "Sonetel.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SonetelWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SpatialChat": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "app\\.spatial\\.chat"
+      ],
+      "description": "SpatialChat is a platform for interactive video meetings, designed to host events such as all-hands meetings, keynotes, and online classes.",
+      "website": "https://spatial.chat",
+      "icon": "SpatialChat.svg"
+    },
+    "Spatie Support Bubble": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "div.spatie-support-bubble": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "Laravel",
+        "Tailwind CSS"
+      ],
+      "description": "Spatie Support Bubble is a non-intrusive support form.",
+      "website": "https://github.com/spatie/laravel-support-bubble",
+      "icon": "Spatie.svg"
+    },
+    "SpeakPipe": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_speakpipe_dialog_loaded": "",
+        "_speakpipe_open_reply_dialog": "",
+        "_speakpipe_open_reply_dialog_by_token": "",
+        "_speakpipe_open_widget": ""
+      },
+      "description": "SpeakPipe is a tool that lets websites receive voice messages from visitors, making it easier for users to leave feedback, testimonials, or contact the site owner directly.",
+      "website": "https://www.speakpipe.com",
+      "icon": "SpeakPipe.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _speakpipe_dialog_loaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _speakpipe_dialog_loaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _speakpipe_dialog_loaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _speakpipe_dialog_loaded !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Spikmi": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "//spikmi\\.com/"
+      ],
+      "description": "Spikmi is a messenger communication button for websites that enables convenient customer support access from anywhere in the world.",
+      "website": "https://spikmi.com",
+      "icon": "Spikmi.svg"
+    },
+    "Splutter AI": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "embeddedChatbotConfig.domain": "//splutter\\.ai"
+      },
+      "description": "Splutter AI is a platform that enables the creation of AI chatbots for websites.",
+      "website": "https://www.splutter.ai",
+      "icon": "SplutterAI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof embeddedChatbotConfig !== 'undefined' && typeof embeddedChatbotConfig.domain !== 'undefined' && embeddedChatbotConfig.domain === '//splutter\\.ai'"
+          }
+        ]
+      }
+    },
+    "Subiz": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "subiz": ""
+      },
+      "scripts": [
+        "\\.subiz\\.com"
+      ],
+      "description": "Subiz is a live chat solution that consolidates all customer messages into a single screen for communication on websites.",
+      "website": "https://subiz.com.vn",
+      "icon": "Subiz.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof subiz !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sugester": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "SUGESTER.ACCOUNT_ID": "",
+        "sugesterChatOptions": ""
+      },
+      "scriptSrc": [
+        "\\.sugester\\.pl/"
+      ],
+      "description": "Sugester is a platform that combines CRM, helpdesk, and project management features, offering an all-in-one solution for small and medium-sized businesses.",
+      "website": "https://sugester.pl",
+      "icon": "Sugester.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SUGESTER !== 'undefined' && typeof SUGESTER.ACCOUNT_ID !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SUGESTER !== 'undefined' && typeof SUGESTER.ACCOUNT_ID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Suiteshare": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "static\\.suiteshare\\.com"
+      ],
+      "description": "Suiteshare powers conversational shopping experiences.",
+      "website": "https://suiteshare.com/",
+      "icon": "Suiteshare.png"
+    },
+    "Superchat": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "Superchat.init": ""
+      },
+      "scriptSrc": [
+        "\\.superchat\\.de/"
+      ],
+      "description": "Superchat is an all-in-one messaging software that helps businesses build loyal customer relationships, send and automate newsletters, sell products, and answer questions.",
+      "website": "https://www.superchat.com/",
+      "icon": "Superchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Superchat !== 'undefined' && typeof Superchat.init !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Swell CX": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "platform\\.swellcx\\.com"
+      ],
+      "scriptSrc": [
+        "platform\\.swellcx\\.com/"
+      ],
+      "description": "Swell CX is an online reviews and website visitor chat system.",
+      "website": "https://www.swellcx.com",
+      "icon": "SwellCX.svg"
+    },
+    "Tactful": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Tactful.TACTFUL_CLIENT_ID": ""
+      },
+      "scriptSrc": [
+        "webchat\\.tactful\\.ai"
+      ],
+      "description": "Tactful is an AI-driven platform that enables seamless customer service across multiple communication channels.",
+      "website": "https://tactful.ai",
+      "icon": "Tactful.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Tactful !== 'undefined' && typeof Tactful.TACTFUL_CLIENT_ID !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Talk-Me": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "MeTalk": "",
+        "TalkMe": "",
+        "TalkMeIsInitialized": "",
+        "TalkMeSetup": ""
+      },
+      "description": "Talk-Me is a chat system designed to enhance sales growth by facilitating customer communication, offering a range of tools to help businesses find new clients through their websites.",
+      "website": "https://talk-me.ru",
+      "icon": "TalkMe.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MeTalk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof MeTalk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof MeTalk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof MeTalk !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TalkJS": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Talk.v": "^(.+)$\\;version:\\1",
+        "_talkjs_locales": ""
+      },
+      "description": "TalkJS is a platform that enables user-to-user messaging within marketplaces or platforms.",
+      "website": "https://talkjs.com",
+      "icon": "TalkJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Talk !== 'undefined' && typeof Talk.v !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Talk !== 'undefined' && typeof Talk.v !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Talk.v || \"\""
+          }
+        ]
+      }
+    },
+    "Talkdesk": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "TalkdeskChatSDK": "",
+        "webpackChunkTalkdeskChatSDK": ""
+      },
+      "scriptSrc": [
+        "\\.talkdeskapp\\.com/"
+      ],
+      "description": "Talkdesk is a platform providing modern AI-powered customer service solutions.",
+      "website": "https://www.talkdesk.com",
+      "icon": "Talkdesk.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TalkdeskChatSDK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TalkdeskChatSDK !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tallentor Widget": {
+      "cats": [
+        52
+      ],
+      "cookies": {
+        "tallentor_widget": ""
+      },
+      "description": "Tallentor is a subscription-based software website analytics, heatmap, channel chat intergration.",
+      "website": "https://tallentor.com",
+      "icon": "Tallentor.png"
+    },
+    "Tars": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "link[href*='api.hellotars.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "tarsWidget": ""
+      },
+      "scriptSrc": [
+        "api\\.hellotars\\.com/"
+      ],
+      "description": "Tars is a platform for creating chatbots without programming knowledge.",
+      "website": "https://hellotars.com/",
+      "icon": "Tars.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tarsWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tawk.to": {
+      "cats": [
+        52
+      ],
+      "cookies": {
+        "tawkconnectiontime": ""
+      },
+      "scriptSrc": [
+        "//embed\\.tawk\\.to"
+      ],
+      "description": "Tawk.to is a free messaging app to monitor and chat with the visitors to a website, mobile app.",
+      "website": "https://tawk.to",
+      "icon": "TawkTo.svg"
+    },
+    "Tencent QQ": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "a[href*='tencent://message/']": {
+          "exists": ""
+        }
+      },
+      "description": "Tencent QQ also known as QQ, is an instant messaging software service and web portal developed by the Chinese tech giant Tencent.",
+      "website": "https://im.qq.com",
+      "icon": "Tencent QQ.svg"
+    },
+    "Text In Church": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.textinchurch\\.com/"
+      ],
+      "description": "Text In Church is a communication platform that enables churches to send text messages and manage member interactions.",
+      "website": "https://textinchurch.com",
+      "icon": "TextInChurch.svg"
+    },
+    "TheBotForge": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "app\\.thebotforge\\.ai/"
+      ],
+      "description": "TheBotForge is an AI chatbot creation platform.",
+      "website": "https://thebotforge.ai",
+      "icon": "TheBotForge.svg"
+    },
+    "Thinking Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "\\.thinkingchat\\.com/"
+      ],
+      "description": "Thinking Chat is an automated lead capture and chat solution.",
+      "website": "https://thinkingchat.com",
+      "icon": "ThinkingChat.svg"
+    },
+    "Tidio": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "tidioChatApi": ""
+      },
+      "scriptSrc": [
+        "code\\.tidio\\.co"
+      ],
+      "description": "Tidio is a customer communication product. It provides multi-channel support so users can communicate with customers on the go. Live chat, messenger, or email are all supported.",
+      "website": "https://www.tidio.com",
+      "icon": "Tidio.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tidioChatApi !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tiledesk": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Tiledesk": "",
+        "tileDeskAsyncInit": "",
+        "tiledesk": "",
+        "tiledeskSettings": ""
+      },
+      "description": "Tiledesk is the full-stack open-source Live Chat with built-in Chatbots, written in Node.js and Angular.",
+      "website": "https://tiledesk.com",
+      "icon": "Tiledesk.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Tiledesk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Tiledesk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Tiledesk !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Tiledesk !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tolk": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "script\\.tolk\\.ai"
+      ],
+      "scriptSrc": [
+        "script\\.tolk\\.ai"
+      ],
+      "description": "Tolk is a platform that provides AI-powered live chat and chatbot solutions designed to enhance customer relations and support interactions.",
+      "website": "https://www.tolk.ai",
+      "icon": "Tolk.svg"
+    },
+    "Tooltip": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.tooltip\\.io/"
+      ],
+      "description": "Tooltip is a web-based in-app messaging suite designed to enhance user engagement and communication within applications.",
+      "website": "https://tooltip.io",
+      "icon": "Tooltip.svg"
+    },
+    "Trengo": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Trengo.eventBus": ""
+      },
+      "scriptSrc": [
+        "\\.widget\\.trengo\\.eu/"
+      ],
+      "description": "Trengo is an omnichannel communication platform that unifies all messaging channels into one single view.",
+      "website": "https://trengo.com",
+      "icon": "Trengo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Trengo !== 'undefined' && typeof Trengo.eventBus !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ultimate": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "ultimateAiLogin": "",
+        "ultimateAiUpdateUser": ""
+      },
+      "description": "Ultimate is a platform for automating customer service using conversational and generative AI technology.",
+      "website": "https://www.ultimate.ai",
+      "icon": "Ultimate.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ultimateAiLogin !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ultimateAiLogin !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Umni": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "widget\\.umni\\.bg"
+      ],
+      "description": "Umni is a platform that provides an AI chatbot designed to automate and improve customer service, sales interactions, and marketing processes.",
+      "website": "https://umni.bg",
+      "icon": "Umni.svg"
+    },
+    "UserLike": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "__USERLIKE_MOUNT_GUARD__": "",
+        "userlike": "",
+        "userlikeInit": ""
+      },
+      "scriptSrc": [
+        "//userlike-cdn-widgets\\.",
+        "api\\.userlike\\.com",
+        "userlike\\.min\\.js",
+        "userlikelib\\.min\\.js"
+      ],
+      "description": "Userlike is a cloud-based live chat solution that can be integrated with existing websites.",
+      "website": "https://userlike.com",
+      "icon": "UserLike.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __USERLIKE_MOUNT_GUARD__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __USERLIKE_MOUNT_GUARD__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __USERLIKE_MOUNT_GUARD__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Userlink": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "setUserlinkChatVisible": "",
+        "userlinkIsInAvailableTimePeriod": ""
+      },
+      "scriptSrc": [
+        "files\\.userlink\\.ai"
+      ],
+      "description": "Userlink is a platform that integrates AI chatbots into webshops to improve customer experience and boost sales.",
+      "website": "https://userlink.ai",
+      "icon": "Userlink.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof setUserlinkChatVisible !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof setUserlinkChatVisible !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Velaro": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Velaro.Call": "",
+        "isVelaroChatClicked": ""
+      },
+      "scripts": [
+        "/velaroscripts/"
+      ],
+      "description": "Velaro is a live chat platform designed to engage website visitors and customers, enhancing online sales conversions.",
+      "website": "https://velaro.com/product/live-chat",
+      "icon": "Velaro.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Velaro !== 'undefined' && typeof Velaro.Call !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Velaro !== 'undefined' && typeof Velaro.Call !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Venyoo": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "venyooProxyScript": ""
+      },
+      "scriptSrc": [
+        "\\.venyoo\\.ru/"
+      ],
+      "description": "Venyoo is a live and robot chat widget designed to facilitate communication.",
+      "website": "https://venew.io",
+      "icon": "Venyoo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof venyooProxyScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Vergic": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "us-content\\.vergic\\.com/"
+      ],
+      "description": "Vergic is a platform facilitating real-time online engagement between site owners, customer service agents, and individual customers, prospects, or visitors.",
+      "website": "https://www.vergic.com",
+      "icon": "Vergic.svg"
+    },
+    "Verloop": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Verloop": ""
+      },
+      "description": "Verloop is provider of conversational AI platform for customer support automation.",
+      "website": "https://verloop.io/",
+      "icon": "Verloop.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Verloop !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ViaSay": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "mindsayJsonP": ""
+      },
+      "description": "ViaSay is a conversational AI tool that facilitates the creation of customised automated processes, enhancing the efficiency and speed of customer service.",
+      "website": "http://www.viasay.io",
+      "icon": "ViaSay.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mindsayJsonP !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Virtual Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "virtual-chat\\.co\\.il/"
+      ],
+      "description": "Virtual Chat is a live-chat service for web sites.",
+      "website": "https://www.virtual-chat.co.il",
+      "icon": "Virtual Chat.png"
+    },
+    "VirtualSpirits": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "vspiritbutton": "",
+        "vspirits_chat_client": "",
+        "vspiritsizeheight": ""
+      },
+      "description": "VirtualSpirits is a chatbot and live-chat service for websites.",
+      "website": "https://www.virtualspirits.com",
+      "icon": "VirtualSpirits.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof vspiritbutton !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof vspiritbutton !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof vspiritbutton !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Visitor Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "VisitorChatInit": "",
+        "VisitorChat_Close": "",
+        "VisitorChat_Init": "",
+        "VisitorChat_clearStore": ""
+      },
+      "description": "Visitor Chat is a service that provides businesses with managed automotive live chat solutions to improve customer relationships.",
+      "website": "https://visitor.chat",
+      "icon": "VisitorChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof VisitorChatInit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof VisitorChatInit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof VisitorChatInit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof VisitorChatInit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Warm Welcome": {
+      "cats": [
+        52
+      ],
+      "scripts": [
+        "app\\.warmwelcome\\.com"
+      ],
+      "description": "Warm Welcome is a tool that provides interactive video bubbles and video email features for personalized communication.",
+      "website": "https://www.warmwelcome.com",
+      "icon": "WarmWelcome.svg"
+    },
+    "WebQnA": {
+      "cats": [
+        52,
+        53
+      ],
+      "js": {
+        "webqna": ""
+      },
+      "description": "WebQnA is a platform that offers generative AI chatbots for businesses to enhance customer interactions and support.",
+      "website": "https://webqna.ai",
+      "icon": "WebQnA.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webqna !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Webbotify": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "api\\.webbotify\\.com/"
+      ],
+      "description": "Webbotify is a chatbot platform that uses AI trained specifically on a website's content to provide automated responses.",
+      "website": "https://www.webbotify.com",
+      "icon": "Webbotify.svg"
+    },
+    "Webim": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "webim": "",
+        "webim.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.webim\\.ru/"
+      ],
+      "description": "Webim is a platform offering live chat service for website visitors, facilitating real-time communication between businesses and their online audience.",
+      "website": "https://webim.ru",
+      "icon": "Webim.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webim !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Webotit": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.webotit\\.ai"
+      ],
+      "description": "Webotit is a business tool that provides chatbot, callbot, and mailbot solutions powered by generative AI.",
+      "website": "https://www.webotit.ai",
+      "icon": "Webotit.svg"
+    },
+    "Weply": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$$weply": ""
+      },
+      "scriptSrc": [
+        "app\\.weply\\.chat/"
+      ],
+      "description": "Weply is a Nordic lead generation chat system designed to enhance lead generation from existing website traffic.",
+      "website": "https://weply.chat",
+      "icon": "Weply.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $$weply !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "WhatsApp Business Chat": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "a[href*='api.whatsapp.com/send'], a[href*='web.whatsapp.com/send'], a[href*='wa.me/'], div[class*='wptwa-container'], a[href*='wa.link'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "description": "WhatsApp Business is a free to download app available on Android and iPhone using which businesses can connect with their customers.",
+      "website": "https://www.whatsapp.com/business",
+      "icon": "WhatsApp.svg"
+    },
+    "WidgetWhats": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "wwwa_loaded": ""
+      },
+      "scriptSrc": [
+        "\\.widgetwhats\\.com/"
+      ],
+      "description": "WidgetWhats is a fully customizable chat widget with appearance, text, color, button style and position.",
+      "website": "https://widgetwhats.com",
+      "icon": "WidgetWhats.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wwwa_loaded !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Wikit Live Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "webchat\\.wikit\\.ai"
+      ],
+      "description": "Wikit Live Chat is a platform that enables the creation of intelligent chatbots, leveraging the capabilities of generative AI to enhance user interactions.",
+      "website": "https://www.wikit.ai/solution/livechat",
+      "icon": "Wikit.svg"
+    },
+    "Wix Answers": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "iframe[src*='.wixanswers.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.wixanswers\\.com/"
+      ],
+      "description": "Wix Answers is a cloud-based help desk software.",
+      "website": "https://www.wixanswers.com",
+      "icon": "Wix Answers.svg"
+    },
+    "WotNot": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "WotNot.GetChatWindow": ""
+      },
+      "scriptSrc": [
+        "app\\.wotnot\\.io/"
+      ],
+      "description": "WotNot is a no-code chatbot platform enabling users to create and deploy chatbots without programming skills.",
+      "website": "https://wotnot.io",
+      "icon": "WotNot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof WotNot !== 'undefined' && typeof WotNot.GetChatWindow !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Xenioo": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "Xenioo": ""
+      },
+      "scriptSrc": [
+        "static\\.xenioo\\.com"
+      ],
+      "description": "Xenioo is an omnichannel chatbot platform designed to create, manage, and deploy conversational agents across multiple messaging channels.",
+      "website": "https://www.xenioo.com",
+      "icon": "Xenioo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Xenioo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Xeno Chat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "_xeno._Utils": "",
+        "_xenoLoader": ""
+      },
+      "scriptSrc": [
+        "cdn\\.xeno\\.app"
+      ],
+      "description": "Xeno Chat is a messaging app that enables live responses to support customer attraction, conversion, and retention.",
+      "website": "https://xenoapp.com",
+      "icon": "Xeno.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _xeno !== 'undefined' && typeof _xeno._Utils !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _xeno !== 'undefined' && typeof _xeno._Utils !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Yonder": {
+      "cats": [
+        52,
+        93
+      ],
+      "js": {
+        "YONDER_APP_LOADED": "",
+        "toggleYonderChat": ""
+      },
+      "scriptSrc": [
+        "\\.yonderhq\\.com/"
+      ],
+      "description": "Yonder is a booking automation solution that helps tourism businesses increase bookings, collect feedback, garner positive reviews, convert website visitors, automate FAQs with an AI chatbot, and communicate with customers.",
+      "website": "https://www.yonderhq.com",
+      "icon": "Yonder.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof YONDER_APP_LOADED !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof YONDER_APP_LOADED !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Zendesk Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "v2\\.zopim\\.com"
+      ],
+      "description": "Zendesk Chat is a live chat and communication widget.",
+      "website": "https://zopim.com",
+      "icon": "Zendesk Chat.png"
+    },
+    "Zendesk Sunshine Conversations": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "cdn\\.smooch\\.io/"
+      ],
+      "implies": [
+        "Zendesk"
+      ],
+      "description": "Zendesk Sunshine Conversations lets you share a single, continuous conversation with every team in your business. With a unified API and native connectors to popular business applications like Zendesk and Slack, everyone in your organization can get access to a single view of the customer conversation.",
+      "website": "https://www.zendesk.com/platform/conversations",
+      "icon": "Zendesk.svg"
+    },
+    "Zenvia": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ZenviaChat": ""
+      },
+      "scriptSrc": [
+        "static\\.zenvia\\.com"
+      ],
+      "description": "Zenvia is a customer engagement platform that enables businesses to communicate with clients through multiple digital channels.",
+      "website": "https://www.zenvia.com",
+      "icon": "Zenvia.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ZenviaChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Zipchat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "zipchatWidgetLoaded": ""
+      },
+      "scripts": [
+        "app\\.zipchat\\.ai"
+      ],
+      "description": "Zipchat is an AI chatbot for ecommerce, designed to boost sales by automating customer interactions and assisting with purchasing decisions.",
+      "website": "https://zipchat.ai",
+      "icon": "Zipchat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof zipchatWidgetLoaded !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Zipteams": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ZipteamsWidget": ""
+      },
+      "description": "Zipteams is a live chat solution.",
+      "website": "https://zipteams.com",
+      "icon": "Zipteams.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ZipteamsWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Zoho SalesIQ": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$zoho.salesiq": ""
+      },
+      "scriptSrc": [
+        "salesiq\\.zohopublic\\.com"
+      ],
+      "description": "Zoho SalesIQ is a digital customer engagement platform that provides marketing, sales, and support teams with tools to interact with site visitors at every stage of the customer lifecycle.",
+      "website": "https://www.zoho.com/salesiq",
+      "icon": "Zoho.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $zoho !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Zoko": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "__zoko_app_version": ""
+      },
+      "scriptSrc": [
+        "zoko-shopify-prod\\.web\\.app"
+      ],
+      "implies": [
+        "WhatsApp Business Chat"
+      ],
+      "description": "Zoko is an all-in-one system that leverages the WhatsApp API to help you do business, on WhatsApp",
+      "website": "https://www.zoko.io/",
+      "icon": "Zoko.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __zoko_app_version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "__zoko_app_version || \"\""
+          }
+        ]
+      }
+    },
+    "Zoominfo Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "madstreetden\\.widget\\.insent\\.ai"
+      ],
+      "description": "ZoomInfo chat is a live chat solution.",
+      "website": "https://www.zoominfo.com/chat",
+      "icon": "Zoominfo.svg"
+    },
+    "Zowie": {
+      "cats": [
+        52,
+        53
+      ],
+      "dom": {
+        "div#zowieChatbotWrapper": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Zowie": "",
+        "zowieJsonp": ""
+      },
+      "description": "Zowie is an AI-powered customer service suite tailored for ecommerce, aimed at cost-saving and revenue generation through value-driven interactions.",
+      "website": "https://getzowie.com",
+      "icon": "Zowie.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Zowie !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Zowie !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "botBrains": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "$botbrains": "",
+        "botbrainsCleanup": ""
+      },
+      "scriptSrc": [
+        "chat\\.botbrains\\.io"
+      ],
+      "description": "botBrains is an AI-powered platform offering customer support chatbots that handle inquiries and improve response times.",
+      "website": "https://www.botbrains.io",
+      "icon": "botBrains.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $botbrains !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $botbrains !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "eGain Conversation": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "egainDockChat": ""
+      },
+      "scriptSrc": [
+        "\\.analytics-egain\\.com/"
+      ],
+      "description": "eGain Conversation is a customer engagement platform that centralises and manages customer interactions across multiple channels, including chat, email, social media, and messaging apps.",
+      "website": "https://www.egain.com",
+      "icon": "eGain.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof egainDockChat !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "iAdvize": {
+      "cats": [
+        52
+      ],
+      "dom": {
+        "link[href*='.iadvize.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.iadvize\\.com/"
+      ],
+      "description": "iAdvize is a conversational marketing platform that connects customers in need of advice with experts who are available 24/7 via messaging.",
+      "website": "https://www.iadvize.com",
+      "icon": "iAdvize.svg"
+    },
+    "iSina Chat": {
+      "cats": [
+        52
+      ],
+      "scriptSrc": [
+        "chat\\.isina\\.agency/"
+      ],
+      "description": "iSina Chat is a live chat service that provides online support and FAQ for customers.",
+      "website": "https://isina.agency",
+      "icon": "iSina Chat.svg"
+    },
+    "uhChat": {
+      "cats": [
+        52
+      ],
+      "cookies": {
+        "uhchatrelock": ""
+      },
+      "js": {
+        "getuhchatCookie": "",
+        "uhchatClick": ""
+      },
+      "description": "uhChat is a tool that enables the creation of an embedded chat box on websites for real-time communication.",
+      "website": "https://uhchat.net",
+      "icon": "uhChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof getuhchatCookie !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof getuhchatCookie !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "vChat": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "__vnpDefault.url": "core\\.vchat\\.vn"
+      },
+      "description": "vChat is a chat solution in Vietnam.",
+      "website": "https://vchat.vn",
+      "icon": "vChat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __vnpDefault !== 'undefined' && typeof __vnpDefault.url !== 'undefined' && __vnpDefault.url === 'core\\.vchat\\.vn'"
+          }
+        ]
+      }
+    },
+    "yellow.ai": {
+      "cats": [
+        52
+      ],
+      "js": {
+        "ymConfig": ""
+      },
+      "scriptSrc": [
+        "cdn\\.yellowmessenger\\.com"
+      ],
+      "description": "yellow.ai provides chatbot and automation services.",
+      "website": "https://yellow.ai/",
+      "icon": "yellow.ai.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ymConfig !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3419 @@
+{
+  "apps": {
+    "AMP for WordPress": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/amp/']": {
+          "exists": ""
+        }
+      },
+      "meta": {
+        "generator": [
+          "^amp plugin v(\\d+\\.\\d+.*)$\\;version:\\1"
+        ]
+      },
+      "implies": [
+        "AMP"
+      ],
+      "description": "AMP for WordPress automatically adds Accelerated Mobile Pages (Google AMP Project) functionality to your WordPress site.",
+      "website": "https://amp-wp.org",
+      "icon": "Accelerated-Mobile-Pages.svg"
+    },
+    "AddToAny Share Buttons": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/add-to-any/addtoany\\.min\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "AddToAny"
+      ],
+      "description": "AddToAny Share Buttons plugin for WordPress increases traffic and engagement by helping people share your posts and pages to any service.",
+      "website": "https://github.com/projectestac/wordpress-add-to-any",
+      "icon": "AddToAny.svg"
+    },
+    "Advanced Custom Fields": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "acf": "",
+        "acfL10n": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/advanced-custom-fields(?:-pro)?/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Advanced Custom Fields is a WordPress plugin which allows you to add extra content fields to your WordPress edit screens.",
+      "website": "https://www.advancedcustomfields.com",
+      "icon": "Advanced Custom Fields.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof acf !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof acf !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Age Gate": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/age-gate/'], .age-gate, .age-gate-form, button[name='age_gate[confirm]']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "age_gate": ""
+      },
+      "scriptSrc": [
+        "age-gate(?:\\/dist)?(?:\\/all)?(?:\\/focus)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "A plugin to check the age of a visitor for Wordpress.",
+      "website": "https://wordpress.org/plugins/age-gate",
+      "icon": "Age Gate.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof age_gate !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Akismet": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/akismet/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "ak_js.checkValidity": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/akismet/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Akismet is a service that filters spam from comments, trackbacks, and contact form messages.",
+      "website": "https://akismet.com",
+      "icon": "Akismet.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ak_js !== 'undefined' && typeof ak_js.checkValidity !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Animate It": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/animate-it/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "animate-it(?:\\/assets)?(?:\\/js)?(?:\\/animo)?(?:\\/edsanimate)?(?:\\/jquery)?(?:\\/viewportchecker)?(?:\\.ba-throttle-debounce)?(?:\\.min)?(?:\\.site)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Animate It! adds CSS3 animations to your content.",
+      "website": "https://wordpress.org/plugins/animate-it/",
+      "icon": "Animate It.png"
+    },
+    "Animation Addons": {
+      "cats": [
+        87
+      ],
+      "scripts": [
+        "/animation-addons\\.com"
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/extension-for-animation-addons/"
+      ],
+      "description": "Animation Addons is a WordPress plugin that extends the Elementor page builder with advanced animation effects and widgets for creating visually dynamic content.",
+      "website": "https://animation-addons.com",
+      "icon": "Animation Addons.svg"
+    },
+    "Asgaros Forum": {
+      "cats": [
+        87,
+        2
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/asgaros-forum/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/asgaros-forum/"
+      ],
+      "description": "Asgaros Forum is a lightweight and simple forum plugin for WordPress.",
+      "website": "https://www.asgaros.de",
+      "icon": "Asgaros Forum.png"
+    },
+    "Astra Widgets": {
+      "cats": [
+        87,
+        5
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/astra-widgets/']": {
+          "attributes": {
+            "href": "/wp-content/plugins/astra-widgets/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "description": "Astra Widgets is a handy little free plugin that lets you display address, list icons or social profiles within the Astra Theme.",
+      "website": "https://wpastra.com/did-you-know-astra-is-widget-ready",
+      "icon": "Astra.svg"
+    },
+    "Autoptimize": {
+      "cats": [
+        87,
+        92
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/autoptimize/'], link[href*='/wp-content/cache/autoptimize/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/autoptimize/.+\\.js(?:\\?ao_version=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Autoptimize is a WordPress plugin that optimises website performance by aggregating, minifying, and compressing HTML, CSS, and JavaScript files.",
+      "website": "https://autoptimize.com",
+      "icon": "Autoptimize.png"
+    },
+    "BerqWP": {
+      "cats": [
+        87,
+        92
+      ],
+      "dom": {
+        "style[data-berqwp],script[data-berqwp]": {
+          "exists": ""
+        }
+      },
+      "description": "BerqWP is a WordPress performance optimization plugin.",
+      "website": "https://berqwp.com/",
+      "icon": "BerqWP.png"
+    },
+    "Better Click To Tweet": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/better-click-to-tweet/']": {
+          "exists": ""
+        }
+      },
+      "description": "Adds click to tweet boxes into your posts.",
+      "website": "https://wordpress.org/plugins/better-click-to-tweet/",
+      "icon": "Better Click To Tweet.png"
+    },
+    "Better Search": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/better-search/']": {
+          "exists": ""
+        }
+      },
+      "description": "Better Search is a WordPress plugin designed to enhance your search experience.",
+      "website": "https://webberzone.com/plugins/better-search/",
+      "icon": "BetterSearch.svg"
+    },
+    "BetterDocs plugin": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/betterdocs(?:-pro)?/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "BetterDocs"
+      ],
+      "description": "BetterDocs plugin is an advanced documentation and knowledge base plugin for WordPress.",
+      "website": "https://betterdocs.co/docs/wordpress",
+      "icon": "BetterDocs.png"
+    },
+    "Blocksy Companion": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/blocksy-companion']": {
+          "attributes": {
+            "href": "/wp-content/plugins/blocksy-companion(?:-pro)?/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/blocksy-companion(?:-pro)?/"
+      ],
+      "implies": [
+        "Blocksy"
+      ],
+      "description": "Blocksy Companion is a WordPress plugin that provides additional functionality and features for the Blocksy theme.",
+      "website": "https://creativethemes.com/blocksy/companion/",
+      "icon": "Blocksy.svg"
+    },
+    "Bold Page Builder": {
+      "cats": [
+        87,
+        51
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/bold-page-builder/"
+      ],
+      "description": "Bold Page Builder is a plugin or a theme component that allows users to structure and design responsive pages.",
+      "website": "https://wordpress.org/plugins/bold-page-builder",
+      "icon": "Bold Page Builder.png"
+    },
+    "Breadcrumb NavXT": {
+      "cats": [
+        87
+      ],
+      "html": [
+        "<!-- breadcrumb navxt ([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "Breadcrumb NavXT is a WordPress plugin compatible with WordPress versions 4.9 and up.",
+      "website": "https://github.com/mtekk/Breadcrumb-NavXT",
+      "icon": "Breadcrumb NavXT.svg"
+    },
+    "Brilliant Web-to-Lead": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/salesforce-wordpress-to-lead/"
+      ],
+      "implies": [
+        "Salesforce"
+      ],
+      "description": "Brilliant Web-to-Lead plugin facilitates the technical integration between WordPress installations and Salesforce CRM accounts, enabling the exchange and synchronization of data.",
+      "website": "https://brilliantplugins.com/downloads/salesforce/",
+      "icon": "Brilliant Web-to-Lead.png"
+    },
+    "BuddyPress": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/buddypress/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "BuddyPress is designed to allow schools, companies, sports teams, or any other niche community to start their own social network or communication tool.",
+      "website": "https://buddypress.org",
+      "icon": "BuddyPress.svg"
+    },
+    "Caldera Forms": {
+      "cats": [
+        87,
+        110
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/caldera-forms/']": {
+          "attributes": {
+            "href": "/wp-content/plugins/caldera-forms/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "js": {
+        "calderaForms": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/caldera-forms/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Caldera Forms is the free WordPress form builder plugin.",
+      "website": "https://calderaforms.com",
+      "icon": "Caldera Forms.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof calderaForms !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chimpmatic": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "form[class*='chimpmatic']": {
+          "attributes": {
+            "class": "chimpmatic-([\\d\\.]+)\\;version:\\1"
+          }
+        }
+      },
+      "implies": [
+        "Contact Form 7",
+        "MailChimp"
+      ],
+      "description": "Chimpmatic is a premium Contact Form 7 and Mailchimp integration plugin.",
+      "website": "https://chimpmatic.com",
+      "icon": "default.svg"
+    },
+    "CiviCRM plugins": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "wp-content/plugins/(?:[\\w\\-]+)?civicrm(?:[\\w\\-]+)?/"
+      ],
+      "implies": [
+        "CiviCRM"
+      ],
+      "description": "CiviCRM is a web-based suite of internationalised open-source software for constituency relationship management.",
+      "website": "https://wordpress.org/plugins/search/civicrm/",
+      "icon": "CiviCRM.png"
+    },
+    "Contact Form 7": {
+      "cats": [
+        87,
+        110
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/contact-form-7/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "wpcf7": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/contact-form-7/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Contact Form 7 is an WordPress plugin which can manage multiple contact forms. The form supports Ajax-powered submitting, CAPTCHA, Akismet spam filtering.",
+      "website": "https://contactform7.com",
+      "icon": "Contact Form 7.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wpcf7 !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cookie Information plugin": {
+      "cats": [
+        87,
+        67
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/wp-gdpr-compliance/"
+      ],
+      "implies": [
+        "Cookie Information"
+      ],
+      "description": "Cookie Information plugin helps your website stay compliant with GDPR using a free cookie pop-up, consent log, and more.",
+      "website": "https://wordpress.org/plugins/wp-gdpr-compliance",
+      "icon": "Cookie Information.svg"
+    },
+    "Core Framework": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link#core-framework-frontend-css, style#core-framework-inline-inline-css": {
+          "exists": ""
+        }
+      },
+      "description": "Core Framework is a visual CSS framework for WordPress and other platforms.",
+      "website": "https://coreframework.com",
+      "icon": "CoreFramework.svg"
+    },
+    "Creativ.eMail": {
+      "cats": [
+        87,
+        75
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/creative-mail-by-constant-contact/"
+      ],
+      "description": "Creativ.eMail is a email editor WordPress plugin which simplifies email marketing campaign creation and pulls your WordPress blog posts, website images and WooCommerce products right into your email content.",
+      "website": "https://www.creativemail.com",
+      "icon": "Creativ.eMail.svg"
+    },
+    "Crocoblock JetElements": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "jetElements": ""
+      },
+      "description": "Crocoblock JetElements is an addon for Elementor that adds additional customisation options to the page builder.",
+      "website": "https://crocoblock.com/plugins/jetelements",
+      "icon": "Crocoblock.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jetElements !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Custom Fonts": {
+      "cats": [
+        87,
+        17
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/custom-fonts/"
+      ],
+      "description": "Custom Fonts plugin helps you easily embed custom fonts files (woff2, woff, ttf, svg, eot, otf) easily in your WordPress website.",
+      "website": "https://github.com/brainstormforce/custom-fonts",
+      "icon": "Custom Fonts.png"
+    },
+    "Cwicly": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/uploads/cwicly/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/cwicly/"
+      ],
+      "implies": [
+        "WordPress Block Editor"
+      ],
+      "description": "Cwicly is an advanced professional design and block toolkit that integrates directly with the WordPress editor.",
+      "website": "https://cwicly.com",
+      "icon": "Cwicly.png"
+    },
+    "Distributor": {
+      "cats": [
+        87
+      ],
+      "headers": {
+        "x-distributor": "yes"
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/distributor"
+      ],
+      "description": "Distributor is a WordPress plugin that helps distribute and reuse content across your websites.",
+      "website": "https://distributorplugin.com",
+      "icon": "distributor.svg"
+    },
+    "Dominate WooCommerce": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/iwd-checkout-connector/"
+      ],
+      "description": "Dominate WooCommerce is a cloud-based checkout-page which supports PayPal Smart buttons for Venmo, PayPal Credit, and other payment methods.",
+      "website": "https://www.dominate.co/woocommerce",
+      "icon": "Dominate.png"
+    },
+    "Doppler Forms": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/doppler-form/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "Doppler"
+      ],
+      "description": "The Doppler Forms plugin allows you to create fully customised subscription forms that you can add to your website or blog.",
+      "website": "https://wordpress.org/plugins/doppler-form/",
+      "icon": "Doppler.svg"
+    },
+    "Doppler for WooCommerce": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/doppler-for-woocommerce/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "Doppler"
+      ],
+      "description": "The Doppler for WooCommerce plugin adds submit your WooCommerce customers and buyers to a Doppler List.",
+      "website": "https://wordpress.org/plugins/doppler-for-woocommerce/",
+      "icon": "Doppler.svg"
+    },
+    "Download Monitor": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/download-monitor/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "DLM_XHR_Download": "",
+        "dlmXHR.prevent_duplicates": ""
+      },
+      "meta": {
+        "dlm-version": [
+          "^([\\d\\.]+)$\\;version:\\1"
+        ]
+      },
+      "description": "Download Monitor is a plugin for selling, uploading and managing downloads, tracking downloads and displaying links.",
+      "website": "https://www.download-monitor.com",
+      "icon": "Download Monitor.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DLM_XHR_Download !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DLM_XHR_Download !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Draftpress HFCM": {
+      "cats": [
+        87
+      ],
+      "html": [
+        "<!--[^>]*hfcm\\sby\\s99\\srobots"
+      ],
+      "description": "Header Footer Code Manager by Draftpress is a easy interface to add snippets to the header or footer or above or below the content of your page.",
+      "website": "https://draftpress.com/products/header-footer-code-manager-pro/",
+      "icon": "Draftpress.png"
+    },
+    "EWWW Image Optimizer": {
+      "cats": [
+        87,
+        92
+      ],
+      "js": {
+        "ewww_webp_supported": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/ewww-image-optimizer/"
+      ],
+      "description": "EWWW Image Optimizer is an image optimisation WordPress plugin designed to improve the performance of your website.",
+      "website": "https://github.com/nosilver4u/ewww-image-optimizer",
+      "icon": "EWWW Image Optimizer.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ewww_webp_supported !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Easy Accordion": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/easy-accordion-free/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/easy-accordion-free/"
+      ],
+      "description": "Easy Accordion is a flexible and customisable accordion and FAQs builder plugin for WordPress.",
+      "website": "https://easyaccordion.io",
+      "icon": "EasyAccordion.svg"
+    },
+    "ElasticPress": {
+      "cats": [
+        87
+      ],
+      "headers": {
+        "x-elasticpress-query": ""
+      },
+      "implies": [
+        "Elasticsearch"
+      ],
+      "description": "ElasticPress is a hosting service that connects your WordPress site to search hosting.",
+      "website": "https://www.elasticpress.io/",
+      "icon": "elasticpress.svg"
+    },
+    "Elementor Header & Footer Builder": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/header-footer-elementor/']": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "Elementor"
+      ],
+      "description": "Elementor Header & Footer Builder is a simple yet powerful WordPress plugin that allows you to create a layout with Elementor and set it as.",
+      "website": "https://github.com/brainstormforce/header-footer-elementor",
+      "icon": "Elementor Header & Footer Builder.svg"
+    },
+    "ElementsKit": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "ElementsKit_Helper": "",
+        "elementskit": ""
+      },
+      "description": "ElementsKit is an addon for Elementor that adds additional customisation options to the page builder.",
+      "website": "https://wpmet.com/plugin/elementskit",
+      "icon": "elementskit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ElementsKit_Helper !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ElementsKit_Helper !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Embed Optimizer": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^embed-optimizer ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which optimizes embeds by lazy loading them only as they come into view.",
+      "website": "https://wordpress.org/plugins/embed-optimizer/",
+      "icon": "embed-optimizer.svg"
+    },
+    "EmbedPlus": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/youtube-embed-plus(?:-pro)?/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "EmbedPlus is a WordPress plugin for YouTube allows you to embed gallery, channel, playlist, or even live stream on your webpage.",
+      "website": "https://www.embedplus.com",
+      "icon": "EmbedPlus.png"
+    },
+    "Endurance Page Cache": {
+      "cats": [
+        87,
+        23
+      ],
+      "headers": {
+        "x-endurance-cache-level": ""
+      },
+      "description": "Endurance Page Cache adds basic file-based caching to WordPress.",
+      "website": "https://github.com/bluehost/endurance-page-cache",
+      "icon": "endurance-cache.png"
+    },
+    "Enhanced Responsive Images": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^auto-sizes ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which improves image sizes attribute accuracy and implements the HTML spec for adding sizes='auto' to lazy loaded images.",
+      "website": "https://wordpress.org/plugins/auto-sizes/",
+      "icon": "enhanced-image-sizes.svg"
+    },
+    "Essential Addons for Elementor": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/uploads/essential-addons-elementor/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/uploads/essential-addons-elementor/"
+      ],
+      "description": "Essential Addons for Elementor gives you 70+ creative elements and extensions to help you extend the stock features of Elementor page builder.",
+      "website": "https://essential-addons.com/elementor/",
+      "icon": "Essential Addons for Elementor.svg"
+    },
+    "Essential Blocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link#essential-blocks-frontend-style-css": {
+          "exists": ""
+        },
+        "link[href*='/wp-content/uploads/eb-style/']": {
+          "exists": ""
+        }
+      },
+      "html": [
+        "<div[^>]+class=[\"']wp-block-essential-blocks-*"
+      ],
+      "description": "Essential Blocks is a Gutenberg Blocks page builder plugin that adds extra functionality to the WordPress Block Editor.",
+      "website": "https://essential-blocks.com",
+      "icon": "essential-blocks.png"
+    },
+    "Etch": {
+      "cats": [
+        87,
+        51
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/etch/']": {
+          "exists": ""
+        }
+      },
+      "description": "Etch is a developer-focused visual development environment for WordPress that combines WYSIWYG editing with IDE-level control and full block editor compatibility.",
+      "website": "https://etchwp.com",
+      "icon": "Etch.svg"
+    },
+    "ExactMetrics": {
+      "cats": [
+        87,
+        10
+      ],
+      "js": {
+        "ExactMetrics": "",
+        "exactmetrics_frontend": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/google-analytics-dashboard-for-wp/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "ExactMetrics (formerly Google Analytics Dashboard for WP) plugin helps you properly setup all the powerful Google Analytics tracking features without writing any code or hiring a developer.",
+      "website": "https://www.exactmetrics.com",
+      "icon": "ExactMetrics.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ExactMetrics !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ExactMetrics !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Extendify": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/plugins/extendify/'], #extendify-utility-styles-css": {
+          "exists": ""
+        }
+      },
+      "description": "Extendify is a popular platform used by WordPress site owners to create high-performing and highly-aesthetic websites with ease.",
+      "website": "https://extendify.com",
+      "icon": "Extendify.png"
+    },
+    "Flying Analytics": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/flying-analytics/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/flying-analytics/"
+      ],
+      "description": "Flying Analytics is a performance optimisation plugin for WordPress websites designed to reduce page load times and improve the user experience.",
+      "website": "https://wordpress.org/plugins/flying-analytics/",
+      "icon": "default.svg"
+    },
+    "Flying Images": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "flyingImages": ""
+      },
+      "description": "Flying Images is a performance optimisation plugin for WordPress websites designed to reduce page load times and improve the user experience.",
+      "website": "https://wordpress.org/plugins/nazy-load/",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof flyingImages !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Flying Pages": {
+      "cats": [
+        87,
+        92
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/flying-pages/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "flyingPages": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/flying-pages/.+\\.js(?:\\?ver=([\\d\\.]+))?\\;version:\\1"
+      ],
+      "description": "Flying Pages is a performance optimisation plugin for WordPress websites designed to reduce page load times and improve the user experience.",
+      "website": "https://wordpress.org/plugins/flying-pages/",
+      "icon": "Flying Pages.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof flyingPages !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "FlyingPress": {
+      "cats": [
+        87,
+        92
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/flying-press/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/flying-press/"
+      ],
+      "description": "FlyingPress is a WordPress plugin that helps to improve website performance by optimising various aspects of a WordPress site. The plugin offers a range of features, including caching, image optimisation, lazy loading, database optimisation, and more.",
+      "website": "https://flying-press.com",
+      "icon": "FlyingPress.svg"
+    },
+    "FooPlugins FooGallery": {
+      "cats": [
+        87,
+        7
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/foogallery/']": {
+          "attributes": {
+            "href": "/wp-content/plugins/foogallery/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "js": {
+        "FooGallery": ""
+      },
+      "description": "FooPlugins FooGallery is a great image gallery plugin for WordPress.",
+      "website": "https://fooplugins.com/foogallery-wordpress-gallery-plugin",
+      "icon": "FooPlugins.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FooGallery !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Formidable Form": {
+      "cats": [
+        87,
+        73,
+        110
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/formidable/']": {
+          "exists": ""
+        }
+      },
+      "description": "Formidable Forms is a WordPress plugin that enables you to create quizzes, surveys, calculators, timesheets, multi-page application forms.",
+      "website": "https://formidableforms.com",
+      "icon": "Formidable Form.png"
+    },
+    "Frames": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/frames-plugin/']": {
+          "exists": ""
+        }
+      },
+      "description": "Frames is a tool that allows you to create wireframes in real time, design and develop systems, and access a library of components to help you build custom websites quickly and easily, without any restrictions on your creative input.",
+      "website": "https://getframes.io",
+      "icon": "Frames.svg"
+    },
+    "Funnelforms": {
+      "cats": [
+        87,
+        110
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/Funnelforms']": {
+          "attributes": {
+            "href": "/wp-content/plugins/Funnelforms(?:-pro)?/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "description": "Funnelforms is a WordPress plugin for creating intelligent multi-step forms, integrating AI to streamline business processes, enhance customer acquisition, and optimise staff recruitment.",
+      "website": "https://en.funnelforms.io",
+      "icon": "Funnelforms.svg"
+    },
+    "GPT AI Power": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/gpt3-ai-content-generator/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "GPT AI Power is a WordPress plugin that offers a comprehensive AI package.",
+      "website": "https://gptaipower.com",
+      "icon": "GPT AI Power.png"
+    },
+    "GTranslate": {
+      "cats": [
+        87,
+        89
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/gtranslate/'], img[src*='/wp-content/plugins/gtranslate/']": {
+          "exists": ""
+        }
+      },
+      "description": "GTranslate is a website translator which can translate any website to any language automatically.",
+      "website": "https://gtranslate.io",
+      "icon": "GTranslate.svg"
+    },
+    "GenerateBlocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link#generateblocks-css": {
+          "exists": ""
+        }
+      },
+      "html": [
+        "<link[^>]* id=[^>]+generateblocks-css"
+      ],
+      "implies": [
+        "WordPress Block Editor"
+      ],
+      "description": "GenerateBlocks is a small collection of lightweight WordPress blocks for the WordPress Block Editor.",
+      "website": "https://generateblocks.com",
+      "icon": "GenerateBlocks.svg"
+    },
+    "GeneratePress GP Premium": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/gp-premium/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "GeneratePress"
+      ],
+      "description": "GP Premium is a premium add-on plugin for the GeneratePress WordPress theme.",
+      "website": "https://docs.generatepress.com/article/installing-gp-premium/",
+      "icon": "generatepress.png"
+    },
+    "Genesis blocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/atomic-blocks']": {
+          "exists": ""
+        },
+        "link[href*='/wp-content/plugins/genesis-blocks']": {
+          "exists": ""
+        }
+      },
+      "html": [
+        "<div[^>]+class=[\"']wp-block-atomic-blocks-*"
+      ],
+      "scriptSrc": [
+        "/wp-content/themes/genesis-blocks/lib/js/"
+      ],
+      "description": "Premium block library & block editor enhancements from StudioPress.",
+      "website": "https://www.studiopress.com/genesis-blocks/",
+      "icon": "genesis-blocks.png"
+    },
+    "GoDaddy CoBlocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/coblocks/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/coblocks/"
+      ],
+      "description": "GoDaddy CoBlocks is a suite of professional page building content blocks for the WordPress Block Editor.",
+      "website": "https://github.com/godaddy-wordpress/coblocks",
+      "icon": "GoDaddy.svg"
+    },
+    "Google Tag Manager for WordPress": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/duracelltomi-google-tag-manager/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/duracelltomi-google-tag-manager/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "Google Tag Manager"
+      ],
+      "description": "Google Tag Manager for WordPress plugin places the GTM container code snippets onto your wordpress website so that you do not need to add this manually.",
+      "website": "https://gtm4wp.com",
+      "icon": "Google Tag Manager for WordPress.png"
+    },
+    "Gravity Forms": {
+      "cats": [
+        87,
+        110
+      ],
+      "html": [
+        "<div class=(?:\"|')[^>]*gform_body",
+        "<div class=(?:\"|')[^>]*gform_wrapper",
+        "<link [^>]*href=(?:\"|')[^>]*wp-content/plugins/gravityforms/css/",
+        "<ul [^>]*class=(?:\"|')[^>]*gform_fields"
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/gravityforms/js/[^/]+\\.js\\?ver=([\\d.]+)$\\;version:\\1"
+      ],
+      "website": "https://gravityforms.com",
+      "icon": "gravityforms.svg"
+    },
+    "Greyd.Suite": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "greyd.animations": "",
+        "greydFormSettings": ""
+      },
+      "scripts": [
+        "\\.greyd\\.io"
+      ],
+      "description": "Greyd.Suite is an all-in-one platform designed to streamline WordPress business operations, integrating site management, design, and marketing tools into a unified system.",
+      "website": "https://greyd.io/",
+      "icon": "GreydSuite.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof greyd !== 'undefined' && typeof greyd.animations !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof greyd !== 'undefined' && typeof greyd.animations !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Gutenberg": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/gutenberg/']": {
+          "attributes": {
+            "href": "/wp-content/plugins/gutenberg/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/gutenberg/"
+      ],
+      "implies": [
+        "WordPress Block Editor"
+      ],
+      "description": "Gutenberg is the development plugin in which new features for the WordPress Block Editor are tested.",
+      "website": "https://github.com/WordPress/gutenberg",
+      "icon": "Gutenberg.png"
+    },
+    "HollerBox": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "HollerBox.active": ""
+      },
+      "description": "HollerBox is a lead generation popup tool for WordPress.",
+      "website": "https://hollerwp.com",
+      "icon": "HollerBox.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HollerBox !== 'undefined' && typeof HollerBox.active !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "HubSpot WordPress plugin": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "leadin_wordpress.leadinPluginVersion": "^([\\d.]+)$\\;version:\\1"
+      },
+      "implies": [
+        "HubSpot",
+        "HubSpot Analytics"
+      ],
+      "description": "HubSpot is a platform with all the tools and integrations you need for marketing, sales, and customer service. HubSpot WordPress plugin allows you to manage contacts (CRM), engage visitors with live chat and chatbots, add beautiful forms to pages, create engaging email marketing campaigns, and more.",
+      "website": "https://wordpress.org/plugins/leadin/",
+      "icon": "HubSpot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof leadin_wordpress !== 'undefined' && typeof leadin_wordpress.leadinPluginVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "leadin_wordpress.leadinPluginVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Image Placeholders": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^dominant-color-images ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which determines and stores the dominant color for newly uploaded images in the media library, then uses that as a placeholder background during front end image loads.",
+      "website": "https://wordpress.org/plugins/dominant-color-images/",
+      "icon": "dominant-color-images.svg"
+    },
+    "Image Prioritizer": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^image-prioritizer ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which optimizes the loading of images which are the LCP (Largest Contentful Paint) element, including both img elements and elements with CSS background images.",
+      "website": "https://wordpress.org/plugins/image-prioritizer/",
+      "icon": "image-prioritizer.svg"
+    },
+    "Imagely NextGEN Gallery": {
+      "cats": [
+        87,
+        7
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/nextgen-gallery/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/nextgen-gallery(?:-pro|-plus)?/"
+      ],
+      "description": "NextGEN Gallery is a WordPress gallery plugin maintained by Imagely.",
+      "website": "https://www.imagely.com/wordpress-gallery-plugin",
+      "icon": "Imagely.png"
+    },
+    "Ivory Search": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "IvorySearchVars": "",
+        "ivory_search_analytics": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/add-search-to-menu/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Ivory Search is a WordPress search plugin that improves WordPress search by providing advanced options to extend search or exclude specific content from search.",
+      "website": "https://ivorysearch.com",
+      "icon": "ivory_searc.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof IvorySearchVars !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof IvorySearchVars !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "JetEngine": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/jet-engine/"
+      ],
+      "description": "JetEngine is a content plugin for WordPress that allows users to create custom post types, taxonomies, and meta boxes, offering flexibility in building complex websites without requiring coding skills.",
+      "website": "https://crocoblock.com/plugins/jetengine",
+      "icon": "JetEngine.svg"
+    },
+    "JetTabs": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "JetTabs.accordionInit": "",
+        "JetTabsSettings": ""
+      },
+      "implies": [
+        "Elementor"
+      ],
+      "description": "JetTabs is a plugin for Elementor that enables the creation of customizable tabs and accordion widgets for organizing content within web pages.",
+      "website": "https://crocoblock.com/plugins/jettabs",
+      "icon": "JetTabs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof JetTabs !== 'undefined' && typeof JetTabs.accordionInit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof JetTabs !== 'undefined' && typeof JetTabs.accordionInit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Jetpack": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/jetpack/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/jetpack/"
+      ],
+      "description": "Jetpack is a popular WordPress plugin created by Automattic, the people behind WordPress.com.",
+      "website": "https://jetpack.com",
+      "icon": "Jetpack.svg"
+    },
+    "Jetpack Boost": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "style[id='jetpack-boost-critical-css']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/jetpack-boost/"
+      ],
+      "description": "Jetpack Boost – Website Speed, Performance and Critical CSS.",
+      "website": "https://jetpack.com",
+      "icon": "Jetpack.svg"
+    },
+    "Jilt plugin": {
+      "cats": [
+        87,
+        98
+      ],
+      "scriptSrc": [
+        "\\.jilt\\.com/.+/jilt\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Jilt plugin helps ecommerce store owners track and recover abandoned orders. Works seamlessly with Shopify and WooCommerce.",
+      "website": "https://wordpress.org/plugins/jilt-for-woocommerce",
+      "icon": "Jilt.svg"
+    },
+    "Kadence WP Blocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/kadence-blocks/']": {
+          "exists": ""
+        }
+      },
+      "html": [
+        "<style[^>]* id=[^>]+kadence-blocks-"
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/kadence-blocks/dist/.+/kb-form-block\\.min\\.js(?:\\?ver=([\\d\\.]+))?\\;version:\\1"
+      ],
+      "implies": [
+        "WordPress Block Editor"
+      ],
+      "description": "Kadence Blocks is a plugin for WordPress that provides a collection of custom blocks for the WordPress Block Editor, allowing users to create custom layouts and designs for their website without needing to know how to code.",
+      "website": "https://www.kadencewp.com/kadence-blocks/",
+      "icon": "Kadence WP.svg"
+    },
+    "Kirki Customizer Framework": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/kirki/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/kirki/"
+      ],
+      "description": "Kirki Customizer Framework is a toolkit allowing WordPress developers to use the Customizer and take advantage of its advanced features and flexibility by abstracting the code.",
+      "website": "https://kirki.org",
+      "icon": "Kirki Customizer Framework.png"
+    },
+    "Limit Login Attempts Reloaded": {
+      "cats": [
+        87,
+        16
+      ],
+      "dom": {
+        "link#llar-login-page-styles-css": {
+          "exists": ""
+        }
+      },
+      "description": "Limit Login Attempts Reloaded stops brute-force attacks and optimizes your site performance by limiting the number of login attempts that are possible through the normal login as well as XMLRPC, Woocommerce and custom login pages.",
+      "website": "https://www.limitloginattempts.com",
+      "icon": "Limit Login Attempts Reloaded.png"
+    },
+    "LiveCanvas": {
+      "cats": [
+        87,
+        51
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/livecanvas/"
+      ],
+      "implies": [
+        "Bootstrap"
+      ],
+      "description": "LiveCanvas is a Bootstrap 5 WordPress page builder.",
+      "website": "https://livecanvas.com",
+      "icon": "LiveCanvas.svg"
+    },
+    "MailChimp for WooCommerce": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/mailchimp-for-woocommerce/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "MailChimp"
+      ],
+      "description": "MailChimp for WooCommerce gives you the ability to automatically sync customer purchase data to your MailChimp account.",
+      "website": "https://mailchimp.com/integrations/woocommerce",
+      "icon": "mailchimp.svg"
+    },
+    "MailChimp for WordPress": {
+      "cats": [
+        87,
+        32
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/mailchimp-for-wp/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "mc4wp": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/mailchimp-for-wp/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "MailChimp"
+      ],
+      "description": "MailChimp for WordPress is an email marketing plugin that enables you to build subscriber lists.",
+      "website": "https://www.mc4wp.com",
+      "icon": "MailChimp for WordPress.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mc4wp !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MailerLite plugin": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/woo-mailerlite/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "MailerLite"
+      ],
+      "description": "The official MailerLite signup forms plugin makes it easy to grow your newsletter subscriber list from your WordPress blog or website. The plugin automatically integrates your WordPress form with your MailerLite email marketing account.",
+      "website": "https://ru.wordpress.org/plugins/official-mailerlite-sign-up-forms/",
+      "icon": "MailerLite.svg"
+    },
+    "Master Slider Plugin": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link#ms-main-css": {
+          "attributes": {
+            "href": "/wp-content/plugins/masterslider/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "implies": [
+        "Master Slider"
+      ],
+      "description": "Master Slider Plugin is an SEO friendly, responsive image and video slider plugin for WordPress.",
+      "website": "https://wordpress.org/plugins/master-slider",
+      "icon": "master_slider.png"
+    },
+    "MetaSlider": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/ml-slider/'], link#metaslider-pro-public-css": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/ml-slider(?:-pro)?/"
+      ],
+      "description": "MetaSlider is a WordPress plugin for adding responsive sliders and carousels to websites.",
+      "website": "https://www.metaslider.com",
+      "icon": "MetaSlider.svg"
+    },
+    "Modern Image Formats": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^webp-uploads ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which adds support for outputting images in WebP or AVIF format and supports the `picture` element to enable format fallbacks.",
+      "website": "https://wordpress.org/plugins/webp-uploads/",
+      "icon": "modern-image-formats.svg"
+    },
+    "Modula": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "ModulaIsotope": "",
+        "modulaInViewport": ""
+      },
+      "description": "Modula is a customizable gallery plugin for WordPress.",
+      "website": "https://wp-modula.com",
+      "icon": "Modula.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ModulaIsotope !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ModulaIsotope !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Moneris Payment Gateway": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "wc_moneris_hosted_tokenization_params": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/woocommerce-gateway-moneris/"
+      ],
+      "implies": [
+        "Moneris",
+        "WooCommerce"
+      ],
+      "description": "Moneris is Canada’s leading processor of Debit and credit card payments. This WooCommerce extension automatically adds moneris payment gateway to your woocommerce website and allows you to keep the customer on your site for the checkout process.",
+      "website": "https://wordpress.org/plugins/wc-moneris-payment-gateway",
+      "icon": "Moneris.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wc_moneris_hosted_tokenization_params !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MonsterInsights": {
+      "cats": [
+        87,
+        10
+      ],
+      "js": {
+        "MonsterInsights": "",
+        "monsterinsights_frontend": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/google-analytics-for-wordpress/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "MonsterInsights is the most popular Google Analytics plugin for WordPress.",
+      "website": "https://www.monsterinsights.com",
+      "icon": "MonsterInsights.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MonsterInsights !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof MonsterInsights !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Motion.page": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "MOTIONPAGE_FRONT.version": "^([0-9\\.]+)$\\;version:\\1"
+      },
+      "description": "Motion.page is a WordPress animation plugin utilizing GSAP and ScrollTrigger.",
+      "website": "https://motion.page",
+      "icon": "Motion.Page.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MOTIONPAGE_FRONT !== 'undefined' && typeof MOTIONPAGE_FRONT.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "MOTIONPAGE_FRONT.version || \"\""
+          }
+        ]
+      }
+    },
+    "Newspack": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "a.imprint[href*='newspack.pub']": {
+          "exists": ""
+        }
+      },
+      "description": "Newspack is an open-source publishing platform built on WordPress for small to medium sized news organizations. It is an “opinionated” platform that stakes out clear, best-practice positions on technology, design, and business practice for news publishers.",
+      "website": "https://github.com/Automattic/newspack-plugin",
+      "icon": "NewspackLogo.png"
+    },
+    "Ninja Forms": {
+      "cats": [
+        87,
+        110
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/ninja-forms/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "nfForms": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/ninja-forms/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Ninja Forms is the WordPress form builder.",
+      "website": "https://ninjaforms.com",
+      "icon": "Ninja Forms.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof nfForms !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "OnePress Social Locker": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "__pandalockers": "",
+        "bizpanda": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/social-?locker(?:-next-premium)?/bizpanda/assets/"
+      ],
+      "description": "Social Locker locks your most valuable site content behind a set of social buttons until the visitor likes, shares, +1s or tweets your page.",
+      "website": "https://wordpress.org/plugins/social-locker",
+      "icon": "OnePress Social Locker.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __pandalockers !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __pandalockers !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Optimization Detective": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^optimization-detective ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which captures real user metrics about what elements are displayed on the page across a variety of device form factors (e.g. desktop, tablet, and phone) in order to apply loading optimizations.",
+      "website": "https://wordpress.org/plugins/optimization-detective/",
+      "icon": "optimization-detective.svg"
+    },
+    "OptinMonster plugin": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/optinmonster/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "OptinMonster"
+      ],
+      "description": "OptinMonster is a lead-generation plugin for WordPress.",
+      "website": "https://optinmonster.com",
+      "icon": "OptinMonster.png"
+    },
+    "OrbitFox": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/themeisle-companion/']": {
+          "exists": ""
+        }
+      },
+      "description": "OrbitFox is a multi-featured WordPress plugin that works with the Elementor, Beaver Builder and WordPress Block Editor site-building utilities by Themeisle.",
+      "website": "https://themeisle.com/plugins/orbit-fox-companion",
+      "icon": "OrbitFox.svg"
+    },
+    "Otter Blocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/otter-blocks']": {
+          "exists": ""
+        }
+      },
+      "html": [
+        "<div[^>]+class=[\"']wp-block-themeisle-blocks-*"
+      ],
+      "description": "Otter blocks is a Gutenberg Blocks page builder plugin that adds extra functionality to the WordPress Block Editor.",
+      "website": "https://wordpress.org/plugins/otter-blocks/",
+      "icon": "otter-blocks.png"
+    },
+    "Perfmatters": {
+      "cats": [
+        87,
+        92
+      ],
+      "scriptSrc": [
+        "/wp-content/(?:plugins|cache|uploads)/perfmatters/"
+      ],
+      "description": "Perfmatters is a performance optimisation plugin for WordPress websites.",
+      "website": "https://perfmatters.io",
+      "icon": "Perfmatters.svg"
+    },
+    "Performance Lab": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^(performance lab|performance-lab) ?([\\d.]+)?\\;version:\\2"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which is a collection of standalone performance modules.",
+      "website": "https://wordpress.org/plugins/performance-lab/",
+      "icon": "Performance Lab.svg"
+    },
+    "Performant Translations": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^performant-translations ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which makes internationalization/localization in WordPress faster than ever before.",
+      "website": "https://wordpress.org/plugins/performant-translations/",
+      "icon": "performant-translations.svg"
+    },
+    "Photo Gallery": {
+      "cats": [
+        87,
+        7
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/photo-gallery/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/photo-gallery/.+scripts\\.min\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Photo Gallery plugin is a feature-rich, yet easy-to-use WordPress tool, which lets you add mobile-friendly image galleries and gallery groups to your website by 10Web.",
+      "website": "https://10web.io/plugins/wordpress-photo-gallery",
+      "icon": "Photo Gallery.svg"
+    },
+    "PixelYourSite": {
+      "cats": [
+        87,
+        10
+      ],
+      "js": {
+        "pys.Facebook": "",
+        "pysOptions": "",
+        "pys_generate_token": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/pixelyoursite/"
+      ],
+      "description": "PixelyourSite is now probably the most complex tracking tool for WordPress, managing the Facebook Pixel, Google Analytics, Google Ads Remarketing, Pinterest Tag, Bing Tag, and virtually any other script.",
+      "website": "https://www.pixelyoursite.com",
+      "icon": "PixelYourSite.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof pys !== 'undefined' && typeof pys.Facebook !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof pys !== 'undefined' && typeof pys.Facebook !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof pys !== 'undefined' && typeof pys.Facebook !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Polylang": {
+      "cats": [
+        87,
+        89
+      ],
+      "dom": {
+        "#pll_switcher": {
+          "exists": ""
+        }
+      },
+      "cookies": {
+        "pll_language": "[a-z]{2}"
+      },
+      "headers": {
+        "x-redirected-by": "polylang(?: (pro))?\\;version:\\1"
+      },
+      "description": "Polylang is a WordPress plugin which allows you to create multilingual WordPress site.",
+      "website": "https://wordpress.org/plugins/polylang",
+      "icon": "Polylang.svg"
+    },
+    "Popup Maker": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "pum_popups": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/popup-maker/(?:.+site(?:\\.min)?\\.js\\?.+ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Popup Maker is a plugin that lets you create popup windows for your WordPress website.",
+      "website": "https://wppopupmaker.com",
+      "icon": "Popup Maker.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof pum_popups !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Powerfolio": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[id='elpt-portfolio-css-css'][href*='portfolio-elementor']": {
+          "attributes": {
+            "href": "ver=([\\d\\.]+)\\;version:\\1"
+          }
+        },
+        "style#powerfolio-portfolio-block-style-inline-css": {
+          "exists": ""
+        }
+      },
+      "description": "Powerfolio is a portfolio plugin for Elementor, offering various customization options for creating a tailored portfolio.",
+      "website": "https://powerfoliowp.com",
+      "cpe": "cpe:2.3:a:pwrplugins:powerfolio:*:*:*:*:*:*:*:*",
+      "icon": "Powerfolio.svg"
+    },
+    "Premio Chaty": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "chaty_settings.chaty_widgets": "",
+        "chaty_settings.object_settings": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/chaty/"
+      ],
+      "description": "Chat with your website visitors via their favorite channels with Chaty by Premio.",
+      "website": "https://premio.io/downloads/chaty",
+      "icon": "Premio.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chaty_settings !== 'undefined' && typeof chaty_settings.chaty_widgets !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Pretty Links": {
+      "cats": [
+        87,
+        71
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/pretty-link/']": {
+          "exists": ""
+        }
+      },
+      "description": "Pretty Links is a WordPress plugin URL shortener, link cloaker, branded link, and QR code generator.",
+      "website": "https://prettylinks.com",
+      "icon": "Pretty Links.png"
+    },
+    "Price By Country": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "wc_price_based_country_ajax_geo_params": "",
+        "wc_price_based_country_pro_frontend_params": ""
+      },
+      "description": "Price By Country is a WooCommerce plugin that enables store owners to set different product prices based on the customer's country.",
+      "website": "https://woocommerce.com/products/price-by-country",
+      "icon": "WooCommerce.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wc_price_based_country_ajax_geo_params !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof wc_price_based_country_ajax_geo_params !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ProfilePress": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/wp-user-avatar/']": {
+          "exists": ""
+        }
+      },
+      "cookies": {
+        "ppwp_wp_session": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wp-user-avatar(?:-pro)?/.+frontend\\.min\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "ProfilePress is a WordPress registration plugin that lets you create login forms, registration forms, user profiles, and more.",
+      "website": "https://profilepress.net",
+      "icon": "ProfilePress.svg"
+    },
+    "PublishPress Blocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/advanced-gutenberg/assets/css/blocks.css?ver=([\\d\\.]+))?\\;version:\\1']": {
+          "exists": ""
+        }
+      },
+      "html": [
+        "<div[^>]+class=[\"']wp-block-advgb-*"
+      ],
+      "description": "PublishPress Blocks is a Gutenberg Blocks page builder plugin that adds extra functionality to the WordPress Block Editor.",
+      "website": "https://publishpress.com/blocks/",
+      "icon": "publishpress-blocks.png"
+    },
+    "RafflePress": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "rafflepress_api_url": "",
+        "rafflepress_cookies": ""
+      },
+      "scripts": [
+        "\\.rafflepress\\.com"
+      ],
+      "description": "RafflePress is a WordPress plugin designed for creating and managing giveaways to boost website engagement and grow audiences.",
+      "website": "https://rafflepress.com",
+      "icon": "RafflePress.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rafflepress_api_url !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof rafflepress_api_url !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RankMath SEO": {
+      "cats": [
+        87,
+        54
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/seo-by-rank-math/'], script.rank-math-schema-pro, script.rank-math-schema": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/seo-by-rank-math(?:-pro)?/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "RankMath SEO is a search engine optimisation plugin for WordPress.",
+      "website": "https://rankmath.com",
+      "icon": "RankMath SEO.svg"
+    },
+    "ReCaptcha v2 for Contact Form 7": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/wpcf7-recaptcha/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "Contact Form 7"
+      ],
+      "description": "Contact Form 7 v5.1 dropped support for reCaptcha v2 along with the [recaptcha] tag December 2018. This plugin brings that functionality back from Contact Form 7 5.0.5 and re-adds the [recaptcha] tag.",
+      "website": "https://wordpress.org/plugins/wpcf7-recaptcha/",
+      "icon": "ReCaptcha v2 for Contact Form 7.svg"
+    },
+    "Really Simple CAPTCHA": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "img[src*='/wp-content/plugins/really-simple-captcha/']": {
+          "exists": ""
+        }
+      },
+      "description": "Really Simple CAPTCHA does not work alone and is intended to work with other plugins. It is originally created for Contact Form 7, however, you can use it with your own plugin.",
+      "website": "https://wordpress.org/plugins/really-simple-captcha",
+      "icon": "Really Simple CAPTCHA.png"
+    },
+    "Recent Posts Widget With Thumbnails": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/recent-posts-widget-with-thumbnails/']": {
+          "attributes": {
+            "href": "/wp-content/plugins/recent-posts-widget-with-thumbnails/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "description": "Recent Posts Widget With Thumbnails is based on the well-known WordPress default widget 'Recent Posts' and extended to display more informations about the posts.",
+      "website": "https://wordpress.org/plugins/recent-posts-widget-with-thumbnails/",
+      "icon": "Recent Posts Widget With Thumbnails.png"
+    },
+    "Redux Framework": {
+      "cats": [
+        87
+      ],
+      "meta": {
+        "framework": [
+          "redux\\s([\\d\\.]+)\\;version:\\1"
+        ],
+        "generator": [
+          "redux\\s([\\d\\.]+)\\;version:\\1"
+        ]
+      },
+      "description": "Redux Framework is a modular PHP library that allows developers to create customisable settings panels and controls for WordPress projects, providing a consistent user interface for managing options and settings.",
+      "website": "https://redux.io",
+      "icon": "Redux Framework.svg"
+    },
+    "Responsive Lightbox & Gallery": {
+      "cats": [
+        87,
+        7
+      ],
+      "js": {
+        "rlArgs.activeGalleries": "",
+        "rl_hide_image": "",
+        "rl_view_image": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/responsive-lightbox/.+front\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Responsive Lightbox & Gallery plugin is a lightweight WordPress gallery plugin by Digital Factory.",
+      "website": "https://dfactory.eu/products/responsive-lightbox-gallery-extensions/",
+      "icon": "Digital Factory.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof rlArgs !== 'undefined' && typeof rlArgs.activeGalleries !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof rlArgs !== 'undefined' && typeof rlArgs.activeGalleries !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof rlArgs !== 'undefined' && typeof rlArgs.activeGalleries !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Rich Plugins Reviews": {
+      "cats": [
+        87,
+        90
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/widget-google-reviews/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/widget-google-reviews/"
+      ],
+      "description": "Rich Plugins Reviews is a WordPress plugin that integrates verified reviews from trusted sources such as Google and Facebook.",
+      "website": "https://richplugins.com/business-reviews-bundle-wordpress-plugin",
+      "icon": "Rich Plugins.png"
+    },
+    "SVG Support": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/svg-support/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/svg-support/"
+      ],
+      "description": "SVG Support is a WordPress plugin which allows you to safely upload SVG files to your media library and use them like any other image.",
+      "website": "https://github.com/wp-plugins/svg-support",
+      "icon": "SVG Support.png"
+    },
+    "SeedProd Coming Soon": {
+      "cats": [
+        87,
+        51
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/coming-soon/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/coming-soon/"
+      ],
+      "description": "SeedProd Coming Soon is a page builder allows you to add a new website under construction page to your WordPress site without hiring a developer.",
+      "website": "https://www.seedprod.com/features/coming-soon-page-templates-for-wordpress",
+      "icon": "SeedProd.svg"
+    },
+    "ShortPixel Image Optimizer": {
+      "cats": [
+        87,
+        92
+      ],
+      "js": {
+        "spPicTest": ""
+      },
+      "description": "ShortPixel Image Optimizer is a lightweight WordPress plugin that can compress all of your site's images and PDF documents.",
+      "website": "https://shortpixel.com",
+      "icon": "ShortPixel.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof spPicTest !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Shortcodes Ultimate": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/shortcodes-ultimate/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/shortcodes-ultimate/.+index\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Shortcodes Ultimate is a comprehensive collection of visual components for WordPress.",
+      "website": "https://getshortcodes.com",
+      "icon": "Shortcodes Ultimate.svg"
+    },
+    "SiteGuard WP Plugin": {
+      "cats": [
+        87,
+        16
+      ],
+      "dom": {
+        "img[src*='/wp-content/plugins/siteguard/']": {
+          "exists": ""
+        }
+      },
+      "description": "SiteGurad WP Plugin is the plugin specialised for the protection against the attack to the management page and login.",
+      "website": "https://www.jp-secure.com/siteguard_wp_plugin_en",
+      "icon": "SiteGuard WP Plugin.png"
+    },
+    "SiteOrigin Page Builder": {
+      "cats": [
+        87,
+        51
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/siteorigin-panels/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/siteorigin-panels/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Page Builder by SiteOrigin makes it easy to build responsive grid-based page content that adapts to mobile devices with pixel perfect accuracy.",
+      "website": "https://siteorigin.com/page-builder",
+      "icon": "SiteOrigin.svg"
+    },
+    "SiteOrigin Widgets Bundle": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/so-widgets-bundle/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/so-widgets-bundle/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "SiteOrigin Widgets Bundle is a WordPress plugin that gives you all the elements you need to build modern, responsive, and engaging website pages.",
+      "website": "https://siteorigin.com/widgets-bundle",
+      "icon": "SiteOrigin.svg"
+    },
+    "Slim SEO": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "#slim-seo-schema": {
+          "exists": ""
+        }
+      },
+      "description": "Slim SEO is a full-featured SEO plugin for WordPress that's lightweight, blazing fast with minimum configuration.",
+      "website": "https://wpslimseo.com",
+      "icon": "Slim-SEO.svg"
+    },
+    "Smart Slider 3": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/smart-slider-3(?:-pro)?/"
+      ],
+      "description": "Smart Slider 3 is a responsive, SEO optimised WordPress plugin.",
+      "website": "https://smartslider3.com",
+      "icon": "Smart Slider 3.svg"
+    },
+    "Smash Balloon Instagram Feed": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/instagram-feed/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/instagram-feed/"
+      ],
+      "description": "Instagram Feed displays Instagram posts from your Instagram accounts, either in the same single feed or in multiple different ones. Created by Smash Balloon.",
+      "website": "https://smashballoon.com/instagram-feed",
+      "icon": "Smash Balloon.svg"
+    },
+    "Societe des Avis Garantis": {
+      "cats": [
+        87,
+        90
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/ag-core/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Societe des Avis Garantis is a French company that provides customer review and rating services for businesses through its online platform.",
+      "website": "https://www.societe-des-avis-garantis.fr",
+      "icon": "Societe des Avis Garantis.svg"
+    },
+    "Spectra": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/ultimate-addons-for-gutenberg/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/ultimate-addons-for-gutenberg/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "WordPress Block Editor"
+      ],
+      "description": "Spectra is a WordPress plugin that provides a collection of new and enhanced blocks for the WordPress Block editor.",
+      "website": "https://wpspectra.com",
+      "icon": "Spectra.svg"
+    },
+    "Speculative Loading": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^speculation-rules ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which adds support for the Speculation Rules API, by which certain URLs are dynamically prefetched or prerendered based on user interaction.",
+      "website": "https://wordpress.org/plugins/speculation-rules/",
+      "icon": "speculation-rules.svg"
+    },
+    "SpeedyCache": {
+      "cats": [
+        87,
+        23
+      ],
+      "dom": {
+        "link[href*='/wp-content/cache/speedycache/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "speedycachell": ""
+      },
+      "headers": {
+        "x-speedycache-source": ""
+      },
+      "description": "SpeedyCache is a WordPress plugin for optimizing page load times and caching efficiency.",
+      "website": "https://speedycache.com",
+      "icon": "SpeedyCache.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof speedycachell !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Spexo Addons": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/sastra-essential-addons-for-elementor/"
+      ],
+      "description": "Spexo Addons is a tool offering essential features for Elementor, enhancing website design and functionality in a single solution.",
+      "website": "https://spexoaddons.com/",
+      "icon": "SpexoAddons.svg"
+    },
+    "Stackable": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/stackable-ultimate-gutenberg-blocks']": {
+          "attributes": {
+            "href": "/wp-content/plugins/stackable-ultimate-gutenberg-blocks(?:-premium)?/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "js": {
+        "stackable.restUrl": "",
+        "stackableAnimations": ""
+      },
+      "implies": [
+        "WordPress Block Editor"
+      ],
+      "description": "Stackable is a plugin for WordPress that offers a collection of blocks, templates, and other design tools to help users create custom, professional-looking websites.",
+      "website": "https://wpstackable.com",
+      "icon": "Stackable.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof stackable !== 'undefined' && typeof stackable.restUrl !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof stackable !== 'undefined' && typeof stackable.restUrl !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SuperPWA": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "superpwa_sw": ""
+      },
+      "implies": [
+        "PWA",
+        "WordPress"
+      ],
+      "description": "SuperPWA helps to easily convert your WordPress website into Progressive Web Apps instantly through our widely used PWA software without in coding.",
+      "website": "https://superpwa.com",
+      "icon": "superpwa.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof superpwa_sw !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Supsystic": {
+      "cats": [
+        87
+      ],
+      "scripts": [
+        "/plugins/data-tables-generator-by-supsystic/"
+      ],
+      "scriptSrc": [
+        "/plugins/data-tables-generator-by-supsystic/"
+      ],
+      "description": "Supsystic is a WordPress plugin that enables opt-in popups for collecting user information or promoting content.",
+      "website": "https://supsystic.com",
+      "icon": "Supsystic.svg"
+    },
+    "TablePress": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/tablepress/']": {
+          "exists": ""
+        }
+      },
+      "description": "TablePress is a free and open source plugin for the WordPress publishing platform. It enables you to create and manage tables on your website, without any coding knowledge.",
+      "website": "https://tablepress.org",
+      "icon": "TablePress.png"
+    },
+    "The Events Calendar": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/the-events-calendar/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "TribeCalendar": "",
+        "tribe_l10n_datatables": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/the-events-calendar(?:-pro)?/"
+      ],
+      "description": "The Events Calendar is a free event management plugin for WordPress.",
+      "website": "https://theeventscalendar.com",
+      "icon": "The Events Calendar.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TribeCalendar !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TribeCalendar !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ThemeIsle Menu Icons": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/menu-icons/']": {
+          "exists": ""
+        }
+      },
+      "description": "ThemeIsle Menu Icons plugin gives you the ability to add icons to your menu items, similar to the look of the latest dashboard menu.",
+      "website": "https://wordpress.org/plugins/menu-icons",
+      "icon": "ThemeIsle.png"
+    },
+    "ThimPress Course Review": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/learnpress-course-review/']": {
+          "exists": ""
+        }
+      },
+      "description": "Course Review is a WordPress plugin by ThimPress. Course Review gives students the opportunity to evaluate and provide feedback in order to improve the course.",
+      "website": "https://wordpress.org/plugins/learnpress-course-review",
+      "icon": "ThimPress.svg"
+    },
+    "ThimPress Course Wishlist": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/learnpress-wishlist/']": {
+          "exists": ""
+        }
+      },
+      "description": "Course Wishlist is a WordPress plugin by ThimPress. Course Wishlist bring wishlist feature for LearnPress.",
+      "website": "https://wordpress.org/plugins/learnpress-wishlist",
+      "icon": "ThimPress.svg"
+    },
+    "ThimPress Gradebook": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/learnpress-gradebook/']": {
+          "exists": ""
+        }
+      },
+      "description": "Gradebook is a WordPress plugin by ThimPress. Gradebook add-on for LearnPress makes it easier to track the students learning progress and result.",
+      "website": "https://thimpress.com/product/gradebook-add-on-for-learnpress",
+      "icon": "ThimPress.svg"
+    },
+    "ThimPress LearnPress": {
+      "cats": [
+        87,
+        21
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/learnpress/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/learnpress/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "LearnPress is a WordPress LMS plugin by ThimPress.",
+      "website": "https://wordpress.org/plugins/learnpress",
+      "icon": "ThimPress.svg"
+    },
+    "Thrive Apprentice": {
+      "cats": [
+        87,
+        21
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/thrive-apprentice/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/thrive-apprentice/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Thrive Apprentice is a WordPress plugin for creating online courses and also a membership plugin.",
+      "website": "https://thrivethemes.com/apprentice/",
+      "icon": "Thrive.svg"
+    },
+    "Thrive Architect": {
+      "cats": [
+        87,
+        51
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/thrive-visual-editor/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/thrive-visual-editor/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Thrive Architect is the visual page builder for WordPress.",
+      "website": "https://thrivethemes.com/architect/",
+      "icon": "Thrive.svg"
+    },
+    "Thrive Comments": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/thrive-comments/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/thrive-comments/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Thrive Comments plugin replaces the standard WordPress comments from your website.",
+      "website": "https://thrivethemes.com/comments/",
+      "icon": "Thrive.svg"
+    },
+    "Thrive Leads": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/thrive-leads/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/thrive-leads/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Thrive Leads is an all-in-one email list building plugin for WordPress.",
+      "website": "https://thrivethemes.com/leads/",
+      "icon": "Thrive.svg"
+    },
+    "Thrive Quiz Builder": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/thrive-quiz-builder/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/thrive-quiz-builder/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Thrive Quiz Builder is a powerful WordPress plugin that can help you to create quizzes for your website or blog.",
+      "website": "https://thrivethemes.com/quizbuilder",
+      "icon": "Thrive.svg"
+    },
+    "Thrive Ultimatum": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/thrive-ultimatum/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/thrive-ultimatum/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Thrive Ultimatum is a WordPress scarcity marketing plugin with built-in templates and campaign tracking tools from developer Thrive Themes.",
+      "website": "https://thrivethemes.com/ultimatum/",
+      "icon": "Thrive.svg"
+    },
+    "Translate WordPress": {
+      "cats": [
+        87,
+        89
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/google-language-translator/.+scripts\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Translate WordPress is a website translator plugin which can translate any website to any language automatically. Translate WordPress plugin is now a part of GTranslate family.",
+      "website": "https://gtranslate.io",
+      "icon": "GTranslate.svg"
+    },
+    "TranslatePress": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "trp_el": "",
+        "trp_ls_shortcode_width": "",
+        "trp_ls_shortcodes": ""
+      },
+      "description": "TranslatePress is a WordPress plugin that simplifies website translation, enabling multilingual functionality to enhance global traffic.",
+      "website": "https://translatepress.com",
+      "icon": "TranslatePress.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof trp_el !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof trp_el !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof trp_el !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ultimate Addons for Elementor": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/ultimate-elementor/']": {
+          "attributes": {
+            "href": "/wp-content/plugins/ultimate-elementor/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "js": {
+        "uael_particles_script.particles_url": "/wp-content/plugins/ultimate-elementor/"
+      },
+      "implies": [
+        "Elementor"
+      ],
+      "description": "Ultimate Addons for Elementor is a plugin that adds new widgets and modules to the Elementor page builder for WordPress, providing additional design options and functionality.",
+      "website": "https://ultimateelementor.com",
+      "icon": "Ultimate Addons for Elementor.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof uael_particles_script !== 'undefined' && typeof uael_particles_script.particles_url !== 'undefined' && uael_particles_script.particles_url === '/wp-content/plugins/ultimate-elementor/'"
+          }
+        ]
+      }
+    },
+    "Ultimate Tables": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/ultimate-tables/"
+      ],
+      "description": "Ultimate Tables is a tool for creating, managing, and designing tables without writing HTML code.",
+      "website": "https://wphive.com/plugins/ultimate-tables",
+      "icon": "UltimateTables.svg"
+    },
+    "UltimatelySocial": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/ultimate-social-media-icons/"
+      ],
+      "description": "Ultimately Social (Share Buttons & Sharing Icons) is a plugin that allows you to place fancy social media icons and buttons on your WordPress website.",
+      "website": "https://www.ultimatelysocial.com",
+      "icon": "UltimatelySocial.png"
+    },
+    "Visual Portfolio": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "VPData.screenSizes": "",
+        "VPData.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "Visual Portfolio is a plugin with a robust set of features, designed to help you create galleries that effectively display your creative projects.",
+      "website": "https://visualportfolio.co",
+      "icon": "Visual Portfolio.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof VPData !== 'undefined' && typeof VPData.screenSizes !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WP Automatic": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/wp-automatic/"
+      ],
+      "description": "WP Automatic is a WordPress plugin that automates the process of creating posts on your WordPress site by automatically fetching content from various sources like RSS feeds, Amazon, eBay, ClickBank, and more.",
+      "website": "https://wpautomatic.com",
+      "icon": "WP Automatic.png"
+    },
+    "WP Courseware": {
+      "cats": [
+        87,
+        21
+      ],
+      "js": {
+        "wpcw_course_note_params.api_url": "/wp-json/wpcw/"
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wp-courseware/.+frontend\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WP Courseware is an LMS plugin that allows novice and professional users to build online courses using its easy-to-use drag and drop course builder.",
+      "website": "https://flyplugins.com/wp-courseware-wordpress-lms",
+      "icon": "WP Courseware.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wpcw_course_note_params !== 'undefined' && typeof wpcw_course_note_params.api_url !== 'undefined' && wpcw_course_note_params.api_url === '/wp-json/wpcw/'"
+          }
+        ]
+      }
+    },
+    "WP Fastest Cache": {
+      "cats": [
+        87,
+        92
+      ],
+      "dom": {
+        "link[href*='/wp-content/cache/wpfc-minified/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Wpfcll": ""
+      },
+      "scriptSrc": [
+        "/wp-content/cache/wpfc-minified/"
+      ],
+      "description": "WP Fastest Cache is one of a number of plugins for WordPress designed to accelerate the performance of your website.",
+      "website": "https://www.wpfastestcache.com",
+      "icon": "WP Fastest Cache.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Wpfcll !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WP Featherlight": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wpfeatherlight\\.pkgd\\.min\\.js"
+      ],
+      "description": "WP Featherlight is a WordPress lightbox plugin for adding a minimal, high-performance, responsive jQuery lightbox to your WordPress website.",
+      "website": "https://wordpress.org/plugins/wp-featherlight",
+      "icon": "WP_Featherlight.png"
+    },
+    "WP Google Map Embed": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link#wp-gmap-embed-front-css-css": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "Google Maps"
+      ],
+      "description": "WP Google Map Embed is a lightweight WordPress plugin for embedding Google Maps with custom markers via shortcodes in posts, pages, and sidebars.",
+      "website": "https://wpgooglemap.com",
+      "icon": "WP Google Map Embed.svg"
+    },
+    "WP Google Map Plugin": {
+      "cats": [
+        87,
+        35
+      ],
+      "js": {
+        "wpgmp_local": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wp-google-map-plugin/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WP Google Map Plugin allows you to create google maps shortcodes to display responsive google maps on pages, widgets and custom templates.",
+      "website": "https://www.wpmapspro.com",
+      "icon": "WP Google Map Plugin.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wpgmp_local !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WP Grid Builder": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "WP_Grid_Builder": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wp-grid-builder/frontend/assets/js/layout\\.js\\?ver=([\\d.]+)\\;version:\\1"
+      ],
+      "description": "WP Grid Builder is a WordPress plugin that enables the creation of advanced grid layouts.",
+      "website": "https://wpgridbuilder.com",
+      "icon": "WpGridBuilder.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof WP_Grid_Builder !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WP Job Openings": {
+      "cats": [
+        87,
+        101
+      ],
+      "js": {
+        "awsmJobs": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wp-job-openings/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WP Job Openings is a job listing and recruitment plugin for WordPress websites.",
+      "website": "https://wpjobopenings.com",
+      "icon": "WP Job Openings.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof awsmJobs !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WP Live Visitor Counter": {
+      "cats": [
+        87,
+        5
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/wp-visitors-widget/']": {
+          "exists": ""
+        }
+      },
+      "description": "WP Live Visitor Counter is a WordPress plugin that displays the number of online visitors on a website in real-time.",
+      "website": "https://wordpress.org/plugins/wp-visitors-widget/",
+      "icon": "default.svg"
+    },
+    "WP Maintenance Mode": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "wpmm_vars": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wp-maintenance-mode/.+wpmm\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WP Maintenance Mode is a WordPress plugin which add a maintenance page to your blog.",
+      "website": "https://github.com/andrianvaleanu/WP-Maintenance-Mode",
+      "icon": "WP Maintenance Mode.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wpmm_vars !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WP Portfolio": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/astra-portfolio/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WP Portfolio is a premium standalone WordPress plugin designed for creating and showcasing portfolios.",
+      "website": "https://wpportfolio.net",
+      "icon": "WP Portfolio.svg"
+    },
+    "WP-Optimize": {
+      "cats": [
+        87,
+        92
+      ],
+      "html": [
+        "<!--[^>]+cached by wp-optimize"
+      ],
+      "description": "WP-Optimize is an all-in-one WordPress plugin that cleans your database, compresses your large images and caches your site.",
+      "website": "https://getwpo.com",
+      "icon": "WP-Optimize.png"
+    },
+    "WP-PageNavi": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/wp-pagenavi/']": {
+          "exists": ""
+        }
+      },
+      "description": "WP-PageNavi is a WordPress plugin which adds a more advanced paging navigation interface to your WordPress blog.",
+      "website": "https://github.com/lesterchan/wp-pagenavi",
+      "icon": "WP-PageNavi.svg"
+    },
+    "WPForms": {
+      "cats": [
+        87,
+        110
+      ],
+      "js": {
+        "wpforms": "",
+        "wpforms_settings": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wpforms(?:-lite)?/.+(?:frontend\\.min|wpforms)\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WPForms is a drag and drop WordPress form builder.",
+      "website": "https://wpforms.com",
+      "icon": "WPForms.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wpforms !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof wpforms !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WPML": {
+      "cats": [
+        87,
+        89
+      ],
+      "cookies": {
+        "wp-wpml_current_language": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/sitepress-multilingual-cms/"
+      ],
+      "meta": {
+        "generator": [
+          "^wpml\\sver\\:([\\d\\.]+)\\;version:\\1"
+        ]
+      },
+      "description": "WPML plugin makes it possible to build and run fully multilingual WordPress sites.",
+      "website": "https://wpml.org/",
+      "icon": "WPML.svg"
+    },
+    "WPMU DEV Smush": {
+      "cats": [
+        87
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/wp-smushit(?:-pro)?/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WPMU DEV Smush is a WordPress plugin that allows you to optimise images without losing quality.",
+      "website": "https://wpmudev.com/project/wp-smush-pro",
+      "icon": "WPMU DEV.png"
+    },
+    "WPS Visitor Counter": {
+      "cats": [
+        87
+      ],
+      "js": {
+        "wpspagevisit": ""
+      },
+      "description": "WPS Visitor Counter is a plugin for WordPress that counts the number of visitors to a website.",
+      "website": "https://wordpress.org/plugins/wps-visitor-counter/",
+      "icon": "WPS Visitor Counter.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wpspagevisit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Web Worker Offloading": {
+      "cats": [
+        87,
+        92
+      ],
+      "meta": {
+        "generator": [
+          "^web-worker-offloading ([\\d.]+)?\\;version:\\1"
+        ]
+      },
+      "description": "Performance plugin from the WordPress Performance Team, which offloads JavaScript execution to a Web Worker, improving performance by freeing up the main thread.",
+      "website": "https://wordpress.org/plugins/web-worker-offloading/",
+      "icon": "web-worker-offloading.svg"
+    },
+    "WebFactory Maintenance": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/maintenance/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "mtnc_front_options": ""
+      },
+      "description": "WebFactory Maintenance is a WordPress plugin which allows you to create an maintenance page.",
+      "website": "https://wordpress.org/plugins/maintenance",
+      "icon": "WebFactory.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mtnc_front_options !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WebFactory Under Construction": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/under-construction-page/']": {
+          "exists": ""
+        }
+      },
+      "description": "WebFactory Under Construction is a WordPress plugin which allows you to create an under construction page.",
+      "website": "https://wordpress.org/plugins/under-construction-page",
+      "icon": "WebFactory.png"
+    },
+    "WebToffee Stripe Payment Plugin for WooCommerce": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/payment-gateway-stripe-and-woocommerce-integration/']": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "Stripe",
+        "WooCommerce"
+      ],
+      "description": "WebToffee Stripe Payment Plugin for WooCommerce is a software add-on that allows online retailers using the WooCommerce ecommerce platform to accept payments through the Stripe payment gateway.",
+      "website": "https://www.webtoffee.com/product/woocommerce-stripe-payment-gateway/",
+      "icon": "WebToffee.svg"
+    },
+    "WooCommerce Blocks": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/woo-gutenberg-products-block/']": {
+          "attributes": {
+            "href": "/wp-content/plugins/woo-gutenberg-products-block/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+          }
+        }
+      },
+      "implies": [
+        "WordPress Block Editor"
+      ],
+      "description": "WooCommerce Blocks offers a range of blocks for the WordPress Block Editor you can use to build and customise your site.",
+      "website": "https://github.com/woocommerce/woocommerce-gutenberg-products-block",
+      "icon": "WooCommerce Blocks.png"
+    },
+    "WooCommerce Multilingual": {
+      "cats": [
+        87,
+        89
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/woocommerce-multilingual/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WooCommerce Multilingual plugin makes it possible to run fully multilingual ecommerce sites using WooCommerce and WPML.",
+      "website": "https://wordpress.org/plugins/woocommerce-multilingual",
+      "icon": "WooCommerce Multilingual.png"
+    },
+    "WooCommerce PayPal Checkout Payment Gateway": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "PayPal"
+      ],
+      "description": "WooCommerce PayPal Checkout Payment Gateway is a WordPress plugin which allows you to securely sell your products and subscriptions online using in-context checkout.",
+      "website": "https://github.com/woocommerce/woocommerce-gateway-paypal-express-checkout",
+      "icon": "WooCommerce PayPal.png"
+    },
+    "WooCommerce PayPal Payments": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/woocommerce-paypal-payments/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/woocommerce-paypal-payments/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "PayPal"
+      ],
+      "description": "WooCommerce PayPal Payments is a latest WordPress plugin with most complete payment processing solution. Accept PayPal exclusives, credit/debit cards and local payment methods.",
+      "website": "https://github.com/woocommerce/woocommerce-paypal-payments",
+      "icon": "WooCommerce PayPal.png"
+    },
+    "WooCommerce Stripe Payment Gateway": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/woocommerce-gateway-stripe/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/woocommerce-gateway-stripe/"
+      ],
+      "implies": [
+        "Stripe"
+      ],
+      "description": "WooCommerce Stripe Payment Gateway plugin extends WooCommerce allowing you to take payments directly on your store via Stripe’s API.",
+      "website": "https://woocommerce.com/products/stripe",
+      "icon": "WooCommerce Stripe Payment Gateway.png"
+    },
+    "WooCommerce Subscriptions": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/woocommerce-subscriptions/']": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "WooCommerce"
+      ],
+      "description": "WooCommerce Subscriptions primarily allows you to create and sell subscription products from your WooCommerce shop.",
+      "website": "https://woocommerce.com/products/woocommerce-subscriptions",
+      "icon": "WooCommerce.svg"
+    },
+    "WordPress Popular Posts": {
+      "cats": [
+        87,
+        5
+      ],
+      "headers": {
+        "wordpresspopularposts": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wordpress-popular-posts/.+wpp\\.min\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "WordPress Popular Posts is a plugin for the WordPress content management system that allows users to display a widget or shortcode featuring a list of the most popular posts on their website based on criteria such as pageviews or comments.",
+      "website": "https://wordpress.org/plugins/wordpress-popular-posts/",
+      "icon": "WordPress Popular Posts.svg"
+    },
+    "Wordfence": {
+      "cats": [
+        87,
+        16
+      ],
+      "js": {
+        "wordfenceAJAXWatcher": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/wordfence/.+admin\\.ajaxwatcher\\.\\d+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Wordfence is a security plugin for sites that use WordPress. Wordfence includes an endpoint firewall and malware scanner.",
+      "website": "https://www.wordfence.com",
+      "icon": "Wordfence.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wordfenceAJAXWatcher !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Wordfence Login Security": {
+      "cats": [
+        87,
+        16
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/wordfence/.+login\\.\\d+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "Wordfence Login Security contains a subset of the functionality found in the full Wordfence plugin: Two-factor Authentication, XML-RPC Protection and Login Page CAPTCHA.",
+      "website": "https://www.wordfence.com",
+      "icon": "Wordfence.svg"
+    },
+    "XYZScripts": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "a[href*='xyzscripts.com/'] + a[href*='www.xyzscripts.com']": {
+          "exists": ""
+        }
+      },
+      "description": "XYZScripts is a provider of PHP clone scripts and WordPress plugins. It offers top-quality PHP and MySQL scripts to help build online businesses, with ready-to-deploy solutions that enable website setup.",
+      "website": "https://xyzscripts.com",
+      "icon": "XYZScripts.svg"
+    },
+    "Yoast Duplicate Post": {
+      "cats": [
+        87
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/duplicate-post/']": {
+          "exists": ""
+        }
+      },
+      "description": "Yoast Duplicate Post is a WordPress plugin which allows users to clone posts of any type, or copy them to new drafts for further editing.",
+      "website": "https://wordpress.org/plugins/duplicate-post",
+      "icon": "Yoast SEO.png"
+    },
+    "Zakeke Interactive Product Designer": {
+      "cats": [
+        87,
+        76
+      ],
+      "scriptSrc": [
+        "/wp-content/plugins/zakeke-interactive-product-designer/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "implies": [
+        "Zakeke"
+      ],
+      "description": "Zakeke Interactive Product Designer lets customers personalise any product and visualise how they’ll look before checking out.",
+      "website": "https://www.zakeke.com",
+      "icon": "Zakeke.png"
+    },
+    "a3 Lazy Load": {
+      "cats": [
+        87,
+        92
+      ],
+      "js": {
+        "a3_lazyload_extend_params": "",
+        "a3_lazyload_params": ""
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/a3-lazy-load/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1"
+      ],
+      "description": "a3 Lazy Load is a mobile oriented, very simple to use plugin that will speed up sites page load speed.",
+      "website": "https://a3rev.com/shop/a3-lazy-load/",
+      "icon": "a3.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof a3_lazyload_extend_params !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof a3_lazyload_extend_params !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "iThemes Security": {
+      "cats": [
+        87,
+        16
+      ],
+      "dom": {
+        "link[href*='/wp-content/plugins/better-wp-security/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/wp-content/plugins/better-wp-security/"
+      ],
+      "description": " iThemes Security(formerly known as Better WP Security) plugin enhances the security and protection of your WordPress website.",
+      "website": "https://ithemes.com/security",
+      "icon": "iThemes Security.svg"
+    }
+  }
+}

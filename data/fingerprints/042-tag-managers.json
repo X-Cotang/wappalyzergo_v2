@@ -1,0 +1,207 @@
+{
+  "apps": {
+    "Adobe DTM": {
+      "cats": [
+        42
+      ],
+      "js": {
+        "_satellite.buildDate": ""
+      },
+      "description": "Dynamic Tag Management (DTM) is a tag management solution for Adobe Experience Cloud applications and others.",
+      "website": "https://marketing.adobe.com/resources/help/en_US/dtm/c_overview.html",
+      "icon": "adobedtm.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _satellite !== 'undefined' && typeof _satellite.buildDate !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adobe Experience Platform Launch": {
+      "cats": [
+        42
+      ],
+      "js": {
+        "_satellite.buildInfo": ""
+      },
+      "description": "Adobe Experience Cloud Launch is an extendable tag management solution for Adobe Experience Cloud, Adobe Experience Platform, and other applications.",
+      "website": "https://docs.adobelaunch.com/getting-started",
+      "icon": "Adobe Experience Platform.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _satellite !== 'undefined' && typeof _satellite.buildInfo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Commanders Act TagCommander": {
+      "cats": [
+        42
+      ],
+      "js": {
+        "tc_vars": ""
+      },
+      "scriptSrc": [
+        "\\.tagcommander\\.com"
+      ],
+      "description": "Commanders Act TagCommander is a European company providing a tag management product designed to handle website tags.",
+      "website": "https://www.commandersact.com/en/solutions/tagcommander/",
+      "icon": "Commanders Act.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tc_vars !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ensighten": {
+      "cats": [
+        42
+      ],
+      "scriptSrc": [
+        "//nexus\\.ensighten\\.com/"
+      ],
+      "description": "Ensighten is a solution that enables secure management, implementation and control of website technologies.",
+      "website": "https://success.ensighten.com/hc/en-us",
+      "icon": "ensighten.png"
+    },
+    "Facebook Pixel Advanced Matching": {
+      "cats": [
+        42
+      ],
+      "implies": [
+        "Facebook Pixel"
+      ],
+      "description": "Facebook Pixel Advanced Matching is a feature that allows the optimization of Meta ads by sending hashed customer information with Meta Pixel events, aiding in improved conversion attribution and broader audience reach.",
+      "website": "https://www.facebook.com/business/help/611774685654668?id=1205376682832142",
+      "icon": "Meta.svg"
+    },
+    "Google Tag Manager": {
+      "cats": [
+        42
+      ],
+      "js": {
+        "googletag": ""
+      },
+      "html": [
+        "<!-- (?:end )?google tag manager -->",
+        "googletagmanager\\.com/ns\\.html[^>]+></iframe>"
+      ],
+      "scriptSrc": [
+        "googletagmanager\\.com/gtm\\.js"
+      ],
+      "description": "Google Tag Manager is a tag management system (TMS) that allows you to quickly and easily update measurement codes and related code fragments collectively known as tags on your website or mobile app.",
+      "website": "https://www.google.com/tagmanager",
+      "icon": "Google Tag Manager.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof googletag !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Matomo Tag Manager": {
+      "cats": [
+        42
+      ],
+      "js": {
+        "MatomoTagManager": ""
+      },
+      "description": "Matomo Tag Manager manages tracking and marketing tags.",
+      "website": "https://developer.matomo.org/guides/tagmanager/introduction",
+      "icon": "Matomo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MatomoTagManager !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TagPro": {
+      "cats": [
+        42
+      ],
+      "js": {
+        "initAdproTags": ""
+      },
+      "scriptSrc": [
+        "tagpro\\.adpromedia\\.net/"
+      ],
+      "description": "TagPro is software that updates and allows you to manage tags within websites, identifying various types of variables to optimise loads for advertising.",
+      "website": "https://tagpro.adpromedia.net",
+      "icon": "TagPro.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof initAdproTags !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tealium": {
+      "cats": [
+        42,
+        97
+      ],
+      "js": {
+        "TEALIUMENABLED": ""
+      },
+      "scriptSrc": [
+        "/tealium/utag\\.js$",
+        "^(?:https?:)?//tags\\.tiqcdn\\.com/"
+      ],
+      "description": "Tealium provides a sales enterprise tag management system and marketing software.",
+      "website": "https://tealium.com",
+      "icon": "Tealium.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TEALIUMENABLED !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Yahoo! Tag Manager": {
+      "cats": [
+        42
+      ],
+      "html": [
+        "<!-- (?:end )?yahoo! tag manager -->"
+      ],
+      "scriptSrc": [
+        "b\\.yjtag\\.jp/iframe"
+      ],
+      "website": "https://tagmanager.yahoo.co.jp/",
+      "icon": "Yahoo.svg"
+    },
+    "Yottaa": {
+      "cats": [
+        42,
+        74,
+        92
+      ],
+      "scriptSrc": [
+        "cdn\\.yottaa\\.\\w+/"
+      ],
+      "meta": {
+        "x-yottaa-metrics": [],
+        "x-yottaa-optimizations": []
+      },
+      "description": "Yottaa is an ecommerce optimisation platform that helps with conversions, performance and security.",
+      "website": "https://www.yottaa.com",
+      "icon": "Yottaa.svg"
+    }
+  }
+}

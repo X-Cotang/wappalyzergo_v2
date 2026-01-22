@@ -1,0 +1,81 @@
+{
+  "apps": {
+    "AnnounceKit": {
+      "cats": [
+        49
+      ],
+      "js": {
+        "announcekit": "",
+        "announcekit_feed": ""
+      },
+      "scriptSrc": [
+        "cdn\\.announcekit\\.app/"
+      ],
+      "description": "AnnounceKit is a platform facilitating announcements for product updates and company news.",
+      "website": "https://announcekit.app",
+      "icon": "AnnounceKit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof announcekit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof announcekit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Beehiiv RSS feed": {
+      "cats": [
+        49
+      ],
+      "dom": {
+        "iframe[src*='embeds.beehiiv.com/']": {
+          "exists": ""
+        }
+      },
+      "description": "Beehiiv RSS feed is a feature of the Beehiiv. Beehiiv is a relatively young, hosted newsletter platform built for businesses and creators.",
+      "website": "https://www.beehiiv.com",
+      "icon": "Beehiiv.svg"
+    },
+    "Blendle": {
+      "cats": [
+        49
+      ],
+      "js": {
+        "asyncBlendleButtonInit": "",
+        "blendleButtonInit.locale": ""
+      },
+      "description": "Blendle is a digital magazine system that allows users to access and read articles from various publications.",
+      "website": "https://www.blendle.com",
+      "icon": "Blendle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof asyncBlendleButtonInit !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof asyncBlendleButtonInit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Planet": {
+      "cats": [
+        49
+      ],
+      "meta": {
+        "generator": [
+          "^planet(?:/([\\d.]+))?\\;version:\\1"
+        ]
+      },
+      "description": "Planet is a feed aggregator, which creates pages with entries from the original feeds in chronological order, most recent entries first.",
+      "website": "https://planetplanet.org",
+      "icon": "Planet.png"
+    }
+  }
+}

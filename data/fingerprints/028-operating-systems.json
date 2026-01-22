@@ -1,0 +1,266 @@
+{
+  "apps": {
+    "AlmaLinux": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "almalinux"
+      },
+      "description": "AlmaLinux is an open-source, community-driven Linux operating system that fills the gap left by the discontinuation of the CentOS Linux stable release.",
+      "website": "https://almalinux.org",
+      "icon": "AlmaLinux.svg"
+    },
+    "Alpine Linux": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "x-powered-by": "alpine"
+      },
+      "description": "Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox.",
+      "website": "https://www.alpinelinux.org",
+      "cpe": "cpe:2.3:o:alpinelinux:alpine_linux:*:*:*:*:*:*:*:*",
+      "icon": "Alpine Linux.svg"
+    },
+    "CentOS": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "centos",
+        "x-powered-by": "centos"
+      },
+      "description": "CentOS is a Linux distribution that provides a free, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL).",
+      "website": "https://centos.org",
+      "cpe": "cpe:2.3:o:centos:centos:*:*:*:*:*:*:*:*",
+      "icon": "CentOS.svg"
+    },
+    "Darwin": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "darwin",
+        "x-powered-by": "darwin"
+      },
+      "description": "Darwin is the open-source operating system from Apple that forms the basis for macOS.",
+      "website": "https://opensource.apple.com",
+      "icon": "Apple.svg"
+    },
+    "Debian": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "debian",
+        "x-powered-by": "(?:debian|dotdeb|(potato|woody|sarge|etch|lenny|squeeze|wheezy|jessie|stretch|buster|sid))\\;version:\\1"
+      },
+      "description": "Debian is a Linux software which is a free open-source software.",
+      "website": "https://debian.org",
+      "cpe": "cpe:2.3:o:debian:debian_linux:*:*:*:*:*:*:*:*",
+      "icon": "Debian.png"
+    },
+    "Fedora": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "fedora"
+      },
+      "description": "Fedora is a free open-source Linux-based operating system.",
+      "website": "https://fedoraproject.org",
+      "cpe": "cpe:2.3:o:fedoraproject:fedora:*:*:*:*:*:*:*:*",
+      "icon": "Fedora.png"
+    },
+    "FreeBSD": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "freebsd(?: ([\\d.]+))?\\;version:\\1"
+      },
+      "description": "FreeBSD is a free and open-source Unix-like operating system.",
+      "website": "https://freebsd.org",
+      "cpe": "cpe:2.3:o:freebsd:freebsd:*:*:*:*:*:*:*:*",
+      "icon": "FreeBSD.png"
+    },
+    "Gentoo": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "x-powered-by": "gentoo"
+      },
+      "description": "Gentoo is a free operating system based on Linux.",
+      "website": "https://www.gentoo.org",
+      "cpe": "cpe:2.3:o:gentoo:linux:*:*:*:*:*:*:*:*",
+      "icon": "Gentoo.png"
+    },
+    "Hirschmann HiOS": {
+      "cats": [
+        28
+      ],
+      "dom": {
+        "div": {
+          "text": "(HiSecOS-|HiOS-.+-)(\\d+\\.\\d+\\.\\d+)\\;version:\\2"
+        },
+        "h2": {
+          "text": "(HiSecOS-|HiOS-.+-)(\\d+\\.\\d+\\.\\d+)\\;version:\\2"
+        }
+      },
+      "description": "Hirschmann HiOS is an operating system for industrial network equipment.",
+      "website": "https://hirschmann.com/",
+      "cpe": "cpe:2.3:o:belden:hirschmann_hios:*:*:*:*:*:*:*:*",
+      "icon": "hirschmann_OS.png"
+    },
+    "Raspbian": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "raspbian",
+        "x-powered-by": "raspbian"
+      },
+      "description": "Raspbian is a free operating system for the Raspberry Pi hardware.",
+      "website": "https://www.raspbian.org/",
+      "icon": "Raspbian.svg"
+    },
+    "Red Hat": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "red hat",
+        "x-powered-by": "red hat"
+      },
+      "description": "Red Hat is an open-source Linux operating system.",
+      "website": "https://www.redhat.com",
+      "cpe": "cpe:2.3:o:redhat:linux:*:*:*:*:*:*:*:*",
+      "icon": "Red Hat.svg"
+    },
+    "SUSE": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "suse(?:/?\\s?-?([\\d.]+))?\\;version:\\1",
+        "x-powered-by": "suse(?:/?\\s?-?([\\d.]+))?\\;version:\\1"
+      },
+      "description": "SUSE is a Linux-based server operating system.",
+      "website": "https://suse.com",
+      "icon": "SUSE.png"
+    },
+    "Scientific Linux": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "scientific linux",
+        "x-powered-by": "scientific linux"
+      },
+      "description": "Scientific Linux (SL) is a free open-source operating system based on Red Hat Enterprise Linux.",
+      "website": "https://scientificlinux.org",
+      "icon": "Scientific Linux.png"
+    },
+    "SunOS": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "sunos( [\\d\\.]+)?\\;version:\\1",
+        "servlet-engine": "sunos( [\\d\\.]+)?\\;version:\\1"
+      },
+      "description": "SunOS is a Unix-branded operating system developed by Sun Microsystems for their workstation and server computer systems.",
+      "website": "https://oracle.com/solaris",
+      "cpe": "cpe:2.3:o:oracle:sunos:*:*:*:*:*:*:*:*",
+      "icon": "Oracle.svg"
+    },
+    "UNIX": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "unix"
+      },
+      "description": "Unix is a family of multitasking, multiuser computer operating systems.",
+      "website": "https://unix.org",
+      "icon": "UNIX.png"
+    },
+    "Ubuntu": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "ubuntu",
+        "x-powered-by": "ubuntu"
+      },
+      "description": "Ubuntu is a free and open-source operating system on Linux for the enterprise server, desktop, cloud, and IoT.",
+      "website": "https://www.ubuntu.com/server",
+      "cpe": "cpe:2.3:o:canonical:ubuntu_linux:*:*:*:*:*:*:*:*",
+      "icon": "Ubuntu.svg"
+    },
+    "UniFi OS": {
+      "cats": [
+        28
+      ],
+      "js": {
+        "unifiConstant.VERSION": "^([\\d+\\.]+)$\\;version:\\1"
+      },
+      "description": "UniFi OS is the operating system for UniFi products, which provides a user interface.",
+      "website": "https://www.ui.com/",
+      "icon": "UniFi_OS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof unifiConstant !== 'undefined' && typeof unifiConstant.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "unifiConstant.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Windows CE": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "\\bwince\\b"
+      },
+      "description": "Windows CE is an operating system designed for small footprint devices or embedded systems.",
+      "website": "https://microsoft.com",
+      "icon": "Microsoft.svg"
+    },
+    "Windows Server": {
+      "cats": [
+        28
+      ],
+      "headers": {
+        "server": "win32|win64"
+      },
+      "description": "Windows Server is a brand name for a group of server operating systems.",
+      "website": "https://microsoft.com/windowsserver",
+      "icon": "WindowsServer.png"
+    },
+    "YunoHost": {
+      "cats": [
+        28
+      ],
+      "scriptSrc": [
+        "/ynh_portal\\.js"
+      ],
+      "implies": [
+        "Debian"
+      ],
+      "description": "YunoHost is a server operating system that is free and open-source, allowing users to host their own web applications, email services, and other online tools. It is based on Debian GNU/Linux.",
+      "website": "https://yunohost.org",
+      "cpe": "cpe:2.3:o:yunohost:yunohost:*:*:*:*:*:*:*:*",
+      "icon": "YunoHost.svg"
+    }
+  }
+}

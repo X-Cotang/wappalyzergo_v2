@@ -1,0 +1,4129 @@
+{
+  "apps": {
+    "33Across": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.33across.com'], link[href*='.33across.com'], link[href*='.tynt.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Tynt": ""
+      },
+      "scriptSrc": [
+        "\\.33across\\.com/",
+        "\\.tynt\\.com/"
+      ],
+      "description": "33Across is a technology company focused on solving the challenge of consumer attention for automated advertising.",
+      "website": "https://www.33across.com",
+      "icon": "33Across.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Tynt !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AD EBiS": {
+      "cats": [
+        36,
+        32
+      ],
+      "dom": {
+        "a[href*='.ebis.ne.jp/'][target='_blank']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "ebis.c.pageurl": ""
+      },
+      "scriptSrc": [
+        "\\.ebis\\.ne\\.jp/"
+      ],
+      "description": "AD EBiS is an advertising and marketing platform that offers advertisement effectiveness measurement, access and user analysis.",
+      "website": "https://www.ebis.ne.jp",
+      "icon": "ebis.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ebis !== 'undefined' && typeof ebis.c !== 'undefined' && typeof ebis.c.pageurl !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ADFOX": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "AdFox_getCodeScript": "",
+        "Site.adFoxParams": "",
+        "adFoxParams": "",
+        "adfoxAsyncParams": "",
+        "adfoxBiddersMap": ""
+      },
+      "description": "ADFOX is an advertising management platform for media publishers.",
+      "website": "https://adfox.yandex.ru",
+      "icon": "ADFOX.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AdFox_getCodeScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AdFox_getCodeScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AdFox_getCodeScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AdFox_getCodeScript !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AdFox_getCodeScript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "APPLOVIN": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.applovin\\.com"
+      ],
+      "description": "APPLOVIN is an advertising platform.",
+      "website": "https://www.applovin.com/",
+      "icon": "APPLOVIN.png"
+    },
+    "Aarki": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "\\.aarki\\.net"
+      ],
+      "description": "Aarki is an AI platform that develops advertising solutions aimed at increasing mobile revenue growth.",
+      "website": "https://www.aarki.com",
+      "icon": "Aarki.svg"
+    },
+    "AcuityAds": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "acuityAdsEventQueue": "",
+        "acuityAdsPixelKey": ""
+      },
+      "headers": {
+        "content-security-policy": "\\.acuityplatform\\.com"
+      },
+      "description": "AcuityAds offers automatic solutions to marketers willing to connect through clients across mobile, social, and online display advertising campaigns.",
+      "website": "https://www.acuityads.com",
+      "icon": "AcuityAds.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof acuityAdsEventQueue !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof acuityAdsEventQueue !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ad Lightning": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.adlightning\\.com"
+      ],
+      "description": "Ad Lightning is an programmatic ads monitoring and audit service.",
+      "website": "https://www.adlightning.com",
+      "icon": "Ad Lightning.svg"
+    },
+    "AdBridg": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "AdBridg.cmd": ""
+      },
+      "description": "AdBridg is a bidding solutions provider for publishers looking to maximize their programmatic revenues.",
+      "website": "https://www.adbridg.com",
+      "icon": "AdBridg.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AdBridg !== 'undefined' && typeof AdBridg.cmd !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdGlare": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.adglare\\.net/"
+      ],
+      "description": "AdGlare is an ad serving solution designed for advertisers, publishers, and agencies.",
+      "website": "https://www.adglare.com",
+      "icon": "AdGlare.svg"
+    },
+    "AdInfinity": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "adinfinity\\.com\\.au"
+      ],
+      "website": "https://adinfinity.com.au",
+      "icon": "AdInfinity.png"
+    },
+    "AdOcean": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "ado.master": "",
+        "ado.placement": "",
+        "ado.slave": ""
+      },
+      "scriptSrc": [
+        "adocean\\.pl/files/js/ado\\.js",
+        "adocean\\.pl\\;confidence:80"
+      ],
+      "implies": [
+        "Gemius"
+      ],
+      "website": "https://adocean-global.com",
+      "icon": "AdOcean.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ado !== 'undefined' && typeof ado.master !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdRecover": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "adRecover.ap": ""
+      },
+      "description": "AdRecover is a tool that helps online publishers monetise their Adblock inventory.",
+      "website": "https://www.adrecover.com",
+      "icon": "adrecover.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adRecover !== 'undefined' && typeof adRecover.ap !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdRiver": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.adriver.ru'], img[src*='.adriver.ru'], iframe[src*='.adriver.ru']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "AdriverCounter": "",
+        "AdriverPrebid": "",
+        "adfoxBiddersMap.adriver": "",
+        "adriver": ""
+      },
+      "scriptSrc": [
+        "\\.adriver\\.ru/"
+      ],
+      "description": "AdRiver is a company which provide internet advertising management and audit software.",
+      "website": "https://adriver.ru",
+      "icon": "AdRiver.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AdriverCounter !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AdriverCounter !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AdriverCounter !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof AdriverCounter !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdRoll": {
+      "cats": [
+        36,
+        77
+      ],
+      "dom": {
+        "link[href*='.adroll.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "adroll_adv_id": "",
+        "adroll_pix_id": "",
+        "adroll_version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "(?:a|s)\\.adroll\\.com"
+      ],
+      "description": "AdRoll is a digital marketing technology platform that specializes in retargeting.",
+      "website": "https://adroll.com",
+      "icon": "AdRoll.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adroll_adv_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adroll_adv_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adroll_adv_id !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "adroll_version || \"\""
+          }
+        ]
+      }
+    },
+    "AdScale": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "_adscale": "",
+        "adscaleAddToCart": "",
+        "adscaleViewProduct": ""
+      },
+      "scriptSrc": [
+        "\\.adscale\\.com/"
+      ],
+      "description": "AdScale is a cloud-based, AI-powered performance optimisation platform which utilises machine learning to automate and optimise AdWords campaigns across Google Search, Google Shopping, Google Display, and YouTube.",
+      "website": "https://www.adscale.com",
+      "icon": "AdScale.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _adscale !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _adscale !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _adscale !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AdThrive": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "adthrive": "",
+        "adthriveVideosInjected": ""
+      },
+      "scriptSrc": [
+        "ads\\.adthrive\\.com"
+      ],
+      "description": "AdThrive is an online advertising network aka ad provider for bloggers for blog monetisation.",
+      "website": "https://www.adthrive.com",
+      "icon": "AdThrive.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adthrive !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adthrive !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adalyser": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "adalyserModules": ""
+      },
+      "scriptSrc": [
+        "c5\\.adalyser\\.com"
+      ],
+      "description": "Adalyser is an online platform offering the tools needed to get up and running with TV advertising.",
+      "website": "https://adalyser.com/",
+      "icon": "Adalyser.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adalyserModules !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adara": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "adara": ""
+      },
+      "scriptSrc": [
+        "\\.adara\\.com/"
+      ],
+      "description": "Adara is a tourism advertising system.",
+      "website": "https://adara.com",
+      "icon": "Adara.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adara !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adcash": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "SuLoaded": "",
+        "SuUrl": "",
+        "ac_bgclick_URL": "",
+        "ct_nOpp": "",
+        "ct_nSuUrl": "",
+        "ct_siteunder": "",
+        "ct_tag": ""
+      },
+      "scriptSrc": [
+        "^[^\\/]*//(?:[^\\/]+\\.)?adcash\\.com/(?:script|ad)/"
+      ],
+      "website": "https://adcash.com",
+      "icon": "Adcash.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SuLoaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SuLoaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SuLoaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SuLoaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SuLoaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SuLoaded !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SuLoaded !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adex": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.theadex.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "_adexc": "",
+        "adex.v": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "dmp\\.theadex\\.com/"
+      ],
+      "description": "Adex is a data management platform (DMP) system utilized for organizing and analyzing large volumes of data to optimize targeted advertising campaigns.",
+      "website": "https://theadex.com",
+      "icon": "Adex.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _adexc !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _adexc !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "adex.v || \"\""
+          }
+        ]
+      }
+    },
+    "Adform": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.adformdsp.net'], link[href*='.adform.net']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.adform\\.net/"
+      ],
+      "description": "Adform is an all-in-one platform for digital advertising.",
+      "website": "https://site.adform.com",
+      "icon": "Adform.svg"
+    },
+    "Adition": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.adition.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "adition": "",
+        "initialize_adition": ""
+      },
+      "description": "Adition is a provider of programmatic advertising solutions.",
+      "website": "https://www.adition.com",
+      "icon": "Adition.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adition !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adition !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adloox": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.adlooxtracking\\.com/"
+      ],
+      "description": "Adloox is a European-born buy-side ad verification and insights company.",
+      "website": "https://www.adloox.com",
+      "icon": "Adloox.png"
+    },
+    "Admixer": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "admixerAds": "",
+        "admixerML": ""
+      },
+      "scriptSrc": [
+        "\\.admixer\\.net/"
+      ],
+      "description": "Admixer is an independent adtech company developing an ecosystem of full-stack programmatic solutions.",
+      "website": "https://admixer.com",
+      "icon": "Admixer.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof admixerAds !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof admixerAds !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Admo.tv": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.admo.tv'], a[href*='.admo.tv'][target='_blank'], iframe[src*='.admo.tv/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "ADMO_TT": "",
+        "ADMO_config": ""
+      },
+      "description": "Admo.tv is a company developing a TV and radio analytics platform.",
+      "website": "https://www.admo.tv",
+      "icon": "Admo.tv.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ADMO_TT !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ADMO_TT !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Admost": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "run\\.admost\\.com/"
+      ],
+      "description": "Admost is a full-cycle monetisation system for app publishers, featuring mediation, revenue analytics, and cross-promotion through a single SDK.",
+      "website": "https://admost.com/",
+      "icon": "Admost.svg"
+    },
+    "Adnegah": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[scr*='adnegah.net']": {
+          "exists": ""
+        }
+      },
+      "headers": {
+        "x-advertising-by": "adnegah\\.net"
+      },
+      "scriptSrc": [
+        "\\.adnegah\\.net/"
+      ],
+      "description": "Adnegah is a digital marketing and internet advertising agency.",
+      "website": "https://adnegah.net",
+      "icon": "Adnegah.png"
+    },
+    "Adomik": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "Adomik": ""
+      },
+      "description": "Adomik is a tool that assists digital publishers in enhancing their programmatic and real-time bidding (RTB) yield management, functioning as a programmatic ad network.",
+      "website": "https://www.adomik.com",
+      "icon": "Adomik.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Adomik !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Advally": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "advally": ""
+      },
+      "scriptSrc": [
+        "cdn\\.adligature\\.com/.+/advally-([\\d.]+)\\.js\\;version:\\1"
+      ],
+      "description": "Advally is an advertising platform for publishers.",
+      "website": "https://www.advally.com",
+      "icon": "Advally.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof advally !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Advert Stream": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "advst_is_above_the_fold": ""
+      },
+      "scriptSrc": [
+        "(?:ad\\.advertstream\\.com|adxcore\\.com)"
+      ],
+      "website": "https://www.advertstream.com",
+      "icon": "Advert Stream.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof advst_is_above_the_fold !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Adverticum": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "a[href*='ad.adverticum.net'], div.goAdverticum": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.adverticum\\.net/"
+      ],
+      "description": "Adverticum is the developer and operator of Hungary's market leading online ad serving solution, the Adverticum AdServer.",
+      "website": "https://adverticum.net",
+      "icon": "Adverticum.svg"
+    },
+    "Amazon Advertising": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.amazon-adsystem.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.amazon-adsystem\\.com"
+      ],
+      "description": "Amazon Advertising (formerly AMS or Amazon Marketing Services) is a service that works in a similar way to pay-per-click ads on Google.",
+      "website": "https://advertising.amazon.com",
+      "icon": "Amazon.svg"
+    },
+    "Amobee": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='.turn.com/r/beacon']": {
+          "exists": ""
+        }
+      },
+      "description": "Amobee is a cloud-based advertising and data management platform.",
+      "website": "https://www.amobee.com",
+      "icon": "Amobee.png"
+    },
+    "Anetwork": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "static-cdn\\.anetwork\\.ir/"
+      ],
+      "website": "https://www.anetwork.ir",
+      "icon": "Anetwork.png"
+    },
+    "Aniview Ad Server": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='aniview.com']": {
+          "attributes": {
+            "href": "^(?!.*player).*aniview\\.com/"
+          }
+        }
+      },
+      "scriptSrc": [
+        "^(?!.*player).*aniview\\.com/"
+      ],
+      "description": "Aniview Ad Server is a technology developed by Aniview, a company that specialises in providing video advertising solutions. The Aniview Ad Server is a platform designed to manage and serve video ads to publishers, advertisers, and agencies.",
+      "website": "https://aniview.com/video-ad-servers/",
+      "icon": "Aniview.png"
+    },
+    "Anura": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "Anura": "",
+        "_anuraResFun": ""
+      },
+      "scriptSrc": [
+        "script\\.anura\\.io/"
+      ],
+      "description": "Anura is an ad fraud detection solution designed to identify and mitigate fraudulent activity across digital advertising platforms.",
+      "website": "https://www.anura.io",
+      "icon": "Anura.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Anura !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Anura !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AnyClip": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='.anyclip.com'], video[poster*='.anyclip.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "anyclip": ""
+      },
+      "scriptSrc": [
+        "\\.anyclip\\.com"
+      ],
+      "description": "AnyClip is a video engagement platform that uses an AI-driven content analysis engine to analyze and categorize video content in real-time to create personalised video feeds.",
+      "website": "https://www.anyclip.com",
+      "icon": "AnyClip.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof anyclip !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AppNexus": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.adnxs.com'], img[src*='.adnxs.com'], link[href*='.adnxs.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "appnexus": "",
+        "appnexusVideo": ""
+      },
+      "scriptSrc": [
+        "adnxs\\.(?:net|com)"
+      ],
+      "description": "AppNexus is a cloud-based software platform that enables and optimizes programmatic online advertising.",
+      "website": "https://appnexus.com",
+      "icon": "AppNexus.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof appnexus !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof appnexus !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Appier": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.appier.net'][rel='dns-prefetch']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "APPIER_LOG": ""
+      },
+      "scriptSrc": [
+        "\\.appier\\.net"
+      ],
+      "description": "Appier is a platform that helps clients optimize advertising ROI.",
+      "website": "https://www.appier.com",
+      "icon": "Appier.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof APPIER_LOG !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ArcSpan": {
+      "cats": [
+        36
+      ],
+      "cookies": {
+        "arcid": "",
+        "aspan_s": ""
+      },
+      "js": {
+        "aspan": "",
+        "aspan_extern": ""
+      },
+      "description": "ArcSpan is an audience monetization DMP platform enabling direct sold and programmatic deal results for the world’s finest publishers and retail media networks.",
+      "website": "https://www.arcspan.com",
+      "icon": "ArcSpan.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof aspan !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof aspan !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Assertive Yield": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "assertive.predict": ""
+      },
+      "description": "Assertive Yield is a SaaS company that specialises in helping SSPs (Supply-Side Platforms), publishers, and ad networks optimise their advertising revenue through real-time attribution and yield optimisation strategies.",
+      "website": "https://www.assertiveyield.com",
+      "icon": "Assertive Yield.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof assertive !== 'undefined' && typeof assertive.predict !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Audiohook": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='listen.audiohook.com/']": {
+          "exists": ""
+        }
+      },
+      "description": "Audiohook specializes in programmatic audio advertising.",
+      "website": "https://www.audiohook.com",
+      "icon": "Audiohook.svg"
+    },
+    "Automatad": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "//go\\.automatad\\.com/"
+      ],
+      "description": "Automatad is a digital media products company that provides a suite of programmatic monetisation solutions.",
+      "website": "https://automatad.com/",
+      "icon": "automatad.png"
+    },
+    "Basis Technologies": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "cdn01\\.basis\\.net"
+      ],
+      "description": "Basis Technologies, formerly ‘Centro,’ provides cloud-based workflow automation and business intelligence software for marketing.",
+      "website": "https://basis.net/",
+      "icon": "Basis.png"
+    },
+    "Beeswax": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "segment\\.prod\\.bidr\\.io"
+      ],
+      "description": "Beeswax offers Bidder-as-a-Service solution.",
+      "website": "https://www.beeswax.com/",
+      "icon": "Beeswax.png"
+    },
+    "Bidmatic": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "nobidVersion": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.bidmatic\\.io/"
+      ],
+      "description": "Bidmatic is a platform providing publisher-centric monetisation solutions, enabling publishers to manage their ad stack and maximise revenue through high-quality demand sources and advanced optimisation technology.",
+      "website": "https://bidmatic.io",
+      "icon": "Bidmatic.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof nobidVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "nobidVersion || \"\""
+          }
+        ]
+      }
+    },
+    "BittAds": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "bitt": ""
+      },
+      "scriptSrc": [
+        "bittads\\.com/js/bitt\\.js$"
+      ],
+      "website": "https://bittads.com",
+      "icon": "BittAds.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof bitt !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "BlokID": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "pixel\\.blokid\\.com/"
+      ],
+      "description": "BlokID is a real-time digital ad auditing tool, ensuring accurate tracking of all ad interactions with secure records.",
+      "website": "https://www.blokid.com",
+      "icon": "BlokID.svg"
+    },
+    "Broadstreet": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "broadstreet": ""
+      },
+      "scriptSrc": [
+        "cdn\\.broadstreetads\\.com"
+      ],
+      "description": "Broadstreet is an ad manager that caters specifically to the needs of direct, digital ad sales.",
+      "website": "https://broadstreetads.com",
+      "icon": "Broadstreet.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof broadstreet !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "BuySellAds": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "_bsa": "",
+        "_bsaPRO": "",
+        "_bsap": "",
+        "_bsap_serving_callback": ""
+      },
+      "scriptSrc": [
+        "^https?://s\\d\\.buysellads\\.com/",
+        "servedby-buysellads\\.com/monetization(?:\\.[\\w\\d]+)?\\.js"
+      ],
+      "website": "https://buysellads.com",
+      "icon": "BuySellAds.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _bsa !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _bsa !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _bsa !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _bsa !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Carbon Ads": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "div#carbonads-container": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "_carbonads": "",
+        "_carbonads_go": ""
+      },
+      "scriptSrc": [
+        "\\.carbonads\\.com/"
+      ],
+      "description": "Carbon Ads is an ad tech company, that connects advertisers to users through targeted verticals called Circles.",
+      "website": "https://carbonads.net",
+      "icon": "Carbon Ads.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _carbonads !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof _carbonads !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Chitika": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "ch_client": "",
+        "ch_color_site_link": ""
+      },
+      "scriptSrc": [
+        "scripts\\.chitika\\.net/"
+      ],
+      "website": "https://chitika.com",
+      "icon": "Chitika.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ch_client !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ch_client !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ClickFreeze": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "api\\.clickfreeze\\.io"
+      ],
+      "description": "ClickFreeze is a tool that detects and blocks click fraud in Google Ads campaigns to improve performance and reduce wasted ad spend.",
+      "website": "https://www.clickfreeze.io",
+      "icon": "ClickFreeze.svg"
+    },
+    "ClickGUARD": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "io\\.clickguard\\.com"
+      ],
+      "description": "ClickGUARD is anti-click fraud prevention software designed to detect and block invalid or fraudulent clicks in online advertising campaigns.",
+      "website": "https://www.clickguard.com",
+      "icon": "ClickGUARD.svg"
+    },
+    "Clickaine": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "api\\.clickaine\\.com/"
+      ],
+      "description": "Clickaine is a traffic ad network that helps advertisers drive targeted traffic to their websites through various digital marketing solutions, offering a platform for publishers to monetize their traffic effectively.",
+      "website": "https://clickaine.com",
+      "icon": "Clickaine.svg"
+    },
+    "Clickbrainiacs": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "www\\.clickbrainiacs\\.com"
+      ],
+      "description": "Clickbrainiacs is a click fraud monitoring software for AdWords PPC campaigns that detects and helps prevent invalid or malicious ad clicks.",
+      "website": "https://www.clickbrainiacs.com",
+      "icon": "Clickbrainiacs.svg"
+    },
+    "Clicktripz": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "static\\.clicktripz\\.com/"
+      ],
+      "description": "Clicktripz is a platform that provides innovative software solutions to serve the needs of suppliers, publishers, advertisers and travelers.",
+      "website": "https://site.clicktripz.com",
+      "icon": "Clicktripz.svg"
+    },
+    "Cluep": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "cas\\.cluep\\.com"
+      ],
+      "description": "Cluep's artificially intelligent mobile ad platform targets people based on what they are sharing, how they are feeling and where they go in the physical world.",
+      "website": "https://cluep.com/",
+      "icon": "Cluep.png"
+    },
+    "Collective Audience": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "BeOpSDK": "",
+        "beOpinionAsyncInit": ""
+      },
+      "scriptSrc": [
+        "widget\\.beop\\.io"
+      ],
+      "description": "Collective Audience is a cloud ecosystem for media and brands on the open web, formerly known as BeOp.",
+      "website": "https://beop.collectiveaudience.co",
+      "icon": "CollectiveAudience.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BeOpSDK !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BeOpSDK !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Concert": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "CONCERT_ADS_CONFIG": "",
+        "ConcertAds": ""
+      },
+      "scriptSrc": [
+        "cdn\\.concert\\.io/"
+      ],
+      "description": "Concert is a publisher-led marketplace for ads by Vox Media.",
+      "website": "https://concert.io",
+      "icon": "Concert.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CONCERT_ADS_CONFIG !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof CONCERT_ADS_CONFIG !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Container Media Group": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.containermedia\\.net/"
+      ],
+      "description": "Container Media Group offers technical solutions for agencies and brands to plan, execute, optimise, and report on advertising campaigns. They specialise in creating engaging custom creatives and utilise advanced tracking pixels to monitor user advertising activity across media channels.",
+      "website": "https://containermedia.net",
+      "icon": "Container Media Group.svg"
+    },
+    "Criteo": {
+      "cats": [
+        36,
+        77
+      ],
+      "dom": {
+        "link[href*='.criteo.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Criteo": "",
+        "criteo_pubtag": "",
+        "criteo_q": ""
+      },
+      "scriptSrc": [
+        "//(?:cas\\.criteo\\.com|(?:[^/]\\.)?criteo\\.net)/",
+        "//static\\.criteo\\.net/js/ld/ld\\.js"
+      ],
+      "description": "Criteo provides personalised retargeting that works with Internet retailers to serve personalised online display advertisements to consumers who have previously visited the advertiser's website.",
+      "website": "https://criteo.com",
+      "icon": "Criteo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Criteo !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Criteo !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Criteo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "DTScout": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.dtscout\\.com/"
+      ],
+      "description": "DTScout is a marketing data intelligence software.",
+      "website": "https://www.dtscout.com",
+      "icon": "DTScout.png"
+    },
+    "Dable": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "dable.q": ""
+      },
+      "scripts": [
+        "static\\.dable\\.io"
+      ],
+      "description": "Dable is a content discovery platform for the open web that uses AI to deliver engaging content through native advertising.",
+      "website": "https://dable.io",
+      "icon": "Dable.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dable !== 'undefined' && typeof dable.q !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "DanAds": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "danads-event"
+      ],
+      "description": "DanAds is an infrastructure platform that enables customization and automation of ad sales, operations, and creative management.",
+      "website": "https://danads.com",
+      "icon": "DanAds.svg"
+    },
+    "Dealer Spike": {
+      "cats": [
+        36,
+        32
+      ],
+      "dom": {
+        "meta[name='author'][content*='Dealer Spike']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "cdn\\.dealerspike\\.com"
+      ],
+      "description": "Dealer Spike is a digital marketing and advertising company focused that helps dealers grow their business.",
+      "website": "https://www.dealerspike.com",
+      "icon": "Dealer Spike.svg"
+    },
+    "Dianomi": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.dianomi.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.dianomi\\.com/"
+      ],
+      "description": "Dianomi is an advertiser campaign management software for financial services, premium lifestyle, technology and corporate sectors.",
+      "website": "https://www.dianomi.com",
+      "icon": "Dianomi.svg"
+    },
+    "District M": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.districtm.io']": {
+          "exists": ""
+        }
+      },
+      "description": "District M is a programmatic advertising exchange.",
+      "website": "https://districtm.net",
+      "icon": "District M.svg"
+    },
+    "Dolead": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "dolead_affiliate_id": "",
+        "dolead_custom": ""
+      },
+      "scriptSrc": [
+        "\\.dolead\\.com"
+      ],
+      "description": "Dolead is an ad-based lead generation platform that helps businesses acquire potential customers through targeted advertising campaigns.",
+      "website": "https://www.dolead.com",
+      "icon": "Dolead.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dolead_affiliate_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof dolead_affiliate_id !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "DoubleClick Ad Exchange (AdX)": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "googlesyndication\\.com.*abg\\.js",
+        "googlesyndication\\.com/pagead/show_ads\\.js",
+        "tpc\\.googlesyndication\\.com/safeframe"
+      ],
+      "description": "DoubleClick Ad Exchange is a real-time marketplace to buy and sell display advertising space.",
+      "website": "https://www.doubleclickbygoogle.com/solutions/digital-marketing/ad-exchange/",
+      "icon": "DoubleClick.svg"
+    },
+    "DoubleClick Campaign Manager (DCM)": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "2mdn\\.net"
+      ],
+      "website": "https://www.doubleclickbygoogle.com/solutions/digital-marketing/campaign-manager/",
+      "icon": "DoubleClick.svg"
+    },
+    "DoubleClick Floodlight": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "https?://fls\\.doubleclick\\.net"
+      ],
+      "website": "https://support.google.com/ds/answer/6029713?hl=en",
+      "icon": "DoubleClick.svg"
+    },
+    "DoubleClick for Publishers (DFP)": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "googletagservices\\.com/tag/js/gpt(?:_mobile)?\\.js"
+      ],
+      "description": "DoubleClick for Publishers (DFP) is a hosted ad serving platform that streamlines your ad management.",
+      "website": "https://www.google.com/dfp",
+      "icon": "DoubleClick.svg"
+    },
+    "DoubleVerify": {
+      "cats": [
+        36,
+        10
+      ],
+      "dom": {
+        "link[href*='.doubleverify.com']": {
+          "exists": ""
+        }
+      },
+      "description": "DoubleVerify is a software platform for digital media measurement, data, and analytics.",
+      "website": "https://doubleverify.com",
+      "icon": "DoubleVerify.svg"
+    },
+    "DynAd": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='t.dynad.net/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "t\\.dynad\\.net/"
+      ],
+      "description": "DynAd is a service for advertising and dynamic content optimisation.",
+      "website": "https://dynad.net",
+      "icon": "DynAd.svg"
+    },
+    "Epom": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "epomCustomParams": ""
+      },
+      "website": "https://epom.com",
+      "icon": "Epom.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof epomCustomParams !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "EthicalAds": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "media\\.ethicalads\\.io"
+      ],
+      "description": "EthicalAds is a privacy-preserving ad network targeting developers.",
+      "website": "https://www.ethicalads.io/",
+      "icon": "EthicalAds.svg"
+    },
+    "Excel Impact": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='api.excelimpact.com'][rel='preconnect']": {
+          "exists": ""
+        }
+      },
+      "description": "Excel Impact is a provider of lead generation systems and advertiser solutions.",
+      "website": "https://excelimpact.com",
+      "icon": "ExcelImpact.svg"
+    },
+    "Exit Bee": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "cdn\\.exitbee\\.com"
+      ],
+      "description": "Exit Bee is a platform that uses pattern recognition and machine learning to detect when users disengage from website content and are more likely to interact with ad campaigns.",
+      "website": "https://www.exitbee.com",
+      "icon": "ExitBee.svg"
+    },
+    "ExoClick": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.exoclick\\.com/"
+      ],
+      "meta": {
+        "exoclick-site-verification": []
+      },
+      "description": "ExoClick is a Barcelona-based online advertising company, which provides online advertising services to both advertisers and publishers.",
+      "website": "https://www.exoclick.com",
+      "icon": "ExoClick.png"
+    },
+    "Facebook Ads": {
+      "cats": [
+        36
+      ],
+      "description": "Facebook Ads is an online advertising platform developed by Facebook.",
+      "website": "https://www.facebook.com/business/ads",
+      "icon": "Facebook.svg"
+    },
+    "FastTony": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.fasttony\\.(?:es|com)/"
+      ],
+      "description": "FastTony is an application that facilitates promotion and sales through Facebook and Instagram.",
+      "website": "https://fasttony.com",
+      "icon": "FastTony.svg"
+    },
+    "Felmat": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "felmat_report_conversion": ""
+      },
+      "scriptSrc": [
+        "js\\.felmat\\.net/"
+      ],
+      "description": "Felmat is an advertising network that connects advertisers with publishers to facilitate performance-based marketing across digital platforms.",
+      "website": "https://www.felmat.net/",
+      "icon": "Felmat.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof felmat_report_conversion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "felmat_report_conversion || \"\""
+          }
+        ]
+      }
+    },
+    "FirstImpression.io": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "FI.options": "",
+        "fiPrebidAnalyticsHandler": ""
+      },
+      "scriptSrc": [
+        "\\.firstimpression\\.io"
+      ],
+      "description": "FirstImpression.io is a customized ad placements for publisher websites on their platform, with zero technical work.",
+      "website": "https://www.firstimpression.io",
+      "icon": "FirstImpression.io.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FI !== 'undefined' && typeof FI.options !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FI !== 'undefined' && typeof FI.options !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "FreakOut": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='.fout.jp/'], link[href*='.fout.jp']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "FOut": "",
+        "_fout_jsurl": "",
+        "_fout_queue": ""
+      },
+      "scriptSrc": [
+        "\\.fout\\.jp/"
+      ],
+      "description": "FreakOut is a marketing technology company with programmatic solutions (DSP,SSP) that delivers in-feed display and video formats across global publishers.",
+      "website": "https://www.fout.co.jp",
+      "icon": "FreakOut.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FOut !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FOut !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FOut !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Fusion Ads": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "_fusion": ""
+      },
+      "scriptSrc": [
+        "^[^\\/]*//[ac]dn\\.fusionads\\.net/(?:api/([\\d.]+)/)?\\;version:\\1"
+      ],
+      "website": "https://fusionads.net",
+      "icon": "Fusion Ads.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _fusion !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "GenieWords": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "admin\\.geniewords\\.com/"
+      ],
+      "description": "GenieWords is a tool that simplifies the process of advertising with Google Ads.",
+      "website": "https://geniewords.com",
+      "icon": "GenieWords.svg"
+    },
+    "Geniee": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='.gssprt.jp/'], link[href*='.gssprt.jp']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.gsspcln\\.jp/"
+      ],
+      "description": "Geniee is an ad technology company.",
+      "website": "https://geniee.co.jp",
+      "icon": "Geniee.png"
+    },
+    "Getintent": {
+      "cats": [
+        36
+      ],
+      "description": "Getintent is an adtech company that offers AI-powered programmatic suite for agencies, publishers, broadcasters and content owners.",
+      "website": "https://getintent.com",
+      "icon": "Getintent.png"
+    },
+    "Google AdSense": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "amp-ad[type='adsense']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Goog_AdSense_": "",
+        "Goog_AdSense_OsdAdapter": "",
+        "__google_ad_urls": "",
+        "adsbygoogle": "",
+        "google_ad_": ""
+      },
+      "scriptSrc": [
+        "2mdn\\.net",
+        "ad\\.ca\\.doubleclick\\.net",
+        "ad\\.ca\\.doubleclick\\.net",
+        "googlesyndication\\.com/"
+      ],
+      "description": "Google AdSense is a program run by Google through which website publishers serve advertisements that are targeted to the site content and audience.",
+      "website": "https://www.google.com/adsense/start/",
+      "icon": "Google AdSense.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Goog_AdSense_ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Goog_AdSense_ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Goog_AdSense_ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Goog_AdSense_ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Goog_AdSense_ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Google Ads": {
+      "cats": [
+        36
+      ],
+      "description": "Google Ads is an online advertising platform developed by Google.",
+      "website": "https://ads.google.com",
+      "icon": "Google Ads.svg"
+    },
+    "Google Publisher Tag": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "googletagservices\\.com/tag/js/gpt\\.js",
+        "pagead2\\.googlesyndication\\.com/tag/js/gpt\\.js",
+        "securepubads\\.g\\.doubleclick.net/tag/js/gpt\\.js"
+      ],
+      "description": "Google Publisher Tag (GPT) is an ad tagging library for Google Ad Manager which is used to dynamically build ad requests.",
+      "website": "https://developers.google.com/publisher-tag/guides/get-started",
+      "icon": "Google Developers.svg"
+    },
+    "GumGum": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='gumgum.com'], img[src*='gumgum.com']": {
+          "exists": ""
+        }
+      },
+      "description": "GumGum is a technology and media company specializing in contextual intelligence.",
+      "website": "https://gumgum.com",
+      "icon": "GumGum.svg"
+    },
+    "Hashtag Labs": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='//htlbid.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "htlbid.cmd": ""
+      },
+      "description": "Hashtag Labs is a full-service digital ad operations company.",
+      "website": "https://hashtag-labs.com",
+      "icon": "Hashtag Labs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof htlbid !== 'undefined' && typeof htlbid.cmd !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Header Bidding Ai": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.headerbidding\\.ai/"
+      ],
+      "description": "Header Bidding Ai is a provider of an automated and managed header bidding solution. Header bidding cutting-edge technique where publishers offer their ad inventory to many ad exchanges.",
+      "website": "https://headerbidding.ai",
+      "icon": "Header Bidding Ai.svg"
+    },
+    "HypeLab": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "HypeLab.Environment": ""
+      },
+      "scriptSrc": [
+        "api\\.hypelab\\.com"
+      ],
+      "description": "HypeLab is a platform that supports audience development by enhancing visibility, fostering recognition, and helping establish a loyal community.",
+      "website": "https://www.hypelab.com",
+      "icon": "HypeLab.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof HypeLab !== 'undefined' && typeof HypeLab.Environment !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ID5": {
+      "cats": [
+        36
+      ],
+      "cookies": {
+        "id5": ""
+      },
+      "js": {
+        "ID5._version": "^(.+)$\\;version:\\1",
+        "__id5_instances": ""
+      },
+      "scriptSrc": [
+        "^https://(?:cdn\\.)?id5-sync\\.com/"
+      ],
+      "description": "ID5 is a company that offers an identity solution for digital advertising, providing a Universal ID that enables privacy-compliant user recognition and tracking across websites without relying on personal information or third-party cookies.",
+      "website": "https://id5.io/",
+      "icon": "ID5.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ID5 !== 'undefined' && typeof ID5._version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ID5 !== 'undefined' && typeof ID5._version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "ID5._version || \"\""
+          }
+        ]
+      }
+    },
+    "Index Exchange": {
+      "cats": [
+        36
+      ],
+      "description": "Index Exchange is a customizable exchange technology that enables sell side media firms to monetize ad inventories programmatically and in real time.",
+      "website": "https://www.indexexchange.com",
+      "icon": "Index Exchange.svg"
+    },
+    "Infolinks": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "infolinks_pid": "",
+        "infolinks_wsid": ""
+      },
+      "description": "Infolinks is an online advertising platform for publishers and advertisers.",
+      "website": "https://www.infolinks.com",
+      "icon": "Infolinks.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof infolinks_pid !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof infolinks_pid !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Innervate": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.revjet.com']": {
+          "exists": ""
+        }
+      },
+      "description": "Innervate is a company that provides a plug-and-play solution for dynamic customer experience orchestration across various formats and channels, leveraging existing systems, data, and teams to enhance and streamline customer interactions.",
+      "website": "https://www.innervate.com",
+      "icon": "Innervate.svg"
+    },
+    "Innovid Advertising Measurement": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.tvsquared.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "TV2Track": "",
+        "_tvq": ""
+      },
+      "description": "Innovid Advertising Measurement is a solution for assessing and analyzing the performance of advertising campaigns across different platforms and devices.",
+      "website": "https://www.innovid.com/solutions/advertising-measurement",
+      "icon": "Innovid.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TV2Track !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TV2Track !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Integral Ad Science": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.adsafeprotected.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.adsafeprotected\\.com/"
+      ],
+      "description": "Integral Ad Science is an American publicly owned technology company that analyses the value of digital advertising placements.",
+      "website": "https://integralads.com",
+      "icon": "Integral Ad Science.svg"
+    },
+    "Internet Brands": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "footer > div > form": {
+          "text": "Internet Brands"
+        }
+      },
+      "description": "Internet Brands is a technology company that operates a variety of web portals and online communities, providing information and services to consumers and businesses across a range of industries.",
+      "website": "https://www.internetbrands.com",
+      "icon": "Internet Brands.png"
+    },
+    "JuicyAds": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "adsbyjuicy": ""
+      },
+      "meta": {
+        "juicyads-site-verification": []
+      },
+      "description": "JuicyAds is a legitimate advertising network that specializes in adult content.",
+      "website": "https://www.juicyads.com",
+      "icon": "JuicyAds.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adsbyjuicy !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Kevel": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='adzerk.net'], link[href*='adzerk.net']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "ados": "",
+        "adosResults": ""
+      },
+      "scriptSrc": [
+        "adzerk\\.net/"
+      ],
+      "description": "Kevel (formerly Adzerk) is a developer of ad-serving APIs to help developers build server-side ad platforms.",
+      "website": "https://www.kevel.com",
+      "icon": "Kevel.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ados !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof ados !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Klickly": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "analytics\\.klickly\\.com/pixel\\.js\\?v=([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "Klickly is an invite-only, commission-based advertising platform.",
+      "website": "https://www.klickly.com",
+      "icon": "Klickly.svg"
+    },
+    "Kueez": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.kueez\\.net/"
+      ],
+      "description": "Kueez is a platform offering data-driven solutions tailored for publishers to enhance advertising strategies.",
+      "website": "https://weare.kueez.com",
+      "icon": "Kueez.svg"
+    },
+    "LKQD": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.lkqd.net']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "lkqdCall": "",
+        "lkqdErrorCount": "",
+        "lkqdSettings": "",
+        "lkqd_http_response": ""
+      },
+      "scriptSrc": [
+        "\\.lkqd\\.net"
+      ],
+      "description": "LKQD is a video advertising platform that enables publishers to serve video ads across multiple devices and formats.",
+      "website": "https://wiki.lkqd.com",
+      "icon": "LKQD.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof lkqdCall !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof lkqdCall !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof lkqdCall !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof lkqdCall !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Leadbit": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "form[action*='wapi.leadbit.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.leadbit\\.com/"
+      ],
+      "description": "Leadbit is an offer-based ad system designed to target users with specific ads based on their engagement and preferences.",
+      "website": "https://leadbit.com",
+      "icon": "Leadbit.svg"
+    },
+    "Linkedin Ads": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='dc.ads.linkedin.com']": {
+          "attributes": {
+            "src": "dc\\.ads\\.linkedin\\.com"
+          }
+        },
+        "link[href*='px.ads.linkedin.com']": {
+          "attributes": {
+            "href": "px\\.ads\\.linkedin\\.com"
+          }
+        }
+      },
+      "headers": {
+        "content-security-policy": "px\\.ads\\.linkedin\\.com"
+      },
+      "html": [
+        "<img [^>]*src=\"[^/]*//[^/]*px\\.ads\\.linkedin\\.com"
+      ],
+      "description": "Linkedin Ads is a paid marketing tool that offers access to Linkedin social networks through various sponsored posts and other methods.",
+      "website": "https://business.linkedin.com/marketing-solutions/ads",
+      "icon": "Linkedin.svg"
+    },
+    "LiveRamp DPM": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "dpmComscoreVars": ""
+      },
+      "scriptSrc": [
+        "c\\.tvpixel\\.com/js/current/dpm_pixel_min\\.js"
+      ],
+      "description": "LiveRamp DPM is a TV advertising metrics and analytics platform.",
+      "website": "https://liveramp.com/data-plus-math",
+      "icon": "LiveRamp.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dpmComscoreVars !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MGID": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "MgSensor.mgqWorker": ""
+      },
+      "scriptSrc": [
+        "\\.mgid\\.com/"
+      ],
+      "description": "MGID is a programmatic advertising platform frequently used by misinformation websites.",
+      "website": "https://www.mgid.com",
+      "icon": "MGID.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MgSensor !== 'undefined' && typeof MgSensor.mgqWorker !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MNTN": {
+      "cats": [
+        36,
+        77
+      ],
+      "scriptSrc": [
+        "\\.steelhousemedia\\.com/(?:spx\\?dxver=([\\d.]+))?\\;version:\\1"
+      ],
+      "description": "MNTN (formerly SteelHouse) is a marketing technology company that provides a platform for digital advertising, including tools for programmatic advertising, creative management, and campaign optimization.",
+      "website": "https://mountain.com",
+      "icon": "mntn.svg"
+    },
+    "MadAdsMedia": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "setMIframe": "",
+        "setMRefURL": ""
+      },
+      "scriptSrc": [
+        "^https?://(?:ads-by|pixel)\\.madadsmedia\\.com/"
+      ],
+      "website": "https://madadsmedia.com",
+      "icon": "MadAdsMedia.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof setMIframe !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof setMIframe !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Magnite": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.spotxchange.com']": {
+          "attributes": {
+            "href": ""
+          }
+        }
+      },
+      "js": {
+        "SpotX.VERSION": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "js\\.spotx\\.tv"
+      ],
+      "description": "Magnite is an independent sell-side advertising platform that provides technology for publishers to monetize digital advertising inventory across various formats.",
+      "website": "https://www.magnite.com",
+      "icon": "Magnite.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SpotX !== 'undefined' && typeof SpotX.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "SpotX.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "MainAd": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.mainadv.com/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.mainadv\\.com/"
+      ],
+      "description": "MainAd is an international advertising technology company specialising in real-time bidding and programmatic ad retargeting.",
+      "website": "https://www.mainad.com",
+      "icon": "MainAd.svg"
+    },
+    "Manatee": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "adsbymanatee": ""
+      },
+      "scriptSrc": [
+        "\\.manatee\\.io/"
+      ],
+      "description": "Manatee is a tool designed to enhance online advertising revenue by optimising ad placements and targeting strategies, increasing click-through rates and overall ad performance.",
+      "website": "https://www.manatee.io",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adsbymanatee !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mantis": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "mantis": "",
+        "mantistimer": ""
+      },
+      "scriptSrc": [
+        "\\.mantisadnetwork\\.com/"
+      ],
+      "description": "Mantis is an end-to-end advertising network catering to brands operating in the legal cannabis industry and ancillary markets.",
+      "website": "https://www.mantisadnetwork.com",
+      "icon": "Mantis.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mantis !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof mantis !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Media.net": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.media.net']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.media\\.net/"
+      ],
+      "description": "Media.net is an advertising company focused on providing monetization products to digital publishers.",
+      "website": "https://www.media.net",
+      "icon": "Media.net.svg"
+    },
+    "Mediavine": {
+      "cats": [
+        36
+      ],
+      "cookies": {
+        "mediavine_session": ""
+      },
+      "js": {
+        "$mediavine.web": ""
+      },
+      "scriptSrc": [
+        "\\.mediavine\\.com/"
+      ],
+      "description": "Mediavine is a full service ad management platform.",
+      "website": "https://www.mediavine.com",
+      "icon": "Mediavine.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $mediavine !== \"undefined\""
+          }
+        ]
+      }
+    },
+    "Microsoft Advertising": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.bing.com']": {
+          "exists": ""
+        }
+      },
+      "cookies": {
+        "_uetsid": "\\w+",
+        "_uetvid": "\\w+"
+      },
+      "js": {
+        "UET": "",
+        "uetq": ""
+      },
+      "scriptSrc": [
+        "bat\\.bing\\.com/bat\\.js"
+      ],
+      "description": "Microsoft Advertising is an online advertising platform developed by Microsoft.",
+      "website": "https://ads.microsoft.com",
+      "icon": "Microsoft.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof UET !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof UET !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mile.tech": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "//go\\.automatad\\.com/"
+      ],
+      "description": "Mile.tech is a digital media products company that provides a suite of programmatic monetisation solutions.",
+      "website": "https://www.mile.tech",
+      "icon": "Mile.tech.svg"
+    },
+    "Mountain": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "dx\\.mountain\\.com",
+        "px\\.mountain\\.com"
+      ],
+      "description": "MNTN Performance TV is a CTV advertising platform with targeting, measurement, and optimization for amplifying marketers' performance goals.",
+      "website": "https://mountain.com/",
+      "icon": "Mountain.png"
+    },
+    "Nativo": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.postrelease.com/'], img[src*='.postrelease.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "ntvConfig": ""
+      },
+      "scriptSrc": [
+        "\\.ntv\\.io/",
+        "\\.postrelease\\.com/"
+      ],
+      "description": "Nativo is an advertising technology provider.",
+      "website": "https://www.nativo.com",
+      "icon": "Nativo.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ntvConfig !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Nextdoor Ads": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "ads\\.nextdoor\\.com/"
+      ],
+      "description": "Nextdoor Ads is an easy-to-use expansion of Nextdoor’s proprietary self-serve campaign management platform, designed to help small and medium-sized businesses (SMBs) advertise on Nextdoor.",
+      "website": "https://help.nextdoor.com/s/article/About-Neighborhood-Ad-Center-NAC-Conversion-Pixel",
+      "icon": "Nextdoor Ads.png"
+    },
+    "ONiAD": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "track\\.oniad\\.com"
+      ],
+      "description": "ONiAd is a software platform that connects brands with their audience through omnichannel advertising.",
+      "website": "https://oniad.com",
+      "icon": "ONiAD.svg"
+    },
+    "OneTag": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.s-onetag.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "signal-beacon\\.s-onetag\\.com/"
+      ],
+      "description": "OneTag is an advertizing platform that automates the buying and selling of online ad space.",
+      "website": "https://onetag.com",
+      "icon": "OneTag.svg"
+    },
+    "Open AdStream": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "OAS_AD": ""
+      },
+      "website": "https://www.xaxis.com",
+      "icon": "Open AdStream.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof OAS_AD !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "OpenWeb": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "SPOTIM.initConversation": ""
+      },
+      "meta": {
+        "spotim-ads": []
+      },
+      "description": "OpenWeb is a social engagement platform that builds online communities around digital content.",
+      "website": "https://www.openweb.com",
+      "icon": "OpenWeb.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SPOTIM !== 'undefined' && typeof SPOTIM.initConversation !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "OpenX": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.openx.net'], img[src*='.openx.net'], link[href*='.openx.net']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "openx.name": "openx"
+      },
+      "scriptSrc": [
+        "https?://[^/]*\\.openx\\.net",
+        "https?://[^/]*\\.servedbyopenx\\.com"
+      ],
+      "description": "OpenX is a programmatic advertising technology company.",
+      "website": "https://openx.com",
+      "cpe": "cpe:2.3:a:openx:openx:*:*:*:*:*:*:*:*",
+      "icon": "OpenX.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof openx !== 'undefined' && typeof openx.name !== 'undefined' && openx.name === 'openx'"
+          }
+        ]
+      }
+    },
+    "Pinterest Ads": {
+      "cats": [
+        36
+      ],
+      "description": "Pinterest Ads is an online advertising platform developed by Pinterest.",
+      "website": "https://ads.pinterest.com/",
+      "icon": "Pinterest.svg"
+    },
+    "Placed": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "api\\.placed\\.com"
+      ],
+      "description": "Placed is a solution that provides advertising insights to help businesses understand and measure the impact of their marketing efforts.",
+      "website": "https://www.placed.com",
+      "icon": "Placed.svg"
+    },
+    "Podsights": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "cdn\\.pdst\\.fm"
+      ],
+      "description": "Podsights is attribution technology platform that brands and agencies use to measure and scale their podcast advertising",
+      "website": "https://podsights.com/",
+      "icon": "Podsights.png"
+    },
+    "Prebid": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "PREBID_TIMEOUT": "",
+        "pbjs": "",
+        "pbjs.version": "v([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/prebid\\.js",
+        "adnxs\\.com/[^\"]*(?:prebid|/pb\\.js)"
+      ],
+      "description": "Prebid is an open-source header bidding wrapper. It forms the core of our Nucleus ad platform, helping maximize revenue and performance for publishers.",
+      "website": "https://prebid.org",
+      "icon": "Prebid.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PREBID_TIMEOUT !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof PREBID_TIMEOUT !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Primis": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.sekindo.com']": {
+          "attributes": {
+            "src": ""
+          }
+        },
+        "img[src*='.sekindo.com']": {
+          "attributes": {
+            "src": ""
+          }
+        }
+      },
+      "js": {
+        "SekindoNativeSkinApi": "",
+        "sekindoDisplayedPlacement": "",
+        "sekindoFlowingPlayerOn": ""
+      },
+      "scriptSrc": [
+        "\\.sekindo\\.com"
+      ],
+      "description": "Primis is a video discovery platform for publishers.",
+      "website": "https://www.primis.tech",
+      "icon": "Primis.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SekindoNativeSkinApi !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SekindoNativeSkinApi !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SekindoNativeSkinApi !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Project Wonderful": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "pw_adloader": ""
+      },
+      "html": [
+        "<div[^>]+id=\"pw_adbox_"
+      ],
+      "scriptSrc": [
+        "^https?://(?:www\\.)?projectwonderful\\.com/(?:pwa\\.js|gen\\.php)"
+      ],
+      "website": "https://projectwonderful.com",
+      "icon": "Project Wonderful.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof pw_adloader !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "PubGuru": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "pg.version": "^([\\d\\.]+)$\\;version:\\1\\;confidence:25"
+      },
+      "scriptSrc": [
+        "cdn\\.pubguru\\.com/"
+      ],
+      "description": "PubGuru is a header wrapper and ad ops platform.",
+      "website": "https://pubguru.com",
+      "icon": "PubGuru.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof pg !== 'undefined' && typeof pg.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "pg.version || \"\""
+          }
+        ]
+      }
+    },
+    "PubMatic": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.pubmatic.com'], link[href*='.pubmatic.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "https?://[^/]*\\.pubmatic\\.com"
+      ],
+      "description": "PubMatic is a company that develops and implements online advertising software and strategies for the digital publishing and advertising industry.",
+      "website": "https://www.pubmatic.com/",
+      "icon": "PubMatic.svg"
+    },
+    "Publy": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.publy\\.net/"
+      ],
+      "description": "Publy is a provider of solutions for publishers and advertisers.",
+      "website": "http://ppc.publy.net"
+    },
+    "Pubstack": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.pubstack\\.io/"
+      ],
+      "description": "Pubstack is a platform that provides tools for managing and optimizing digital advertising, offering solutions for real-time analytics, ad performance monitoring, and revenue optimization.",
+      "website": "https://www.pubstack.io",
+      "icon": "Pubstack.svg"
+    },
+    "PurpleAds": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.purpleads\\.io/"
+      ],
+      "meta": {
+        "purpleads-verification": []
+      },
+      "description": "PurpleAds is an online advertising solution that businesses use to promote their products and services on Google Search, YouTube and other sites across the web.",
+      "website": "https://purpleads.io",
+      "icon": "PurpleAds.svg"
+    },
+    "Pushub": {
+      "cats": [
+        36,
+        71
+      ],
+      "scriptSrc": [
+        "\\.pushub\\.net/"
+      ],
+      "description": "Pushub is a self-serve demand side platform (DSP) designed for affiliates and agencies.",
+      "website": "https://pushub.net",
+      "icon": "Pushub.svg"
+    },
+    "Q1Media": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "//q1mediahydraplatform\\.com/"
+      ],
+      "description": "Q1Media is a platform that facilitates the creation, demand, and supply of digital advertising.",
+      "website": "https://www.q1media.com",
+      "icon": "Q1Media.svg"
+    },
+    "Qbrick": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "Qbrick": ""
+      },
+      "scriptSrc": [
+        "\\.qbrick\\.com/"
+      ],
+      "description": "Qbrick is a video advertising system.",
+      "website": "https://www.qbrick.com",
+      "icon": "Qbrick.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Qbrick !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Quon": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "counter\\.quon\\.ru/"
+      ],
+      "description": "Quon is a platform that provides control over website advertising and sales, integrating an end-to-end analytics system to optimize advertising management.",
+      "website": "https://www.quon.ru"
+    },
+    "Rakuten Advertising": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "tag\\.rmp\\.rakuten\\.com"
+      ],
+      "website": "https://rakutenadvertising.com/",
+      "icon": "Rakuten Advertising.svg"
+    },
+    "Raptive": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "adthrive": "",
+        "adthriveVideosInjected": ""
+      },
+      "scriptSrc": [
+        "ads\\.adthrive\\.com"
+      ],
+      "description": "Raptive is a company formed from the merger of CafeMedia, AdThrive, and CafeMedia Ad Management, focusing on supporting digital creators and publishers​.",
+      "website": "https://raptive.com",
+      "icon": "Raptive.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adthrive !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adthrive !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Reddit Ads": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "www\\.redditstatic\\.com"
+      ],
+      "description": "Reddit Ads is an online advertising offering from Reddit.",
+      "website": "https://advertising.reddithelp.com/",
+      "icon": "Reddit.svg"
+    },
+    "Relap": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "//relap\\.io/v([\\d]+)/relap\\.js\\;version:\\1"
+      ],
+      "description": "Relap is an advertising effectiveness system that focuses on optimizing content recommendations and increasing user engagement.",
+      "website": "https://relap.io",
+      "icon": "Relap.svg"
+    },
+    "RevBid": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.revbid\\.net/"
+      ],
+      "description": "RevBid is a header bidding platform designed for publishers to optimize ad revenue.",
+      "website": "https://revbid.net",
+      "icon": "RevBid.svg"
+    },
+    "RevContent": {
+      "cats": [
+        36,
+        5
+      ],
+      "dom": {
+        "link[href*='.revcontent.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "revcontent": ""
+      },
+      "description": "RevContent is a monetization and recommendation engine that connects advertisers to highly engaged audiences on the web's leading publisher sites.",
+      "website": "https://www.revcontent.com",
+      "icon": "revcontent.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof revcontent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RevJet": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.revjet.com']": {
+          "exists": ""
+        }
+      },
+      "description": "RevJet is the first comprehensive Ad Experience Platform, for every audience, channel, format, inventory, and device.",
+      "website": "https://www.revjet.com",
+      "icon": "RevJet.png"
+    },
+    "Rontar": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "RontarAddToCartFunction": ""
+      },
+      "scriptSrc": [
+        "\\.rontar\\.com/"
+      ],
+      "description": "Rontar is a provider of ad management solutions catering to businesses seeking effective advertising strategies and optimization tools.",
+      "website": "https://www.rontar.com",
+      "icon": "Rontar.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RontarAddToCartFunction !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Rubicon Project": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.rubiconproject.com']": {
+          "attributes": {
+            "src": ""
+          }
+        },
+        "img[src*='.rubiconproject.com']": {
+          "attributes": {
+            "src": ""
+          }
+        }
+      },
+      "scriptSrc": [
+        "https?://[^/]*\\.rubiconproject\\.com"
+      ],
+      "description": "Rubicon Project is an advertising automation platform enabling publishers to transact advertising brands.",
+      "website": "https://rubiconproject.com/",
+      "icon": "Rubicon Project.svg"
+    },
+    "SHE Media": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "SheMedia": "",
+        "blogherads.adq": ""
+      },
+      "description": "SHE Media is an ad network, which means that they basically serve as a coordinator between advertisers and publishers (bloggers).",
+      "website": "https://www.shemedia.com",
+      "icon": "SHE Media.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SheMedia !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SheMedia !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "STN Video": {
+      "cats": [
+        36,
+        14
+      ],
+      "scripts": [
+        "embed\\.sendtonews\\.com/"
+      ],
+      "scriptSrc": [
+        "embed\\.sendtonews\\.com/"
+      ],
+      "description": "STN Video is a online video platform that solves digital video for publishers, content creators, and advertisers.",
+      "website": "https://www.stnvideo.com",
+      "icon": "STN Video.png"
+    },
+    "SabaVision": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "SabavisionElement": "",
+        "__SABAVISION_GET_ADD_TIMEOUT": "",
+        "sabaVisionWebsiteID": "",
+        "sabaVisionWebsitePage": ""
+      },
+      "meta": {
+        "sabavision_zone": []
+      },
+      "description": "SabaVision, one of the core products of SabaIdea, is Iran's largest online advertising agency.",
+      "website": "https://www.sabavision.com",
+      "icon": "SabaVision.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SabavisionElement !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SabavisionElement !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SabavisionElement !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof SabavisionElement !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sharethrough": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.sharethrough.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.sharethrough\\.com/"
+      ],
+      "description": "Sharethrough is a software company that powers in-feed advertising for brands and publishers.",
+      "website": "https://www.sharethrough.com",
+      "icon": "Sharethrough.svg"
+    },
+    "Simpli.fi": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.simpli\\.fi"
+      ],
+      "description": "Simpli.fi is a programmatic advertising and agency management software.",
+      "website": "https://simpli.fi/",
+      "icon": "Simplifi.png"
+    },
+    "Sixads": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "app\\.sixads\\.net"
+      ],
+      "description": "Sixads is a platform that facilitates the exchange of product ads between webstores.",
+      "website": "https://sixads.net",
+      "icon": "Sixads.svg"
+    },
+    "Sizmek": {
+      "cats": [
+        36
+      ],
+      "html": [
+        "(?:<a [^>]*href=\"[^/]*//[^/]*serving-sys\\.com/|<img [^>]*src=\"[^/]*//[^/]*serving-sys\\.com/)"
+      ],
+      "scriptSrc": [
+        "serving-sys\\.com/"
+      ],
+      "website": "https://sizmek.com",
+      "icon": "Sizmek.png"
+    },
+    "Smart Ad Server": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='smartadserver.com/'], link[href*='.smartadserver.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "SmartAdServer": ""
+      },
+      "scriptSrc": [
+        "\\.sascdn\\.com/"
+      ],
+      "description": "Smart Ad Server is an adserving and RTB platform.",
+      "website": "https://smartadserver.com",
+      "icon": "Smart Ad Server.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SmartAdServer !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Snap Pixel": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "__SnapPixel": "",
+        "snaptr.pixelIdList": ""
+      },
+      "scriptSrc": [
+        "intg\\.snapchat\\.com/"
+      ],
+      "description": "Snap Pixel is a piece of JavaScript code that helps advertisers measure the cross-device impact of campaigns.",
+      "website": "https://businesshelp.snapchat.com/s/article/snap-pixel-about",
+      "icon": "Snap Pixel.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __SnapPixel !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __SnapPixel !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sonobi": {
+      "cats": [
+        36
+      ],
+      "description": "Sonobi is an ad technology developer that designs advertising tools and solutions for the media publishers, brand advertisers and media agencies.",
+      "website": "https://sonobi.com",
+      "icon": "Sonobi.png"
+    },
+    "Sortable": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "deployads": ""
+      },
+      "scriptSrc": [
+        "\\.deployads\\.com/"
+      ],
+      "description": "Sortable is a broad-spectrum platform that helps publishers unify demand partners, data, and tools.",
+      "website": "https://sortable.com",
+      "icon": "Sortable.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof deployads !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sovrn": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "sovrn": "",
+        "sovrn_render": ""
+      },
+      "scriptSrc": [
+        "\\.(?:linksmart|lijit)\\.com/"
+      ],
+      "description": "Sovrn is a advertising products and services provider for publishers.",
+      "website": "https://www.sovrn.com",
+      "icon": "Sovrn.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof sovrn !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof sovrn !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SpotX": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.spotxchange.com']": {
+          "attributes": {
+            "href": ""
+          }
+        }
+      },
+      "js": {
+        "SpotX.VERSION": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "js\\.spotx\\.tv"
+      ],
+      "description": "SpotX is a video advertising platform.",
+      "website": "https://www.spotx.tv",
+      "icon": "SpotX.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SpotX !== 'undefined' && typeof SpotX.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "SpotX.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "StackAdapt": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "srv\\.stackadapt\\.com/"
+      ],
+      "description": "StackAdapt is a platform that provides a content advertising strategy solution for planning, executing, and optimizing digital campaigns.",
+      "website": "https://www.stackadapt.com",
+      "icon": "StackAdapt.svg"
+    },
+    "Sublime": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "loadSublimeSkinz": ""
+      },
+      "scriptSrc": [
+        "\\.ayads\\.co/"
+      ],
+      "description": "Sublime (formerly Sublime Skinz) operator of an advertising agency intended to offer skin-based advertising services to clients.",
+      "website": "https://www.sublime.xyz",
+      "icon": "Sublime.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof loadSublimeSkinz !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Swoop": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='ardrone.swoop.com'], script#swoop_sdk": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.swoop\\.com/"
+      ],
+      "description": "Swoop is a search targeting advertising system.",
+      "website": "https://www.swoop.com",
+      "icon": "Swoop.svg"
+    },
+    "TVSquared": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.tvsquared.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "TV2Track": "",
+        "_tvq": ""
+      },
+      "description": "TVSquared is a cross-platform TV ad measurement, analytics and optimisation platform.",
+      "website": "https://www.tvsquared.com",
+      "icon": "TVSquared.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TV2Track !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TV2Track !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Taboola": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.taboola.com']": {
+          "attributes": {
+            "href": ""
+          }
+        }
+      },
+      "cookies": {
+        "taboola_session_id": ""
+      },
+      "js": {
+        "TRCImpl.global": "",
+        "_taboola": "",
+        "taboola_view_id": ""
+      },
+      "scriptSrc": [
+        "\\.taboola\\.com"
+      ],
+      "description": "Taboola is a content discovery & native advertising platform for publishers and advertisers.",
+      "website": "https://www.taboola.com",
+      "icon": "Taboola.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TRCImpl !== 'undefined' && typeof TRCImpl.global !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TRCImpl !== 'undefined' && typeof TRCImpl.global !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TRCImpl !== 'undefined' && typeof TRCImpl.global !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tagtoo": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "tagtoo_advertiser_id": "",
+        "tagtoo_ga": "",
+        "tagtoo_s": ""
+      },
+      "description": "Tagtoo is an ad platform that provides businesses with digital advertising solutions, specializing in targeted display and programmatic ads to help brands reach their audience more across various online channels.",
+      "website": "https://tagtoo.com",
+      "icon": "Tagtoo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tagtoo_advertiser_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof tagtoo_advertiser_id !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof tagtoo_advertiser_id !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tapad": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='pixel.tapad.com'], img[src*='pixel.tapad.com']": {
+          "exists": ""
+        }
+      },
+      "description": "Tapad is a venture-funded startup company that develops and markets software and services for cross-device advertising and content delivery.",
+      "website": "https://www.tapad.com",
+      "icon": "Tapad.svg"
+    },
+    "Tapsell": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "\\.mediaad\\.org"
+      ],
+      "description": "Tapsell is an Iranian digital advertising platform that enables businesses to manage and deliver targeted ads across digital channels.",
+      "website": "https://tapsell.com",
+      "icon": "Tapsell.svg"
+    },
+    "Tatari": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "tatari": ""
+      },
+      "description": "Tatari is a data and analytics company focused on buying and measuring ads across TV and streaming platforms.",
+      "website": "https://www.tatari.tv",
+      "icon": "Tatari.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tatari !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Teads": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "teads\\.tv"
+      ],
+      "description": "Teads is a technology provider that sells ads on publisher websites.",
+      "website": "https://www.teads.com",
+      "icon": "Teads.svg"
+    },
+    "The Arena Group": {
+      "cats": [
+        36
+      ],
+      "meta": {
+        "generator": [
+          "^tempest\\s-\\smaven\\.io$"
+        ]
+      },
+      "description": "The Arena Group is a media coalition of professional content destinations. It operates on a shared digital publishing, advertising, and distribution platform, providing a major media-scale alternative to news and information distributed on social platforms.",
+      "website": "https://thearenagroup.net",
+      "icon": "The Arena Group.svg"
+    },
+    "The Monetyzer": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.themoneytizer\\.com/"
+      ],
+      "description": "The Monetyzer is a global advertising platform for publishers.",
+      "website": "https://www.themoneytizer.com",
+      "icon": "TheMonetyzer.svg"
+    },
+    "Thor-Media": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "t\\.thor-media\\.ru/"
+      ],
+      "description": "Thor-Media is a Russian-based affiliate advertising system that connects advertisers with affiliates for performance-based marketing campaigns.",
+      "website": "https://thor-media.ru"
+    },
+    "Titan": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "titan": "",
+        "titanEnabled": ""
+      },
+      "website": "https://titan360.com",
+      "icon": "Titan.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof titan !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof titan !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TrafficStars": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='tsyndicate.com/'], a[href*='trafficstars.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.tsyndicate\\.com/"
+      ],
+      "description": "TrafficStars is a self-served ad network and ad exchange that operates mainly in adult-related verticals.",
+      "website": "https://trafficstars.com",
+      "icon": "TrafficStars.png"
+    },
+    "TripleLift": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='.3lift.com']": {
+          "attributes": {
+            "src": ""
+          }
+        }
+      },
+      "description": "TripleLift is an advertising technology company providing native programmatic to buyers and sellers.",
+      "website": "https://triplelift.com",
+      "icon": "TripleLift.png"
+    },
+    "Twiago": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "\\.twiago\\.com"
+      ],
+      "description": "Twiago is a digital advertising solution that provides transparency and is tailored to specific business needs.",
+      "website": "https://www.twiago.com",
+      "icon": "Twiago.svg"
+    },
+    "Twitter Ads": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "twttr": ""
+      },
+      "scriptSrc": [
+        "static\\.ads-twitter\\.com/uwt\\.js"
+      ],
+      "description": "Twitter Ads is an advertising platform for Twitter 'microblogging' system.",
+      "website": "https://ads.twitter.com",
+      "icon": "Twitter.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof twttr !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Unruly": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.unrulymedia.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "unruly.native": ""
+      },
+      "description": "Unruly is a video advertising platform.",
+      "website": "https://unruly.co",
+      "icon": "Unruly.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof unruly !== 'undefined' && typeof unruly.native !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Upravel": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.upravel.com']": {
+          "exists": ""
+        }
+      },
+      "cookies": {
+        "user_id-legacy": ""
+      },
+      "description": "Upravel is a marketing advertising system.",
+      "website": "https://upravel.com",
+      "icon": "Upravel.svg"
+    },
+    "Utiq": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "Utiq": ""
+      },
+      "scriptSrc": [
+        "/utiqloader\\.js"
+      ],
+      "description": "Utiq empowers brands and publishers to address audiences through Telco-powered first-party identifier.",
+      "website": "https://utiq.com/",
+      "icon": "Utiq.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Utiq !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "VDX.tv": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.tribalfusion.com'], link[href*='.exponential.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.exponential\\.com",
+        "\\.tribalfusion\\.com/"
+      ],
+      "description": "VDX.tv (formerly Exponential) is a global advertising technology company that is transforming the way brands connect with relevant audiences in today's converging video landscape.",
+      "website": "https://vdx.tv",
+      "icon": "VDX.tv.png"
+    },
+    "Valuad": {
+      "cats": [
+        36
+      ],
+      "scripts": [
+        "cdn\\.valuad\\.cloud"
+      ],
+      "description": "Valuad is a platform that provides algorithm-based header bidding for publishers to optimize advertising revenue.",
+      "website": "https://valuad.io",
+      "icon": "Valuad.svg"
+    },
+    "Veoxa": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "VuVeoxaContent": ""
+      },
+      "html": [
+        "<img [^>]*src=\"[^\"]+tracking\\.veoxa\\.com"
+      ],
+      "scriptSrc": [
+        "tracking\\.veoxa\\.com"
+      ],
+      "website": "https://veoxa.com",
+      "icon": "Veoxa.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof VuVeoxaContent !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Verizon Media": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='pixel.advertising.com']": {
+          "attributes": {
+            "src": ""
+          }
+        }
+      },
+      "scriptSrc": [
+        "\\.advertising\\.com",
+        "\\.vidible\\.tv/"
+      ],
+      "description": "Verizon Media is a tech and media company with global assets for advertisers, consumers and media companies.",
+      "website": "https://www.verizonmedia.com",
+      "icon": "Verizon Media.svg"
+    },
+    "VerticalScope": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "footer > div": {
+          "text": "VerticalScope Inc\\."
+        }
+      },
+      "description": "VerticalScope is a Canadian-based technology company that owns and operates a network of online communities and discussion forums focused on a variety of interests and hobbies, such as cars, pets, sports, and technology. VerticalScope generates revenue primarily through advertising, including banner ads, sponsored content, and affiliate marketing.",
+      "website": "https://www.verticalscope.com",
+      "icon": "VerticalScope.svg"
+    },
+    "Vidazoo": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "__vidazooPlayer__": "",
+        "vidazoo": "",
+        "vidazoo.version": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "\\.vidazoo\\.com"
+      ],
+      "description": "Vidazoo is a video content and yield management platform.",
+      "website": "https://www.vidazoo.com",
+      "icon": "Vidazoo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __vidazooPlayer__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __vidazooPlayer__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Wazimo": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "wz.mmConfig.buildVersion": ""
+      },
+      "description": "Wazimo is a digital media company focused on combining engaging content with advanced real-time tendering (RTB) capabilities.",
+      "website": "https://wazimo.com",
+      "icon": "wazimo.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wz !== 'undefined' && typeof wz.mmConfig !== 'undefined' && typeof wz.mmConfig.buildVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "wz.mmConfig.buildVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Webica": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "WebicaWidget": ""
+      },
+      "description": "Webica is a web-based platform designed to manage online advertising campaigns for your website.",
+      "website": "https://webica.pro",
+      "icon": "Webica.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof WebicaWidget !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WiderPlanet": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "\\.widerplanet\\.com/"
+      ],
+      "description": "WiderPlanet is a real-time advertising platform that utilises user behaviour data to deliver targeted advertisements.",
+      "website": "https://widerplanet.com",
+      "icon": "WiderPlanet.svg"
+    },
+    "WordAds": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "link[href*='.pubmine.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.pubmine\\.com/"
+      ],
+      "description": "WordAds is an advertising platform run by Automatic that allows bloggers and website owners to place advertisements on their blogs and websites.",
+      "website": "https://wordads.co",
+      "icon": "WordAds.png"
+    },
+    "Yahoo Advertising": {
+      "cats": [
+        36,
+        77
+      ],
+      "dom": {
+        "link[href*='bc.yahoo.com']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "adxinserthtml": "",
+        "yahooCvLoad": "",
+        "yahoo_retargeting_pv_id": "",
+        "yahoo_ydn_conv_label": "",
+        "yahoo_ydn_conv_transaction_id": ""
+      },
+      "scriptSrc": [
+        "(?:adinterax|adserver\\.yahoo)\\.com"
+      ],
+      "description": "Yahoo Advertising includes a comprehensive suite of web, mobile, and video ad products across native, audience, and premium display, which are accessible through a new buying platform.",
+      "website": "https://www.adtech.yahooinc.com",
+      "icon": "Yahoo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof adxinserthtml !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adxinserthtml !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adxinserthtml !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adxinserthtml !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof adxinserthtml !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Yandex.Direct": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "yandex_ad_format": "",
+        "yandex_partner_id": ""
+      },
+      "html": [
+        "<yatag class=\"ya-partner__ads\">"
+      ],
+      "scriptSrc": [
+        "https?://an\\.yandex\\.ru/"
+      ],
+      "description": "Yandex Direct is the platform designed for sponsored ad management.",
+      "website": "https://partner.yandex.com",
+      "icon": "Yandex.Direct.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof yandex_ad_format !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof yandex_ad_format !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Yektanet": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "yektanet": ""
+      },
+      "meta": {
+        "yektanet_session_last_activity": []
+      },
+      "description": "Yektanet is the biggest and most advanced native advertising network in Iran.",
+      "website": "https://www.yektanet.com",
+      "icon": "Yektanet.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof yektanet !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Yieldlab": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "^https?://(?:[^/]+\\.)?yieldlab\\.net/"
+      ],
+      "website": "https://yieldlab.de",
+      "icon": "Yieldlab.png"
+    },
+    "Zanox": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "zanox": ""
+      },
+      "html": [
+        "<img [^>]*src=\"[^\"]+ad\\.zanox\\.com"
+      ],
+      "scriptSrc": [
+        "zanox\\.com/scripts/zanox\\.js$"
+      ],
+      "website": "https://zanox.com",
+      "icon": "Zanox.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof zanox !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Zeus Technology": {
+      "cats": [
+        36
+      ],
+      "js": {
+        "zeus.version": "v([\\d\\.]+)\\;version:\\1",
+        "zeusAdUnitPath": ""
+      },
+      "description": "Zeus Technology is a media monetisation platform that levels the playing field for publishers and advertisers of all sizes.",
+      "website": "https://www.zeustechnology.com",
+      "icon": "Zeus Technology.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof zeus !== 'undefined' && typeof zeus.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof zeus !== 'undefined' && typeof zeus.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "zeus.version || \"\""
+          }
+        ]
+      }
+    },
+    "eRate": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='rep.erate.co']": {
+          "exists": ""
+        }
+      },
+      "description": "eRate is a provider of digital advertising tools and inventory within global ad networks.",
+      "website": "https://www.eratead.com",
+      "icon": "ErateAd.svg"
+    },
+    "i-mobile": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "img[src*='.i-mobile.co.jp/']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "\\.i-mobile\\.co\\.jp/"
+      ],
+      "description": "i-mobile is a advertising platform for clients to advertise their product and for publishers to monetize their cyberspace.",
+      "website": "https://www2.i-mobile.co.jp",
+      "icon": "i-mobile.png"
+    },
+    "snigel AdEngine": {
+      "cats": [
+        36
+      ],
+      "scriptSrc": [
+        "(?:staging-)?cdn\\.snigelweb\\.com/adengine/",
+        "adengine\\.snigelweb\\.com"
+      ],
+      "description": "snigel AdEngine is a header bidding solution product from snigel.",
+      "website": "https://www.snigel.com/adengine/",
+      "icon": "snigel.svg"
+    },
+    "theTradeDesk": {
+      "cats": [
+        36
+      ],
+      "dom": {
+        "iframe[src*='insight.adsrvr.org']": {
+          "attributes": {
+            "src": ""
+          }
+        }
+      },
+      "js": {
+        "TTDUniversalPixelApi": "",
+        "ttd_dom_ready": ""
+      },
+      "scriptSrc": [
+        "\\.adsrvr\\.org/"
+      ],
+      "description": "theTradeDesk is an technology company that markets a software platform used by digital ad buyers to purchase data-driven digital advertising campaigns across various ad formats and devices.",
+      "website": "https://www.thetradedesk.com",
+      "icon": "theTradeDesk.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TTDUniversalPixelApi !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TTDUniversalPixelApi !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

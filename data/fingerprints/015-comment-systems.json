@@ -1,0 +1,302 @@
+{
+  "apps": {
+    "Annoto": {
+      "cats": [
+        15
+      ],
+      "js": {
+        "Annoto.boot": "",
+        "AnnotoApiPromise": ""
+      },
+      "scriptSrc": [
+        "\\.annoto\\.io"
+      ],
+      "description": "Annoto is a platform that transforms video viewing into an interactive, social, and collaborative experience rather than a passive individual activity.",
+      "website": "https://www.annoto.net",
+      "icon": "Annoto.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Annoto !== 'undefined' && typeof Annoto.boot !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Annoto !== 'undefined' && typeof Annoto.boot !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cackle": {
+      "cats": [
+        15
+      ],
+      "js": {
+        "Cackle.CommentCount": "",
+        "cackle_widget": ""
+      },
+      "scriptSrc": [
+        "k\\.cackle\\.me/"
+      ],
+      "description": "Cackle is a cloud services platform for increasing conversion using comments, feedback collection, online consultant and surveys.",
+      "website": "https://cackle.me",
+      "icon": "Cackle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Cackle !== 'undefined' && typeof Cackle.CommentCount !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Cackle !== 'undefined' && typeof Cackle.CommentCount !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Commento": {
+      "cats": [
+        15
+      ],
+      "scriptSrc": [
+        "cdn\\.commento\\.io/"
+      ],
+      "description": "Commento is a tool for fostering discussion and improving engagement on websites.",
+      "website": "https://commento.io",
+      "icon": "Commento.svg"
+    },
+    "Cove": {
+      "cats": [
+        15
+      ],
+      "js": {
+        "coveAction": "",
+        "coveCommentCount": ""
+      },
+      "scriptSrc": [
+        "cdn\\.cove\\.chat"
+      ],
+      "description": "Cove is a commenting and community platform that integrates with Ghost sites to enable reader discussions and user engagement.",
+      "website": "https://www.coveo.com",
+      "icon": "Cove.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof coveAction !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof coveAction !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Disqus": {
+      "cats": [
+        15
+      ],
+      "dom": {
+        "div#disqus_thread": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "DISQUS": "",
+        "disqus_shortname": "",
+        "disqus_url": ""
+      },
+      "scriptSrc": [
+        "disqus_url"
+      ],
+      "description": "Disqus is a worldwide blog comment hosting service for web sites and online communities that use a networked platform.",
+      "website": "https://disqus.com",
+      "cpe": "cpe:2.3:a:disqus:disqus_comment_system:*:*:*:*:*:*:*:*",
+      "icon": "Disqus.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof DISQUS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DISQUS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof DISQUS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Giscus": {
+      "cats": [
+        15
+      ],
+      "dom": {
+        "link[href*='giscus.app'], div[class^='giscus-container']": {
+          "exists": ""
+        }
+      },
+      "description": "Giscus is a comment system powered by GitHub Discussions.",
+      "website": "https://giscus.app",
+      "icon": "Giscus.svg"
+    },
+    "IntenseDebate": {
+      "cats": [
+        15
+      ],
+      "scriptSrc": [
+        "intensedebate\\.com"
+      ],
+      "description": "IntenseDebate is a blog commenting system that supports Typepad, Blogger and Wordpress blogs. The system allows blog owners to track and moderate comments from one place with features like threading, comment analytics, user reputation, and comment aggregation.",
+      "website": "https://intensedebate.com",
+      "icon": "IntenseDebate.png"
+    },
+    "Isso": {
+      "cats": [
+        15
+      ],
+      "js": {
+        "Isso.fetchComments": ""
+      },
+      "implies": [
+        "Python"
+      ],
+      "description": "Isso is a lightweight commenting server written in Python and JavaScript, referred to as \"Ich schrei sonst\" in German.",
+      "website": "https://github.com/posativ/isso/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Isso !== 'undefined' && typeof Isso.fetchComments !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Livefyre": {
+      "cats": [
+        15
+      ],
+      "js": {
+        "FyreLoader": "",
+        "L.version": "^(.+)$\\;confidence:0\\;version:\\1",
+        "LF.CommentCount": "",
+        "fyre": ""
+      },
+      "html": [
+        "<[^>]+(?:id|class)=\"livefyre"
+      ],
+      "scriptSrc": [
+        "livefyre_init\\.js"
+      ],
+      "description": "Livefyre is a platform that integrates with the social web to boost social interaction.",
+      "website": "https://livefyre.com",
+      "icon": "Livefyre.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FyreLoader !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FyreLoader !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FyreLoader !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof FyreLoader !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "L.version || \"\""
+          }
+        ]
+      }
+    },
+    "Question2Answer": {
+      "cats": [
+        15
+      ],
+      "html": [
+        "<!-- powered by question2answer"
+      ],
+      "scriptSrc": [
+        "\\./qa-content/qa-page\\.js\\?([0-9.]+)\\;version:\\1"
+      ],
+      "implies": [
+        "PHP"
+      ],
+      "description": "Question2Answer (Q2A) is a popular open-source Q&A platform for PHP/MySQL.",
+      "website": "https://www.question2answer.org",
+      "icon": "question2answer.png"
+    },
+    "Twikoo": {
+      "cats": [
+        15
+      ],
+      "js": {
+        "twikoo.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/twikoo/dist/twikoo\\.all\\.min\\.js"
+      ],
+      "description": "Twikoo is a simple, safe, free comment system.",
+      "website": "https://twikoo.js.org",
+      "icon": "Twikoo.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof twikoo !== 'undefined' && typeof twikoo.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "twikoo.version || \"\""
+          }
+        ]
+      }
+    },
+    "Vuukle": {
+      "cats": [
+        15
+      ],
+      "js": {
+        "VUUKLE_CONFIG": ""
+      },
+      "description": "Vuukle is an audience engagement and commenting platform.",
+      "website": "https://vuukle.com",
+      "icon": "vuukle.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof VUUKLE_CONFIG !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "utterances": {
+      "cats": [
+        15
+      ],
+      "dom": {
+        "iframe[src*='utteranc.es']": {
+          "exists": ""
+        }
+      },
+      "description": "Utterances is a lightweight comments widget built on GitHub issues.",
+      "website": "https://utteranc.es/",
+      "icon": "utterances.svg"
+    }
+  }
+}

@@ -1,0 +1,4651 @@
+{
+  "apps": {
+    "@sulu/web": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "web.startComponents": ""
+      },
+      "website": "https://github.com/sulu/web-js",
+      "icon": "Sulu.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof web !== 'undefined' && typeof web.startComponents !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "AOS": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        " body[data-aos-easing]": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "AOS.init": "",
+        "AOS.refresh": "",
+        "AOS.refreshHard": ""
+      },
+      "scriptSrc": [
+        "/typo3conf/ext/udem_vendor/resources/public/aos-([\\d\\.]+)\\;version:\\1",
+        "unpkg\\.com/aos@([\\d\\.]+)/dist/aos\\.js\\;version:\\1"
+      ],
+      "description": "JavaScript library to animate elements on your page as you scroll.",
+      "website": "https://michalsnik.github.io/aos/",
+      "icon": "AOS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AOS !== 'undefined' && typeof AOS.init !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ARM JS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "ARM.aliases": ""
+      },
+      "description": "ARM JS is a JavaScript library that centralizes data management and streamlines interactions with APIs.",
+      "website": "https://github.com/michaeljymsgutierrez/arm-js-library",
+      "icon": "ARMJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ARM !== 'undefined' && typeof ARM.aliases !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Amaze UI": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:js\\/)?)?amazeui(?:\\/js\\/jquery)?(?:\\.widgets)?(?:\\.helper)?(?:\\.legacy)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Amaze UI is a mobile-first JavaScript library designed to simplify front-end development.",
+      "website": "https://amazeui.shopxo.net/",
+      "icon": "Amaze UI.png"
+    },
+    "Amplify JS": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?amplify(?:-production)?(?:\\.core)?(?:\\.store)?(?:\\.min)?(?:[-\\.][\\d\\w]{0,40})?\\.js\\;version:\\1"
+      ],
+      "description": "AmplifyJS is a set of components designed to solve common web application problems with a simplistic API. Amplify's goal is to simplify all forms of data handling by providing a unified API for various data sources.",
+      "website": "https://amplifyjs.com/",
+      "icon": "Amplify JS.png"
+    },
+    "AnythingSlider": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "anythingslider(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "A robust jQuery-based slider plugin.",
+      "website": "https://css-tricks.com/anythingslider-jquery-plugin/",
+      "icon": "AnythingSlider.svg"
+    },
+    "Apollo": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "script#__APOLLO_STATE__": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "__APOLLO_CLIENT__": "",
+        "__APOLLO_CLIENT__.version": "^(.+)$\\;version:\\1",
+        "__NEXT_DATA__.props.pageProps.__APOLLO_STATE__": ""
+      },
+      "implies": [
+        "GraphQL",
+        "TypeScript\\;confidence:50"
+      ],
+      "description": "Apollo is a fully-featured caching GraphQL client with integrations for React, Angular, and more.",
+      "website": "https://www.apollographql.com",
+      "icon": "Apollo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __APOLLO_CLIENT__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __APOLLO_CLIENT__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Axios": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "axios.get": ""
+      },
+      "scriptSrc": [
+        "/axios(@|/)([\\d.]+)(?:/[a-z]+)?/axios(?:.min)?\\.js\\;version:\\2"
+      ],
+      "description": "Promise based HTTP client for the browser and node.js",
+      "website": "https://github.com/axios/axios",
+      "icon": "Axios.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof axios !== 'undefined' && typeof axios.get !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Barba.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "barba.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "description": "Barba.js is a small and easy-to-use javascript library that helps you creating fluid and smooth transitions between your website's pages.",
+      "website": "https://barba.js.org",
+      "icon": "Barba.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof barba !== 'undefined' && typeof barba.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "barba.version || \"\""
+          }
+        ]
+      }
+    },
+    "Boba.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "boba(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "Google Analytics"
+      ],
+      "website": "https://boba.space150.com"
+    },
+    "Boomerang": {
+      "cats": [
+        59,
+        78
+      ],
+      "js": {
+        "BOOMR": "",
+        "BOOMR_lstart": "",
+        "BOOMR_mq": ""
+      },
+      "description": "boomerang is a JavaScript library that measures the page load time experienced by real users, commonly called RUM (Real User Measurement).",
+      "website": "https://akamai.github.io/boomerang",
+      "icon": "boomerang.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BOOMR !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BOOMR !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BOOMR !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Bootbox.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?bootbox(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Bootbox.js is a small JavaScript library which allows you to create custom modal dialogs using Bootstrap modals, without having to worry about creating, managing, or removing any of the required DOM elements or JavaScript event handlers.",
+      "website": "https://bootboxjs.com/",
+      "icon": "Bootbox.js.png"
+    },
+    "Bootstrap Table": {
+      "cats": [
+        59
+      ],
+      "html": [
+        "<link[^>]+href=\"[^>]*bootstrap-table(?:\\.min)?\\.css"
+      ],
+      "scriptSrc": [
+        "bootstrap-table(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "Bootstrap",
+        "jQuery"
+      ],
+      "website": "https://bootstrap-table.wenzhixin.net.cn/",
+      "icon": "Bootstrap Table.svg"
+    },
+    "C3.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "c3(?:\\.min)?(?:-[a-za-z0-9]{8})?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "D3 based reusable chart library",
+      "website": "https://c3js.org/",
+      "icon": "C3.js.png"
+    },
+    "CamanJS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Caman": "",
+        "Caman.version.release": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "CamanJS is a JavaScript library designed for image editing directly on the browser, allowing manipulation of canvas elements.",
+      "website": "https://github.com/meltingice/CamanJS",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Caman !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Cart.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:shopify-cartjs/([\\d\\.]+)|assets)/rivets-cart\\.min\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "Shopify"
+      ],
+      "description": "Cart.js is a very small open-source Javascript library that makes the addition of powerful Ajax cart functionality to your Shopify theme a breeze.",
+      "website": "https://cartjs.org",
+      "icon": "Cart.js.png"
+    },
+    "Chai": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "chai": "",
+        "chai.version": "^(.+)$\\;version:\\1"
+      },
+      "description": "Chai is a BDD / TDD assertion library for node and the browser that can be paired with any javascript testing framework.",
+      "website": "https://www.chaijs.com",
+      "icon": "Chai.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof chai !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Choices": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Choices": ""
+      },
+      "scriptSrc": [
+        "/modules/choices/js/choices\\.js",
+        "choices\\.js(?:@|/)?([\\d\\.]+)?.+choices\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Choices.js is a lightweight, configurable select box/text input plugin.",
+      "website": "https://github.com/Choices-js/Choices",
+      "icon": "Choices.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Choices !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Classnames": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "classnames\\.?\\w{0,20}(?:\\.chunk)?\\.js"
+      ],
+      "description": "Javascript utility for conditionally joining classNames together.",
+      "website": "https://jedwatson.github.io/classnames/"
+    },
+    "Cleave.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "cleave(?:\\.min)?(?:\\.\\w{0,32})?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "JavaScript library for formatting input text content when you are typing.",
+      "website": "https://nosir.github.io/cleave.js/"
+    },
+    "ClientJS": {
+      "cats": [
+        59,
+        83
+      ],
+      "js": {
+        "ClientJS": ""
+      },
+      "scriptSrc": [
+        "/clientjs/([\\d.]+)/\\;version:\\1",
+        "/clientjs@([\\d.]+)\\;version:\\1"
+      ],
+      "description": "ClientJS is a JavaScript library for generating browser fingerprints, exposing all the browser data-points.",
+      "website": "https://clientjs.org",
+      "icon": "ClientJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ClientJS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Clipboard.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "clipboard(?:-([\\d.]+))?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "website": "https://clipboardjs.com/",
+      "icon": "Clipboard.js.svg"
+    },
+    "Closure Library": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "script": {
+          "text": "Copyright\\sThe\\sClosure\\sLibrary\\sAuthors"
+        }
+      },
+      "description": "Closure Library is a JavaScript library developed by Google for building robust web applications, offering utilities for DOM manipulation, event handling, data structures, and more.",
+      "website": "https://github.com/google/closure-library",
+      "icon": "Google.svg"
+    },
+    "DHTMLX": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "dhtmlDragAndDropObject": "",
+        "dhtmlXTreeItemObject": ""
+      },
+      "scriptSrc": [
+        "/dhtmlxcommon\\.js"
+      ],
+      "description": "DHTMLX specialises in building JavaScript UI libraries for project management, event planning, big data visualisation, and reporting.",
+      "website": "https://dhtmlx.com",
+      "icon": "DHTMLX.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dhtmlDragAndDropObject !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof dhtmlDragAndDropObject !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Darkmode.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Darkmode": ""
+      },
+      "scriptSrc": [
+        "darkmode-js@([\\d\\.]+)/lib/darkmode-js\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Darkmode.js is a JavaScript library that enables an HTML element to switch between CSS themes.",
+      "website": "https://github.com/sandoche/Darkmode.js",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Darkmode !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "DataTables": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "$.fn.dataTable.version": "^(.+)$\\;version:\\1",
+        "jQuery.fn.dataTable.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "datatables.*\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "DataTables is a plug-in for the jQuery Javascript library adding advanced features like pagination, instant search, themes, and more to any HTML table.",
+      "website": "https://datatables.net",
+      "cpe": "cpe:2.3:a:datatables:datatables.net:*:*:*:*:*:*:*:*",
+      "icon": "DataTables.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== 'undefined' && typeof $.fn !== 'undefined' && typeof $.fn.dataTable !== 'undefined' && typeof $.fn.dataTable.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "$.fn.dataTable.version || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "jQuery.fn.dataTable.version || \"\""
+          }
+        ]
+      }
+    },
+    "Day.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "dayjs": ""
+      },
+      "website": "https://github.com/iamkun/dayjs",
+      "icon": "Day.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dayjs !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dexie.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?dexie(?:\\.bitrix)?(?:\\.bundle)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "A Minimalistic Wrapper for IndexedDB.",
+      "website": "https://dexie.org",
+      "icon": "Dexie.js.png"
+    },
+    "Dojo": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "dojo": "",
+        "dojo.version.major": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "([\\d.]+)/dojo/dojo(?:\\.xd)?\\.js\\;version:\\1"
+      ],
+      "website": "https://dojotoolkit.org",
+      "cpe": "cpe:2.3:a:dojotoolkit:dojo:*:*:*:*:*:*:*:*",
+      "icon": "Dojo.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof dojo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dropzone": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Dropzone": "",
+        "Dropzone.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "Dropzone is a JavaScript library that turns any HTML element into a dropzone.",
+      "website": "https://www.dropzone.dev",
+      "icon": "Dropzone.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Dropzone !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Dynamics.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "dynamics(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Javascript library to create physics-related animations",
+      "website": "https://dynamicsjs.com",
+      "icon": "Dynamics.js.png"
+    },
+    "EaselJS": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "/easeljs\\.min\\.js"
+      ],
+      "description": "EaselJS is a JavaScript library designed to simplify working with the HTML5 Canvas element, making it useful for creating games, generative art, and other graphical applications.",
+      "website": "https://createjs.com/easeljs",
+      "icon": "EaselJS.svg"
+    },
+    "Easy Pie Chart": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "[ee]asy-?[pp]ie-?[cc]hart(?:\\.min)?\\.js"
+      ],
+      "description": "Lightweight jQuery plugin to render and animate nice pie charts with the HTML5 canvas element.",
+      "website": "https://rendro.github.io/easy-pie-chart/"
+    },
+    "Elliptic": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "elliptic(?:[\\w\\.-]{0,27})?(?:\\.bundle)?(?:\\.chunk)?(?:\\.min)?\\.js"
+      ],
+      "description": "Fast Elliptic Curve Cryptography in plain javascript.",
+      "website": "https://github.com/indutny/elliptic"
+    },
+    "Enquire.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "enquire(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "enquire.js is a lightweight, pure JavaScript library for responding to CSS media queries.",
+      "website": "https://wicky.nillia.ms/enquire.js/"
+    },
+    "Ethers": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "_ethers": ""
+      },
+      "description": "Ethers is a complete, tiny and simple Ethereum library.",
+      "website": "https://ethers.org/",
+      "icon": "Ethers.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _ethers !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "FancyBox": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "$.fancybox.version": "^(.+)$\\;version:\\1",
+        "Fancybox.version": "^(.+)$\\;version:\\1",
+        "jQuery.fancybox.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "jquery\\.fancybox(?:\\.pack|\\.min)?\\.js(?:\\?v=([\\d.]+))?$\\;version:\\1"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "FancyBox is a tool for displaying images, html content and multi-media in a Mac-style 'lightbox' that floats overtop of web page.",
+      "website": "https://fancyapps.com/fancybox",
+      "icon": "FancyBox.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== 'undefined' && typeof $.fancybox !== 'undefined' && typeof $.fancybox.version !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== 'undefined' && typeof $.fancybox !== 'undefined' && typeof $.fancybox.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "$.fancybox.version || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "Fancybox.version || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "jQuery.fancybox.version || \"\""
+          }
+        ]
+      }
+    },
+    "FilePond": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "FilePond": "",
+        "FilePond.create": "",
+        "FilePond.setOptions": ""
+      },
+      "scriptSrc": [
+        "filepond.js"
+      ],
+      "description": "FilePond is a JavaScript library for file uploads.",
+      "website": "https://pqina.nl/filepond/",
+      "icon": "filepond.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FilePond !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "FingerprintJS": {
+      "cats": [
+        59,
+        83
+      ],
+      "js": {
+        "Fingerprint": "(\\d)?$\\;version:\\1",
+        "Fingerprint2": "",
+        "Fingerprint2.VERSION": "^(.+)$\\;version:\\1",
+        "FingerprintJS": ""
+      },
+      "scriptSrc": [
+        "fingerprint(?:/fp)?(\\d)?(?:\\.min)?\\.js\\;version:\\1",
+        "fingerprintjs(?:\\-pro|2)?(?:@|/)(\\d.*?)?/\\;version:\\1"
+      ],
+      "description": "FingerprintJS is a browser fingerprinting library that queries browser attributes and computes a hashed visitor identifier from them.",
+      "website": "https://fingerprintjs.com",
+      "icon": "FingerprintJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Fingerprint !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Fingerprint !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Fingerprint !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Fingerprint || \"\""
+          }
+        ]
+      }
+    },
+    "Flickity": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "style[data-context='foundation-flickity-css'], div.flickity-enabled": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Flickity": ""
+      },
+      "scriptSrc": [
+        "flickity(?:/|@)([\\d\\.]+).+flickity(?:\\.pkgd)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Flickity is a JavaScript slider library, built by David DeSandro of Metafizzy fame.",
+      "website": "https://flickity.metafizzy.co",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Flickity !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Floating UI": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "floating-ui(?:\\/core)?(?:\\/dom)?(?:\\.js)?(?:@?(?:\\?v(?:er)?=)?((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "A JavaScript library to position floating elements and create interactions for them.",
+      "website": "https://floating-ui.com/",
+      "icon": "Floating UI.svg"
+    },
+    "FooTable": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "$FOOTABLE.init": "",
+        "footable.plugins": ""
+      },
+      "description": "FooTable is a jQuery plugin that converts HTML tables into expandable responsive tables.",
+      "website": "https://fooplugins.github.io/FooTable/index.html",
+      "icon": "FooPlugins.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $FOOTABLE !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $FOOTABLE !== 'undefined' && typeof $FOOTABLE.init !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Formstone": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "jquery\\.formstone\\.min\\.js"
+      ],
+      "description": "Formstone is a front-end library that simplifies web development by providing customizable jQuery plugins that abstract modern web patterns.",
+      "website": "https://formstone.it",
+      "cpe": "cpe:2.3:a:formstone:formstone:*:*:*:*:*:*:*:*",
+      "icon": "Formstone.svg"
+    },
+    "Framer Motion": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "MotionIsMounted": ""
+      },
+      "description": "Framer Motion is a modern animation library for JavaScript, React, and Vue.",
+      "website": "https://motion.dev",
+      "icon": "FramerMotion.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MotionIsMounted !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Fresco": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Fresco.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "description": "Fresco is a responsive lightbox. Fresco comes with thumbnail support, fullscreen zoom, Youtube and Vimeo integration for HTML5 video and a powerful Javascript API.",
+      "website": "https://github.com/staaky/fresco",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Fresco !== 'undefined' && typeof Fresco.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Fresco.version || \"\""
+          }
+        ]
+      }
+    },
+    "Gijgo": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "/gijgo@([\\d\\.]+)/js/gijgo\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Gijgo is a set of free for commercial use javascript controls.",
+      "website": "https://gijgo.com",
+      "icon": "Gijgo.svg"
+    },
+    "Glide.js": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div[data-glide-el]": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Glide": ""
+      },
+      "scriptSrc": [
+        "/@glidejs/glide(?:@([\\d\\.]+))?\\;version:\\1"
+      ],
+      "description": "Glide.js is a dependency-free JavaScript ES6 slider and carousel.",
+      "website": "https://glidejs.com",
+      "icon": "Glide.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Glide !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Glider.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:/|@)?([\\d\\.]{2,})?/glider\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Glider.js is a fast, lightweight, responsive, dependency-free scrollable list with customisable paging controls.",
+      "website": "https://nickpiscitelli.github.io/Glider.js",
+      "icon": "Glider.js.svg"
+    },
+    "Goat Slider": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "GoatSliderCarousel": "",
+        "GoatSliderSlider": ""
+      },
+      "description": "Goat Slider is a webflow library that enables users to construct advanced sliders for their sites.",
+      "website": "https://goatslider.com",
+      "icon": "GoatSlider.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof GoatSliderCarousel !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GoatSliderCarousel !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Goober": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "style#_goober": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "goober": "",
+        "gooberGlobal": "",
+        "gooberPrefixer": ""
+      },
+      "description": "Goober is a minified CSS-in-JS styling solution.",
+      "website": "https://goober.js.org",
+      "icon": "Goober.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof goober !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof goober !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof goober !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Granim.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Granim": ""
+      },
+      "description": "Granim.js is a lightweight javascript library to create fluid and interactive gradients animations.",
+      "website": "https://sarcadass.github.io/granim.js",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Granim !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "HTML5 Media": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?html5media(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "HTML5 Media enables video and audio tags in all major browsers.",
+      "website": "https://html5media.info/"
+    },
+    "Hammer.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Ha.VERSION": "^(.+)$\\;version:\\1",
+        "Hammer": "",
+        "Hammer.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "hammer(?:\\.min)?\\.js"
+      ],
+      "website": "https://hammerjs.github.io",
+      "icon": "Hammer.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Ha !== 'undefined' && typeof Ha.VERSION !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Ha !== 'undefined' && typeof Ha.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Ha.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Handsontable": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Handsontable": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?(?:jquery\\.)?handsontable(?:\\.full)?(?:\\.min)?(?:\\.[\\w]+)?\\.js\\;version:\\1"
+      ],
+      "description": "Handsontable is a JavaScript component that combines data grid features with spreadsheet-like UX.",
+      "website": "https://handsontable.com",
+      "icon": "Handsontable.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Handsontable !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "HeadJS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "head.browser.name": ""
+      },
+      "html": [
+        "<[^>]*data-headjs-load"
+      ],
+      "scriptSrc": [
+        "head\\.(?:core|load)(?:\\.min)?\\.js"
+      ],
+      "website": "https://headjs.com",
+      "icon": "HeadJS.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof head !== 'undefined' && typeof head.browser !== 'undefined' && typeof head.browser.name !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Highlight.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "hljs.highlightBlock": "",
+        "hljs.listLanguages": ""
+      },
+      "scriptSrc": [
+        "/(?:([\\d.])+/)?highlight(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "website": "https://highlightjs.org/",
+      "icon": "Highlight.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof hljs !== 'undefined' && typeof hljs.highlightBlock !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Howler.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Howler": "",
+        "HowlerGlobal": ""
+      },
+      "scriptSrc": [
+        "howler/([\\d.]+)/howler(?:\\.core)?\\.min\\.js\\;version:\\1",
+        "howler@([\\d.]+)/dist/howler\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Howler.js is an audio library with support for the Web Audio API and a fallback mechanism for HTML5 Audio.",
+      "website": "https://howlerjs.com",
+      "icon": "Howler.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Howler !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Howler !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Htmx": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "script[data-src*='/dist/htmx.min.js']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "htmx": ""
+      },
+      "scriptSrc": [
+        "/htmx\\.org@([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "Htmx is a JavaScript library for performing AJAX requests, triggering CSS transitions, and invoking WebSocket and server-sent events directly from HTML elements.",
+      "website": "https://htmx.org",
+      "icon": "Htmx.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof htmx !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Immutable.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Immutable": "",
+        "Immutable.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "^immutable\\.(?:min\\.)?js$"
+      ],
+      "website": "https://facebook.github.io/immutable-js/",
+      "icon": "Immutable.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Immutable !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Infinite Scroll": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "infinitescroll": ""
+      },
+      "scriptSrc": [
+        "infinite-?scroll(?:\\.pkgd)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "jQuery plugin for infinite scrolling.",
+      "website": "https://infinite-scroll.com/",
+      "icon": "Infinite Scroll.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof infinitescroll !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Instafeed.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "instafeed(?:\\.min)?\\.js"
+      ],
+      "description": "A way to add Instagram photos to your website.",
+      "website": "https://instafeedjs.com/"
+    },
+    "Instant.Page": {
+      "cats": [
+        59,
+        92
+      ],
+      "scriptSrc": [
+        "instant\\.page"
+      ],
+      "description": "Instant.Page is a JavaScript library which uses just-in-time preloading technique to make websites faster.",
+      "website": "https://instant.page/",
+      "icon": "Instant.page.svg"
+    },
+    "InstantClick": {
+      "cats": [
+        59,
+        92
+      ],
+      "js": {
+        "InstantClick": ""
+      },
+      "scriptSrc": [
+        "instantclick\\.min\\.js"
+      ],
+      "description": "InstantClick is a JavaScript library that speeds up your website, making navigation faster.",
+      "website": "https://instantclick.io/",
+      "icon": "InstantClick.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof InstantClick !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "InstantGeo": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "geojs": ""
+      },
+      "scriptSrc": [
+        "js\\.instantgeo\\.info",
+        "script\\.instantgeo\\.info"
+      ],
+      "description": "InstantGeo is a service that provides IP geolocation to web pages",
+      "website": "https://instantgeo.info",
+      "icon": "InstantGeo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof geojs !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Isotope": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Isotope": "",
+        "init_isotope": ""
+      },
+      "description": "Isotope.js is a JavaScript library that makes it easy to sort, filter, and add Masonry layouts to items on a webpage.",
+      "website": "https://isotope.metafizzy.co",
+      "icon": "Isotope.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Isotope !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Isotope !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "JSZip": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "JSZip.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/jszip\\.min\\.js"
+      ],
+      "description": "JSZip is a JavaScript library that enables the creation, reading, and manipulation of zip files in a browser environment.",
+      "website": "https://stuk.github.io/jszip/",
+      "cpe": "cpe:2.3:a:jszip_project:jszip:*:*:*:*:*:*:*:*",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof JSZip !== 'undefined' && typeof JSZip.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "JSZip.version || \"\""
+          }
+        ]
+      }
+    },
+    "JsObservable": {
+      "cats": [
+        59
+      ],
+      "description": "JsObservable is integrated with JsViews and facilitates observable data manipulations that are immediately reflected in the data-bound templates. The library is developed and maintained by Microsoft employee Boris Moore and is used in projects such as Outlook.com and Windows Azure.",
+      "website": "https://www.jsviews.com/#jsobservable",
+      "icon": "JsObservable.svg"
+    },
+    "JsRender": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "([\\d\\.]+)?/jsrender(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "JsViews"
+      ],
+      "description": "JsRender is the template library. The library is developed and maintained by Microsoft employee Boris Moore and is used in projects such as Outlook.com and Windows Azure.",
+      "website": "https://www.jsviews.com/#jsrender",
+      "icon": "JsRender.svg"
+    },
+    "JsViews": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "([\\d\\.]+)?/jsviews(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "JsObservable",
+        "JsRender"
+      ],
+      "description": "JsViews is the MVVM library which provides two-way data binding for the template. The library is developed and maintained by Microsoft employee Boris Moore and is used in projects such as Outlook.com and Windows Azure.",
+      "website": "https://www.jsviews.com/#jsviews",
+      "icon": "JsViews.svg"
+    },
+    "Karma": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "karma.vars.version": "(.+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "karma\\.mdpcdn\\.com"
+      ],
+      "implies": [
+        "Node.js"
+      ],
+      "description": "Karma is a test runner for JavaScript that runs on Node.js.",
+      "website": "https://karma-runner.github.io",
+      "icon": "Karma.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof karma !== 'undefined' && typeof karma.vars !== 'undefined' && typeof karma.vars.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "karma.vars.version || \"\""
+          }
+        ]
+      }
+    },
+    "Keen-Slider": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div.keen-slider, div.keen-slider__slide": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "KeenSlider": ""
+      },
+      "description": "Keen-Slider is a free library agnostic touch slider with native touch/swipe behavior.",
+      "website": "https://keen-slider.io",
+      "icon": "keen-slider.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof KeenSlider !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "KerningJS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "FLAutoKerning": ""
+      },
+      "scriptSrc": [
+        "jquery\\.flautokerning\\.js"
+      ],
+      "description": "Kerning.js is a JavaScript library that applies real CSS rules to style, transform, and scale web typography.",
+      "website": "https://webupon.com/blog/what-is-kerning",
+      "icon": "Kerning.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof FLAutoKerning !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Laravel Echo": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Echo.connector": "",
+        "echo.connector": ""
+      },
+      "implies": [
+        "Laravel"
+      ],
+      "description": "Laravel Echo is a JavaScript library that makes it painless to subscribe to channels and listen for events broadcast by Laravel.",
+      "website": "https://laravel.com/docs/broadcasting#client-side-installation",
+      "icon": "Laravel Echo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Echo !== 'undefined' && typeof Echo.connector !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Echo !== 'undefined' && typeof Echo.connector !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LazySizes": {
+      "cats": [
+        59,
+        92
+      ],
+      "js": {
+        "lazySizes": "",
+        "lazySizesConfig": ""
+      },
+      "description": "LazySizes is a JavaScript library used to delay the loading of images (iframes, scripts, etc) until they come into view.",
+      "website": "https://github.com/aFarkas/lazysizes",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof lazySizes !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof lazySizes !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "LazySizes unveilhooks plugin": {
+      "cats": [
+        59,
+        92
+      ],
+      "scriptSrc": [
+        "ls\\.unveilhooks(?:\\.min)?\\.js"
+      ],
+      "description": "LazySizes unveilhooks plugin extends lazySizes to lazyload scripts/widgets, background images, styles and video/audio elements.",
+      "website": "https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/unveilhooks",
+      "icon": "default.svg"
+    },
+    "Lenis": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "lenisVersion": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "Lenis is a smooth scroll library to normalise the scrolling experience across devices.",
+      "website": "https://lenis.studiofreight.com",
+      "icon": "Lenis.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof lenisVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "lenisVersion || \"\""
+          }
+        ]
+      }
+    },
+    "Lightbox": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "link[href*='lightbox']": {
+          "attributes": {
+            "href": "/lightbox(?:\\.min)?\\.css"
+          }
+        }
+      },
+      "js": {
+        "Lightbox.activeImage": "",
+        "lightbox.$lightbox": ""
+      },
+      "scriptSrc": [
+        "lightbox(?:-plus-jquery)?.{0,32}\\.js"
+      ],
+      "description": "Lightbox is small javascript library used to overlay images on top of the current page.",
+      "website": "https://lokeshdhakar.com/projects/lightbox2/",
+      "cpe": "cpe:2.3:a:lightbox_photo_gallery_project:lightbox_photo_gallery:*:*:*:*:*:*:*:*",
+      "icon": "Lightbox.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Lightbox !== 'undefined' && typeof Lightbox.activeImage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Lightbox !== 'undefined' && typeof Lightbox.activeImage !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "List.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "List": "\\;confidence:50"
+      },
+      "scriptSrc": [
+        "@([\\d.]+)/(?:/dist)?list\\.(?:min\\.)?js\\;version:\\1",
+        "list\\.js/\\;confidence:50"
+      ],
+      "website": "https://listjs.com",
+      "icon": "List.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof List !== 'undefined' && List === '\\;confidence:50'"
+          }
+        ]
+      }
+    },
+    "Loadable-Components": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "script#__LOADABLE_REQUIRED_CHUNKS__": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "__LOADABLE_LOADED_CHUNKS__": ""
+      },
+      "description": "Loadable-Components is a library to solve the React code-splitting client-side and server-side.",
+      "website": "https://github.com/gregberge/loadable-components",
+      "icon": "Loadable-Components.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __LOADABLE_LOADED_CHUNKS__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Locomotive Scroll": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div[data-scroll-section]": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "LocomotiveScroll": ""
+      },
+      "scriptSrc": [
+        "locomotive-scroll(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "Lenis"
+      ],
+      "description": "Locomotive Scroll is an opinionated JavaScript library that provides smooth scrolling animations and advanced scroll interactions for web applications.",
+      "website": "https://github.com/locomotivemtl/locomotive-scroll",
+      "icon": "Locomotive Scroll.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof LocomotiveScroll !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Lodash": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "_.VERSION": "^(.+)$\\;confidence:0\\;version:\\1",
+        "_.differenceBy": "",
+        "_.templateSettings.imports._.templateSettings.imports._.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "lodash.*\\.js"
+      ],
+      "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
+      "website": "https://www.lodash.com",
+      "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
+      "icon": "Lodash.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _ !== 'undefined' && typeof _.VERSION !== 'undefined' && (typeof _.chunk === 'function' || typeof _.runInContext === 'function')"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "_.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Lozad.js": {
+      "cats": [
+        59,
+        92
+      ],
+      "js": {
+        "lozad": ""
+      },
+      "scripts": [
+        "/lozad\\.min\\.js"
+      ],
+      "description": "Lozad.js is a lightweight lazy-loading library that's just 535 bytes minified & gzipped.",
+      "website": "https://apoorv.pro/lozad.js/",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof lozad !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Lunr.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "lunr": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?lunr(?:-store)?(?:-en)?(?:\\.min)?\\.js"
+      ],
+      "description": "A very simple search index.",
+      "website": "https://lunrjs.com/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof lunr !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Magnific Popup": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "magnific-popup(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device.",
+      "website": "https://dimsemenov.com/plugins/magnific-popup/",
+      "icon": "Magnific Popup.png"
+    },
+    "Mailcheck": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "mailcheck(?:\\.min)?\\.js(?:\\?v(?:er)?=(\\d+\\.\\d+\\.\\d+))?\\;version:\\1"
+      ],
+      "description": "Mailcheck is a JavaScript library designed to address the issue of misspelled email addresses during user input.",
+      "website": "https://github.com/mailcheck/mailcheck",
+      "icon": "Mailcheck.png"
+    },
+    "Marked": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "marked": ""
+      },
+      "scriptSrc": [
+        "/marked(?:\\.min)?\\.js"
+      ],
+      "website": "https://marked.js.org",
+      "cpe": "cpe:2.3:a:marked_project:marked:*:*:*:*:*:*:*:*",
+      "icon": "Marked.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof marked !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Masonry": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Masonry.Item": ""
+      },
+      "description": "Masonry is a JavaScript library that enables a cascading grid layout, positioning elements based on available vertical space for an optimized, gap-free arrangement.",
+      "website": "https://masonry.desandro.com",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Masonry !== 'undefined' && typeof Masonry.Item !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Matter.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Matter.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "matter(?:-wrap)?(?:\\/demo\\/js\\/lib(?:\\/matter-tools\\/jquery)?(?:\\/decomp)?)?(?:\\/?-?((?:\\d+\\.)+\\d+))?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Matter.js is a JavaScript 2D rigid body physics engine for the web.",
+      "website": "https://brm.io/matter-js",
+      "icon": "MatterJs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Matter !== 'undefined' && typeof Matter.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Matter.version || \"\""
+          }
+        ]
+      }
+    },
+    "Mavo": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Mavo": "",
+        "Mavo.version": "v([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "Mavo is a JavaScript library that enables web developers to turn regular HTML into reactive web applications without the need for writing custom JavaScript.",
+      "website": "https://mavo.io",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Mavo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Milonic": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "milonic.C": ""
+      },
+      "description": "Milonic is a platform for developing Dynamic Hypertext Markup Language (DHTML) JavaScript and building dynamic, DHTML-based websites.",
+      "website": "https://milonic.com",
+      "icon": "Milonic.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof milonic !== 'undefined' && typeof milonic.C !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Mixitup": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "mixitup(?:\\.min)?\\.js"
+      ],
+      "description": "A CSS3 and jQuery Filter & Sort Plugin.",
+      "website": "https://www.kunkalabs.com/mixitup/",
+      "icon": "kunkalabs.svg"
+    },
+    "MobX": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "__mobxGlobal": "",
+        "__mobxGlobals": "",
+        "__mobxInstanceCount": ""
+      },
+      "scriptSrc": [
+        "(?:/([\\d\\.]+))?/mobx(?:\\.[a-z]+){0,2}\\.js(?:$|\\?)\\;version:\\1"
+      ],
+      "website": "https://mobx.js.org",
+      "icon": "MobX.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __mobxGlobal !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __mobxGlobal !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __mobxGlobal !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MochiKit": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "MochiKit": "",
+        "MochiKit.MochiKit.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "mochikit(?:\\.min)?\\.js"
+      ],
+      "website": "https://mochi.github.io/mochikit/",
+      "icon": "MochiKit.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MochiKit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Modernizr": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Modernizr._version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "([\\d.]+)?/modernizr(?:\\.([\\d.]+))?.*\\.js\\;version:\\1?\\1:\\2"
+      ],
+      "description": "Modernizr is a JavaScript library that detects the features available in a user's browser.",
+      "website": "https://modernizr.com",
+      "icon": "Modernizr.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Modernizr !== 'undefined' && typeof Modernizr._version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Modernizr._version || \"\""
+          }
+        ]
+      }
+    },
+    "Moment Timezone": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "moment-timezone(?:-data)?(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "Moment.js"
+      ],
+      "website": "https://momentjs.com/timezone/",
+      "icon": "Moment.js.svg"
+    },
+    "Moment.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "moment": "",
+        "moment.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "moment(?:\\.min)?\\.js"
+      ],
+      "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
+      "website": "https://momentjs.com",
+      "cpe": "cpe:2.3:a:momentjs:moment:*:*:*:*:*:*:*:*",
+      "icon": "Moment.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof moment !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Morphext": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "morphext(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Morphext is a lightweight jQuery plugin that rotates text using Animate.css transitions for smooth, dynamic visual effects.",
+      "website": "https://morphext.fyianlai.com/",
+      "icon": "Morphext.svg"
+    },
+    "Morris.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "morris(?:\\/(?:area|bar|donut|grid|hover|line))?(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "A JavaScript library that simplifies the process of creating interactive and responsive data visualizations on the web.",
+      "website": "https://morrisjs.github.io/morris.js/"
+    },
+    "Muuri": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Muuri": ""
+      },
+      "description": "Muuri is a JavaScript layout engine that allows you to build all kinds of layouts and make them responsive, sortable, filterable, draggable and/or animated.",
+      "website": "https://muuri.dev",
+      "icon": "Muuri.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Muuri !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "NProgress": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "NProgress.version": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/nprogress\\.min\\.js"
+      ],
+      "description": "NProgress is a JavaScript library that displays a nanoscopic progress bar at the top of websites or web applications. It includes trickle animations to indicate loading activity, enhancing user experience by showing that content is being loaded.",
+      "website": "https://ricostacruz.com/nprogress/",
+      "icon": "NProgress.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof NProgress !== 'undefined' && typeof NProgress.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "NProgress.version || \"\""
+          }
+        ]
+      }
+    },
+    "Notie": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "notie": ""
+      },
+      "description": "Notie is a notification, input, and selection suite for javascript, with no dependencies.",
+      "website": "https://github.com/jaredreich/notie",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof notie !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "OWL Carousel": {
+      "cats": [
+        59
+      ],
+      "html": [
+        "<link [^>]*href=\"[^\"]+owl\\.carousel(?:\\.min)?\\.css"
+      ],
+      "scriptSrc": [
+        "owl\\.carousel.*\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "OWL Carousel is an enabled jQuery plugin that lets you create responsive carousel sliders.",
+      "website": "https://owlcarousel2.github.io/OwlCarousel2/",
+      "icon": "OWL Carousel.png"
+    },
+    "Offline.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Offline.confirmDown": "",
+        "Offline.state": ""
+      },
+      "scriptSrc": [
+        "/(?:bundles/[^/]+|assets/javascripts|js)/offline\\.min\\.js"
+      ],
+      "description": "Offline.js is a library that automatically alerts users when they have lost internet connectivity.",
+      "website": "https://github.hubspot.com/offline/docs/welcome",
+      "icon": "HubSpot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Offline !== 'undefined' && typeof Offline.confirmDown !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "OpenCV": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "opencvIsReady": ""
+      },
+      "implies": [
+        "WebAssembly"
+      ],
+      "description": "OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.",
+      "website": "https://opencv.org",
+      "icon": "OpenCV.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof opencvIsReady !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Orbit Slider": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "orbit(?:\\.min)?([\\d.]{2,}[\\d])?\\.js\\;version:\\1"
+      ],
+      "description": "Orbit is a jQuery slider.",
+      "website": "https://zurb.com/playground/orbit-jquery-image-slider"
+    },
+    "Packery": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "packery(?:\\.pkgd)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Packery is a JavaScript library and jQuery plugin that makes gapless and draggable layouts.",
+      "website": "https://packery.metafizzy.co",
+      "icon": "Packery.svg"
+    },
+    "Page.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "page.Route": ""
+      },
+      "description": "Page.js is a micro client-side router designed to handle client-side routing within web applications.",
+      "website": "https://github.com/visionmedia/page.js",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof page !== 'undefined' && typeof page.Route !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Pannellum": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:build\\/)?)?pannellum(?:-plugin)?\\.js\\;version:\\1"
+      ],
+      "description": "Pannellum is a lightweight, free, and open source panorama viewer for the web.",
+      "website": "https://pannellum.org/"
+    },
+    "Papa Parse": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Papa.Parser": "",
+        "Papa.parse": ""
+      },
+      "description": "Papa Parse is a JavaScript library that functions as an in-browser CSV parser, enabling parsing of CSV files within web applications.",
+      "website": "https://www.papaparse.com",
+      "icon": "PapaParse.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Papa !== 'undefined' && typeof Papa.Parser !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Paraglide JS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "__paraglide": ""
+      },
+      "description": "Paraglide JS is a compiler-based i18n library that emits tree-shakable message functions for optimized localization workflows.",
+      "website": "https://inlang.com/m/gerre34r/library-inlang-paraglideJs",
+      "icon": "ParaglideJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __paraglide !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Parsley.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "parsley": ""
+      },
+      "scriptSrc": [
+        "parsley(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Javascript forms validation script.",
+      "website": "https://parsleyjs.org",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof parsley !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "PeerJS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Peer.DEFAULT_KEY": ""
+      },
+      "description": "PeerJS is a JavaScript library that enables WebRTC-based peer-to-peer data, video, and audio connections.",
+      "website": "https://peerjs.com",
+      "icon": "PeerJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Peer !== 'undefined' && typeof Peer.DEFAULT_KEY !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Peity": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "peity": ""
+      },
+      "scriptSrc": [
+        "(?:jquery\\.)?peity(?:-demo)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Peity is a jQuery plugin that converts an element's content into a simple mini svg pie, line or bar chart.",
+      "website": "https://benpickles.github.io/peity/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof peity !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Pikaday": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "pikaday(?:-jquery)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "A refreshing JavaScript Datepicker.",
+      "website": "https://github.com/dbushell/Pikaday"
+    },
+    "Pinia": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "script": {
+          "text": "\"pinia\""
+        }
+      },
+      "js": {
+        "Pinia.createPinia": "",
+        "__NUXT__.pinia": "",
+        "mount_pinia": "",
+        "pinia.state": ""
+      },
+      "scriptSrc": [
+        "/pinia/.+\\.js"
+      ],
+      "description": "Pinia is a state management library for Vue.js.",
+      "website": "https://pinia.vuejs.org",
+      "icon": "Pinia.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Pinia !== 'undefined' && typeof Pinia.createPinia !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pinia !== 'undefined' && typeof Pinia.createPinia !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pinia !== 'undefined' && typeof Pinia.createPinia !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Pinia !== 'undefined' && typeof Pinia.createPinia !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Plupload": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "plupload.DONE": "",
+        "plupload.VERSION": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "plupload(?:\\.min)?\\.js(?:\\?ver=([\\d.]+))?\\;version:\\1"
+      ],
+      "description": "Plupload is a JavaScript API for dealing with file uploads.",
+      "website": "https://plupload.com",
+      "cpe": "cpe:2.3:a:plupload:plupload:*:*:*:*:*:*:*:*",
+      "icon": "Plupload.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof plupload !== 'undefined' && typeof plupload.DONE !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Polyfill": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "polyfill\\.io/v([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "Polyfill is a service which accepts a request for a set of browser features and returns only the polyfills that are needed by the requesting browser.",
+      "website": "https://polyfill.io",
+      "icon": "polyfill.svg"
+    },
+    "Popmotion": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "popmotion": ""
+      },
+      "scriptSrc": [
+        "popmotion\\.global\\.min\\.js(?:\\?ver=\\d+\\.\\d+)?"
+      ],
+      "description": "Popmotion is a collection of low-level JavaScript animation functions and utils for advanced animators.",
+      "website": "https://popmotion.io",
+      "icon": "Popmotion.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof popmotion !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Preact": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "#app, .app, #root, .root, body, body > *, body > * > *, body > * > * > *": {
+          "properties": {
+            "__k": ""
+          }
+        }
+      },
+      "description": "Preact is a JavaScript library that describes itself as a fast 3kB alternative to React with the same ES6 API.",
+      "website": "https://preactjs.com",
+      "icon": "Preact.svg"
+    },
+    "ProgressBar.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?progressbar(?:\\.min)?\\.js\\;version:\\1",
+        "progressbar(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Responsive progress bars with animated SVG paths.",
+      "website": "https://kimmobrunfeldt.github.io/progressbar.js/",
+      "icon": "ProgressBar.js.png"
+    },
+    "PubSubJS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "PubSub": "",
+        "PubSub.version": "^(.+)$\\;version:\\1"
+      },
+      "description": "PubSubJS is a topic-based publish/subscribe library written in JavaScript.",
+      "website": "https://github.com/mroderick/PubSubJS",
+      "icon": "pubsub-js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof PubSub !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Puter.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "puter.APIOrigin": "",
+        "puter_gui_enabled": ""
+      },
+      "description": "Puter.js is a JavaScript library that provides serverless authentication, cloud services, and AI capabilities directly in the browser without requiring backend code or configuration.",
+      "website": "https://docs.puter.com",
+      "icon": "PuterJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof puter !== 'undefined' && typeof puter.APIOrigin !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof puter !== 'undefined' && typeof puter.APIOrigin !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Quicklink": {
+      "cats": [
+        59,
+        92
+      ],
+      "js": {
+        "drupalSettings.quicklink": "",
+        "quicklink": ""
+      },
+      "scriptSrc": [
+        "quicklink@([\\d.]+)/dist/quicklink.*\\.js\\;version:\\1"
+      ],
+      "description": "Quicklink is a JS library which aims to be a drop-in solution for sites to prefetch links based on what is in the user's viewport.",
+      "website": "https://getquick.link/",
+      "icon": "Quicklink.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof drupalSettings !== 'undefined' && typeof drupalSettings.quicklink !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof drupalSettings !== 'undefined' && typeof drupalSettings.quicklink !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ractive.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "ractive/ractive\\.min\\.js"
+      ],
+      "description": "Ractive.js is a template-driven UI library.",
+      "website": "https://www.ractivejs.org",
+      "icon": "Ractive.svg"
+    },
+    "Ramda": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "ramda.*\\.js"
+      ],
+      "website": "https://ramdajs.com",
+      "icon": "Ramda.png"
+    },
+    "React Flow": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "style[type='text/css']": {
+          "text": "react-flow"
+        }
+      },
+      "description": "React Flow is a library for building node-based applications.",
+      "website": "https://reactflow.dev",
+      "icon": "React Flow.svg"
+    },
+    "React Native for Web": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "style#react-native-stylesheet": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "React"
+      ],
+      "description": "React Native for Web is a library that allows developers to use React Native components and patterns to build cross-platform web applications alongside native mobile applications.",
+      "website": "https://necolas.github.io/react-native-web/",
+      "icon": "React.svg"
+    },
+    "Responsive Nav": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "responsive-nav(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Responsive navigation plugin without library dependencies and with fast touch screen support.",
+      "website": "http://responsive-nav.com/",
+      "icon": "Responsive Nav.png"
+    },
+    "Retina.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "RetinaImage": "",
+        "retinajs": ""
+      },
+      "scriptSrc": [
+        "/js/retina(\\.min)?\\.js\\?ver=([\\d\\.]+)\\;version:\\2"
+      ],
+      "description": "Retina.js is an open-source script designed to facilitate the delivery of high-resolution images to devices with retina displays.",
+      "website": "https://imulus.github.io/retinajs",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof RetinaImage !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof RetinaImage !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Screenfull.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?screenfull(?:\\.min)?\\.js\\;version:\\1",
+        "screenfull(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Simple wrapper for cross-browser usage of the JavaScript Fullscreen API.",
+      "website": "https://sindresorhus.com/screenfull/"
+    },
+    "ScrollMagic": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "ScrollMagic": "",
+        "ScrollMagic.version": "^([\\d\\.]+)$\\;version:\\1"
+      },
+      "implies": [
+        "GSAP",
+        "jQuery"
+      ],
+      "description": "ScrollMagic is a jQuery plugin which essentially lets you use the scrollbar like a playback scrub control.",
+      "website": "https://scrollmagic.io",
+      "icon": "ScrollMagic.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof ScrollMagic !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Select2": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "jQuery.fn.select2": ""
+      },
+      "scriptSrc": [
+        "select2(?:\\.min|\\.full)?\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
+      "website": "https://select2.org/",
+      "icon": "Select2.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jQuery !== 'undefined' && typeof jQuery.fn !== 'undefined' && typeof jQuery.fn.select2 !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Selectize": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Selectize": "",
+        "selectize": ""
+      },
+      "implies": [
+        "jQuery"
+      ],
+      "description": "Selectize is an extensible jQuery-based custom <select> UI control.",
+      "website": "https://selectize.dev",
+      "icon": "Selectize.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Selectize !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Selectize !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Shepherd": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "shepherd(?:\\.min)?\\.js"
+      ],
+      "description": "Shepherd is a JavaScript library which makes an use-friendly user-guide to any website.",
+      "website": "https://shepherdjs.dev/",
+      "icon": "Shepherd.svg"
+    },
+    "Showdown": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "showdown": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:dist\\/)?)?showdown(?:\\.min)?(?:-)?\\.js\\;version:\\1",
+        "(?:(?:dist\\/)?)?showdown(?:\\.min)?(?:-?((?:\\d+\\.)+\\d+))?\\.js\\;version:\\1"
+      ],
+      "description": "A Markdown to HTML converter written in Javascript.",
+      "website": "https://showdownjs.com/",
+      "icon": "Showdown.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof showdown !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Sigma.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "sigma.canvas": ""
+      },
+      "scriptSrc": [
+        "/(static/js/|)sigma\\.min\\.js(?:\\?ver=([\\d\\.]+))?"
+      ],
+      "description": "Sigma.js is a JavaScript library designed for visualizing large-scale graphs with thousands of nodes and edges.",
+      "website": "https://www.sigmajs.org",
+      "icon": "SigmaJs.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof sigma !== 'undefined' && typeof sigma.canvas !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SignalR": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/jquery\\.)?signal[rr](?:-)?(?:\\.min)?\\.js\\;version:\\1",
+        "(?:jquery\\.)?signal[rr](?:-((?:\\d+\\.)+\\d+))?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Realtime web communication framework from Microsoft for ASP.NET.",
+      "website": "https://dotnet.microsoft.com/es-es/apps/aspnet/signalr"
+    },
+    "SimplexNoise.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "SimplexNoise": ""
+      },
+      "scriptSrc": [
+        "/simplex-noise/([\\d\\.]+)/simplex-noise.min.js\\;version:\\1"
+      ],
+      "description": "SimplexNoise.js is a library that generates pseudorandom noise functions, designed for use in video games, graphical applications, and demoscene production.",
+      "website": "https://github.com/jwagner/simplex-noise.js",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SimplexNoise !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Skitter": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "/jquery\\.skitter\\.min\\.js"
+      ],
+      "description": "Skitter is a jQuery-based slider system.",
+      "website": "https://skitter-slider.net",
+      "icon": "Skitter.svg"
+    },
+    "Skrollr": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "skrollr.VERSION": "^(.+)$\\;version:\\1"
+      },
+      "description": "Skrollr is a JavaScript library supporting parallax scrolling on mobile and desktop platforms in a compact 12k minified size.",
+      "website": "https://prinzhorn.github.io/skrollr/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof skrollr !== 'undefined' && typeof skrollr.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "skrollr.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Slick": {
+      "cats": [
+        59
+      ],
+      "html": [
+        "<link [^>]+(?:/([\\d.]+)/)?slick-theme\\.css\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "(?:/([\\d.]+))?/slick(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "website": "https://kenwheeler.github.io/slick",
+      "icon": "Slick.svg"
+    },
+    "Slim Select": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div.ss-values, div.ss-deselect.ss-hide": {
+          "exists": ""
+        }
+      },
+      "description": "Slim Select is a JavaScript library designed to enable the creation of select dropdowns with enhanced functionality and features.",
+      "website": "https://slimselectjs.com",
+      "icon": "SlimSelect.png"
+    },
+    "Slimbox": {
+      "cats": [
+        59
+      ],
+      "html": [
+        "<link [^>]*href=\"[^/]*slimbox(?:-rtl)?\\.css"
+      ],
+      "scriptSrc": [
+        "slimbox\\.js"
+      ],
+      "implies": [
+        "MooTools"
+      ],
+      "website": "https://www.digitalia.be/software/slimbox",
+      "icon": "Slimbox.png"
+    },
+    "Slimbox 2": {
+      "cats": [
+        59
+      ],
+      "html": [
+        "<link [^>]*href=\"[^/]*slimbox2(?:-rtl)?\\.css"
+      ],
+      "scriptSrc": [
+        "slimbox2\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "website": "https://www.digitalia.be/software/slimbox2",
+      "icon": "Slimbox 2.png"
+    },
+    "Snabbt": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?snabbt(?:[\\.-]min)?\\.js\\;version:\\1",
+        "snabbt(?:[\\.-]min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Minimalistic animation library in javascript Snabbt.js.",
+      "website": "https://daniel-lundin.github.io/snabbt.js/"
+    },
+    "Snap.svg": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Snap.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "snap\\.svg(?:-min)?\\.js"
+      ],
+      "website": "https://snapsvg.io",
+      "icon": "Snap.svg.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Snap !== 'undefined' && typeof Snap.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Snap.version || \"\""
+          }
+        ]
+      }
+    },
+    "SoundManager": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "BaconPlayer": "",
+        "SoundManager": "",
+        "soundManager.version": "V(.+) \\;version:\\1"
+      },
+      "website": "https://www.schillmania.com/projects/soundmanager2",
+      "icon": "SoundManager.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BaconPlayer !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BaconPlayer !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BaconPlayer !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "soundManager.version || \"\""
+          }
+        ]
+      }
+    },
+    "Spin.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Spinner": ""
+      },
+      "scriptSrc": [
+        "cdnjs\\.cloudflare\\.com/ajax/libs/spin\\.js/([\\d\\.]+)/spin\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Spin.js is a configurable JavaScript/CSS spinner serving as a resolution-independent loading indicator.",
+      "website": "https://spin.js.org",
+      "icon": "SpinJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Spinner !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Spine.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Spine": "",
+        "Spine.version": "^(.+)$\\;version:\\1",
+        "pixi_spine.Spine": ""
+      },
+      "description": "Spine is a lightweight MVC library for building JavaScript web applications.",
+      "website": "https://spine.github.io",
+      "icon": "SpineJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Spine !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Spine !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Splide": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Splide.STATES": "",
+        "Splide.name": "i"
+      },
+      "description": "Splide.js is a lightweight, responsive, and customizable slider and carousel library for JavaScript.",
+      "website": "https://splidejs.com",
+      "icon": "Splide.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Splide !== 'undefined' && typeof Splide.STATES !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SpriteSpin": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "SpriteSpin": ""
+      },
+      "description": "SpriteSpin is a JavaScript plugin that enables users to create 360-degree image spin animations on their websites.",
+      "website": "https://github.com/giniedp/spritespin",
+      "icon": "SprintHub.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SpriteSpin !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Stellar.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "stellar(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Stellar.js is a JavaScript library and jQuery plugin specifically designed to deliver parallax scrolling effects for web pages.",
+      "website": "https://markdalgleish.com/projects/stellar.js/"
+    },
+    "Sugar": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "SUGAR.AutoComplete": ""
+      },
+      "scriptSrc": [
+        "/sugar/([\\d\\.]+)/release/sugar\\.min\\.js\\;version:\\1"
+      ],
+      "description": "Sugar is a Javascript utility library for working with native objects.",
+      "website": "https://sugarjs.com",
+      "icon": "Sugar.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof SUGAR !== 'undefined' && typeof SUGAR.AutoComplete !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "SugarJS": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "sugar\\/?((?:\\d+\\.)+\\d+)?(?:\\/sugar(?:-full)?)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "SugarJS is a JavaScript library that simplifies working with native JavaScript objects, enhancing productivity and code readability.",
+      "website": "https://sugarjs.com/",
+      "icon": "SugarJS.svg"
+    },
+    "SweetAlert": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "link[href*='sweet-alert']": {
+          "attributes": {
+            "href": "sweet-alert(?:\\.min)?\\.css"
+          }
+        }
+      },
+      "scriptSrc": [
+        "sweet(?:-)?alert(?:\\.min)?\\.js"
+      ],
+      "description": "SweetAlert is a JavaScript library that provides alternative alert and modal dialog boxes for web applications, with customisable features, aiming to improve the user interface of the default browser dialogs.",
+      "website": "https://sweetalert.js.org",
+      "icon": "SweetAlert.png"
+    },
+    "SweetAlert2": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "link[href*='sweetalert2']": {
+          "attributes": {
+            "href": "sweetalert2(?:\\.min)?\\.css"
+          }
+        }
+      },
+      "js": {
+        "Sweetalert2": ""
+      },
+      "scriptSrc": [
+        "/npm/sweetalert2@([\\d.]+)\\;version:\\1",
+        "limonte-sweetalert2/([\\d.]+)/sweetalert2(?:\\.all)(?:\\.min)\\.js",
+        "sweetalert2(?:\\.all)?(?:\\.min)?\\.js",
+        "sweetalert2@([\\d.]+)/dist/sweetalert2(?:\\.all)(?:\\.min)\\.js"
+      ],
+      "description": "SweetAlert2 is a JavaScript library that provides customisable, visually appealing, and responsive alert and modal dialog boxes for web applications.",
+      "website": "https://sweetalert2.github.io/",
+      "icon": "SweetAlert2.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Sweetalert2 !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Swiffy Slider": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "link[href*='/swiffy-slider.min.css']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/npm/swiffy-slider@([\\d\\.]+)/\\;version:\\1"
+      ],
+      "description": "Swiffy Slider is a wrapper defined in html with slides, navigation and indicators as its children.",
+      "website": "https://swiffyslider.com",
+      "icon": "Swiffy Slider.svg"
+    },
+    "Swiper": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div.swiper-initialized": {
+          "exists": ""
+        },
+        "div.swiper-vertical": {
+          "exists": ""
+        },
+        "div.swiper-wrapper": {
+          "exists": ""
+        },
+        "div[data-swiper-slide-index]": {
+          "exists": ""
+        },
+        "swiper-container": {
+          "exists": ""
+        },
+        "swiper-slide": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Swiper": ""
+      },
+      "scriptSrc": [
+        "swiper(?:\\.min)?\\.js"
+      ],
+      "description": "Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions.",
+      "website": "https://swiperjs.com",
+      "icon": "Swiper.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Swiper !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Swup": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "html[class*='swup-enabled']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Swup": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:dist\\/)?)?swup(?:-preload)?(?:-plugin)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Swup is a versatile and expandable library for implementing page transitions on websites that use server-side rendering.",
+      "website": "https://swup.js.org",
+      "icon": "Swup.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Swup !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Syncfusion": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "link[href*='cdn.syncfusion.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "Syncfusion": ""
+      },
+      "scriptSrc": [
+        "\\.syncfusion\\.com/"
+      ],
+      "description": "Syncfusion is a JavaScript UI controls library that includes a wide range of UI components in a single package.",
+      "website": "https://www.syncfusion.com",
+      "icon": "Syncfusion.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Syncfusion !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tablesorter": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)[-\\/](?:dist\\/js\\/)?)?(?:jquery\\.)?tablesorter(?:[\\.\\/]pager)?(?:-custom-controls)?(?:\\.widgets)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Flexible client-side table sorting.",
+      "website": "https://mottie.github.io/tablesorter/"
+    },
+    "Tabulator": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Tabulator": ""
+      },
+      "description": "Tabulator is a JavaScript tool for creating interactive tables and data grids.",
+      "website": "https://tabulator.info/",
+      "icon": "Tabulator.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Tabulator !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TanStack": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "link[href*='@tanstack']": {
+          "exists": ""
+        }
+      },
+      "scripts": [
+        "(?:https?:)?\\/\\/(?:www\\.)?tanstack\\.com(?:\\/[^\"'>]*)?"
+      ],
+      "scriptSrc": [
+        "/static/.*npm\\.tanstack.*\\.js"
+      ],
+      "description": "TanStack is a set of headless JavaScript libraries for building web application features such as data fetching, tables, routing, virtualization, and state management.",
+      "website": "https://tanstack.com",
+      "icon": "TanStack.svg"
+    },
+    "Timeago": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "jquery\\.timeago\\.js"
+      ],
+      "description": "Timeago is a jQuery plugin that automatically updates fuzzy timestamps.",
+      "website": "https://timeago.yarp.com",
+      "icon": "Timeago.svg"
+    },
+    "Tiny Slider": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:/([\\d\\.]+)/min/)?tiny-slider(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Tiny Slider is a vanilla javascript slider for all purposes.",
+      "website": "https://github.com/ganlanyuan/tiny-slider",
+      "icon": "default.svg"
+    },
+    "Tinycon": {
+      "cats": [
+        59,
+        66
+      ],
+      "scriptSrc": [
+        "tinycon(?:\\.min)?\\.js"
+      ],
+      "description": "A library for manipulating a websites favicon.",
+      "website": "https://github.com/tommoor/tinycon"
+    },
+    "Tippy.js": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "style[data-tippy-stylesheet]": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "tippy.defaultProps": ""
+      },
+      "scriptSrc": [
+        "/tippy\\.js(?:@|/)?([\\d\\.]+)?\\;version:\\1"
+      ],
+      "description": "Tippy.js is the complete tooltip, popover, dropdown, and menu solution for the web, powered by Popper.",
+      "website": "https://atomiks.github.io/tippyjs",
+      "icon": "Tippy.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tippy !== 'undefined' && typeof tippy.defaultProps !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tipso": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "tipsoData.background": ""
+      },
+      "scriptSrc": [
+        "/js/tipso\\.min\\.js"
+      ],
+      "description": "Tipso is a lightweight, responsive jQuery plugin designed to display customizable tooltips across devices and screen sizes.",
+      "website": "https://tipso.object505.com",
+      "icon": "Tipso.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tipsoData !== 'undefined' && typeof tipsoData.background !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TogetherJS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "TogetherJS": "",
+        "TogetherJSConfig_cloneClicks": "",
+        "TogetherJSConfig_toolName": ""
+      },
+      "description": "TogetherJS is an open-source JavaScript library by Mozilla that integrates collaboration tools and features into websites.",
+      "website": "https://togetherjs.com",
+      "icon": "TogetherJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof TogetherJS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TogetherJS !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof TogetherJS !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Tremor": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div[tremor-id*='tremor-raw'], div[class*='text-tremor-']": {
+          "exists": ""
+        }
+      },
+      "description": "Tremor is an open-source library for building charts and dashboards using React components, designed on top of Tailwind CSS.",
+      "website": "https://tremor.so",
+      "icon": "Tremor.svg"
+    },
+    "TurfJS": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "turf.feature": "",
+        "turf.point": "",
+        "turf.random": ""
+      },
+      "scriptSrc": [
+        "(turf@[\\d.]+)?/?turf\\.min\\.js"
+      ],
+      "description": "Turf is a modular geospatial engine written in JavaScript.",
+      "website": "https://turfjs.org/",
+      "icon": "TurfJS.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof turf !== 'undefined' && typeof turf.feature !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Twitter typeahead.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "typeahead": ""
+      },
+      "scriptSrc": [
+        "(?:typeahead|bloodhound)\\.(?:jquery|bundle)?(?:\\.min)?\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "website": "https://twitter.github.io/typeahead.js",
+      "icon": "Twitter typeahead.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof typeahead !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Typed.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "typed(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Typed.js is a library that types. It is designed to create typewriter-style animations with ease.",
+      "website": "https://mattboldt.com/demos/typed-js/"
+    },
+    "Typer.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "unpkg\\.com/typer-dot-js@([\\d\\.]+)/typer\\.js\\;version:\\1"
+      ],
+      "description": "Typer.js is a JavaScript library for creating a fully configurable typing effect in HTML.",
+      "website": "https://github.com/straversi/Typer.js"
+    },
+    "Underscore.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "_.VERSION": "^(.+)$\\;confidence:0\\;version:\\1",
+        "_.restArguments": ""
+      },
+      "scriptSrc": [
+        "underscore.*\\.js(?:\\?ver=([\\d.]+))?\\;version:\\1"
+      ],
+      "description": "Underscore.js is a JavaScript library which provides utility functions for common programming tasks. It is comparable to features provided by Prototype.js and the Ruby language, but opts for a functional programming design instead of extending object prototypes.",
+      "website": "https://underscorejs.org",
+      "icon": "Underscore.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _ !== 'undefined' && typeof _.VERSION !== 'undefined' && typeof _.chunk === 'undefined' && typeof _.restArguments === 'function'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "_.VERSION || \"\""
+          }
+        ]
+      }
+    },
+    "Uppy": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Uppy.Audio": "",
+        "UppyUploader": ""
+      },
+      "description": "Uppy is an open-source, modular JavaScript file uploader designed for integration and file management across web applications.",
+      "website": "https://uppy.io",
+      "icon": "Uppy.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Uppy !== 'undefined' && typeof Uppy.Audio !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof Uppy !== 'undefined' && typeof Uppy.Audio !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Vex": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "vex.close": ""
+      },
+      "description": "Vex is a lightweight library for creating functional dialogs using vanilla JavaScript without external dependencies.",
+      "website": "https://github.hubspot.com/vex",
+      "icon": "HubSpot.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof vex !== 'undefined' && typeof vex.close !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Vuex": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Vuex.version": "(.*)\\;version:\\1"
+      },
+      "implies": [
+        "Vue.js"
+      ],
+      "description": "Vuex is a state management pattern + library for Vue.js applications.",
+      "website": "https://vuex.vuejs.org/",
+      "icon": "vue.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Vuex !== 'undefined' && typeof Vuex.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Vuex.version || \"\""
+          }
+        ]
+      }
+    },
+    "Web Font Loader": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?webfontloader(?:\\.min)?(?:[-\\.][\\d\\w]{0,32})?\\.js\\;version:\\1"
+      ],
+      "description": "WebFont Loader is a versatile JavaScript library that provides enhanced control and flexibility in managing web fonts.",
+      "website": "https://github.com/typekit/webfontloader"
+    },
+    "Wijmo": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "wijmo": ""
+      },
+      "scriptSrc": [
+        "/scripts/acts/wijmo/wijmo\\.min\\.js\\?v=([\\d]+\\.\\d+)\\;version:\\1"
+      ],
+      "description": "Wijmo is a JavaScript UI component library built in TypeScript, ideal for developing lightweight, high-speed HTML5/JavaScript applications with no dependencies, and designed for enterprise use.",
+      "website": "https://developer.mescius.com/wijmo",
+      "icon": "Wijmo.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof wijmo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "WookMark": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Wookmark": ""
+      },
+      "scriptSrc": [
+        "wookmark\\.min\\.js(?:\\?ver=([\\d\\.]+))?\\;version:\\1"
+      ],
+      "description": "WookMark is a plugin for laying out elements of varying heights in a column-based grid.",
+      "website": "https://wookmark.com",
+      "icon": "WookMark.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Wookmark !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Wurfl": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "WURFL": ""
+      },
+      "scriptSrc": [
+        "\\.wurfl\\.io"
+      ],
+      "description": "WURFL.js is JavaScript that detects device models of smartphones, tablets, smart TVs and game consoles accessing your website.",
+      "website": "https://web.wurfl.io/",
+      "icon": "Wurfl.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof WURFL !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "XRegExp": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "XRegExp.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/([\\d.]+)/xregexp(?:\\.min)?\\.js\\;version:\\1",
+        "xregexp.*\\.js",
+        "xregexp[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1"
+      ],
+      "website": "https://xregexp.com",
+      "icon": "XRegExp.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof XRegExp !== 'undefined' && typeof XRegExp.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "XRegExp.version || \"\""
+          }
+        ]
+      }
+    },
+    "Xajax": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "xajax_core.*\\.js"
+      ],
+      "website": "https://xajax-project.org",
+      "icon": "Xajax.png"
+    },
+    "YUI": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "YAHOO.VERSION": "^(.+)$\\;version:\\1",
+        "YUI.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "(?:/yui/|yui\\.yahooapis\\.com)"
+      ],
+      "description": "YUI is a JavaScript and CSS library with more than 30 unique components including low-level DOM utilities and high-level user-interface widgets.",
+      "website": "https://clarle.github.io/yui3",
+      "cpe": "cpe:2.3:a:yahoo:yui:*:*:*:*:*:*:*:*",
+      "icon": "YUI.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof YAHOO !== 'undefined' && typeof YAHOO.VERSION !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof YAHOO !== 'undefined' && typeof YAHOO.VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "YAHOO.VERSION || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "YUI.version || \"\""
+          }
+        ]
+      }
+    },
+    "Zepto": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Zepto": ""
+      },
+      "scriptSrc": [
+        "zepto.*\\.js"
+      ],
+      "website": "https://zeptojs.com",
+      "icon": "Zepto.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Zepto !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Ziggy": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Ziggy": ""
+      },
+      "implies": [
+        "Inertia.js",
+        "Laravel"
+      ],
+      "description": "Ziggy is a library that allows using Laravel named routes in JavaScript.",
+      "website": "https://github.com/tighten/ziggy",
+      "icon": "Ziggy.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Ziggy !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "_hyperscript": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "_hyperscript": ""
+      },
+      "scriptSrc": [
+        "//unpkg\\.com/hyperscript\\.org@([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "_hyperscript is a scripting language for adding interactivity to the front-end.",
+      "website": "https://hyperscript.org",
+      "icon": "_hyperscript.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _hyperscript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "_hyperscript ": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "_hyperscript": ""
+      },
+      "scriptSrc": [
+        "//unpkg\\.com/hyperscript\\.org@([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "_​hyperscript is a scripting language for adding interactivity to the front-end.",
+      "website": "https://hyperscript.org",
+      "icon": "_hyperscript.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof _hyperscript !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "autoComplete.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "@tarekraafat/autocomplete\\.js@([\\d\\.]+)/\\;version:\\1"
+      ],
+      "description": "autoComplete.js is a simple, pure vanilla Javascript library.",
+      "website": "https://tarekraafat.github.io/autoComplete.js",
+      "icon": "autoComplete.js.svg"
+    },
+    "basket.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "basket.isValidItem": ""
+      },
+      "website": "https://addyosmani.github.io/basket.js/",
+      "icon": "basket.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof basket !== 'undefined' && typeof basket.isValidItem !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "bowser": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?bowser(?:\\.min)?(?:[-\\.][\\d\\w]{0,64})?\\.js\\;version:\\1"
+      ],
+      "description": "A small, fast and rich-API browser/platform/engine detector for both browser and node.",
+      "website": "https://opencollective.com/bowser"
+    },
+    "chroma.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?chroma(?:\\.min)?\\.js\\;version:\\1",
+        "chroma(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "chroma.js is a small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.",
+      "website": "https://www.vis4.net/chromajs/"
+    },
+    "core-js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "__core-js_shared__": "",
+        "__core-js_shared__.versions.0.version": "^(.+)$\\;version:\\1",
+        "_babelPolyfill": "",
+        "core": "",
+        "core.version": "^(.+)$\\;version:\\1"
+      },
+      "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+      "website": "https://github.com/zloirock/core-js",
+      "icon": "core-js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof __core-js_shared__ !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __core-js_shared__ !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof __core-js_shared__ !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "crypto-js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "CryptoJS.Rabbit": "",
+        "CryptoJS.algo": ""
+      },
+      "scriptSrc": [
+        "(?:/([\\d\\.-]+))?/crypto-js(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "crypto-js is a JavaScript library of crypto standards.",
+      "website": "https://github.com/brix/crypto-js",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof CryptoJS !== 'undefined' && typeof CryptoJS.Rabbit !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "decimal.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Decimal.ROUND_HALF_FLOOR": ""
+      },
+      "scriptSrc": [
+        "/([\\d.]*\\d+)/decimal(?:\\.min)?\\.js\\;version:\\1",
+        "decimal(?:\\.min)?\\.js(?:\\?ver(?:sion)?=([\\d.]*\\d+))?\\;version:\\1",
+        "decimal[.-]([\\d.]*\\d+)(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "website": "https://mikemcl.github.io/decimal.js/",
+      "icon": "decimal.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Decimal !== 'undefined' && typeof Decimal.ROUND_HALF_FLOOR !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "framework7": {
+      "cats": [
+        59,
+        66
+      ],
+      "dom": {
+        "link[href*='framework7'], .framework7-root, .framework7-modals": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:js\\/)?)?framework7(?:-)?(?:\\.custom)?(?:\\.min)?(?:-vue)?_?[\\w\\.]{0,29}\\.js\\;version:\\1",
+        "(?:\\/(?:js\\/)?)?framework7(?:-((?:\\d+\\.)+\\d+))?(?:\\.custom)?(?:\\.min)?(?:-vue)?_?[\\w\\.]{0,29}\\.js\\;version:\\1"
+      ],
+      "description": "Full Featured Mobile HTML Framework For Building iOS & Android Apps.",
+      "website": "https://framework7.io/",
+      "icon": "framework7.png"
+    },
+    "fullPage.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "fullpage_api.version": "([\\d\\.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/fullpage\\.js(?:/([\\d\\.]+)/)?\\;version:\\1"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "fullPage.js a jQuery and vanilla JavaScript plugin for fullscreen scrolling websites.",
+      "website": "https://github.com/alvarotrigo/fullpage.js",
+      "icon": "fullPage.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof fullpage_api !== 'undefined' && typeof fullpage_api.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "fullpage_api.version || \"\""
+          }
+        ]
+      }
+    },
+    "html2canvas": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?html2canvas(?:\\.min)?(?:[_\\w]{0,8})?\\.js\\;version:\\1",
+        "html2canvas(?:\\.min)?(?:[_\\w]{0,8})?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Screenshots with JavaScript.",
+      "website": "https://html2canvas.hertzen.com/"
+    },
+    "iCheck": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "/(?:js|icheck)/icheck\\.min\\.js"
+      ],
+      "description": "iCheck is a library for customizable checkboxes and radio buttons.",
+      "website": "https://github.com/drgullin/icheck"
+    },
+    "imagesLoaded": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "imagesloaded(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "jQuery plugin for seeing if the images are loaded.",
+      "website": "https://imagesloaded.desandro.com/"
+    },
+    "jQuery": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "$.fn.jquery": "([\\d.]+)\\;version:\\1",
+        "jQuery.fn.jquery": "([\\d.]+)\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/(\\d+\\.\\d+\\.\\d+)/jquery[/.-][^u]\\;version:\\1",
+        "/jquery(?:-(\\d+\\.\\d+\\.\\d+))[/.-]\\;version:\\1",
+        "jquery"
+      ],
+      "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+      "website": "https://jquery.com",
+      "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+      "icon": "jQuery.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== 'undefined' && typeof $.fn !== 'undefined' && typeof $.fn.jquery !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "$.fn.jquery || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "jQuery.fn.jquery || \"\""
+          }
+        ]
+      }
+    },
+    "jQuery DevBridge Autocomplete": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "$.devbridgeAutocomplete": "",
+        "jQuery.devbridgeAutocomplete": ""
+      },
+      "scriptSrc": [
+        "/devbridgeautocomplete(?:-min)?\\.js",
+        "/jquery\\.devbridge-autocomplete/([0-9.]+)/jquery\\.autocomplete(?:.min)?\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "Ajax Autocomplete for jQuery allows you to easily create autocomplete/autosuggest boxes for text input fields.",
+      "website": "https://www.devbridge.com/sourcery/components/jquery-autocomplete/",
+      "icon": "jQuery.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== \"undefined\""
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof $ !== 'undefined' && typeof $.devbridgeAutocomplete !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "jQuery Migrate": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "jQuery.migrateVersion": "([\\d.]+)\\;version:\\1",
+        "jQuery.migrateWarnings": "",
+        "jqueryMigrate": ""
+      },
+      "scriptSrc": [
+        "jquery[.-]migrate(?:-([\\d.]+))?(?:\\.min)?\\.js(?:\\?ver=([\\d.]+))?\\;version:\\1?\\1:\\2"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "Query Migrate is a javascript library that allows you to preserve the compatibility of your jQuery code developed for versions of jQuery older than 1.9.",
+      "website": "https://github.com/jquery/jquery-migrate",
+      "icon": "jQuery.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jQuery !== 'undefined' && typeof jQuery.migrateVersion !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof jQuery !== 'undefined' && typeof jQuery.migrateVersion !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "jQuery.migrateVersion || \"\""
+          }
+        ]
+      }
+    },
+    "jQuery Modal": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "link[href*='jquery.modal.min.css']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "jquery-modal/([\\d\\.]+)/jquery\\.modal\\.min\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "jQuery Modal is an overlay dialog box or in other words, a popup window that is made to display on the top or 'overlayed' on the current page.",
+      "website": "https://jquerymodal.com",
+      "icon": "jQuery Modal.png"
+    },
+    "jQuery Popup Overlay": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(\\d+\\.\\d+\\.\\d+)/jquery\\.popupoverlay\\.js\\;version:\\1"
+      ],
+      "description": "jQuery Popup Overlay is a responsive overlay which lets you create modal windows, tooltips, and more.",
+      "website": "https://www.npmjs.com/package/jquery-popup-overlay"
+    },
+    "jQuery UI": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "jQuery.ui.version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "([\\d.]+)/jquery-ui(?:\\.min)?\\.js\\;version:\\1",
+        "jquery-ui.*\\.js",
+        "jquery-ui[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery, Cascading Style Sheets, and HTML.",
+      "website": "https://jqueryui.com",
+      "cpe": "cpe:2.3:a:jquery:jquery_ui:*:*:*:*:*:*:*:*",
+      "icon": "jQuery UI.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "jQuery.ui.version || \"\""
+          }
+        ]
+      }
+    },
+    "jsPDF": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "jsPDF.API": ""
+      },
+      "scriptSrc": [
+        "/jspdf\\.min\\.js"
+      ],
+      "description": "jsPDF is a HTML5 client-side solution for generating PDF documents directly within web browsers.",
+      "website": "https://parall.ax/products/jspdf",
+      "icon": "jsPDF.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof jsPDF !== 'undefined' && typeof jsPDF.API !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "libphonenumber": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "libphonenumber.AsYouType": "",
+        "libphonenumber.DIGITS": ""
+      },
+      "scriptSrc": [
+        "(?:/([\\d\\.]+))?/libphonenumber(?:-js\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "libphonenumber is a JavaScript library for parsing, formatting, and validating international phone numbers.",
+      "website": "https://github.com/google/libphonenumber",
+      "icon": "default.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof libphonenumber !== 'undefined' && typeof libphonenumber.AsYouType !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "lit-element": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "litElementVersions.0": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "lit-element is a simple base class for creating web components that work in any web page with any framework. lit-element uses lit-html to render into shadow DOM, and adds API to manage properties and attributes.",
+      "website": "https://lit.dev",
+      "icon": "Lit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof litElementVersions !== 'undefined' && typeof litElementVersions.0 !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "litElementVersions.0 || \"\""
+          }
+        ]
+      }
+    },
+    "lit-html": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "litHtmlVersions.0": "([\\d\\.]+)\\;version:\\1"
+      },
+      "description": "lit-html is a simple, modern, safe, small and fast HTML templating library for JavaScript.",
+      "website": "https://lit.dev",
+      "icon": "Lit.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof litHtmlVersions !== 'undefined' && typeof litHtmlVersions.0 !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "litHtmlVersions.0 || \"\""
+          }
+        ]
+      }
+    },
+    "lite-youtube-embed": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "lite-youtube": {
+          "exists": ""
+        }
+      },
+      "implies": [
+        "YouTube"
+      ],
+      "description": "The lite-youtube-embed technique renders the YouTube video inside the IFRAME tag only when the play button in clicked thus improving the core web vitals score of your website.",
+      "website": "https://github.com/paulirish/lite-youtube-embed"
+    },
+    "mOxie": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "mOxie": "",
+        "moxie": ""
+      },
+      "description": "mOxie is a library providing polyfills for XHR2 and File API, ensuring compatibility with older browsers that lack native support.",
+      "website": "https://github.com/moxiecode/moxie",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mOxie !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof mOxie !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "math.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "mathjs": ""
+      },
+      "scriptSrc": [
+        "math(?:\\.min)?\\.js"
+      ],
+      "description": "Math.js a JavaScript library that provides a comprehensive set of mathematical functions and capabilities for performing complex calculations and operations in web applications.",
+      "website": "https://mathjs.org",
+      "icon": "math.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mathjs !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "metisMenu": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "MetisMenu": "",
+        "metisMenu": ""
+      },
+      "scriptSrc": [
+        "(?:/|\\.)metismenu(?:js)?(?:\\.min)?\\.js(?:\\?([\\d\\.]+))?\\;version:\\1"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "description": "metisMenu is a collapsible jQuery menu plugin.",
+      "website": "https://github.com/onokumus/metismenu",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof MetisMenu !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof MetisMenu !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "mobile-detect.js": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "mobile-detect(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Mobile-detect.js is a compact JavaScript library designed to detect devices by comparing patterns against a given User-Agent string.",
+      "website": "https://hgoebl.github.io/mobile-detect.js/doc/MobileDetect.html"
+    },
+    "p5.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "p5.Camera": "",
+        "p5.ColorConversion": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:addons\\/)?)?p5(?:\\.sound)?(?:\\.dom)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else.",
+      "website": "https://p5js.org",
+      "icon": "p5.js.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof p5 !== 'undefined' && typeof p5.Camera !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "parallax.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "parallax": "",
+        "parallaxInstance": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?parallax(?:\\/assets\\/js)?(?:\\/jquery)?(?:\\/scripts)?(?:\\/wow)?(?:[_\\.]move)?(?:\\.inview)?(?:\\.pkgd)?(?:\\.scrolling)?(?:\\.min)?\\.js\\;version:\\1",
+        "parallax(?:\\/assets\\/js)?(?:\\/jquery)?(?:\\/scripts)?(?:\\/wow)?(?:[_\\.]move)?(?:\\.inview)?(?:\\.pkgd)?(?:\\.scrolling)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Simple parallax scrolling effect.",
+      "website": "https://github.com/pixelcog/parallax.js",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof parallax !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof parallax !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "pdfmake": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "pdfmake(?:[\\/-]((?:\\d+\\.)+\\d+)\\/(?:build\\/)?)?(?:pdfmake)?(?:vfs_fonts)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Client/server side PDF printing in pure JavaScript.",
+      "website": "https://bpampuch.github.io/pdfmake"
+    },
+    "pickadate.js": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "pickadate": ""
+      },
+      "scriptSrc": [
+        "pickadate(?:\\/translations)?(?:\\/de_de)?(?:\\/picker)?(?:\\.date)?(?:\\.time)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Mobile-friendly, responsive, and lightweight jQuery date & time input picker.",
+      "website": "https://amsul.ca/pickadate.js/",
+      "icon": "pickadate.js.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof pickadate !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "prettyPhoto": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "pp_alreadyInitialized": "",
+        "pp_descriptions": "",
+        "pp_images": "",
+        "pp_titles": ""
+      },
+      "html": [
+        "(?:<link [^>]*href=\"[^\"]*prettyphoto(?:\\.min)?\\.css|<a [^>]*rel=\"prettyphoto)"
+      ],
+      "scriptSrc": [
+        "jquery\\.prettyphoto\\.js"
+      ],
+      "implies": [
+        "jQuery"
+      ],
+      "website": "https://no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/",
+      "icon": "prettyPhoto.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof pp_alreadyInitialized !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof pp_alreadyInitialized !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof pp_alreadyInitialized !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof pp_alreadyInitialized !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "punycode": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "punycode(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.){1,2}\\d+))?\\;version:\\1"
+      ],
+      "description": "A robust Punycode converter that fully complies to RFC 3492 and RFC 5891, and works on nearly all JavaScript platforms.",
+      "website": "https://github.com/mathiasbynens/punycode.js"
+    },
+    "qiankun": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div[id^='__qiankun_']": {
+          "attributes": {
+            "data-version": "([\\d\\.]+)\\;version:\\1"
+          }
+        }
+      },
+      "scripts": [
+        "__powered_by_qiankun__"
+      ],
+      "description": "qiankun is a JS library who helps developers to build a micro frontends system.",
+      "website": "https://qiankun.umijs.org",
+      "icon": "qiankun.svg"
+    },
+    "script.aculo.us": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "Scriptaculous.Version": "^(.+)$\\;version:\\1"
+      },
+      "scriptSrc": [
+        "/(?:scriptaculous|protoaculous)(?:\\.js|/)"
+      ],
+      "website": "https://script.aculo.us",
+      "icon": "script.aculo.us.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof Scriptaculous !== 'undefined' && typeof Scriptaculous.Version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "Scriptaculous.Version || \"\""
+          }
+        ]
+      }
+    },
+    "scrollreveal": {
+      "cats": [
+        59
+      ],
+      "html": [
+        "<[^>]+data-sr(?:-id)"
+      ],
+      "scriptSrc": [
+        "scrollreveal(?:\\.min)(?:\\.js)"
+      ],
+      "website": "https://scrollrevealjs.org",
+      "icon": "scrollreveal.svg"
+    },
+    "sidr": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "sidr(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "Sidr is a jQuery plugin for creating side menus.",
+      "website": "https://www.albertovarela.net/sidr/"
+    },
+    "slideout": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "slideout": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?slideout(?:-init)?(?:\\.min)?\\.js\\;version:\\1",
+        "slideout(?:-init)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
+      ],
+      "description": "A touch slideout navigation menu for your mobile web apps.",
+      "website": "https://slideout.js.org/",
+      "icon": "slideout.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof slideout !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "timeago": {
+      "cats": [
+        59
+      ],
+      "js": {
+        "timeago": ""
+      },
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/)?(?:jquery\\.)?[tt]imeago(?:_mkdocs_material)?(?:\\.full)?(?:\\.locales)?(?:\\.native)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "Timeago is a jQuery plugin that makes it easy to support automatically updating fuzzy timestamps.",
+      "website": "https://timeago.yarp.com/",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof timeago !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "vxe-table": {
+      "cats": [
+        59
+      ],
+      "dom": {
+        "div[class*='vxe-table']": {
+          "exists": ""
+        }
+      },
+      "description": "vxe-table is a Vue.js based PC form component, support add, delete, change, virtual scroll, lazy load, shortcut menu, data validation, tree structure, print export, form rendering, data paging, virtual list, modal window, custom template, renderer, flexible configuration items, extension interface.",
+      "website": "https://vxetable.cn",
+      "icon": "vxe-table.png"
+    },
+    "waitForImages": {
+      "cats": [
+        59
+      ],
+      "scriptSrc": [
+        "(?:((?:\\d+\\.)+\\d+)\\/(?:jquery\\.)?)?waitforimages(?:-modded)?(?:\\.min)?\\.js\\;version:\\1",
+        "(?:(?:jquery\\.)?)?waitforimages(?:-((?:\\d+\\.)+\\d+)-modded)?(?:\\.min)?\\.js\\;version:\\1"
+      ],
+      "description": "waitForImages is a lightweight, high-performance JavaScript library that simplifies the handling of image preloading events.",
+      "website": "https://github.com/alexanderdickson/waitForImages"
+    },
+    "web-vitals": {
+      "cats": [
+        59,
+        78
+      ],
+      "js": {
+        "webVitals": ""
+      },
+      "scripts": [
+        "(8999999999999[\\s\\s]+1e12[\\s\\s]+(largest-contentful-paint|first-input|layout-shift)|(largest-contentful-paint|first-input|layout-shift)[\\s\\s]+8999999999999[\\s\\s]+1e12)"
+      ],
+      "scriptSrc": [
+        "web-vitals@([\\d.]+)/dist/web-vitals.*\\.js\\;version:\\1"
+      ],
+      "description": "The web-vitals JavaScript is a tiny, modular library for measuring all the web vitals metrics on real users.",
+      "website": "https://github.com/GoogleChrome/web-vitals",
+      "icon": "web-vitals.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webVitals !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

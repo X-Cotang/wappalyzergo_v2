@@ -1,0 +1,694 @@
+{
+  "apps": {
+    "Amap": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "AMap.ArrayBounds": ""
+      },
+      "scriptSrc": [
+        "webapi\\.amap\\.com"
+      ],
+      "description": "Amap is a digital cartography platform providing detailed geographic data, navigation, and location-based services across Asian regions.",
+      "website": "https://amap.com",
+      "icon": "Amap.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof AMap !== 'undefined' && typeof AMap.ArrayBounds !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Apple MapKit JS": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "mapkit._tileProvider": ""
+      },
+      "headers": {
+        "content-security-policy": "\\.apple-mapkit\\.com"
+      },
+      "scriptSrc": [
+        "//cdn\\.apple-mapkit\\.com/mk/([\\d\\.\\w]+)\\;version:\\1"
+      ],
+      "description": "Apple MapKit JS lets you embed interactive maps directly into your websites across platforms and operating systems, including iOS and Android.",
+      "website": "https://developer.apple.com/maps/web/",
+      "icon": "Apple.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mapkit !== 'undefined' && typeof mapkit._tileProvider !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ArcGIS API for JavaScript": {
+      "cats": [
+        35
+      ],
+      "scriptSrc": [
+        "basemaps\\.arcgis\\.com",
+        "js\\.arcgis\\.com"
+      ],
+      "description": "ArcGIS API for JavaScript is a tool used to embed maps and tasks in web applications.",
+      "website": "https://developers.arcgis.com/javascript/",
+      "icon": "arcgis_icon.png"
+    },
+    "Baidu Maps": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "BMAP_API_VERSION": "(.+)\\;version:\\1",
+        "bmap.version": "(.+)\\;version:\\1"
+      },
+      "description": "Baidu Maps is a desktop and mobile web mapping service application and technology provided by Baidu, offering satellite imagery, street maps, street view and indoor view perspectives, as well as functions such as a route planner for traveling by foot, car, or with public transportation.",
+      "website": "https://map.baidu.com",
+      "icon": "Baidu Maps.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof BMAP_API_VERSION !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof BMAP_API_VERSION !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "BMAP_API_VERSION || \"\""
+          },
+          {
+            "type": "js-eval",
+            "query": "bmap.version || \"\""
+          }
+        ]
+      }
+    },
+    "CARTO Analytics": {
+      "cats": [
+        35
+      ],
+      "scripts": [
+        "\\.basemaps\\.cartocdn\\.com"
+      ],
+      "description": "Carto is a cloud-based spatial analytics platform that enables analysis and development with spatial data at scale.",
+      "website": "https://carto.com",
+      "icon": "Carto.svg"
+    },
+    "ClustrMaps Widget": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "img[src*='clustrmaps.com']": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "clustrmaps\\.com"
+      ],
+      "description": "ClustrMaps widget is a visitor tracker, designed for general web and blog use.",
+      "website": "https://clustrmaps.com/",
+      "icon": "ClustrMaps.svg"
+    },
+    "Develic Omnium Maps": {
+      "cats": [
+        35
+      ],
+      "scripts": [
+        "maps\\.develic\\.com"
+      ],
+      "scriptSrc": [
+        "maps\\.develic\\.com"
+      ],
+      "description": "Develic Omnium Maps is a store locator application for Shopify stores designed to help users display and manage physical store locations.",
+      "website": "https://www.develic.com",
+      "icon": "Develic.svg"
+    },
+    "EagleView": {
+      "cats": [
+        35
+      ],
+      "scripts": [
+        "\\.eagleview\\.com"
+      ],
+      "description": "EagleView is a provider of GIS mapping, aerial imagery tools, and analytics used to deliver accurate geospatial data.",
+      "website": "https://www.eagleview.com",
+      "icon": "Eagleview.svg"
+    },
+    "Geoapify": {
+      "cats": [
+        35
+      ],
+      "scripts": [
+        "api\\.geoapify\\.com"
+      ],
+      "description": "Geoapify is a platform that provides APIs and location services for building location-aware applications.",
+      "website": "https://www.geoapify.com",
+      "icon": "Geoapify.svg"
+    },
+    "Google Maps": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "iframe[src*='google.com/maps']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "GoogleMap": "",
+        "googleMapsConfig": ""
+      },
+      "scriptSrc": [
+        "(?:maps\\.google\\.com/maps\\?file=api(?:&v=([\\d.]+))?|maps\\.google\\.com/maps/api/staticmap)\\;version:api v\\1",
+        "//maps\\.google(?:apis)?\\.com/maps/api/js"
+      ],
+      "description": "Google Maps is a web mapping service. It offers satellite imagery, aerial photography, street maps, 360° interactive panoramic views of streets, real-time traffic conditions, and route planning for traveling by foot, car, bicycle and air, or public transportation.",
+      "website": "https://maps.google.com",
+      "icon": "Google Maps.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof GoogleMap !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof GoogleMap !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Here": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "link[href*='//js\\.api\\.here\\.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "H.buildInfo": "",
+        "H.geo": "\\;confidence:50",
+        "H.util": "\\;confidence:50"
+      },
+      "description": "HERE is a PaaS for creating custom maps, visualize location datasets, gather insights and buy and sell location assets.",
+      "website": "https://www.here.com",
+      "icon": "here.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof H !== 'undefined' && typeof H.buildInfo !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Leaflet": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "L.DistanceGrid": "",
+        "L.PosAnimation": "",
+        "L.version": "^(.+)$\\;version:\\1\\;confidence:0"
+      },
+      "scriptSrc": [
+        "leaflet.{0,32}\\.js(?!.+shopify)"
+      ],
+      "description": "Leaflet is the open-source JavaScript library for mobile-friendly interactive maps.",
+      "website": "https://leafletjs.com",
+      "icon": "Leaflet.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof L !== 'undefined' && typeof L.DistanceGrid !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "MapLibre GL JS": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "apex.libVersions.maplibre": "([\\d\\.]+)\\;version:\\1",
+        "maplibregl": "",
+        "rmap2.maplibreglCompare": ""
+      },
+      "scriptSrc": [
+        "maplibre-gl@([\\d\\.]+)/dist/maplibre-gl\\.js\\;version:\\1"
+      ],
+      "description": "MapLibre GL JS is an open-source library for publishing maps on your websites.",
+      "website": "https://github.com/maplibre/maplibre-gl-js",
+      "icon": "MapLibre.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof apex !== 'undefined' && typeof apex.libVersions !== 'undefined' && typeof apex.libVersions.maplibre !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof apex !== 'undefined' && typeof apex.libVersions !== 'undefined' && typeof apex.libVersions.maplibre !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof apex !== 'undefined' && typeof apex.libVersions !== 'undefined' && typeof apex.libVersions.maplibre !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "apex.libVersions.maplibre || \"\""
+          }
+        ]
+      }
+    },
+    "MapLoco": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "a[href*='m.maploco.com'] > img[src*='www.maploco.com']": {
+          "exists": ""
+        }
+      },
+      "description": "MapLoco is a tool that displays website visitor locations on an interactive map for analysis and tracking.",
+      "website": "https://maploco.com",
+      "icon": "MapLoco.svg"
+    },
+    "Mapbox GL JS": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "link[href*='mapbox-gl.css'], div.mapboxgl-map": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "mapboxgl.version": "^(.+)$\\;version:\\1\\;confidence:0"
+      },
+      "scriptSrc": [
+        "mapbox-gl\\.js"
+      ],
+      "description": "Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps from vector tiles and Mapbox styles.",
+      "website": "https://github.com/mapbox/mapbox-gl-js",
+      "icon": "Mapbox.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof mapboxgl !== 'undefined' && typeof mapboxgl.version !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "mapboxgl.version || \"\""
+          }
+        ]
+      }
+    },
+    "Mapbox.js": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "link[href*='api.mapbox.com/']": {
+          "exists": ""
+        }
+      },
+      "scripts": [
+        "api\\.mapbox\\.com/mapbox\\.js/v([\\d\\.]+)/\\;version:\\1"
+      ],
+      "scriptSrc": [
+        "api\\.mapbox\\.com/mapbox\\.js/v([\\d\\.]+)/\\;version:\\1"
+      ],
+      "implies": [
+        "Leaflet"
+      ],
+      "description": "Mapbox.js is a JavaScript library provided by Mapbox for working with interactive maps and geospatial data.",
+      "website": "https://github.com/mapbox/mapbox.js",
+      "icon": "Mapbox.svg"
+    },
+    "Mapline": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "iframe[src*='app.mapline.com']": {
+          "exists": ""
+        }
+      },
+      "headers": {
+        "access-control-allow-origin": "app\\.mapline\\.com"
+      },
+      "description": "Mapline is a geo-powered analytics platform designed to deliver location-based insights worldwide.",
+      "website": "https://mapline.com",
+      "icon": "Mapline.svg"
+    },
+    "Mapme": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "iframe[src*='viewer.mapme.com/']": {
+          "exists": ""
+        }
+      },
+      "description": "Mapme is an interactive map builder that allows users to create custom maps.",
+      "website": "https://mapme.com",
+      "icon": "Mapme.svg"
+    },
+    "Mappedin": {
+      "cats": [
+        35
+      ],
+      "headers": {
+        "content-security-policy": "\\.mappedin\\.com"
+      },
+      "description": "Mappedin is an all-in-one indoor mapping platform designed for scalability.",
+      "website": "https://www.mappedin.com",
+      "icon": "Mappedin.svg"
+    },
+    "Mapplic": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "div.mapplic-layer > div.mapplic-map-image": {
+          "exists": ""
+        }
+      },
+      "scriptSrc": [
+        "/include/mapplic/mapplic\\.js",
+        "wp-content/plugins/mapplic/"
+      ],
+      "description": "Mapplic is a plugin for creating interactive maps based on simple image (jpg, png) or vector (svg) files.",
+      "website": "https://mapplic.com",
+      "icon": "Mapplic.svg"
+    },
+    "Maptalks": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "div.maptalks-wrapper": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "map._eventMap": "",
+        "maptalks.GeoJSON": ""
+      },
+      "description": "Maptalks is a light and plugable JavaScript library for integrated 2D/3D maps.",
+      "website": "https://maptalks.org",
+      "icon": "Maptalks.png",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof map !== 'undefined' && typeof map._eventMap !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof map !== 'undefined' && typeof map._eventMap !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Maptiler": {
+      "cats": [
+        35
+      ],
+      "scripts": [
+        "api\\.maptiler\\.com"
+      ],
+      "description": "Maptiler is a mapping platform offering visual tools, global data, SDKs, and APIs for enterprise application development.",
+      "website": "https://www.maptiler.com",
+      "icon": "Maptiler.svg"
+    },
+    "Microsoft Azure Maps": {
+      "cats": [
+        35,
+        79
+      ],
+      "meta": {
+        "enabled-features": [
+          "geojson_azure_maps"
+        ]
+      },
+      "implies": [
+        "Azure"
+      ],
+      "description": "Microsoft Azure Maps is a cloud-based mapping and geospatial platform provided by Microsoft.",
+      "website": "https://azure.microsoft.com/en-us/products/azure-maps/",
+      "icon": "Microsoft.svg"
+    },
+    "Naver Maps": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "naver.maps": ""
+      },
+      "scriptSrc": [
+        "openapi\\.map\\.naver\\.com/openapi/v([\\d\\.]+)\\;version:\\1"
+      ],
+      "description": "Naver Maps help develop location-based services which provided by Naver.",
+      "website": "https://www.ncloud.com/product/applicationService/maps",
+      "icon": "Naver Maps.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof naver !== 'undefined' && typeof naver.maps !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Neshan": {
+      "cats": [
+        35
+      ],
+      "scriptSrc": [
+        "static\\.neshan\\.org"
+      ],
+      "description": "Neshan is an Iranian route-finding tool that provides users with navigation and mapping services for travel across the country.",
+      "website": "https://neshan.org",
+      "icon": "Neshan.svg"
+    },
+    "OpenLayers": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "OpenLayers.VERSION_NUMBER": "([\\d.]+)\\;version:\\1",
+        "ol.CanvasMap": ""
+      },
+      "scriptSrc": [
+        "openlayers"
+      ],
+      "description": "OpenLayers is an open-source JavaScript library for displaying map data in web browser.",
+      "website": "https://openlayers.org",
+      "icon": "OpenLayers.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof OpenLayers !== 'undefined' && typeof OpenLayers.VERSION_NUMBER !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof OpenLayers !== 'undefined' && typeof OpenLayers.VERSION_NUMBER !== 'undefined'"
+          }
+        ],
+        "version": [
+          {
+            "type": "js-eval",
+            "query": "OpenLayers.VERSION_NUMBER || \"\""
+          }
+        ]
+      }
+    },
+    "OpenStreetMap": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "iframe[src*='openstreetmap.org'],iframe[data-lazy-src*='openstreetmap.org']": {
+          "exists": ""
+        }
+      },
+      "description": "OpenStreetMap is a free, editable map of the whole world that is being built by volunteers largely from scratch and released with an open-content license.",
+      "website": "https://www.openstreetmap.org",
+      "icon": "OpenStreetMap.svg"
+    },
+    "Prolo Finder": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "proloConfig": "",
+        "proloFinderState": ""
+      },
+      "scriptSrc": [
+        "embed\\.prolofinder\\.com"
+      ],
+      "description": "Prolo is a tool that adds a store locator feature to any website, enabling users to find nearby store locations through an interactive map or search interface.",
+      "website": "https://www.prolofinder.com",
+      "icon": "ProloFinder.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof proloConfig !== 'undefined'"
+          },
+          {
+            "type": "js-eval",
+            "query": "typeof proloConfig !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "RevolverMaps": {
+      "cats": [
+        35
+      ],
+      "scriptSrc": [
+        "\\.revolvermaps\\.com"
+      ],
+      "description": "RevolverMaps is a collection of real-time visitor statistics widgets for website or blog. Interactive visitor mappings to a globe rendered by the Revolver Engine.",
+      "website": "https://www.revolvermaps.com",
+      "icon": "RevolverMaps.svg"
+    },
+    "Seatics": {
+      "cats": [
+        35
+      ],
+      "scriptSrc": [
+        "tn-widget\\.seatics\\.com"
+      ],
+      "description": "Seatics is a platform that provides interactive maps for venues like arenas, stadiums, and convention centers, displaying seating arrangements, concession stands, restrooms, and other key locations.",
+      "website": "https://seatics.com",
+      "icon": "Seatics.svg"
+    },
+    "StorePoint": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "STOREPOINT": ""
+      },
+      "scriptSrc": [
+        "cdn\\.storepoint\\.co/"
+      ],
+      "description": "StorePoint is a store locator software that allows anyone to build a store locator for their website and fully customize it to match the website theme, branding, colors, exact fonts and much more.",
+      "website": "https://storepoint.co",
+      "icon": "StorePoint.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof STOREPOINT !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "Storeify Store Locator": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "storeify_storelocator_form": ""
+      },
+      "scripts": [
+        "\\.storeify\\.app"
+      ],
+      "description": "Storeify Store Locator is an app for Shopify that enables businesses to add a store locator feature to their online stores.",
+      "website": "https://storeify.app",
+      "icon": "Storeify.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof storeify_storelocator_form !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "TerriaJS": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "html[class*='terria']": {
+          "exists": ""
+        }
+      },
+      "description": "TerriaJS is an open-source framework for web-based geospatial catalogue explorers.",
+      "website": "https://terria.io/",
+      "icon": "TerriaJS.png"
+    },
+    "TomTom Maps": {
+      "cats": [
+        35
+      ],
+      "js": {
+        "tomtom.Map": ""
+      },
+      "scriptSrc": [
+        "api\\.tomtom\\.com"
+      ],
+      "description": "TomTom Maps is a web mapping service.",
+      "website": "https://www.tomtom.com",
+      "icon": "TomTom.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof tomtom !== 'undefined' && typeof tomtom.Map !== 'undefined'"
+          }
+        ]
+      }
+    },
+    "ZeeMaps": {
+      "cats": [
+        35
+      ],
+      "dom": {
+        "iframe[src*='www.zeemaps.com/']": {
+          "exists": ""
+        }
+      },
+      "js": {
+        "webpackChunkZeeMaps": ""
+      },
+      "description": "ZeeMaps is a custom map generation service that enables users to create personalized maps with location markers, regions, and annotations.",
+      "website": "https://www.zeemaps.com",
+      "icon": "ZeeMaps.svg",
+      "browser": {
+        "detection": [
+          {
+            "type": "js-eval",
+            "query": "typeof webpackChunkZeeMaps !== 'undefined'"
+          }
+        ]
+      }
+    }
+  }
+}

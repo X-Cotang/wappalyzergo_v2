@@ -1,0 +1,114 @@
+{
+  "apps": {
+    "Envoy": {
+      "cats": [
+        64
+      ],
+      "headers": {
+        "server": "^envoy$",
+        "x-envoy-upstream-service-time": "",
+        "x-envoy-decorator-operation": ""
+      },
+      "description": "Envoy is an open-source edge and service proxy, designed for cloud-native applications.",
+      "website": "https://www.envoyproxy.io/",
+      "cpe": "cpe:2.3:a:envoyproxy:envoy:*:*:*:*:*:*:*:*",
+      "icon": "Envoy.png"
+    },
+    "F5 BigIP": {
+      "cats": [
+        64
+      ],
+      "cookies": {
+        "f5_fullwt": "",
+        "f5_ht_shrinked": "",
+        "f5_st": "",
+        "lastmrh_session": "",
+        "mrhsequence": "",
+        "mrhsession": "",
+        "mrhshint": "",
+        "tin": ""
+      },
+      "headers": {
+        "server": "^big-?ip$"
+      },
+      "description": "F5's BIG-IP is a family of products covering software and hardware designed around application availability, access control, and security solutions.",
+      "website": "https://www.f5.com/products/big-ip-services",
+      "cpe": "cpe:2.3:a:f5:big-ip:*:*:*:*:*:*:*:*",
+      "icon": "F5.png"
+    },
+    "Hydra-Shield": {
+      "cats": [
+        64
+      ],
+      "headers": {
+        "server": "^hydra-shield\\sv([\\d\\.]+)$\\;version:\\1"
+      },
+      "description": "Hydra-Shield is an anti-DDoS protection reverse proxy that filters and mitigates malicious traffic to safeguard servers from distributed denial-of-service attacks.",
+      "website": "https://hydra-shield.fr",
+      "icon": "Hydra-Shield.png"
+    },
+    "IBM DataPower": {
+      "cats": [
+        64
+      ],
+      "headers": {
+        "x-backside-transport": "",
+        "x-global-transaction-id": ""
+      },
+      "description": "IBM DataPower Gateway is a single multi-channel gateway designed to help provide security, control, integration and optimized access to a full range of mobile, web, application programming interface (API), service-oriented architecture (SOA), B2B and cloud workloads.",
+      "website": "https://www.ibm.com/products/datapower-gateway",
+      "cpe": "cpe:2.3:a:ibm:datapower_gateway:*:*:*:*:*:*:*:*",
+      "icon": "DataPower.png"
+    },
+    "Kong": {
+      "cats": [
+        64
+      ],
+      "headers": {
+        "via": "^kong/([\\d\\.]+)(?:.+)?$\\;version:\\1"
+      },
+      "description": "Kong is an open-source API gateway and platform that acts as middleware between compute clients and the API-centric applications.",
+      "website": "https://konghq.com",
+      "icon": "Kong.svg"
+    },
+    "MATORI.NET": {
+      "cats": [
+        64
+      ],
+      "headers": {
+        "x-powered-by": "matori.net"
+      },
+      "implies": [
+        "OpenResty"
+      ],
+      "description": "MATORI.NET is a fully managed reverse proxy.",
+      "website": "https://matori.net"
+    },
+    "Urllo": {
+      "cats": [
+        64
+      ],
+      "dom": {
+        "iframe[src*='www.urllo-cdn.com']": {
+          "exists": ""
+        }
+      },
+      "description": "Urllo is a URL redirection service designed for businesses to manage and streamline link forwarding.",
+      "website": "https://www.urllo.com",
+      "icon": "Urllo.svg"
+    },
+    "V2Board": {
+      "cats": [
+        64
+      ],
+      "dom": {
+        "link[href*='/theme/v2board/assets/']": {
+          "exists": ""
+        }
+      },
+      "description": "V2Board is a multi-agent protocol management system with an interface for managing multiple proxy protocols.",
+      "website": "https://v2board.com",
+      "icon": "V2Board.png"
+    }
+  }
+}
